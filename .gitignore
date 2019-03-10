@@ -1,0 +1,95 @@
+## Emacs
+*~
+.\#*
+.#*
+\#*\#
+#*
+*.bak
+
+## General
+README.html
+*.Rhistory
+*.Rproj.user
+*.RData
+*.Rout
+
+## Rnw/Rmd output files
+**/*_cache/*
+**/*_files/*
+**/figure/*
+*.nav
+*.snm
+*.tex
+*.vrb
+
+## R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+Rplots.pdf
+cache/
+auto/
+*.synctex.gz
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.bak
+
+config/*.bibtex
+
+slides/*.aux
+slides/*.bcf
+slides/*.log
+slides/*.nav
+slides/*.out
+slides/*.pdf
+slides/*.run.xml
+slides/*.snm
+slides/*.tex
+slides/*.toc
+slides/*.vrb
+slides/figure/*
+
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.brf
+
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+
+## Intermediate documents:
+*.dvi
+*-converted-to.*
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+README.html
+config/template.html
+config/Refs.bib
+index.html
+_site/
+slides/*.html
+*.html
+tutorials/*.html

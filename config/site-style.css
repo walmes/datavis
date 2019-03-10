@@ -1,0 +1,394 @@
+/* Fontes do Google: https://fonts.google.com/ */
+/*
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+@import url('https://fonts.googleapis.com/css?family=Karma');
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic');
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+*/
+/*
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+*/
+
+/* Cores ------------------------------------ */
+
+/* http://htmlcolorcodes.com/ */
+/* http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF */
+:root{
+    /* Roxo */
+    --one-color: #7a0292; /* médio */
+    --two-color: #520163; /* escuro */
+    --thr-color: #c416e7; /* claro */
+}
+/* Corpo ------------------------------------ */
+
+body, td, caption {
+    /* font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif; */
+     font-family: "Lato", sans-serif;
+    /* font-family: 'Vollkorn', serif; */
+    /* font-family: 'Karma', serif; */
+    /* font-family: 'Gentium Book Basic', serif; */
+    /* font-family: 'Barlow', sans-serif; */
+/*
+    font-family: 'Catamaran', sans-serif;
+*/
+    background-color: white;
+    font-size: 16px;
+    text-align: none;
+}
+
+body {
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: inherit;
+}
+
+h1.title {
+    font-size: 38px;
+}
+
+h1.toc-ignore {
+    font-size: 42px;
+}
+
+.section h1 {
+    margin-top: -40px !important;
+}
+
+.section h2 {
+    margin-top: -26px !important;;
+}
+
+.h1, .h2, .h3, h1, h2, h3 {
+    /* margin-top: 3px !important; */
+    margin-bottom: 20px;
+}
+
+div#header {
+    margin-bottom: 4em;
+}
+
+/* TOC -------------------------------------- */
+
+#TOC {
+    font-size: 15px;
+    margin: 0px 0px 20px 0px;
+}
+
+#TOC li {
+    list-style: none;
+}
+
+#TOC li:before {
+    content: '';
+}
+
+.tocify-header {
+    text-indent: 0px;
+}
+
+.tocify-subheader {
+    text-indent: 0px !important;
+}
+
+.tocify-subheader .tocify-item {
+    font-size: 90% !important;
+    padding-left: 15px !important;
+}
+
+div.tocify-extend-page {
+	height: 10px !important;
+}
+
+/* Cores ------------------------------------ */
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+    background-color: var(--one-color);
+    border-color: var(--one-color);
+}
+
+.navbar-default {
+    background-color: var(--one-color);
+    border-color: var(--one-color);
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color: var(--one-color);
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    background-color: var(--two-color);
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: var(--thr-color);
+}
+
+a,
+a:hover,
+a:focus {
+    color: var(--one-color);
+    text-decoration: none;
+}
+
+/* Parafrases ------------------------------- */
+
+blockquote {
+    font-size: 100%;
+    width: 66%;
+    margin-left: auto;
+    border: none;
+    display: block;
+    margin: auto;
+}
+
+blockquote p {
+    font-style: italic;
+    text-indent: 0em;
+}
+
+blockquote p:last-child {
+    text-indent: 0em;
+    text-align: right;
+    font-style: normal;
+    display: inherit;
+}
+
+/* Listas ----------------------------------- */
+
+ul:not([class]) > li {
+    list-style: none;
+}
+ul:not([class]) > li:before {
+    content: '\25B8';
+    margin-left: -1em;
+    position: absolute;
+    color: var(--one-color);
+}
+
+/* https://www.lockedowndesign.com/ordered-list-ol-different-color-for-numbers/ */
+ol:not([class]) {
+    counter-reset: list;
+}
+ol > li {
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+}
+ol > li:before {
+    color: var(--one-color);
+    content: counter(list) ".";
+    left: -32px;
+    position: absolute;
+    text-align: right;
+    width: 26px;
+}
+
+/* Figuras ---------------------------------- */
+
+img {
+    max-width: 100% !important;
+    display: block;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.header img {
+    box-shadow: unset;
+}
+
+/* Tabelas ---------------------------------- */
+
+tbody {
+    border-bottom: 2px solid #DDD;
+}
+
+tr.header {
+    border-top: 2px solid #DDD;
+    border-bottom: 2px solid #DDD;
+}
+
+tr {
+    border-top: 1px solid #DDD;
+}
+
+/* Tabela com o nome dos autores. */
+h4.author table {
+    border: none;
+    font-size: 120%;
+    width: auto;
+    margin: 2em auto 2em auto;
+}
+
+h4.author table tbody,
+h4.author table thead,
+h4.author table tr.header th,
+h4.author table tr {
+    border: none;
+    line-height: unset;
+     font-weight: normal;
+}
+
+h4.author table td,
+h4.author table th {
+    border: none;
+    border: none;
+    padding: 0 20px 0 20px;
+}
+
+/* Legendas --------------------------------- */
+
+table.table caption,
+caption,
+p.caption {
+    text-align: left;
+    color: inherit;
+    line-height: 125%;
+}
+
+img + p {
+    margin-top: 1em;
+}
+
+/* Referências ------------------------------ */
+
+div.references p {
+    text-indent: -1em;
+    margin-left: 1em;
+    text-align: left;
+}
+
+/* Código ----------------------------------- */
+
+tt, code, pre {
+    font-family: "Inconsolata", "Andale Mono", monospace;
+}
+
+pre code {
+    font-size: 14px;
+}
+
+code {
+    padding: 1px 1px;
+    font-size: 90%;
+    background-color: none;
+}
+
+p code,
+table code {
+    font-size: 80%;
+    background-color: unset;
+}
+
+/* R input */
+pre, code {
+    background-color: #EDEDED;
+    color: #333;
+}
+
+pre {
+    border: none;
+    border-radius: 3px;
+}
+
+/* Comments in gray italic */
+code > span.co {
+    color: #848484;
+    font-style: italic;
+}
+
+/* R output */
+pre:not([class]) code {
+    background-color: #D4D4D4;
+}
+
+pre:not([class]), code {
+    background-color: #D4D4D4;
+}
+
+/* Solarized light--------------------------- */
+
+/* Retirado de
+   https://cdnjs.cloudflare.com/ajax/libs/highlight.js/7.3/styles/solarized_light.min.css
+ */
+
+pre code {
+    color:#657b83
+}
+pre .comment {
+    color:#93a1a1;
+    font-style:italic
+}
+pre .keyword {
+    color:#859900
+}
+pre .string {
+    color:#2aa198
+}
+pre .number {
+    color:#cb4b16
+}
+pre .identifier,
+pre .literal {
+    color:#657b83
+}
+pre .operator,
+pre .paren {
+    color:#3e4a4f
+}
+
+/* header & footer -------------------------- */
+
+div.header {
+    margin-top: 20px;
+    border-bottom: 1px solid #BCBCBC;
+    border-top: none;
+}
+table.header {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-collapse: unset;
+}
+table.header > tbody {
+    border-bottom: 0px;
+    border-top: 0px;
+}
+
+hr.footer {
+    border-top: 1px solid #BCBCBC;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+table.footer {
+    margin-bottom: 10px;
+    border-bottom: none;
+    border-collapse: unset;
+}
+table.footer > tbody {
+    border-bottom: 0px;
+}
+div.tocify-extend-page {
+    height: 10px !important;
+}
+img.ufpr {
+    margin: 2em auto 2em auto;
+    box-shadow: unset;
+}
+img.build {
+    box-shadow: unset;
+}
+
+/*------------------------------------------- */
