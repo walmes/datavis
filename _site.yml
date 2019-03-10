@@ -1,0 +1,46 @@
+name: "DATAVIS"
+# output_dir: "docs"
+exclude: ["README.md", "build.sh", "_site.yml", "*.Rmd"]
+output:
+  html_document:
+    theme: united
+    highlight: haddock
+    fig_caption: yes
+    fig_align: center
+    number_sections: true
+    toc: true
+    toc_depth: 3
+    # toc_float:
+    #   collapsed: false
+    #   smooth_scroll: false
+    css: config/site-style.css
+    includes:
+      in_header: [config/MathJax.html, config/font-awesome.html]
+      before_body: config/site-header.html
+      after_body: config/site-footer.html
+navbar:
+  left:
+    - icon: fa-home
+      href: index.html
+    # - icon: fa-television
+    #   text: "Material"
+    #   menu:
+      # - text: "Introdução ao R"
+      #   href: 00-intro-R.html
+      # - text: "Visualização com o `graphics`"
+      #   href: 01-vis-graphics.html
+      # - text: "Visualização com o `lattice`"
+      #   href: 02-vis-lattice.html
+      # - text: "Visualização com o `ggplot2`"
+      #   href: 03-vis-ggplot2.html
+#    - text: "Scripts"
+#      icon: fa-file-text
+#      href: scripts/
+    - text: "Datasets"
+      icon: fa-table
+      href: 99-datasets.html
+  right:
+    - icon: fa-user
+      href: http://leg.ufpr.br/~walmes
+    - icon: fa-git-square fa-lg
+      href: https://gitlab.c3sl.ufpr.br/walmes/data-vis

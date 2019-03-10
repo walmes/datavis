@@ -1,0 +1,410 @@
+---
+title: "Conjuntos de dados para praticar"
+author: Prof. Walmes M. Zeviani
+date: '`r Sys.Date()`'
+---
+
+```{r, include = FALSE}
+source("./config/setup.R")
+opts_chunk$set(
+    cache = FALSE,
+    message = FALSE,
+    warning = FALSE)
+```
+
+# Conjuntos de dados
+
+```{r}
+# Carrega o pacote `readr`.
+library(readr)
+packageVersion("readr")
+```
+```{r, include = FALSE}
+opts_chunk$set(eval = FALSE)
+```
+
+## Jogadores de futebol da liga européia
+
+**Descrição**: são dados biométricos e esportivos dos jogadores dos
+times da liga européia. Os dados foram estraidos do
+<https://www.whoscored.com/>.
+
+```{r}
+url <- "http://leg.ufpr.br/~walmes/data/euro_football_players.txt"
+browseURL(url)
+
+fl <- file.exists(basename(url))
+if (!fl) {
+    download.file(url = url, destfile = basename(url))
+}
+
+# Leitura com R básico.
+tb <- read.table(file = url,
+                 header = TRUE,
+                 sep = "\t",
+                 quote = "",
+                 stringsAsFactors = FALSE)
+class(tb)
+str(tb)
+
+# Leitura com `readr`.
+tb <- read_tsv(file = url,
+               col_names = TRUE,
+               quote = "",
+               comment = "#")
+class(tb)
+str(tb, give.attr = FALSE)
+```
+
+**Exercício**: Faça a manipulação de dados para obter
+
+   1. Total de jogadores por país de origem.
+   2. Total de jogadores por equipe.
+   3. Total de gols por equipe.
+   4. Total de cartões amarelos por equipe.
+   5. Total de cartões amarelos e vermelhos por equipe.
+   6. Substitua o `NA` dos cartões por 0.
+   7. Distribuição das alturas/pesos dos jogadores.
+   8. Obtenha a média, médiana e desvio-padrão de (idade|altura|peso)
+      por equipe.
+   9. Distribuição das idades por equipe.
+   10. Distribuição das alturas por país de origem.
+   11. Distribuição das alturas por posição em campo.
+   12. Correlação entre peso e altura por equipe.
+   13. Determine o IMC médio por equipe.
+   14. Relação do peso com altura por posição em campo.
+   15. Relação do peso com altura por país de origem.
+   16. Calcule a proporção de disputas aéreas ganhas por faixa de altura
+       com amplitura de classe de altura de 5 cm.
+
+## Preço de veículos à venda
+
+**Descrição**: são dados de veículos a venda em site de anúncio de
+veículos. As informações descrevem cada veículo sobre o preço de venda,
+a distância percorrida, ano e modelo de fabriação, etc.
+
+```{r}
+url <- "http://leg.ufpr.br/~walmes/data/carros_venda_webmotors_270314.txt"
+browseURL(url)
+
+fl <- file.exists(basename(url))
+if (!fl) {
+    download.file(url = url, destfile = basename(url))
+}
+
+# Leitura com R básico.
+tb <- read.table(file = url,
+                 header = TRUE,
+                 sep = "\t",
+                 stringsAsFactors = FALSE)
+class(tb)
+str(tb)
+
+# Leitura com `readr`.
+tb <- read_tsv(file = url,
+               col_names = TRUE)
+class(tb)
+str(tb, give.attr = FALSE)
+```
+
+**Exercício**: Faça a manipulação de dados para obter
+
+  1. O número de veículos a venda por modelo.
+  6. O número de veículos de cada cor.
+  2. O preço médio de cada modelo.
+  3. O número de veículos anunciados por marca.
+  4. O número médio de km rodados por ano por modelo.
+  5. O preço médio por veículo para faixas de km rodados com amplitude de classe de 10 km.
+
+## Avaliação de veículos pelos donos
+
+**Descrição**: dados sobre a avaliação de veículos pelos donos. Os dados
+sobre avaliações foram extraídos do
+<https://www.carrosnaweb.com.br/opiniao.asp>. Os veículos são avaliados
+na escala de 0 a 10 para 14 itens.
+
+```{r}
+url <- "http://leg.ufpr.br/~walmes/data/aval_carros_nota.txt"
+browseURL(url)
+
+fl <- file.exists(basename(url))
+if (!fl) {
+    download.file(url = url, destfile = basename(url))
+}
+
+# Leitura com R básico.
+tb <- read.table(file = url,
+                 header = TRUE,
+                 sep = "\t",
+                 stringsAsFactors = FALSE)
+class(tb)
+str(tb)
+
+# Leitura com `readr`.
+tb <- read_tsv(file = url,
+               col_names = TRUE)
+class(tb)
+str(tb, give.attr = FALSE)
+```
+
+**Exercício**: Faça a manipulação de dados para obter
+
+  1. Reformate a disposição dos dados para do formato amplo no itens.
+  2. Obtenha o número de avaliações por modelo.
+  3. Determine a nota média para Recomendação por modelo.
+  4. Determine o item mais correlacionad com Recomendação em cada modelo.
+
+## Apartamentos à venda por bairro em Curitiba
+
+**Descrição**: São dados de apartamentos à venda em Curitiba anunciados
+em site de imóveis. As informações são de imóveis em 7 bairros de
+Curitiba e descrevem cada imóvel em termos de preço de venda, metragem e
+número de cômodos.
+
+```{r}
+url <- "http://leg.ufpr.br/~walmes/data/ap_venda7bairros_cwb_210314.txt"
+browseURL(url)
+
+fl <- file.exists(basename(url))
+if (!fl) {
+    download.file(url = url, destfile = basename(url))
+}
+
+# Leitura com R básico.
+tb <- read.table(file = url,
+                 header = TRUE,
+                 sep = "\t",
+                 quote = "",
+                 comment.char = "")
+class(tb)
+str(tb)
+
+# Leitura com `readr`.
+tb <- read_tsv(file = url,
+               col_names = TRUE,
+               quote = "",
+               comment = "")
+class(tb)
+str(tb, give.attr = FALSE)
+```
+
+**Exercício**: Faça a manipulação de dados para obter
+
+  1. Total de imóveis por bairro.
+  2. Distribuição do número de quartos/suites por imóvel.
+  3. Distribuição preço/área dos imóveis.
+  4. Distribuição preço/área dos imóveis por bairro.
+  5. Relação preço e área dos imóveis.
+  6. Relação preço e área dos imóveis por bairro.
+
+## Corrida de São Silvestre
+
+**Descrição**: são dados sobre os atletas participantes da corrida de
+São Silvestre. Os dados são de alguma prova anterior a 2007 quando os
+resultados eram disponibilizados em formato de comprimento fixo de campo
+(FWF). Os dados foram extraídos do site oficial da prova:
+<https://www.gazetaesportiva.com/sao-silvestre/resultados/>.
+
+```{r}
+url <- "http://leg.ufpr.br/~walmes/data/saosilvestre_fwf.txt"
+browseURL(url)
+
+fl <- file.exists(basename(url))
+if (!fl) {
+    download.file(url = url, destfile = basename(url))
+}
+
+# Posições que delimitam as fronteiras dos campos.
+pos <- c(0, 5, 11, 43, 47, 57, 65, 104, 126)
+
+# Leitura com R básico.
+tb <- read.fwf(url,
+               widths = diff(pos),
+               stringsAsFactors = FALSE)
+str(tb)
+
+# Leitura com `readr`.
+tb <- read_fwf(file = url,
+               col_positions = fwf_widths(diff(pos)))
+str(tb, give.attr = FALSE)
+class(tb)
+```
+
+**Exercício**: Faça a manipulação de dados para obter
+
+  1. O número de atletas de cada país.
+  2. O número de atletas de cada equipe.
+  3. O número de atletas de cada gênero.
+  4. O número de atletas em cada faixa etária.
+  5. O tempo médio de prova para cada gênero.
+  6. O tempo médio de prova para cada faixa etária.
+  7. O atleta campeão em cada gênero e faixa etária.
+
+## Triathlon
+
+**Descrição**: dados sobre atletas de prova de triathlon. Foram
+extraídos do <http://www.ipitos.com/>. Os dados contém informações sobre
+o tempo nas provas de natação, ciclismo e corrida, além do gênero e
+categoria do atleta.
+
+```{r}
+url <- "http://leg.ufpr.br/~walmes/data/triathlon.txt"
+browseURL(url)
+
+fl <- file.exists(basename(url))
+if (!fl) {
+    download.file(url = url, destfile = basename(url))
+}
+
+# Leitura com R básico.
+tb <- read.table(file = url,
+                 header = TRUE,
+                 sep = "\t",
+                 quote = "",
+                 stringsAsFactors = FALSE)
+class(tb)
+str(tb)
+
+# Leitura com `readr`.
+tb <- read_tsv(file = url,
+               col_names = TRUE,
+               quote = "",
+               comment = "#")
+class(tb)
+str(tb, give.attr = FALSE)
+```
+
+**Exercício**: Faça a manipulação de dados para obter
+
+  1. O número de atletas por gênero.
+  2. O número de atletas por categoria.
+  3. O tempo médio na prova de (natação|ciclismo|corrida) por gênero.
+  4. A fração do tempo total em (natação|ciclismo|corrida) por gênero.
+
+## Coberturas em Curitiba
+
+**Descrição**: São dados de coberturas à venda em Curitiba de um site de
+anúncios de imóveis.  Os dados foram obtidos por *web scraping*. Estão
+disponíveis informações como preço de venda, metragem do imóvel,
+localização geográfica, número de quartos, banheiros, vagas na garagem,
+etc.
+
+```{r}
+# Para baixar o arquivo.
+url <- "http://leg.ufpr.br/~walmes/data/coberturas-venda-cwb-26Jan2018.txt"
+browseURL(url)
+
+fl <- file.exists(basename(url))
+if (!fl) {
+    download.file(url = url, destfile = basename(url))
+}
+
+# Leitura com R básico.
+tb <- read.table(file = url,
+                 header = TRUE,
+                 skip = 5,
+                 sep = "\t",
+                 quote = "",
+                 comment.char = "",
+                 stringsAsFactors = FALSE)
+class(tb)
+str(tb)
+
+# Leitura com `readr`.
+tb <- read_tsv(file = url,
+               col_names = TRUE,
+               skip = 5,
+               quote = "",
+               comment = "")
+class(tb)
+str(tb, give.attr = FALSE)
+```
+
+# Instalação do `tidyverse`
+
+```{r}
+#-----------------------------------------------------------------------
+# Instala e carrega o tidyverse.
+
+# Define globalmente na sessão o repositório R (use no seu ~/.Rprofile).
+options(repos = "http://cran-r.c3sl.ufpr.br/")
+
+# Instalar se não possuir o pacote.
+install.packages(tidyverse, dependencies = TRUE)
+
+# Carrega o pacote para a sessão.
+library(tidyverse)
+
+packageVersion("tidyverse")
+```
+
+Resumo das funcionalidades para manipulação:
+
+  * `filter()`: filtra registros (subconjunto de linhas).
+  * `arrange()`: ordena os registros pelas variáveis.
+  * `select()`: seleciona variáveis (subconjunto de colunas).
+  * `mutate()`: modifica/cria variáveis.
+  * `group_by()`: realiza agrupamento para realização de agregações.
+  * `summarize()`: aplica agregrações (e.g. médias por grupo).
+  * `spread()`: passa de formato longo para amplo (long -> wide).
+  * `gather()`: passa de formato amplo para longo (wide -> long).
+
+Materiais úteis:
+
+  * <https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Tidyverse+Cheat+Sheet.pdf>.
+  * <https://www.rstudio.com/resources/cheatsheets/>
+  * <https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf>
+  * <https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf>
+  * <https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf>
+  * <https://rworkshop.uni.lu/lectures/img/02/tidyr_cheatsheet.jpg>
+
+# Visualização com `ggplot2`
+
+```{r, include = FALSE}
+opts_chunk$set(eval = TRUE)
+```
+
+```{r}
+#-----------------------------------------------------------------------
+# Visualização com ggplot2.
+
+# Modelo.
+#
+# ggplot(data = <dados>, ...) +
+#     geom_<grafico>(mapping = aes(...), ...) +
+#
+# em que <dados> indica um data.frame e <grafico> indica um tipo de
+# representação geométrica das informação dos dados.
+
+# ls("package:ggplot2")
+
+# Funções no `ggplot2` que começam com "geom".
+grep(x = ls("package:ggplot2"),
+     pattern = "^geom_",
+     value = TRUE)
+
+# Funções no `ggplot2` que começam com "stat".
+grep(x = ls("package:ggplot2"),
+     pattern = "^stat_",
+     value = TRUE)
+
+# Funções no `ggplot2` que começam com "scale" ou "coord".
+grep(x = ls("package:ggplot2"),
+     pattern = "^(scale|coord)_",
+     value = TRUE)
+
+# Funções no `ggplot2` que começam com "theme".
+grep(x = ls("package:ggplot2"),
+     pattern = "^theme_",
+     value = TRUE)
+```
+
+****
+
+```{r, message = FALSE, error = FALSE, warning = FALSE}
+#-----------------------------------------------------------------------
+# Versões dos pacotes e data do documento.
+
+devtools::session_info()
+Sys.time()
+```
