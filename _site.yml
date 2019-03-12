@@ -22,9 +22,12 @@ navbar:
   left:
     - icon: fa-home
       href: index.html
-    # - icon: fa-television
-    #   text: "Material"
-    #   menu:
+    - icon: fa-television
+      text: "Material"
+      menu:
+      - text: "Intro ao tidyverse"
+        href: slides/01-tidyverse.pdf
+        icon: fa-file-pdf
       # - text: "Introdução ao R"
       #   href: 00-intro-R.html
       # - text: "Visualização com o `graphics`"

@@ -209,8 +209,265 @@ knitr::include_graphics("img/tidyr-split.png")
 
 # Agregação com `dplyr`
 
+## Anatomia do `dplyr`
+
+  * O `dplyr` é a **gramática** para manipulação de dados.
+  * Tem um conjunto **consistente** de verbos para atuar sobre tabelas.
+    * Verbos: `mutate()`, `select()`, `filter()`, `arrange()`, `summarise()`, `slice()`, `rename()`, etc.
+    * Sufixos: `_at()`, `_if()`, `_all()`, etc.
+    * Agrupamento: `group_by()` e `ungroup()`.
+    * Junções: `inner_join()`, `full_join()`, `left_join()` e `right_join()`.
+    * Funções resumo: `n()`, `n_distinct()`, `first()`, `last()`, `nth()`, etc.
+    * E muito mais no cartão de referência.
+  * Cartão de referência: <https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf>.
+  * É sem dúvida **o pacote mais importante** do `tidyverse`.
+
+```{r, results = "hide"}
+# library(dplyr)
+packageVersion("dplyr")
+ls("package:dplyr")
+```
+
+---
+
+\vspace{-1.5em}
+\begin{figure}
+\includegraphics[page=1, width=11cm]{img/data-transformation.pdf}
+\caption{Cartão de referência de operações em dados com tabulares com \texttt{dplyr}.}
+\end{figure}
+
+---
+
+\vspace{-1.5em}
+\begin{figure}
+\includegraphics[page=2, width=11cm]{img/data-transformation.pdf}
+\caption{Cartão de referência de operações em dados com tabulares com \texttt{dplyr}.}
+\end{figure}
+
 # Programação funcional com `purrr`
 
+## Anatomia do `purrr`
+
+  * O `purrr` fornece um conjunto **completo e consistente** para
+    **programação funcional**.
+  * São uma sofisticação da *família `apply`*.
+  * Várias função do tipo `map` para cada tipo de input/output.
+  * Percorrem vetores, listas, colunas, linhas, etc.
+  * Permitem filtar, concatenar, parear listas, etc.
+  * Tem funções para tratamento de exceções: falhas/erros, avisos.
+  * Cartão de referência: <https://github.com/rstudio/cheatsheets/raw/master/purrr.pdf>.
+
+```{r}
+# library(purrr)
+ls("package:purrr") %>%
+    str_subset("^.?map.*")
+```
+
+---
+
+\vspace{-1.5em}
+\begin{figure}
+\includegraphics[page=1, width=11cm]{img/purrr.pdf}
+\caption{Cartão de referência de programação funcional com \texttt{purrr}.}
+\end{figure}
+
+---
+
+\vspace{-1.5em}
+\begin{figure}
+\includegraphics[page=2, width=11cm]{img/purrr.pdf}
+\caption{Cartão de referência de programação funcional com \texttt{purrr}.}
+\end{figure}
+
 # Gráficos com `ggplot2`
+
+## Anatomia do `ggplot2`
+
+  * O `ggplot2` é o pacote gráfico mais adotado em ciência de dados.
+  * Sua implementação é baseada no *The Gammar of Graphics*
+    [@wilkinson2013grammar].
+  * Cartão de referência: <https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf>.
+  * A gramática faz com que a construção dos gráficos seja por camadas.
+  * Um tutorial de `ggplot2` apresentado no [R Day](http://rday.leg.ufpr.br/materiais.html):
+    <http://rday.leg.ufpr.br/materiais/intro_ggplo2_tomas.pdf>.
+
+---
+
+\vspace{-1.5em}
+\begin{figure}
+\includegraphics[page=1, width=11cm]{img/data-visualization.pdf}
+\caption{Cartão de referência de gráficos com \texttt{ggplot2}.}
+\end{figure}
+
+---
+
+\vspace{-1.5em}
+\begin{figure}
+\includegraphics[page=2, width=11cm]{img/data-visualization.pdf}
+\caption{Cartão de referência de gráficos com \texttt{ggplot2}.}
+\end{figure}
+
+## Anatomia do `ggplot2`
+
+```{r, results = "hide"}
+u <- ls("package:ggplot2")
+u %>% str_subset("^geom_")
+u %>% str_subset("^stat_")
+u %>% str_subset("^(scale|coord)_")
+u %>% str_subset("^theme_")
+```
+
+# Manipulação de strings com `stringr`
+
+## Anatomia do `stringr`
+
+  * O `stringr` é uma coleção de funções para operações com strings.
+  * Ele foi construído sobre o `stringi`.
+  * Cartão de referência: <https://github.com/rstudio/cheatsheets/raw/master/strings.pdf>.
+
+```{r}
+ls("package:stringr")
+```
+
+---
+
+\vspace{-1.5em}
+\begin{figure}
+\includegraphics[page=1, width=11cm]{img/strings.pdf}
+\caption{Cartão de referência para manipulação de strings com \texttt{stringr}.}
+\end{figure}
+
+---
+
+\vspace{-1.5em}
+\begin{figure}
+\includegraphics[page=2, width=11cm]{img/strings.pdf}
+\caption{Cartão de referência para manipulação de strings com \texttt{stringr}.}
+\end{figure}
+
+# Manipulação de fatores com `forcats`
+
+## Anatomia do `forcats`
+
+  * O `forcats` é uma coleção de funções para operações com fatores.
+  * Permite renomear, reordenar, aglutinar níveis, etc.
+  * Cartão de referência: <https://github.com/rstudio/cheatsheets/raw/master/factors.pdf>.
+
+```{r}
+ls("package:forcats")
+```
+
+---
+
+\vspace{-1.5em}
+\begin{figure}
+\includegraphics[page=1, width=11cm]{img/factors.pdf}
+\caption{Cartão de referência para manipulação de factores com \texttt{forcats}.}
+\end{figure}
+
+# Dados cronológicos com `lubridate` e `hms`
+
+## Anatomia dos pacotes
+
+  * Recursos para manipulação de dados *date-time*.
+  * Fácil decomposição de datas: dia, mês, semana, dia da semana, etc.
+  * Lida com fusos horários, horários de verão, etc.
+  * Extende para outras classes de dados baseados em *date-time*:
+    duração, período, intervalos.
+  * Cartão de referência: <https://rawgit.com/rstudio/cheatsheets/master/lubridate.pdf>.
+  * **Não** é carregado junto com o `tidyverse`.
+
+---
+
+\vspace{-1.5em}
+\begin{figure}
+\includegraphics[page=1, width=11cm]{img/lubridate.pdf}
+\caption{Cartão de referência para manipulação de *date-time* com \texttt{lubridate} e \texttt{hms}.}
+\end{figure}
+
+---
+
+\vspace{-1.5em}
+\begin{figure}
+\includegraphics[page=2, width=11cm]{img/lubridate.pdf}
+\caption{Cartão de referência para manipulação de *date-time* com \texttt{lubridate} e \texttt{hms}.}
+\end{figure}
+
+# asd
+
+## Anatomia do `magrittr`
+
+  * O operador permite expressar de forma mais direta as operações.
+  * É uma ideia inspirada no Shell.
+  * A lógica é bem simples:
+    * `x %>% f` é o mesmo que `f(x)`.
+    * `x %>% f(y)` é o mesmo que `f(x, y)`.
+    * `x %>% f %>% g %>% h` é o mesmo que `h(g(f(x)))`.
+
+## Anatomia do `magrittr`
+
+```{r, message = FALSE}
+library(magrittr)
+
+# Operadores "pipe".
+ls("package:magrittr") %>%
+    str_subset("%")
+
+# Outras funções/objetos.
+ls("package:magrittr") %>%
+    str_subset("^[^%]*$")
+```
+
+## Exemplos do uso do pipe (1)
+
+```{r}
+x <- precip
+mean(sqrt(x - min(x)))
+
+x <- x - min(x)
+x <- sqrt(x)
+mean(x)
+
+precip %>%
+    `-`(min(.)) %>% # o mesmo que subtract(min(.))
+    sqrt() %>%
+    mean()
+```
+
+## Exemplos de uso do pipe (2)
+
+```{r}
+x <- precip
+x <- sqrt(x)
+x <- x[x > 5]
+x <- mean(x)
+x
+
+precip %>%
+    sqrt() %>%
+    .[is_greater_than(., 5)] %>% # o mesmo que .[`>`(., 5)]
+    mean()
+```
+
+# Mãos à obra!
+
+## Instalar o `tidyverse`
+
+```{r, eval = FALSE}
+# Do CRAN.
+install.packages("tidyverse")
+
+# Do GitHub.
+# install.packages("devtools")
+devtools::install_github("hadley/tidyverse")
+
+# Atualizar caso já tenha instalado.
+tidyverse_update()
+```
+
+## Conjuntos de dados para praticar
+
+Fazer o que está sendo pedido como exercício para cada conjunto de
+dados: <http://leg.ufpr.br/~walmes/cursoR/data-vis/99-datasets.html>.
 
 ## Referências
