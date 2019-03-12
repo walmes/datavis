@@ -23,11 +23,23 @@ navbar:
     - icon: fa-home
       href: index.html
     - icon: fa-television
-      text: "Material"
+      text: "Slides"
       menu:
-      - text: "Intro ao tidyverse"
+      - text: "Introdução ao `tidyverse`"
         href: slides/01-tidyverse.pdf
         icon: fa-file-pdf
+    - icon: fa-file-code
+      text: "Tutoriais"
+      menu:
+      - text: "em breve"
+    - icon: fa-terminal
+      text: "Scripts"
+      menu:
+#    - text: "Scripts"
+#      icon: fa-file-text
+#      href: scripts/
+      - text: "em breve"
+      # fa-code, fa-scroll, fa-file-code, fa-terminal.
       # - text: "Introdução ao R"
       #   href: 00-intro-R.html
       # - text: "Visualização com o `graphics`"
@@ -36,9 +48,6 @@ navbar:
       #   href: 02-vis-lattice.html
       # - text: "Visualização com o `ggplot2`"
       #   href: 03-vis-ggplot2.html
-#    - text: "Scripts"
-#      icon: fa-file-text
-#      href: scripts/
     - text: "Datasets"
       icon: fa-table
       href: 99-datasets.html
@@ -46,4 +55,4 @@ navbar:
     - icon: fa-user
       href: http://leg.ufpr.br/~walmes
     - icon: fa-git-square fa-lg
-      href: https://gitlab.c3sl.ufpr.br/walmes/data-vis
+      href: https://github.com/walmes/data-vis
