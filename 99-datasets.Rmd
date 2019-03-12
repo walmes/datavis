@@ -23,10 +23,10 @@ packageVersion("readr")
 opts_chunk$set(eval = FALSE)
 ```
 
-## Jogadores de futebol da liga européia
+## Jogadores de futebol da liga européia {.tabset}
 
 **Descrição**: são dados biométricos e esportivos dos jogadores dos
-times da liga européia. Os dados foram estraidos do
+times da liga européia. Os dados foram extraídos do
 <https://www.whoscored.com/>.
 
 ```{r}
@@ -58,26 +58,35 @@ str(tb, give.attr = FALSE)
 
 **Exercício**: Faça a manipulação de dados para obter
 
-   1. Total de jogadores por país de origem.
-   2. Total de jogadores por equipe.
-   3. Total de gols por equipe.
-   4. Total de cartões amarelos por equipe.
-   5. Total de cartões amarelos e vermelhos por equipe.
-   6. Substitua o `NA` dos cartões por 0.
-   7. Distribuição das alturas/pesos dos jogadores.
-   8. Obtenha a média, médiana e desvio-padrão de (idade|altura|peso)
-      por equipe.
-   9. Distribuição das idades por equipe.
-   10. Distribuição das alturas por país de origem.
-   11. Distribuição das alturas por posição em campo.
-   12. Correlação entre peso e altura por equipe.
-   13. Determine o IMC médio por equipe.
-   14. Relação do peso com altura por posição em campo.
-   15. Relação do peso com altura por país de origem.
-   16. Calcule a proporção de disputas aéreas ganhas por faixa de altura
-       com amplitura de classe de altura de 5 cm.
+### Manipulação
 
-## Preço de veículos à venda
+   1. Total de observações e variáveis.
+   2. O nome das equipes.
+   3. Total de jogadores por equipe.
+   4. Total de jogadores por país de origem.
+   5. Total de gols por equipe.
+   6. Total de cartões amarelos por equipe.
+   7. Total de cartões amarelos e vermelhos por equipe.
+   8. Substitua o `NA` dos cartões por 0.
+   9. Obtenha a média, médiana e desvio-padrão de (idade|altura|peso)
+      por equipe.
+   10. Determine a correlação entre peso e altura por equipe.
+   11. Determine o IMC médio por equipe.
+   12. Calcule a proporção de disputas aéreas ganhas por faixa de altura
+       com amplitura de classe de altura de 5 cm.
+   13. Crie a variável que representa a posição em campo do jogador.
+   14. Crie a variável que represente a classe de obsevidade pelo IMC.
+
+### Visualização
+
+   1. A distribuição de frequência das posições em campo.
+   1. Distribuição das idades por equipe.
+   2. Distribuição das alturas por país de origem.
+   3. Distribuição das alturas por posição em campo.
+   4. Relação do peso com altura por posição em campo.
+   5. Relação do peso com altura por país de origem.
+
+## Preço de veículos à venda {.tabset}
 
 **Descrição**: são dados de veículos a venda em site de anúncio de
 veículos. As informações descrevem cada veículo sobre o preço de venda,
@@ -109,14 +118,25 @@ str(tb, give.attr = FALSE)
 
 **Exercício**: Faça a manipulação de dados para obter
 
-  1. O número de veículos a venda por modelo.
-  6. O número de veículos de cada cor.
-  2. O preço médio de cada modelo.
-  3. O número de veículos anunciados por marca.
-  4. O número médio de km rodados por ano por modelo.
-  5. O preço médio por veículo para faixas de km rodados com amplitude de classe de 10 km.
+### Manipulação
 
-## Avaliação de veículos pelos donos
+  1. O número de veículos da tabela.
+  2. O tipo de valor de cada variável.
+  3. O número de veículos à venda por modelo.
+  6. O número de veículos anunciados por marca.
+  4. O número de veículos de cada cor.
+  5. O preço médio de cada modelo.
+  7. O número médio de km rodados por ano por modelo.
+  8. O preço médio por veículo para faixas de km rodados com amplitude
+     de classe de 10 km.
+
+### Visualização
+
+  1. A distribuição do valor dos veículos.
+  2. A distribuição do valor por modelo.
+  3. A relação entre valor e km percorridos por modelo.
+
+## Avaliação de veículos pelos donos {.tabset}
 
 **Descrição**: dados sobre a avaliação de veículos pelos donos. Os dados
 sobre avaliações foram extraídos do
@@ -154,7 +174,61 @@ str(tb, give.attr = FALSE)
   3. Determine a nota média para Recomendação por modelo.
   4. Determine o item mais correlacionad com Recomendação em cada modelo.
 
-## Apartamentos à venda por bairro em Curitiba
+## Opiniões e características dos veículos {.tabset}
+
+**Descrição**: disponível em <https://github.com/leg-ufpr/hackathon>.
+
+```{r}
+url <- "https://raw.githubusercontent.com/leg-ufpr/hackathon/master/notas.csv"
+# url <- "~/Dropbox/web-scrap/hackathon/notas.csv"
+
+# tb <- read_csv2(url, col_names = FALSE)
+tb <- read_csv2(url, col_names = c("id", "item", "nota"))
+tb
+
+url <- "https://raw.githubusercontent.com/leg-ufpr/hackathon/master/opinioes.json"
+# url <- "/home/walmes/Dropbox/web-scrap/hackathon/opinions.json"
+js <- jsonlite::fromJSON(url)
+str(js)
+
+js <- as_tibble(js)
+str(js)
+
+js <- js %>%
+    setNames(nm = c("id", "tit", "veic", "dono", "desc", "pros",
+                    "cont", "defe", "opin", "ts"))
+str(js)
+```
+
+### Manipulação
+
+  1. Passe os dados das notas para o formato amplo.
+  2. Selecione apenas as variáveis que descrevem o veículo e o dono.
+  3. Isole a variável tempo de posse (anos).
+  4. Isole a variável distância percorrida (km).
+  5. Isole a variável ano/modelo.
+  6. Isole a variável marca do veículo.
+  7. Isole a variável carro anterior.
+  8. Isole a variável cidade.
+  9. Isole a variável estado.
+  10. Faça a junção das duas tabelas.
+  11. Qual o total de avaliações por veículo.
+  12. Qual o total de avaliações por estado.
+  13. Determine a recomendação média por veículo.
+  14. Determine a recomendação média do Celta.
+  15. Determine a recomendação média do Celta por estado.
+  16. Determine a distância percorrida média por ano por estado do
+      Celta.
+
+### Visualização
+
+  1. Qual a distribuição da distância percorrida.
+  2. Qual a distribuição da distância percorrida por veículo.
+  3. Qual a distribuição da satisfação por veículo.
+  4. Qual a distribuição da satisfação do Celta para cada estado.
+  5. Qual a relação entre tempo de posse e distância percorrida.
+
+## Apartamentos à venda por bairro em Curitiba {.tabset}
 
 **Descrição**: São dados de apartamentos à venda em Curitiba anunciados
 em site de imóveis. As informações são de imóveis em 7 bairros de
@@ -197,7 +271,7 @@ str(tb, give.attr = FALSE)
   5. Relação preço e área dos imóveis.
   6. Relação preço e área dos imóveis por bairro.
 
-## Corrida de São Silvestre
+## Corrida de São Silvestre {.tabset}
 
 **Descrição**: são dados sobre os atletas participantes da corrida de
 São Silvestre. Os dados são de alguma prova anterior a 2007 quando os
@@ -240,7 +314,7 @@ class(tb)
   6. O tempo médio de prova para cada faixa etária.
   7. O atleta campeão em cada gênero e faixa etária.
 
-## Triathlon
+## Triathlon {.tabset}
 
 **Descrição**: dados sobre atletas de prova de triathlon. Foram
 extraídos do <http://www.ipitos.com/>. Os dados contém informações sobre
@@ -281,7 +355,7 @@ str(tb, give.attr = FALSE)
   3. O tempo médio na prova de (natação|ciclismo|corrida) por gênero.
   4. A fração do tempo total em (natação|ciclismo|corrida) por gênero.
 
-## Coberturas em Curitiba
+## Coberturas em Curitiba {.tabset}
 
 **Descrição**: São dados de coberturas à venda em Curitiba de um site de
 anúncios de imóveis.  Os dados foram obtidos por *web scraping*. Estão
