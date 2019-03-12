@@ -93,3 +93,10 @@ _site/
 slides/*.html
 *.html
 tutorials/*.html
+
+!slides/config/template.tex
+!slides/config/template-chunk.tex
+!config/font-awesome.html
+!config/MathJax.html
+!config/site-footer.html
+!config/site-header.html
