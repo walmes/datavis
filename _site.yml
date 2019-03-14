@@ -31,7 +31,15 @@ navbar:
     - icon: fa-file-code
       text: "Tutoriais"
       menu:
-      - text: "em breve"
+      - text: "Introdução ao graphics"
+        href: 01-vis-graphics.html
+        icon: fa-file
+      - text: "Introdução ao lattice"
+        href: 02-vis-lattice.html
+        icon: fa-file
+      - text: "Introdução ao ggplot2"
+        href: 03-vis-ggplot2.html
+        icon: fa-file
     - icon: fa-terminal
       text: "Scripts"
       menu:

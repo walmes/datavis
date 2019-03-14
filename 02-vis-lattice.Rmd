@@ -1,0 +1,458 @@
+---
+title: "Recursos visualização do R com `lattice`"
+author: Prof. Walmes M. Zeviani
+date: '`r Sys.Date()`'
+#bibliography: ../config/Refs.bib
+#csl: ../config/ABNT-UFPR-2011-Mendeley.csl
+---
+
+```{r, include = FALSE}
+source("./config/setup.R")
+opts_chunk$set(cache = FALSE, message = FALSE, warning = FALSE)
+```
+
+# Leitura dos dados
+
+Para explorar os recursos básicos de visualização, serão usados dados
+reais sobre a venda do modelo Renault Duster extraídos da WEB.  Os dados
+estão disponíveis online em
+<http://www.leg.ufpr.br/~walmes/data/duster_venda_260314.txt>.
+
+Os dados contém informações sobre o preço de venda (R$, `valor`) e
+distância percorrida (km, `km`) além de outras características
+descritoras do veículo, como ano de fabricação, cor, tipo de câmbio.
+
+```{r}
+#-----------------------------------------------------------------------
+# Dados de carros Duster à venda no webmotors em 26/03/2014.
+
+# Importa a tabela de dados da web.
+url <- "http://www.leg.ufpr.br/~walmes/data/duster_venda_260314.txt"
+dus <- read.table(file = url,
+                  header = TRUE,
+                  sep = "\t",
+                  encoding = "utf-8")
+str(dus)
+
+# Cria ano do veículo com extração regex.
+dus$ano <- factor(gsub(x = as.character(dus$ano),
+                       pattern = "/\\d{4}$",
+                       replacement = ""))
+
+# Quantidade de NA em cada coluna.
+apply(dus, MARGIN = 2, FUN = function(x) sum(is.na(x)))
+
+#-----------------------------------------------------------------------
+# Carrega o pacote `lattice` e `latticeExtra`.
+
+library(lattice)
+library(latticeExtra)
+
+ls("package:lattice")
+ls("package:latticeExtra")
+
+funs <- c(ls("package:lattice"), ls("package:latticeExtra"))
+
+# Funções de alto nível.
+c(grep(x = funs, pattern = "^[^.]+plot$", value = TRUE),
+  c("histogram", "wireframe", "splom", "qqmath"))
+
+# Funções de baixo nível.
+grep(x = funs, pattern = "^panel\\.", value = TRUE)
+
+# Lista de itens que podem ser customizados.
+str(trellis.par.get())
+```
+
+# Gráficos para uma variável categórica
+
+```{r}
+#-----------------------------------------------------------------------
+# Gráfico de barras e setores.
+
+# Tabela de frequência.
+x <- xtabs(~cambio, data = dus)
+class(x)
+
+# Gráfico padrão.
+barchart(x,
+         horizontal = FALSE,
+         xlab = "Tipo de câmbio",
+         ylab = "Frequência absoluta")
+
+# A lattice também trabalha com fórmulas.
+tb <- as.data.frame(x)
+
+# CUIDADO: a origem desse gráfico não é o zero!
+barchart(Freq ~ cambio,
+         data = tb,
+         xlab = "Tipo de câmbio",
+         ylab = "Frequência absoluta",
+         col = c("seagreen", "yellowgreen"))
+
+barchart(Freq ~ cambio,
+         data = tb,
+         origin = 0, # <-- ATENÇÃO.
+         xlab = "Tipo de câmbio",
+         ylab = "Frequência absoluta",
+         col = c("seagreen", "yellowgreen"))
+```
+
+Deve-se ter cuidado com a refência das barras.  O argumento `origin = `
+permite especificar a origem.
+
+```{r}
+# Para as cores do carro.
+x <- xtabs(~cor, data = dus)
+levels(dus$cor)
+
+tb <- as.data.frame(x)
+tb
+
+# Vetor que cores para usar com cada cor de veiculo.
+cols <- c("blue", "white", "gray50", "Yellow", "gray90", "black",
+          "green4", "red", "red4")
+
+cbind(levels(dus$cor), cols)
+
+# Com anotação sobre as barras.
+barchart(Freq ~ reorder(cor, -Freq),
+         data = tb,
+         origin = 0,
+         col = cols,
+         xlab = "Cores",
+         ylab = "Frequência absoluta") +
+    layer({
+        panel.text(x = x, y = y, pos = 3, label = y)
+    })
+```
+
+# Gráfico para duas variáveis categóricas
+
+```{r}
+#-----------------------------------------------------------------------
+# Gráficos de barras emplilhadas (stacked) e lado a lado.
+
+x <- xtabs(~cambio + ano, data = dus)
+x
+
+cols <- c("#660d32", "#bc1a5e")
+
+# Barras empilhadas.
+barchart(x,
+         xlab = "Ano",
+         stack = TRUE,
+         auto.key = TRUE,
+         ylab = "Frequência absoluta")
+
+# Barras lado a lado.
+barchart(x,
+         xlab = "Ano",
+         stack = FALSE,
+         horizontal = FALSE,
+         auto.key = list(space = "right"),
+         ylab = "Frequência absoluta")
+
+tb <- as.data.frame(x)
+tb
+
+barchart(Freq ~ ano,
+         groups = cambio,
+         auto.key = list(space = "right", title = "Ano"),
+         data = tb,
+         origin = 0,
+         xlab = "Câmbio",
+         ylab = "Frequência absoluta")
+
+cols <- c("#07B1FF", "#0CE8BB", "#00FF40", "#BEE80C")
+barchart(Freq ~ cambio,
+         groups = ano,
+         auto.key = list(space = "right", title = "Ano"),
+         data = tb,
+         origin = 0,
+         xlab = "Ano",
+         ylab = "Frequência absoluta",
+         par.settings = list(superpose.polygon = list(col = cols)))
+
+#-----------------------------------------------------------------------
+# Anotações nas barras.
+
+cols <- c("#07B1FF", "#0CE8BB", "#00FF40", "#BEE80C")
+barchart(Freq ~ cambio,
+         groups = ano,
+         auto.key = list(corner = c(0, 1), title = "Ano"),
+         data = tb,
+         origin = 0,
+         xlab = "Ano",
+         ylab = "Frequência absoluta",
+         par.settings = list(superpose.polygon = list(col = cols))) +
+    layer({
+        # print(ls()) # Descomente para ver os objetos do escopo.
+        g <- scale(as.integer(groups)/(nlevels(groups) + box.ratio),
+                   scale = FALSE)
+        print(g)
+        panel.text(x = as.integer(x) + g, y = y, pos = 3, label = y)
+    }) +
+    layer({
+        panel.abline(h = seq(0, 200, by = 25),
+                     lty = 2,
+                     col = "gray50")
+    }, under = TRUE)
+```
+
+
+```{r}
+# Mais dimensões.
+x <- xtabs(~cambio + ano + cor, data = dus)
+
+tb <- as.data.frame(x)
+head(tb)
+
+barchart(Freq ~ ano | cor,
+         groups = cambio,
+         auto.key = list(columns = 2, title = "Câmbio", cex.title = 1.1),
+         data = tb,
+         origin = 0,
+         xlab = "Ano",
+         ylab = "Frequência absoluta",
+         par.settings = list(superpose.polygon = list(col = cols)))
+
+barchart(Freq ~ ano | cor,
+         groups = cambio,
+         auto.key = list(columns = 2, title = "Câmbio", cex.title = 1.1),
+         data = tb,
+         origin = 0,
+         xlab = "Ano",
+         ylab = "Frequência absoluta",
+         scales = list(y = list(relation = "free")),
+         par.settings = list(superpose.polygon = list(col = cols)))
+
+```
+
+# Gráficos para uma variável contínua
+
+```{r}
+#-----------------------------------------------------------------------
+# Histograma.
+
+# Gráfico básico.
+# hist(dus$valor)
+
+histogram(~valor,
+          data = dus,
+          xlab = "Preço de venda (R$)",
+          ylab = "Frequência relativa",
+          col = "orange") +
+    layer(panel.rug(x, col = 1))
+
+# Se breaks é um escalar então entende-se que é uma *sugestão* para o
+# número de clases.
+histogram(~valor,
+          data = dus,
+          breaks = 15,
+          type = c("percent", "count", "density")[2],
+          xlab = "Preço de venda (R$)",
+          ylab = "Frequência absoluta",
+          col = "orange") +
+    layer(panel.rug(x, col = 1))
+
+# Se breaks é um vetor então entende-se que são os limites para
+# classificação dos valores.
+histogram(~valor,
+          data = dus,
+          breaks = seq(35000, 75000, by = 2500),
+          type = c("percent", "count", "density")[2],
+          xlab = "Preço de venda (R$)",
+          ylab = "Frequência absoluta",
+          col = "orange") +
+    layer(panel.rug(x, col = 1))
+
+# Gráfico onde a altura é a densidade e não a frequência.
+histogram(~valor,
+          data = dus,
+          type = c("percent", "count", "density")[3],
+          xlab = "Preço de venda (R$)",
+          ylab = "Frequência absoluta",
+          col = "#ba6dff") +
+    layer(panel.rug(x, col = 1))
+```
+
+```{r}
+#-----------------------------------------------------------------------
+# Gráficos de densidade.
+
+densityplot(~valor,
+            data = dus,
+            kernel = "rectangular",
+            bw = 2000,
+            xlab = "Preço de venda (R$)",
+            ylab = "Frequência absoluta",
+            # plot.points = c("jitter", "rug")[2],
+            plot.points = FALSE,
+            col = "#ba6dff") +
+    layer({
+        panel.rug(x, col = 1)
+    })
+
+densityplot(~valor,
+            groups = cambio,
+            auto.key = list(corner = c(0.95, 0.95)),
+            data = dus,
+            xlab = "Preço de venda (R$)",
+            ylab = "Frequência absoluta",
+            plot.points = "jitter")
+
+densityplot(~valor | ano,
+            groups = cambio,
+            auto.key = list(corner = c(0.05, 0.95)),
+            data = dus,
+            xlab = "Preço de venda (R$)",
+            ylab = "Frequência absoluta",
+            plot.points = "jitter")
+```
+
+```{r}
+#-----------------------------------------------------------------------
+# Gráfico de frequência acumulada empírica.
+
+# Gráfico onde a altura é a densidade e não a frequência.
+ecdfplot(~valor,
+         data = dus,
+         xlab = "Preço de venda (R$)",
+         ylab = "Frequência acumulada",
+         col = "#ba6dff") +
+    layer({
+        panel.rug(x, col = 1)
+    })
+
+ecdfplot(~valor,
+         groups = cambio,
+         auto.key = list(corner = c(0.05, 0.8)),
+         data = dus,
+         xlab = "Preço de venda (R$)",
+         ylab = "Frequência acumulada")
+
+ecdfplot(~valor | ano,
+         groups = cambio,
+         auto.key = list(corner = c(0.05, 0.85)),
+         data = dus,
+         xlab = "Preço de venda (R$)",
+         ylab = "Frequência acumulada")
+```
+
+# Gráfico para duas variáveis contínuas
+
+```{r}
+#-----------------------------------------------------------------------
+# Diagrama de dispersão.
+
+# Diagrama de dispersão básico.
+xyplot(valor ~ km, data = dus)
+
+# Adicionar uma linha de tendência suave.
+xyplot(valor ~ km,
+       data = dus,
+       type = c("p", "smooth"))
+
+xyplot(valor ~ km, data = dus) +
+    layer({
+        panel.smoother(x, y)
+    })
+
+# Usar cores diferentes para identificar o tipo de câmbio.
+xyplot(valor ~ km,
+       groups = cambio,
+       auto.key = TRUE,
+       data = dus)
+
+# Adicionar uma linha de tendência suave.
+xyplot(valor ~ km,
+       groups = cambio,
+       auto.key = TRUE,
+       data = dus) +
+    glayer({
+        panel.smoother(x = x, y = y, col = col.line, span = 0.9)
+    })
+
+n <- head(names(sort(table(dus$cor), decreasing = TRUE)), n = 4)
+
+xyplot(valor ~ km | cor,
+       groups = cambio,
+       auto.key = TRUE,
+       data = subset(dus, cor %in% n)) +
+    glayer({
+        panel.smoother(x = x, y = y, col = col.line, span = 0.9)
+    })
+```
+
+# Gráfico para variável contínua e categórica
+
+```{r}
+#-----------------------------------------------------------------------
+
+# Preço em função dos anos.
+bwplot(valor ~ ano, data = dus, pch = "|")
+
+# Edita níveis do fator.
+levels(dus$cat)
+levels(dus$cat) <- trimws(levels(dus$cat))
+dus2 <- droplevels(subset(dus, cat != ""))
+dus2 <- transform(dus2, valor = valor/1000, km = km/1000)
+
+names(trellis.par.get())
+str(trellis.par.get()$box.dot)
+str(trellis.par.get()$box.rectangle)
+str(trellis.par.get()$box.umbrella)
+
+# Customização do gráfico.
+bw_ps <- list(plot.symbol = list(col = 1),
+              box.dot = list(pch = "|"),
+              box.umbrella = list(col = 1, lty = 1),
+              box.rectangle = list(col = 1, fill = "seagreen"))
+
+bwplot(valor ~ cat,
+       data = dus2,
+       xlab = "Modelo",
+       ylab = "Preço de venda (R$)",
+       par.settings = bw_ps)
+
+bwplot(valor ~ cat | ano,
+       data = dus2,
+       xlab = "Modelo",
+       ylab = "Preço de venda (R$)",
+       as.table = TRUE,
+       par.settings = bw_ps)
+
+# Indicação do valor da média.
+bwplot(valor ~ cat,
+       data = dus2,
+       xlab = "Modelo",
+       ylab = "Preço de venda (R$)",
+       par.settings = bw_ps) +
+    layer({
+        # panel.xyplot(x = x, y = y, jitter.x = TRUE)
+        m <- aggregate(y ~ x, FUN = mean)
+        panel.points(x = m$x, y = m$y, col = "red", pch = 19)
+    })
+
+# Indicação do valor da média.
+bwplot(valor ~ cat | cambio,
+       data = dus2,
+       xlab = "Modelo",
+       ylab = "Preço de venda (R$)",
+       par.settings = bw_ps) +
+    layer({
+        m <- aggregate(y ~ x, FUN = mean)
+        panel.points(x = m$x, y = m$y, col = "red", pch = 19)
+        fiv <- by(y, x, FUN = fivenum, simplify = FALSE)
+        fiv <- do.call(cbind, fiv)
+        aiq <- fiv[4, ] - fiv[2, ]
+        l <- fiv[2, ] - 1.5 * aiq
+        u <- fiv[4, ] + 1.5 * aiq
+        i <- seq_along(u)
+        panel.segments(x0 = i - 0.5, x1 = i + 0.5, y0 = l, y1 = l,
+                       col = "gray50", lty = 3)
+        panel.segments(x0 = i - 0.5, x1 = i + 0.5, y0 = u, y1 = u,
+                       col = "gray50", lty = 3)
+    })
+```

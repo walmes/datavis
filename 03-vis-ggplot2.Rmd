@@ -1,0 +1,450 @@
+---
+title: "Recursos de visualização do R com `ggplot2`"
+author: Prof. Walmes M. Zeviani
+date: '`r Sys.Date()`'
+#bibliography: ../config/Refs.bib
+#csl: ../config/ABNT-UFPR-2011-Mendeley.csl
+---
+
+```{r, include = FALSE}
+source("./config/setup.R")
+opts_chunk$set(cache = FALSE, message = FALSE, warning = FALSE)
+```
+
+  * Definir análise exploratória e explanatória.
+  * Apresentar gráficos para análise de dados contínuos, categóricos e
+    suas combinações.
+  * Gráficos estáticos e reativos.
+  * Recomendações sobre visualização de dados.
+  * Recursos do R para visualização de dados.
+
+# Imóveis a venda em Curitiba
+
+## Imóveis
+
+```{r, include = FALSE}
+#-----------------------------------------------------------------------
+# Carrega o pacote.
+
+library(tidyverse)
+
+#-----------------------------------------------------------------------
+# Define esquema de cores que será usado.
+
+mycol <- c("#1869b1", "#d81159", "#8f2d56", "#73d2de", "#ffbc42")
+
+#-----------------------------------------------------------------------
+
+# # Usando read.table() do R básico.
+# imo <- read.table(file = "coberturas-venda-cwb-26Jan2018.txt",
+#                   header = TRUE,
+#                   sep = "\t",
+#                   dec = ".",
+#                   comment = "",
+#                   skip = 5,
+#                   quote = "",
+#                   encoding = "UTF-8")
+# str(imo)
+
+url <- "http://leg.ufpr.br/~walmes/data/coberturas-venda-cwb-26Jan2018.txt"
+# browseURL(url)
+
+# Usando readr::read_tsv().
+imo <- read_tsv(file = url,
+                col_names = TRUE,
+                skip = 5,
+                quote = "",
+                comment = "")
+str(imo, give.attr = FALSE)
+
+# Seleciona variáveis.
+imo <- imo %>%
+    select(ID, price, condo, area, rooms, suites, bathroom,
+           garages, lon, lat)
+str(imo, give.attr = FALSE)
+
+# Método print() agora exibe apenas as primeiras linhas.
+imo
+```
+
+## Qual a distribuição do preço das coberturas?
+
+```{r}
+ggplot(data = imo,
+       mapping = aes(x = price)) +
+    geom_histogram(color = "black", fill = mycol[1]) +
+    geom_rug()
+```
+
+```{r}
+ggplot(data = imo,
+       mapping = aes(x = price)) +
+    geom_histogram(color = "black", fill = mycol[1]) +
+    geom_rug() +
+    scale_x_log10()
+```
+
+```{r price_hist_orig_3, echo = FALSE}
+ggplot(data = imo,
+       mapping = aes(x = price/1000)) +
+    geom_histogram(color = "black",
+                   fill = mycol[1],
+                   binwidth = 500) +
+    geom_rug() +
+    xlab(label = "Preço do imóvel (R$/1000)") +
+    ylab(label = "Quantidade de imóveis")
+```
+
+## Só gráficos por enquanto
+
+```{r}
+ggplot(data = imo,
+       mapping = aes(x = price/1000)) +
+    geom_density(color = "black") +
+    geom_rug()
+
+ggplot(data = imo,
+       mapping = aes(x = price/1000)) +
+    geom_step(stat = "ecdf") +
+    geom_rug()
+
+#-----------------------------------------------------------------------
+# Área.
+
+ggplot(data = imo,
+       mapping = aes(x = area)) +
+    geom_density(color = "black") +
+    geom_rug()
+
+ggplot(data = imo,
+       mapping = aes(x = area)) +
+    geom_step(stat = "ecdf") +
+    geom_rug()
+
+ggplot(data = imo,
+       mapping = aes(x = 1, y = area)) +
+    geom_boxplot(color = mycol[2]) +
+    geom_rug()
+
+#-----------------------------------------------------------------------
+
+ggplot(data = imo,
+       mapping = aes(x = garages)) +
+    geom_bar(fill = mycol[3])
+
+ggplot(data = imo,
+       mapping = aes(x = bathroom)) +
+    geom_bar(fill = mycol[4])
+
+ggplot(data = imo,
+       mapping = aes(x = suites)) +
+    geom_bar(fill = mycol[5])
+
+ggplot(data = imo,
+       mapping = aes(x = rooms)) +
+    geom_bar(fill = mycol[1])
+
+#-----------------------------------------------------------------------
+
+ggplot(data = imo,
+       mapping = aes(x = area,
+                     y = price/1000)) +
+    geom_point(color = mycol[1])
+
+ggplot(data = imo,
+       mapping = aes(x = area,
+                     y = price/1000)) +
+    geom_point(color = mycol[1]) +
+    scale_x_log10() +
+    scale_y_log10()
+```
+
+```{r}
+url <- "http://leg.ufpr.br/~walmes/data/triathlon.txt"
+# browseURL(url)
+
+tri <- read_tsv(file = url,
+                col_names = TRUE,
+                quote = "",
+                comment = "#")
+str(tri, give.attr = FALSE)
+
+tri <- tri %>%
+    filter(sexo %in% c("M", "F"))
+
+ggplot(data = tri,
+       mapping = aes(x = ano)) +
+    geom_bar()
+
+ggplot(data = tri,
+       mapping = aes(x = categ)) +
+    geom_bar() +
+    coord_flip()
+
+ggplot(data = tri,
+       mapping = aes(x = sexo)) +
+    geom_bar()
+
+#-----------------------------------------------------------------------
+
+ggplot(data = tri,
+       mapping = aes(x = ano, fill = sexo)) +
+    geom_bar(position = "stack", color = "black")
+
+ggplot(data = tri,
+       mapping = aes(x = ano, fill = sexo)) +
+    geom_bar(position = "dodge", color = "black")
+
+#-----------------------------------------------------------------------
+
+ggplot(data = tri,
+       mapping = aes(x = tnadar, color = sexo, fill = sexo)) +
+    geom_density(alpha = 0.15) +
+    geom_rug()
+
+ggplot(data = tri,
+       mapping = aes(x = tcorrer, color = sexo, fill = sexo)) +
+    geom_density(alpha = 0.15) +
+    geom_rug()
+
+ggplot(data = tri,
+       mapping = aes(x = tpedalar, color = sexo, fill = sexo)) +
+    geom_density(alpha = 0.15) +
+    geom_rug()
+
+#-----------------------------------------------------------------------
+
+ggplot(data = tri,
+       mapping = aes(x = tpedalar, color = sexo, fill = sexo)) +
+    geom_step(stat = "ecdf") +
+    geom_rug()
+
+#-----------------------------------------------------------------------
+
+tril <- tri %>%
+    gather(key = "ativ",
+           value = "tempo",
+           tnadar,
+           tcorrer,
+           tpedalar)
+str(tril)
+
+ggplot(data = tril,
+       mapping = aes(x = tempo, color = ativ)) +
+    geom_density(alpha = 0.15) +
+    scale_x_log10() +
+    geom_rug()
+
+# Frações de tempo.
+tri <- tri %>%
+    mutate(ttotal = tnadar + tpedalar + tcorrer,
+           pnadar = tnadar/ttotal,
+           ppedalar = tpedalar/ttotal,
+           pcorrer = tcorrer/ttotal)
+str(tri)
+
+#-----------------------------------------------------------------------
+
+library(plotrix)
+
+# triax.plot(x = with(tri, na.omit(cbind(pnadar, ppedalar, pcorrer))))
+
+par(mfrow = c(1, 2))
+triax.plot(x = with(subset(tri, sexo == "F"),
+                    na.omit(cbind(pnadar, ppedalar, pcorrer))),
+           main = "F",
+           col.symbols = mycol[2])
+triax.plot(x = with(subset(tri, sexo == "M"),
+                    na.omit(cbind(pnadar, ppedalar, pcorrer))),
+           main = "M",
+           col.symbols = mycol[1])
+layout(1)
+```
+
+```{r}
+url <- "http://leg.ufpr.br/~walmes/data/euro_football_players.txt"
+# browseURL(url)
+
+pla <- read_tsv(file = url,
+                col_names = TRUE,
+                quote = "",
+                comment = "#")
+str(pla, give.attr = FALSE)
+
+ggplot(data = pla,
+       mapping = aes(x = country)) +
+    geom_bar() +
+    coord_flip()
+
+ggplot(data = pla,
+       mapping = aes(x = reorder(country, country, length))) +
+    geom_bar() +
+    coord_flip()
+
+ggplot(data = pla,
+       mapping = aes(x = reorder(team, team, length))) +
+    geom_bar() +
+    coord_flip()
+
+ggplot(data = pla,
+       mapping = aes(x = age)) +
+    geom_bar()
+
+ggplot(data = pla,
+       mapping = aes(x = cm)) +
+    geom_density()
+
+ggplot(data = pla,
+       mapping = aes(x = kg)) +
+    geom_density()
+
+ggplot(data = pla,
+       mapping = aes(x = kg)) +
+    geom_density()
+
+ggplot(data = pla,
+       mapping = aes(x = country, y = cm)) +
+    geom_boxplot()
+
+ggplot(data = pla,
+       mapping = aes(x = reorder(country, cm, median, na.rm = TRUE),
+                     y = cm)) +
+    geom_boxplot() +
+    coord_flip()
+
+pla <- pla %>%
+    mutate(posit = gsub("^([A-Z]+).*$", "\\1", pos))
+table(pla$posit)
+
+ggplot(data = pla,
+       mapping = aes(x = reorder(posit, cm, median, na.rm = TRUE),
+                     y = cm)) +
+    geom_boxplot()
+
+ggplot(data = pla,
+       mapping = aes(x = cm,
+                     y = kg)) +
+    geom_point()
+
+ggplot(data = pla,
+       mapping = aes(x = cm,
+                     y = kg,
+                     color = posit)) +
+    geom_point()
+
+ggplot(data = pla,
+       mapping = aes(x = cm,
+                     y = kg)) +
+    geom_point() +
+    facet_wrap(facets = ~posit)
+```
+
+```{r}
+url <- "http://leg.ufpr.br/~walmes/data/aval_carros_nota.txt"
+# browseURL(url)
+
+not <- read_tsv(file = url)
+str(not, give.attr = FALSE)
+
+notm <- not %>%
+    group_by(carro, item) %>%
+    summarize(nota = mean(nota))
+notm
+
+ggplot(notm,
+       mapping = aes(x = carro, y = nota, color = item)) +
+    geom_point()
+
+ggplot(notm,
+       mapping = aes(x = carro, y = nota, color = item, group = item)) +
+    geom_line()
+
+ggplot(notm,
+       mapping = aes(x = carro, y = nota)) +
+    geom_line(mapping = aes(group = 1)) +
+    facet_wrap(facets = ~item)
+
+ggplot(notm,
+       mapping = aes(x = item, y = nota)) +
+    geom_line(mapping = aes(group = 1)) +
+    facet_wrap(facets = ~carro)
+
+#-----------------------------------------------------------------------
+
+dts <- filter(notm,
+              carro %in% c("crossfox", "ecosport"))
+dts
+
+ggplot(dts,
+       mapping = aes(x = item, y = nota)) +
+    geom_line(mapping = aes(color = carro, group = carro))
+
+aux <- dts %>%
+    spread(key = "item", value = "nota")
+aux
+
+m <- as.data.frame(aux[, -1])
+m <- rbind(matrix(c(10, 0),
+                  nrow = 2,
+                  ncol = ncol(m),
+                  dimnames = list(NULL, names(m))),
+           m)
+
+library(fmsb)
+
+radarchart(m)
+legend("topright",
+       legend = aux$carro,
+       col = 1:2,
+       lty = 1:2,
+       bty = "n")
+
+#-----------------------------------------------------------------------
+
+ggplot(dts,
+       mapping = aes(x = carro,
+                     y = nota,
+                     group = item,
+                     color = item)) +
+    geom_point() +
+    geom_line() +
+    geom_text(data = filter(dts,
+                            carro == "ecosport"),
+              mapping = aes(x = 2,
+                            y = nota,
+                            label = item),
+              color = "black",
+              hjust = 0,
+              nudge_x = 0.02,
+              size = 3.5) +
+    coord_cartesian(xlim = c(1.25, 1.75)) +
+    guides(colour = FALSE)
+
+aux <- dts %>%
+    spread(key = "carro", value = "nota") %>%
+    mutate(diff = crossfox - ecosport) %>%
+    arrange(diff)
+dts$item <- factor(dts$item, levels = aux$item)
+dts <- dts %>%
+    arrange(item)
+
+ggplot(dts,
+       mapping = aes(x = reorder(item,
+                                 nota,
+                                 mean),
+                     y = nota,
+                     fill = carro)) +
+    geom_bar(stat = "identity",
+             position = "dodge",
+             color = I("black")) +
+    coord_flip()
+
+ggplot(dts,
+       mapping = aes(x = item,
+                     y = nota,
+                     fill = carro)) +
+    geom_bar(stat = "identity",
+             position = "dodge",
+             color = I("black")) +
+    coord_flip()
+```

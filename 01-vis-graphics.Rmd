@@ -1,0 +1,997 @@
+---
+title: "Recursos básicos de visualização do R"
+author: Prof. Walmes M. Zeviani
+date: '`r Sys.Date()`'
+#bibliography: ../config/Refs.bib
+#csl: ../config/ABNT-UFPR-2011-Mendeley.csl
+---
+
+```{r, include = FALSE}
+source("./config/setup.R")
+opts_chunk$set(cache = FALSE, message = FALSE, warning = FALSE)
+```
+
+# Os recusos para visualização
+
+O [landscape de recursos para visualização] de dados no R pode ser
+representado por uma divisão em 3 territórios.
+
+  * `graphics`: representa o pacote básico `graphics` e vários pacotes
+     que complementam funcionalidades dele, como o [`plotrix`] e
+     [`gplots`].  Contém os recursos mais primitivos, com funções de
+     alto e baixo nível na sua maioria nativas nos pacotes básicos do R.
+     Oferece muitos recursos para confecção de gráficos porém não tem
+     suporte nativo para acomodar informação adicional como cores,
+     linhas, pontos, preenchimentos de acordo com variáveis categóricas.
+     Ainda assim, é o que mais se usa para implementar gráficos de
+     diagnóstico de modelos e visualização que envolva até um par de
+     variáveis.  É importante saber utilizar a `graphics` para
+     customização de gráficos resultados de análise de dados
+     (dendrogramas, biplots, gráficos de resíduos, quantil-quantil,
+     etc).
+  * [`lattice`]: desenvolvido por [Deepayan Sarkar] com primeira
+    alternativa aos recursos básicos.  O principais recursos foram a
+    plotagem multi-painel e mapeamento de informação adicional usando
+    cores, símbolos, preenchimentos, espessura, etc.  A [`lattice`] faz
+    parte do grupo de pacotes recomendados do R, portanto, já vem com a
+    instalação básica.  Tem sido utilizado por muitos pacotes, como a
+    `nlme` e `lme4` para apresentar resultados de análises.  O pacote
+    [`latticeExtra`] estende as funcionalidades da [`lattice`].  A
+    importância da [`lattice`] está em pertencer ao grupo de pacotes
+    recomendados, o que encoraja seu uso dentro de pacotes contribuidos,
+    é rápida na confeção dos gráficos e possui recursos para ajuste fino
+    da aparência do gráfico.
+  * [`ggplot2`]: desenvolvido por [Hadley Wickham], surgiu depois da
+    [`lattice`] e é baseado na [*Grammar of Graphics*], um modelo que
+    permite a descrição concisa dos componentes de um gráfico.  A
+    [`ggplot2`] possui a maioria dos recursos da [`lattice`], como
+    condicionamento multi-painel, mas é melhor para o mapeamento de
+    variáveis em atributos estéticos (símbolos, cores, etc).  A
+    customização dos gráficos é mais fatorável pois usa camadas para os
+    diversos elementos gráficos.  A importância da [`ggplot2`] está no
+    modelo mental mais claro, o tem contribuido para o ganho em
+    popularidade.  A [`ggplot2`] é bem mais lenta para construir os
+    gráficos que a [`lattice`] mas também é altamente customizável.
+
+Para mais detalhes sobre os recursos gráficos, siga esse link:
+<https://www.stat.ubc.ca/~jenny/STAT545A/block90_baseLatticeGgplot2.html>.
+
+Para uma descrição completada comparação entre [`lattice`] e [`ggplot2`],
+siga esse link: <https://learnr.wordpress.com/2009/08/26/ggplot2-version-of-figures-in-lattice-multivariate-data-visualization-with-r-final-part/>
+
+Confira no [R Graph Gallery] a variedade de gráficos confeccionados com
+o R.
+
+Além dos recursos disponíveis nos territórios supradescritos, pode-se
+considerar ainda a existência de mais dois conjuntos de recursos: para
+mapas e gráficos interativos.
+
+A visualização de dados geográficos conta com um vários pacotes
+específicos. Siga os links abaixo para ter uma ideia das
+funcionalidades:
+
+  * <https://cran.r-project.org/web/views/Spatial.html>;
+  * <https://bhaskarvk.github.io/user2017.geodataviz/>;
+  * <http://spatial.ly/r/>;
+  * <https://data.cdrc.ac.uk/tutorial/an-introduction-to-spatial-data-analysis-and-visualisation-in-r>;
+
+Os recursos para visualização interativa de dados estão distribuídos em
+vários pacotes.  Talvez o mais interessante deles seja o [`plotly`] que
+permite a criação de gráficos interativos a partir da [`ggplot2`] além
+de possuir funções próprias.  Veja em [`plotly-R`] a galeria de
+gráficos.
+
+A visualização interativa é voltada para exibicação na WEB.  Alguns dos
+pacotes para isso são estes:
+
+  * [`plotly`](https://plot.ly/r/).
+  * [`highcharter`](http://jkunst.com/highcharter/).
+  * [`googleVis`](https://cran.r-project.org/web/packages/googleVis/vignettes/googleVis_examples.html).
+  * [`rCharts`](https://ramnathv.github.io/rCharts/).
+  * [`leaflet`](https://rstudio.github.io/leaflet/).
+  * [`iplots`](http://rosuda.org/software/iPlots/).
+  * [`rgl`](https://cran.r-project.org/web/packages/rgl/vignettes/rgl.html).
+  * [`animation`](https://yihui.name/animation/).
+
+# Leitura dos dados
+
+Para explorar os recursos básicos de visualização, serão usados dados
+reais sobre a venda do modelo Renault Duster extraídos da WEB.  Os dados
+estão disponíveis online em
+<http://www.leg.ufpr.br/~walmes/data/duster_venda_260314.txt>.
+
+Os dados contém informações sobre o preço de venda (R$, `valor`) e
+distância percorrida (km, `km`) além de outras características
+descritoras do veículo, como ano de fabricação, cor, tipo de câmbio.
+
+```{r}
+#-----------------------------------------------------------------------
+# Dados de carros Duster à venda no webmotors em 26/03/2014.
+
+# Importa a tabela de dados da web.
+url <- "http://www.leg.ufpr.br/~walmes/data/duster_venda_260314.txt"
+dus <- read.table(file = url,
+                  header = TRUE,
+                  sep = "\t",
+                  encoding = "utf-8")
+str(dus)
+
+# Cria ano do veículo com extração regex.
+dus$ano <- factor(gsub(x = as.character(dus$ano),
+                       pattern = "/\\d{4}$",
+                       replacement = ""))
+
+# Quantidade de NA em cada coluna.
+apply(dus, MARGIN = 2, FUN = function(x) sum(is.na(x)))
+```
+
+A variável `km` apresentou mais de uma centena de valores ausentes.  A
+tabela tem 3 variáveis numéricas (`km`, `valor`, `poten`), sendo as
+demais todas categóricas.
+
+# Gráficos para uma variável categórica
+
+A análise exploratória de variáveis categóricas é praticamente baseada
+na distribuição das frequências.  Por ser uma variável não numérica, não
+é possível calcular medidas descritivas numéricas de posição (como
+média, mediada) ou de dispersão (variância, amplitude).  Dessa forma,
+esta-se confinado à visualizações que consideram as frequências.
+
+```{r}
+#-----------------------------------------------------------------------
+# Gráfico de barras e setores.
+
+# Tabela de frequência.
+x <- table(dus$cambio)
+class(x)
+
+# Se vem da xtabs() também tem classe `table`.
+x <- xtabs(~cambio, data = dus)
+class(x)
+
+# Gráfico padrão.
+# barplot(x)
+
+# Com anotações nas margens e cores.
+barplot(x,
+        xlab = "Tipo de câmbio",
+        ylab = "Frequência absoluta",
+        col = c("seagreen", "yellowgreen"))
+
+# Horizontal.
+barplot(x,
+        horiz = TRUE,
+        xlab = "Tipo de câmbio",
+        ylab = "Frequência absoluta",
+        col = c("seagreen", "#FF9911"))
+box(bty = "L")
+
+# Cores com `green` no vetor de cores `colors()`.
+grep(pattern = "green", x = colors(), value = TRUE)
+```
+
+```{r}
+# Gráfico de setores. Evite usar referências radiais pois comparações de
+# arcos são prejudicadas por não estarem alinhadas.
+pie(x,
+    col = c("#5398ed",
+            rgb(12, 58, 114, max = 255)),
+    main = "Tipo de câmbio")
+
+# Para as cores do carro.
+x <- xtabs(~cor, data = dus)
+pie(x)
+```
+
+Tanto os gráficos de barras (vertical ou horizontal) quanto o de setores
+(pizza), representam a distribuição de frequência.  No entanto, exceto
+por razões bem específicas, o gráfico de setores deve ser evitado.  A
+percepção sobre do comprimento dos setores é comprometida pela ausência
+de um sistema de referência linear.  Ou seja, o gráfico está em um
+sistema de referência polar que dificulta a percepção de comprimentos em
+arco.
+
+```{r}
+# Vetor que cores para usar com cada cor de veiculo.
+cols <- c("blue", "white", "gray50", "Yellow", "gray90", "black",
+          "green4", "red", "red4")
+
+cbind(levels(dus$cor), cols)
+
+# Reordenar os níveis do fator e as cores.
+ord <- order(x, decreasing = TRUE)
+cols <- cols[ord]
+x <- x[ord]
+n <- names(x)
+dus$cor <- factor(dus$cor, levels = n)
+
+cbind(levels(dus$cor), cols)
+
+a <- barplot(x,
+             xaxt = "n",
+             las = 1,
+             col = cols)
+mtext(side = 2, text = "Frequência absoluta", line = 3)
+axis(side = 1, at = a, labels = n, las = 2)
+box(bty = "L")
+
+par(mar = c(4.1, 7.1, 2.1, 2.1))
+barplot(x,
+        horiz = TRUE,
+        las = 1,
+        col = cols)
+mtext(side = 2, text = "Cor", line = 5)
+mtext(side = 1, text = "Frequência absoluta", line = 2)
+box(bty = "L")
+
+# Fecha a janela gráfica para restaturar as configurações.
+# dev.off()
+```
+
+Quando o número de categorias cresce, a leitura do gráfico de barras é
+naturalmente mais demorada.  Porém, se não existe uma ordenação natural
+nos níveis da variável categória (variável categórica nominal e não
+ordinal), a ordenação das barras com relação ao valor aprimora a
+visualização.
+
+O uso das barras horizontais é recomendado quando os texto sob o eixo é
+comprido.  O texto na vertical não favorece a rápida leitura, por isso
+colocá-lo na horizontal é uma boa opção.
+
+# Gráfico para duas variáveis categóricas
+
+```{r}
+#-----------------------------------------------------------------------
+# Gráficos de barras emplilhadas (stacked) e lado a lado.
+
+dus$cambio <- factor(dus$cambio)
+
+x <- xtabs(~cambio + ano, data = dus)
+x
+
+cols <- c("#660d32", "#bc1a5e")
+
+# Barras empilhadas.
+barplot(x,
+        beside = FALSE,
+        xlab = "Ano",
+        ylab = "Frequência absoluta",
+        col = cols)
+legend("topleft",
+       legend = levels(dus$cambio),
+       fill = cols,
+       bty = "n")
+box(bty = "L")
+
+# Barras lado a lado.
+barplot(x,
+        beside = TRUE,
+        xlab = "Ano",
+        ylab = "Frequência absoluta",
+        col = cols)
+legend("topleft",
+       legend = levels(dus$cambio),
+       fill = cols,
+       bty = "n")
+box(bty = "L")
+```
+
+Quando duas ou variáveis categóricas são consideradas, pode-se
+representar a distribuição de frequência com barras empilhadas ou barras
+lado a lado.  O enfoque desses gráficos é diferente.
+
+**Barras empilhadas**
+
+  1. Principal: ver os totais absolutos marginais de cada ano.
+  2. Secundário: ver as proporções de cada câmbio em cada ano.
+  3. Ruim: compreender a série de frequências absolutas de cada câmbio
+     ao longo dos anos.
+
+**Barras lado a lado**
+
+  1. Principal: comparar os valores absolutos dos câmbios em cada ano.
+  2. Secundário: entender a série de cada câmbio ao longo dos anos.
+  3. Ruim: compreender a série do total absoluto ao longo dos anos.
+  4. Ruim: determinar a proporção de cada câmbio em cada ano.
+
+```{r}
+x
+
+u <- x %*% diag(1/colSums(x))
+colnames(u) <- colnames(x)
+u
+
+# Barras empilhadas relativas.
+barplot(u,
+        beside = FALSE,
+        xlab = "Ano",
+        ylab = "Frequência relativa",
+        col = cols)
+legend("topleft",
+       inset = c(0.025, -0.12),
+       xpd = TRUE,
+       ncol = 2,
+       legend = levels(dus$cambio),
+       fill = cols,
+       bty = "n")
+box(bty = "L")
+
+mosaicplot(t(x),
+           off = c(2, 1),
+           col = cols,
+           ylab = "Tipo de câmbio",
+           xlab = "Ano",
+           main = NULL)
+legend("topleft",
+       inset = c(0.025, -0.12),
+       xpd = TRUE,
+       ncol = 2,
+       legend = levels(dus$cambio),
+       fill = cols,
+       bty = "n")
+```
+
+**Barras empilhadas padronizadas**
+
+As barras empilhadas podem ter comprimento padronizado para representar
+a frequência relativa.  Dessa forma é mais facil comprar as frquências
+relativas.  Nesse gráfico as ênfases são:
+
+  1. Principal: comprar as proporções dos câmbios em cada ano
+     independente dos totais absolutos.
+  2. Ruim: determinar os totais relativos de cada ano.
+  3. Ruim: determinar os totais absolutos dos anos e câmbios.
+
+**Gráfico de barras como mosaico**
+
+Mais um tipo de gráfico interessante é o mosaico.  Ele é uma exibição
+das frequências relativas marginais e condicionais. Tem por objetivo:
+
+  1. Principal: ver os totais dos anos (largura).
+  2. Secundário: ver as proporções de cada câmbio em cada ano (alturas
+     relativas).
+  3. Ruim: determinar os valores absolutos.
+
+```{r}
+#-----------------------------------------------------------------------
+# Anotações nas barras.
+
+x <- xtabs(~cambio + poten, data = dus)
+x
+
+# Cores de preenchimento para as barras.
+cols <- c("#04510a", "#229b2b")
+
+# Barras lado a lado.
+bp <- barplot(t(x),
+              beside = TRUE,
+              col = cols,
+              xlab = "Tipo de câmbio",
+              ylab = "Frequência absoluta")
+bp
+
+# Calcula a altura de uma palavra em termos da escala y do gráfico.
+sh <- strheight("um texto qualquer")
+sh
+
+# Opera com os limites do gráfico armazenados em `par()$usr`.
+lim <- par()$usr[4] + 3 * sh
+
+# Refaz o gráfico com espaço para o texto.
+barplot(t(x),
+        beside = TRUE,
+        col = cols,
+        ylim = c(0, lim),
+        xlab = "Tipo de câmbio",
+        ylab = "Frequência absoluta")
+legend("topleft",
+       title = "Potência",
+       legend = c("1.6","2.0"),
+       fill = cols,
+       bty = "n")
+text(x = c(bp),
+     y = t(x),
+     labels = t(x),
+     pos = 3)
+box()
+```
+
+Se mais variáveis forem envolvidas, o gráfico de mosaico fará a
+representação com mais divisões nos retângulos.
+
+```{r}
+# Mais dimensões.
+mosaicplot(HairEyeColor,
+           off = 2,
+           col = c("pink", "cyan"))
+
+# Obtendo totais para fazer gráficos de barras.
+dimnames(HairEyeColor)
+a <- apply(HairEyeColor,
+           MARGIN = c(1, 2),
+           FUN = sum)
+
+# Vetor que associa cores conforme os níveis dos fatores às cores usadas
+# para preenchimento.
+cols <- c(Brown = "#6b2205",
+          Blue = "#4fb2ff",
+          Green = "#1a9b1e",
+          Blond = "#d8d652",
+          Red = "#bc1405",
+          Black = "#210a08",
+          Hazel = "#a86526")
+
+# Mosaico.
+mosaicplot(a,
+           col = cols[colnames(a)])
+
+mosaicplot(t(a),
+           col = cols[rownames(a)])
+
+# Barras empilhadas.
+barplot(a,
+        xlab = "Eye",
+        col = cols[rownames(a)])
+legend("topright",
+       title = "Hair",
+       legend = rownames(a),
+       fill = cols[rownames(a)],
+       bty = "n")
+
+# Barras lado a lado.
+barplot(a,
+        xlab = "Eye",
+        beside = TRUE,
+        col = cols[rownames(a)])
+legend("topright",
+       title = "Hair",
+       legend = rownames(a),
+       fill = cols[rownames(a)],
+       bty = "n")
+
+# Visite estes sites para pegar cores.
+# browseURL("http://www.w3schools.com/html/html_colors.asp")
+# browseURL("http://html-color-codes.info/")
+```
+
+# Gráficos para uma variável contínua
+
+Para representar a distribuição de frequência de variáveis contínuas
+tem-se mais opções.  A mais simples delas, o histograma, consiste em
+discretizar os dados agrupando as observações em classes.  A frequência
+das classes é exibida contra as classes.
+
+```{r}
+#-----------------------------------------------------------------------
+# Histograma.
+
+# Gráfico básico.
+# hist(dus$valor)
+
+hist(dus$valor,
+     xlab = "Preço de venda (R$)",
+     ylab = "Frequência absoluta",
+     col = "orange")
+rug(dus$valor)
+
+# Se breaks é um escalar então entende-se que é uma *sugestão* para o
+# número de clases.
+hist(dus$valor,
+     breaks = 15,
+     xlab = "Preço de venda (R$)",
+     ylab = "Frequência absoluta",
+     col = "orange")
+rug(dus$valor)
+
+# Se breaks é um vetor então entende-se que são os limites para
+# classificação dos valores.
+hist(dus$valor,
+     breaks = seq(35000, 75000, by = 2500),
+     xlab = "Preço de venda (R$)",
+     ylab = "Frequência absoluta",
+     col = "#7700B7",
+     sub = "Amplitude de classe de R$ 2500",
+     main = NULL)
+
+# Gráfico onde a altura é a densidade e não a frequência.
+hist(dus$valor,
+     prob = TRUE,
+     breaks = seq(35000, 75000, by = 2500),
+     xlab = "Preço de venda (R$)",
+     ylab = "Densidade",
+     col = "#ba6dff",
+     sub = "Amplitude de classe de R$ 2500",
+     main = NULL)
+```
+
+O histograma pode representar duas medidas diferentes, porem
+relacionadas, de frequência. Como argumento `prob = FALSE`, a altura da
+barra é o número de registros em cada classe.  Com `prob = TRUE`, o
+produto da altura (densidade) pela largura (amplitude de classe) de cada
+barra corresponde a frequência relativa.  A soma das frequências
+relativas é 1 e, portanto, a área do gráfico coberta pelas barras do
+histograma é unitária.
+
+```{r}
+#-----------------------------------------------------------------------
+# Anotações sobre um histograma.
+
+# Com domínio do R se pode fazer gráficos espetaculares, como por
+# exemplo esses com variação da tonalidade ou destaque da classe modal.
+
+ht <- hist(dus$valor,
+           prob = TRUE,
+           breaks = seq(35000, 75000, 2000),
+           xlab = "Preço de venda (R$)",
+           ylab = "Frequência absoluta",
+           sub = "Amplitude de classe de R$ 2500")
+rug(dus$valor) # Faz risquinhos no eixo x.
+
+# Destacar a barra da classe modal usando outra cor.
+wm <- which.max(ht$counts)
+cols <- rep("yellow", length(ht$counts))
+cols[wm] <- "red"
+cols
+
+plot(ht, col = cols)
+
+# Traçar os segmentos que indicam o valor interpolado para a moda.
+ycoor <- with(ht, counts[wm + 0:1])
+xcoor <- with(ht, breaks[wm + 0:1])
+segments(xcoor[1], ycoor[1], xcoor[2], ycoor[2], lty = 2)
+
+ycoor <- with(ht, counts[wm - 1:0])
+xcoor <- with(ht, breaks[wm + 0:1])
+segments(xcoor[1], ycoor[1], xcoor[2], ycoor[2], lty = 2)
+
+# Por semelhança de triangulos a moda obtida é:
+ac <- with(ht, diff(breaks[1:2]))
+d <- with(ht, abs(diff(counts[wm + (-1:1)])))
+xmoda <- with(ht, breaks[wm] + (ac * d[1])/sum(d))
+xmoda
+
+abline(v = xmoda, lwd = 2)
+```
+
+É possível fazer gráficos personalizados com o domínios dos recursos
+básicos de plotagem do R. O código acima usa a função de alto nível
+`hist()` para produzir o histograma.  Quando atribuida a um objeto,
+todos os elementos do histograma ficam salvos para permitir pós
+processamento (limites e cento das classes, frequência absoluta e
+relativa, etc).  Funções de baixo nível (`abline()`, `segments()`) são
+chamadas para adicionar elementos aos gráficos.
+
+Os dois gráficos abaixo fazem uso das funções de baixo para ilustrar o
+potencial do R para confecção de gráficos.  No entanto, tais gráficos
+podem não ter muita utilidade prática.
+
+```{r}
+#--------------------------------------------
+# Destaque para a classe modal.
+
+plot(ht,
+     col = NULL,
+     lty = 0,
+     ann = FALSE,
+     axes = FALSE)
+abline(h = seq(0, 100, by = 10), lty = 2)
+plot(ht,
+     col = cols,
+     ann = FALSE,
+     axes = FALSE,
+     add = TRUE)
+rug(dus$valor)
+axis(side = 1, at = seq(35000, 75000, 5000))
+axis(side = 2, at = seq(0, 100, by = 10))
+box(bty = "L")
+title(main = "Histograma do valor (R$)",
+      sub = "Dados retirados do webmotors.com",
+      xlab = "Valor (R$)",
+      ylab = "Frequência absoluta")
+mtext(side = 3, line = 0,
+      text = paste("Amostra de tamanho", length(dus$valor)))
+mtext(side = 4,
+      line = -1,
+      col = "gray70",
+      outer = TRUE,
+      adj = 0,
+      text = "Feito por Walmes Zeviani - walmes@ufpr.br")
+legend("topright",
+       fill = "red",
+       legend = "Classe modal",
+       bty = "n")
+
+#--------------------------------------------
+
+# Outra variação de um histograma.
+ht <- hist(dus$valor, seq(35000, 75000, 2000), plot = FALSE)
+nc <- length(ht$mids)             # Número de classes.
+ac <- diff(ht$breaks[1:2])        # Amplitude de classe.
+ma <- mean(dus$valor)             # Média da amostra.
+md <- median(dus$valor)           # Mediana da amostra.
+qts <- fivenum(dus$valor)[c(2,4)] # 1Q e 3Q da amostra.
+modal <- which.max(ht$counts)     # Classe modal.
+modal <- list(x = ht$mids[modal], y = ht$counts[modal])
+colseq <- rgb(red = 0.25,
+              blue = 0.7,
+              green = seq(0.1, 0.9, length.out = nc))
+
+plot(ht,
+     col = colseq,
+     ylim = c(0, modal$y + strheight("1")),
+     xlab = "Preço de venda (R$)",
+     ylab = "Frequência absoluta",
+     sub = paste("Amplitude de classe de R$", ac),
+     main = NULL,
+     border = "gray50")
+rug(dus$valor)
+text(x = modal$x, y = modal$y, labels = modal$y, pos = 3)
+arrows(ma, 0, ma, modal$y/3, code = 1, length = 0.15)
+text(ma, modal$y/3, labels = paste("Média:", round(ma,2)), pos = 3)
+arrows(md, 0, md, modal$y/6, code = 1, length = 0.15)
+text(ma, modal$y/6, labels = paste("Mediana:", round(md,1)),
+     pos = ifelse(md<ma, 2, 4))
+box()
+```
+
+Responda: o que de informação adicional foi acrescentado com as barras
+mudando de cor?  Nada!  A variação das cores está se sobrepondo a
+informação de posição no eixo horizontal.  Ou seja, são dois elementos
+estéticos (posição e preenchimento) mapeando a mesma informação.  Uma
+boa prática na confecção de gráficos e evitar redundância.  Pode até ser
+que o leitor seja atraído pelo visual pouco ortodoxo do gráfico mas há
+um desperdício de carga cognitiva para processamento dessa informação
+visual acessória ou meramente estética.
+
+```{r}
+#-----------------------------------------------------------------------
+# Gráficos de densidade.
+
+den <- density(dus$valor)
+plot(den)
+den
+
+# Tipos de função kernel.
+formals("density.default")$kernel
+
+den <- density(dus$valor,
+               kernel = "triangular")
+plot(den)
+rug(dus$valor)
+
+# Controle da largura de banda.
+den <- density(dus$valor,
+               kernel = "rectangular",
+               bw = 3000)
+plot(den)
+rug(dus$valor)
+abline(v = seq(35000, 75000, 5000), col = "gray50")
+abline(v = seq(35000, 75000, 1000), col = "gray90")
+
+# Realce da classe modal.
+den <- density(dus$valor/1000)
+str(den)
+
+x <- eval(parse(text = den$data.name))
+ma <- mean(x)             # Média da amostra.
+md <- median(x)           # Mediana da amostra.
+
+modal <- which.max(den$y)
+modal <- list(x = den$x[modal], y = den$y[modal])
+
+plot(den,
+     type = "n",
+     xlab = "Preço de venda (R$ x 1000)",
+     ylab = "Densidade",
+     ylim = c(0, modal$y + strheight("1")),
+     main = "",
+     sub = paste("Bandwidth:", round(den$bw,3)))
+with(den, polygon(x, y, col = "gray90"))
+with(modal, {
+    segments(x, 0, x, y, col = 2)
+    text(x, y, labels = sprintf("Moda: %0.2f", x), pos = 3)
+})
+arrows(ma, 0, ma, modal$y/3, code = 1, length = 0.15)
+text(ma, modal$y/3, labels = sprintf("Média: %0.2f", ma), pos = 3)
+arrows(md, 0, md, modal$y/6, code = 1, length = 0.15)
+text(ma, modal$y/6, labels = sprintf("Mediana: %0.2f", md),
+     pos = ifelse(md<ma, 2, 4))
+rug(dus$valor)
+```
+
+O gráfico de densidade empírica kernel é o sucessor ou evolução do
+histograma.  Esse gráfico calcula a densidade em um ponto $x$ no domínio
+da variável por meio de uma função kernel que é, de forma simples, uma
+função de ponderação, e o resultado e uma soma de frequências ponderada
+pela distância.  Existem 7 funções kernel disponíveis.  Visite essa
+aplicação Shiny para compreender visualmente como funciona a densidade
+kernel: <http://shiny.leg.ufpr.br/walmes/density/>.
+
+```{r}
+#-----------------------------------------------------------------------
+# Gráfico de frequência acumulada empírica.
+
+y <- ecdf(dus$valor)
+plot(y)
+
+plot(y,
+     xlab = "Preço de venda (R$)",
+     ylab = "Frequência relativa acumulada",
+     cex = NA,
+     verticals = TRUE,
+     main = NULL)
+
+# Destacando a frequência de veículos com preço de 50 à 60 mil.
+lim <- c(50000, 60000)
+ptbl <- prop.table(table(cut(dus$valor,
+                             breaks = c(-Inf, lim, Inf))))
+cs <- cumsum(ptbl)[seq_along(lim)]
+
+# As observações do intervalo correspondem ao valor 1.
+ins <- findInterval(dus$valor, vec = lim)
+table(ins)
+
+plot(y,
+     xlab = "Preço de venda (R$)",
+     ylab = "Frequência relativa acumulada",
+     cex = NA,
+     col = "#00af20",
+     lwd = 2,
+     verticals = TRUE,
+     main = NULL)
+segments(x0 = lim,
+         y0 = 0,
+         x1 = lim,
+         y1 = cs,
+         lty = 2)
+segments(x0 = lim,
+         y0 = cs,
+         x1 = par()
+         $usr[3],
+         y1 = cs,
+         lty = 2)
+arrows(x0 = lim[1],
+       y0 = cs[1],
+       x1 = lim[1],
+       y1 = cs[2],
+       code = 3,
+       length = 0.15)
+text(x = lim[1],
+     y = median(cs),
+     labels = sprintf("%0.3f", ptbl[2]),
+     srt = 90,
+     adj = c(0.5,-0.5))
+rug(dus$valor[ins == 1L], col = "#00af20")
+rug(dus$valor[ins != 1L], col = "black")
+```
+
+# Gráfico para duas variáveis contínuas
+
+```{r}
+#-----------------------------------------------------------------------
+# Diagrama de dispersão.
+
+dus2 <- subset(dus,
+               complete.cases(cbind(km, valor)),
+               select = c(cambio, valor, km))
+dus2 <- transform(dus2, km = km/1000, valor = valor/1000)
+
+# Diagrama de dispersão básico.
+plot(valor ~ km, data = dus2)
+
+# Adicionar uma linha de tendência suave.
+plot(valor ~ km,
+     data = dus2,
+     xlab = "Distância percorrida (km)",
+     ylab = "Preço de venda (R$)")
+with(dus2, {
+    lines(lowess(x = km, y = valor),
+          lwd = 2,
+          col = "#ff0050")
+})
+
+# Usar cores diferentes para identificar o tipo de câmbio, com linhas
+# de tendência e grid.
+
+cols <- c("#db0d9d", "#0c0099")
+levels(dus2$cambio)
+
+plot(valor ~ km,
+     data = dus2,
+     type = "n",
+     xlab = "Distância percorrida (km)",
+     ylab = "Preço de venda (R$)")
+i <- 0
+by(dus2,
+   INDICES = dus2$cambio,
+   FUN = function(data) {
+       i <<- i + 1
+       with(data, {
+           points(x = km, y = valor, col = cols[i], pch = 19)
+           lines(lowess(x = km, y = valor),
+                 col = cols[i],
+                 lwd = 1.5)
+           rug(km, side = 1, col = cols[i])
+           rug(valor, side = 4, col = cols[i])
+           invisible()
+       })
+   })
+legend("top",
+       lty = 1,
+       col = cols,
+       legend = levels(dus2$cambio),
+       lwd = 1.5,
+       bty = "n")
+grid()
+```
+
+O diagrama de dispersão é um dos gráficos mais fáceis de produzir pois
+não requer pré-processamento dos dados. Ou seja, o gráfico exibe todos
+os pares de pontos, diferente dos gráficos de barras que presentam o
+resultado de uma agregação dos dados: as frequências absolutas ou
+relativas.
+
+Por outro lado, quando-se deseja destacar categorias usando cores ou
+símbolos, é necessário trabalho manual.  Uma das principais vantagens da
+`lattice` e `ggplot2` é fazer isso de forma bem mais simples.
+
+# Gráfico para variável contínua e categórica
+
+```{r}
+#-----------------------------------------------------------------------
+
+# Preço em função dos anos.
+boxplot(valor ~ ano, data = dus)
+
+# Edita níveis do fator.
+levels(dus$cat)
+levels(dus$cat) <- trimws(levels(dus$cat))
+dus2 <- droplevels(subset(dus, cat != ""))
+dus2 <- transform(dus2,
+                  valor = valor/1000,
+                  km = km/1000,
+                  cat = factor(cat))
+
+boxplot(valor ~ cat,
+        data = dus2,
+        xlab = "Modelo",
+        ylab = "Preço de venda (R$)")
+
+# Larguras proporcionais à raiz da quantidade em cada grupo.
+boxplot(valor ~ cat,
+        data = dus2,
+        varwidth = TRUE,
+        pars = list(boxwex = 1),
+        xlab = "Modelo",
+        ylab = "Preço de venda (R$)")
+
+table(dus2$cat)
+
+# Indicação do valor da média.
+mds <- with(dus2, tapply(valor, cat, mean))
+mds
+
+bp <- boxplot(valor ~ cat, data = dus2)
+bp
+
+# Amplitude interquartílica.
+aiq <- bp$stats[4, ] - bp$stats[2, ]
+l <- bp$stats[2, ] - 1.5 * aiq
+u <- bp$stats[4, ] + 1.5 * aiq
+i <- seq_along(u)
+
+boxplot(valor ~ cat,
+        data = dus2,
+        notch = TRUE,
+        col = "#ff5c21",
+        xlab = "Modelo",
+        ylab = "Preço de venda (R$)")
+points(x = 1:nlevels(dus2$cat), y = mds, pch = 4, cex = 1.5)
+segments(x0 = i - 0.5, x1 = i + 0.5, y0 = l, y1 = l,
+         col = "gray50", lty = 3)
+segments(x0 = i - 0.5, x1 = i + 0.5, y0 = u, y1 = u,
+         col = "gray50", lty = 3)
+```
+
+O gráfico/diagrama de caixas e bigodes (box and whiskers) representa os
+5 números de Tukey: mínimo, 1 quartil, mediana, 3 quartil e máximo.
+Alguns pontos são represetados além da extremidade do bigode porque
+ultrapassam a linha imaginária construída baseana na amplitude
+interquartílica (AIQ = 3 quartil - 1 quartil).  A opção `notch = TRUE`
+faz um entalhe para representar o intervalo de confiança para a mediana,
+baseados na distribuição normal assintótica da mediana. Visite
+`?boxplot.stats` para mais detalhes.
+
+# Composição de gráfico
+
+```{r}
+#-----------------------------------------------------------------------
+# Gráficos com o valor para a média e barra de erro para o
+# desvio-padrão.
+
+res <- aggregate(valor ~ cat,
+                 data = dus2,
+                 FUN = function(x) {
+                     c(m = mean(x), s = sd(x))
+                 })
+
+# Criando os limites superior e inferior.
+res <- transform(res,
+                 lwr = valor[, 1] - valor[, 2],
+                 upr = valor[, 1] + valor[, 2],
+                 catf = as.integer(cat))
+res
+
+# dev.off()
+
+# Com boxplot e pontos dispersos dos lados.
+xlim <- extendrange(x = 1:nlevels(dus2$cat), f = 0.1)
+ylim <- extendrange(x = c(res$lwr, res$upr, dus2$valor), f = 0.1)
+
+par(mar = c(5.1, 4.1, 4.1, 0))
+layout(matrix(c(1, 2), ncol = 2), widths = c(0.85, 0.15))
+with(dus2, {
+    plot.default(x = jitter(as.integer(cat), factor = 0.25) - 0.2,
+                 y = valor,
+                 xaxt = "n",
+                 ann = FALSE,
+                 col = "gray50",
+                 xlim = xlim,
+                 ylim = ylim)})
+grid()
+
+with(res, {
+    points(x = catf, y = valor[, "m"], pch = 19)
+    arrows(catf, lwr, catf, upr, code = 3, angle = 90, length = 0.05)
+    axis(side = 1, at = catf, labels = as.character(cat), cex.axis = 0.95)
+})
+
+title(xlab = "Categoria", ylab = "Valor (R$)")
+mtext(side = 3, line = 0,
+      text = expression("Barras de erro representam " * bar(x) %+-% 1 * s))
+
+boxplot(valor ~ cat,
+        at = 1:nlevels(dus2$cat) + 0.2,
+        col = "gray45",
+        data = dus2,
+        add = TRUE,
+        ann = FALSE,
+        axes = FALSE,
+        pars = list(boxwex = 0.1))
+
+par(mar = c(5.1, 0.1, 4.1, 1))
+yhist <- hist(dus2$valor, plot = FALSE, breaks = 20)
+with(yhist, {
+    plot(x = NULL,
+         y = NULL,
+         ann = FALSE,
+         axes = FALSE,
+         ylim = ylim,
+         xlim = c(0, max(density)))})
+rug(side = 2, dus2$valor)
+snc <- 1:length(yhist$mids)
+with(yhist, {
+    rect(0,
+         breaks[snc],
+         density[snc],
+         breaks[snc+1],
+         col = "gray70")})
+den <- density(dus2$valor)
+with(den, {
+    lines(x = y, y = x, col = "red", lwd = 2)
+})
+```
+
+<!-- Referencias -->
+[*Grammar of Graphics*]: http://byrneslab.net/classes/biol607/readings/wickham_layered-grammar.pdf
+[landscape de recursos para visualização]: https://www.stat.ubc.ca/~jenny/STAT545A/block90_baseLatticeGgplot2.html
+[Hadley Wickham]: http://hadley.nz/
+[Deepayan Sarkar]: https://www.isid.ac.in/~deepayan/
+[`gplots`]: https://cran.r-project.org/package=gplots
+[`plotrix`]: https://cran.r-project.org/package=plotrix
+[R Graph Gallery]: https://www.r-graph-gallery.com/
+[`lattice`]: http://lattice.r-forge.r-project.org/
+[`latticeExtra`]: http://latticeextra.r-forge.r-project.org/
+[`ggplot2`]: http://ggplot2.org/
+[`plotly`]: https://plot.ly/
+[`plotly-R`]: https://plot.ly/r/
