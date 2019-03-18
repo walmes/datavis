@@ -17,14 +17,75 @@ source("config/setup.R")
 
 # Motivação
 
+## Manipulação e visualização de dados
+
+  * Manipular e visualizar dados são tarefas **obrigatórias** em Data
+    Science (DS).
+  * O conhecimento sobre dados **determina o sucesso** das etapas
+    seguintes.
+  * Fazer isso de forma eficiente requer:
+    * Conhecer o processo e suas etapas.
+    * Dominar a tecnologia para isso.
+  * Existem inúmeros softwares voltados para isso.
+  * R se destaca em DS por ser *free & open source*, ter muitos recursos
+    e uma ampla comunidade.
+
+## O tempo gasto em DS
+
+```{r, include = FALSE}
+library(tidyverse)
+
+tm <- c(
+  "Coletar dados" = 19,
+  "Limpar e organizar dados" = 60,
+  "Minerar de dados" = 9,
+  "Contruir dados de treino" = 3,
+  "Refinar algorítmos" = 4,
+  "Outros" = 5) %>%
+    enframe(value = "time")
+te <- c(
+  "Coletar dados" = 21,
+  "Limpar e organizar dados" = 57,
+  "Minerar de dados" = 3,
+  "Contruir dados de treino" = 10,
+  "Refinar algorítmos" = 4,
+  "Outros" = 5) %>%
+    enframe(value = "enjoy")
+
+tme <- inner_join(tm, te) %>%
+    gather(key = "ativ", value = "value", -name) %>%
+    mutate(
+        ativ = fct_relevel(ativ, "time", "enjoy"),
+        ativ = fct_recode(factor(ativ),
+                          "Tempo gasto" = "time",
+                          "Menos divertido" = "enjoy"),
+        name = str_c(1:6, ". ", name))
+str(tme)
+
+gg <- ggplot(tme, aes(x = "", y = value, fill = name))+
+    facet_wrap(facets = ~ativ) +
+    geom_col(color = "black") +
+    coord_polar("y", start = pi/2,  direction = 1) +
+    geom_text(aes(label = paste0(value, "%")),
+              position = position_stack(vjust = 0.5)) +
+    ggtitle("O que os cientistas de dados mais gastam tempo\nfazendo e como gostam disso?") +
+    labs(fill = "Atividade") +
+    xlab(NULL) +
+    ylab(NULL)
+```
+```{r, echo = FALSE, out.width = "11cm", fig.cap = cap}
+cap <- "Tempo gasto e diversão em atividades. Fonte: \\href{https://www.forbes.com/sites/gilpress/2016/03/23/data-preparation-most-time-consuming-least-enjoyable-data-science-task-survey-says}{Gil Press, 2016}."
+gg
+```
+
 ## O ambiente R para manipulação de dados
 
   * O R é a lingua franca da Estatística.
   * Desde o princípio oferece recursos para manipulação de dados.
     * O `data.frame` é a estrutura base para dados tabulares.
-    * `base`, `utils`, `stats`, `reshape`, etc com recursos para ler,
-      transformar, modificar, filtrar, agregar, `data.frame`s.
-  * Porém, existem "algumas imperfeições":
+    * `base`, `utils`, `stats`, `reshape`, etc com recursos para
+      importar, transformar, modificar, filtrar, agregar, `data.frame`s.
+  * Porém, existem "algumas imperfeições" ou espaço para melhorias:
     * Coerções indesejadas de `data.frame`/matriz para vetor.
     * Ordem/nome irregular/inconsistente dos argumentos nas funções.
     * Dependência de pacotes apenas em cascata.
@@ -33,99 +94,162 @@ source("config/setup.R")
 
 ## O `tidyverse`
 
-  * Oferece uma reimplementação e extensão das funcionalidades para
+  * Oferece uma **reimplementação e extensão** das funcionalidades para
     manipulação e visualização.
-  * É uma coleção 8 de pacotes R que operam em harmonia.
+  * É uma coleção **8 de pacotes** R que operam em harmonia.
   * Eles foram planejados e construídos para trabalhar em conjunto.
   * Possuem gramática, organização, filosofia e estruturas de dados
     mais clara.
   * Maior facilidade de desenvolvimento de código e portabilidade.
-  * Pacotes: <https://www.tidyverse.org/packages/>.
-  * <https://rstudio-education.github.io/tidyverse-cookbook/program.html>.
   * Outros pacotes acoplam muito bem com o `tidyverse`.
+  * Pacotes: <https://www.tidyverse.org/packages/>.
+  * **R4DS**: <https://r4ds.had.co.nz/>.
+  * Cookbook: <https://rstudio-education.github.io/tidyverse-cookbook/program.html>.
 
-```{r, results = "hide", message = FALSE}
+## O que o `tidyverse` contém
+
+```{r, message = FALSE}
 library(tidyverse)
 ls("package:tidyverse")
 tidyverse_packages()
 ```
 
-## O `tidyverse`
+## Os pacotes do `tidyverse`
 
 ```{r, echo = FALSE, out.width = "10 cm", fig.cap = cap}
 cap <- "Pacotes que fazer parte do \\texttt{tidyverse}."
 knitr::include_graphics("img/tidyverse-packages.png")
 ```
 
+## Mas na realidade
+
+```{r, echo = FALSE, out.width = "10 cm", fig.cap = cap}
+cap <- "Em um universo pararelo."
+knitr::include_graphics("img/tidyverse-power-ranger.png")
+```
+
 ## A anatomia do `tidyverse`
-
-### `readr`
-
-  * <https://readr.tidyverse.org/>.
-  * Leitura de dados tabulares: csv, tsv, fwf.
-  * Recursos "inteligentes" que determinam tipo de variável.
-  * Ex: importar campos de datas como datas!
 
 ### `tibble`
 
-  * <https://tibble.tidyverse.org/>.
   * Uma reimplementação do `data.frame` com muitas melhorias.
+  * Método `print()` enxuto.
+  * O formato `triblle`.
+  * Documentação: <https://tibble.tidyverse.org/>.
+
+### `readr`
+
+  * Leitura de dados tabulares: csv, tsv, fwf.
+  * Recursos "inteligentes" que determinam tipo de variável.
+  * Ex: importar campos de datas como datas!
+  * Documentação: <https://readr.tidyverse.org/>.
 
 ## A anatomia do `tidyverse`
 
 ### `tidyr`
 
-  * <https://tidyr.tidyverse.org/>.
   * Suporte para criação de dados no formato `tidy` (tabular).
     * Cada variável está em uma coluna.
     * Cada observação (unidade amostral) é uma linha.
     * Cada valor é uma cédula.
+  * Documentação: <https://tidyr.tidyverse.org/>.
 
 ### `dplyr`
 
-  * <https://dplyr.tidyverse.org/>.
-  * Oferece uma gramática pra manipulação de dados.
+  * Oferece uma gramática extensa pra manipulação de dados.
   * Operações de *split-apply-combine*.
   * Na maior parte da manipulação é usado o `dplyr`.
+  * Documentação: <https://dplyr.tidyverse.org/>.
 
 ## A anatomia do `tidyverse`
 
 ### `ggplot2`
 
-  * <https://ggplot2.tidyverse.org/>.
-  * Criação de gráficos baseado no *grammar of graphics*.
-  * Claro mapeamento de variáveis em elementos visuais e contrução
-    baseada em camadas.
+  * Criação de gráficos baseado no *The Grammar of Graphics*
+    [@wilkinson2013grammar].
+  * Claro mapeamento das variáveis do BD em variáveis visuais e
+    construção baseada em camadas.
+  * Documentação: <https://ggplot2.tidyverse.org/>.
+  * [@wickham2016ggplot2] : `ggplot2` - Elegant Graphics for Data Analysis.
+  * [@teutonico2015ggplot2] : `ggplot2` Essentials.
 
 ### `forcats`
 
-  * <https://forcats.tidyverse.org/>.
   * Para manipulação de variáveis categóricas/fatores.
+    * Renomenar, reordenar, transformar, aglutinar.
+  * Documentação: <https://forcats.tidyverse.org/>.
 
 ## A anatomia do `tidyverse`
 
 ### `stringr`
 
-  * <https://stringr.tidyverse.org/>.
   * Recursos coesos construídos para manipulação de *strings*.
+  * Feito sobre o `stringi`.
+  * Documentação: <https://stringr.tidyverse.org/>.
 
 ### `purrr`
 
-  * <https://purrr.tidyverse.org/>.
-  * Recursos para programação funcional.
+  * Recursos para **programação funcional**.
+  * Funções que aplicam funções em lote varrendo objetos: vetores,
+    listas, etc.
+  * Documentação: <https://purrr.tidyverse.org/>.
 
 ## Harmonizam bem com o `tidyverse`
 
   * [`magrittr`](https://magrittr.tidyverse.org/):
     operadores *pipe* $\rightarrow$ `%>%`.
   * [`rvest`](https://rvest.tidyverse.org/): *web scraping*.
-  * [`httr`](https://cran.r-project.org/package=httr): requisições HTTP e afins.
-  * [`xml2`](https://cran.r-project.org/package=xml2): manipulação de XML.
-  * [`lubridate`](https://lubridate.tidyverse.org/) e [`hms`](https://hms.tidyverse.org/): manipulação de dados cronológicos.
+  * [`httr`](https://cran.r-project.org/package=httr): requisições HTTP
+    e afins.
+  * [`xml2`](https://cran.r-project.org/package=xml2): manipulação de
+    XML.
+  * [`lubridate`](https://lubridate.tidyverse.org/) e
+    [`hms`](https://hms.tidyverse.org/): manipulação de dados
+    cronológicos.
+
+# Estruturas de dados do `tibble`
+
+## Anatomia do `tibble`
+
+  * Aperfeiçoamento do `data.frame`.
+  * A classe `tibble` e `tribble`.
+  * Formas ágeis de criar `tibble`s.
+  * Formas ágeis de modificar objetos das classes.
+  * Método print mais enxuto e informativo.
+
+---
+
+```{r}
+# packageVersion("tibble")
+ls("package:tibble")
+```
+
+---
+
+```{r, echo = FALSE, out.width = "11 cm", fig.cap = cap}
+cap <- "Uso do \\texttt{tibble}."
+knitr::include_graphics("img/tibbles.png")
+```
 
 # Leitura de dados com `readr`
 
 ## Anatomia do `readr`
+
+  * Importação de dados no formato texto.
+    * Funções de importação: `read_*()`.
+    * Funções de escrita: `write_*()`.
+    * Funções de *parsing*: `parse_*`.
+  * Conseguem identificar campos de data.
+  * Muitas opções de controle de importação:
+    * Encoding.
+    * Separador de campo e decimal.
+    * Aspas, comentários, etc.
+  * Cartão de leitura com o `readr` e arrumação com o `tidyr`:
+    <https://rawgit.com/rstudio/cheatsheets/master/data-import.pdf>.
+  * Exemplos do curso de leitura de dados com o `readr`:
+    <http://leg.ufpr.br/~walmes/cursoR/data-vis/99-datasets.html>.
+
+---
 
 ```{r}
 # packageVersion("readr")
@@ -134,11 +258,13 @@ ls("package:readr") %>%
     sort()
 ```
 
-## Cartão de referência
+---
 
-  * Cartão de leitura com o `readr` e arrumação com o `tidyr`:
-  <https://rawgit.com/rstudio/cheatsheets/master/data-import.pdf>.
-  * Exemplos de leitura de dados com o `readr`: <http://leg.ufpr.br/~walmes/cursoR/data-vis/99-datasets.html>.
+\vspace{-1.5em}
+\begin{figure}
+\includegraphics[page=1, width=11cm]{img/data-import.pdf}
+\caption{Cartão de referência importação de dados com o \texttt{readr}.}
+\end{figure}
 
 ---
 
@@ -154,30 +280,31 @@ cap <- "Parsing de valores com \\texttt{readr}."
 knitr::include_graphics("img/readr-parse.png")
 ```
 
-# O `tibble`
-
-## Anatomia do `tibble`
-
-```{r}
-# packageVersion("tibble")
-ls("package:tibble")
-```
-
----
-
-```{r, echo = FALSE, out.width = "11 cm", fig.cap = cap}
-cap <- "Uso do \\texttt{tibble}."
-knitr::include_graphics("img/tibbles.png")
-```
-
 # Dados no formato `tidy` com `tidyr`
 
 ## Anatomia do `tidyr`
+
+  * Para fazer arrumação dos dados.
+  * Mudar a disposição dos dados: *long* $\rightleftharpoons$ *wide*.
+  * Partir uma variável em vários campos.
+  * Concatenar vários campos para criar uma variável.
+  * Remover ou imputar os valores ausentes: `NA`.
+  * Aninhar listas em tabelas: `tribble`.
+
+---
 
 ```{r}
 # packageVersion("tidyr")
 ls("package:tidyr")
 ```
+
+---
+
+\vspace{-1.5em}
+\begin{figure}
+\includegraphics[page=2, width=11cm]{img/data-import.pdf}
+\caption{Cartão de referência arrumação de dados com \texttt{tidyr}.}
+\end{figure}
 
 ---
 
@@ -222,10 +349,11 @@ knitr::include_graphics("img/tidyr-split.png")
   * Cartão de referência: <https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf>.
   * É sem dúvida **o pacote mais importante** do `tidyverse`.
 
-```{r, results = "hide"}
+---
+
+```{r}
 # library(dplyr)
-packageVersion("dplyr")
-ls("package:dplyr")
+ls("package:dplyr") %>% str_c(collapse = ", ") %>% strwrap()
 ```
 
 ---
@@ -257,10 +385,11 @@ ls("package:dplyr")
   * Tem funções para tratamento de exceções: falhas/erros, avisos.
   * Cartão de referência: <https://github.com/rstudio/cheatsheets/raw/master/purrr.pdf>.
 
+---
+
 ```{r}
 # library(purrr)
-ls("package:purrr") %>%
-    str_subset("^.?map.*")
+ls("package:purrr") %>% str_c(collapse = ", ") %>% strwrap()
 ```
 
 ---
@@ -286,8 +415,8 @@ ls("package:purrr") %>%
   * O `ggplot2` é o pacote gráfico mais adotado em ciência de dados.
   * Sua implementação é baseada no *The Gammar of Graphics*
     [@wilkinson2013grammar].
-  * Cartão de referência: <https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf>.
   * A gramática faz com que a construção dos gráficos seja por camadas.
+  * Cartão de referência: <https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf>.
   * Um tutorial de `ggplot2` apresentado no [R Day](http://rday.leg.ufpr.br/materiais.html):
     <http://rday.leg.ufpr.br/materiais/intro_ggplo2_tomas.pdf>.
 
@@ -307,14 +436,19 @@ ls("package:purrr") %>%
 \caption{Cartão de referência de gráficos com \texttt{ggplot2}.}
 \end{figure}
 
-## Anatomia do `ggplot2`
+---
 
-```{r, results = "hide"}
+```{r}
 u <- ls("package:ggplot2")
 u %>% str_subset("^geom_")
+u %>% str_subset("^theme_")
+```
+
+---
+
+```{r}
 u %>% str_subset("^stat_")
 u %>% str_subset("^(scale|coord)_")
-u %>% str_subset("^theme_")
 ```
 
 # Manipulação de strings com `stringr`
@@ -324,6 +458,8 @@ u %>% str_subset("^theme_")
   * O `stringr` é uma coleção de funções para operações com strings.
   * Ele foi construído sobre o `stringi`.
   * Cartão de referência: <https://github.com/rstudio/cheatsheets/raw/master/strings.pdf>.
+
+---
 
 ```{r}
 ls("package:stringr")
@@ -379,6 +515,13 @@ ls("package:forcats")
 
 ---
 
+```{r, message = FALSE}
+library(lubridate)
+ls("package:lubridate") %>% str_c(collapse = ", ") %>% strwrap()
+```
+
+---
+
 \vspace{-1.5em}
 \begin{figure}
 \includegraphics[page=1, width=11cm]{img/lubridate.pdf}
@@ -393,7 +536,7 @@ ls("package:forcats")
 \caption{Cartão de referência para manipulação de *date-time* com \texttt{lubridate} e \texttt{hms}.}
 \end{figure}
 
-# asd
+# Encadeando operações com o *pipe* do `magrittr`
 
 ## Anatomia do `magrittr`
 
@@ -465,9 +608,10 @@ devtools::install_github("hadley/tidyverse")
 tidyverse_update()
 ```
 
-## Conjuntos de dados para praticar
+## O que vem agora?
 
-Fazer o que está sendo pedido como exercício para cada conjunto de
-dados: <http://leg.ufpr.br/~walmes/cursoR/data-vis/99-datasets.html>.
+  * Uma visão aprofundada de cada pacote do `tidyverse`.
+  * Exemplos didáticos seguidos de desafios práticos.
+  * *Happy coding*.
 
 ## Referências
