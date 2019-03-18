@@ -28,6 +28,15 @@ navbar:
       - text: "Introdução ao `tidyverse`"
         href: slides/01-tidyverse.pdf
         icon: fa-file-pdf
+      - text: "A estrutura de dados `tibble`"
+        href: slides/02-tibble.pdf
+        icon: fa-file-pdf
+      - text: "Leitura de dados com `readr`"
+        href: slides/03-readr.pdf
+        icon: fa-file-pdf
+      - text: "Arrumação de dados com `tidyr`"
+        href: slides/04-tidyr.pdf
+        icon: fa-file-pdf
     - icon: fa-file-code
       text: "Tutoriais"
       menu:

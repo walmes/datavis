@@ -15,14 +15,23 @@ output:
 
 # Detalhes {.tabset}
 
+## V2.2: GemMelhor-UFV
+
+  * Organização: [GenMelhor UFV](https://www.genmelhor.com.br/).
+  * Público: Alunos de Pós Graduação.
+  * Instrutor: Prof. Walmes M. Zeviani.
+  * Local: Laboratório de Biometria - Departamento de Biologia Geral.
+  * Período: 18 a 21 de Março de 2019 das 10h às 12h e 14h às 17h.
+  * Carga horária: 20 horas.
+
 ## V2.0: DES-UFLA
 
   * Organização: [X Programa de Verão DES/UFLA](http://www.des.ufla.br/eventos/programa-de-verao-2019).
   * Público: Alunos do Programa de [Pós Graduação em Estatística e Experimentação Agropecuária](http://prpg.ufla.br/_ppg/estatistica/), UFLA.
   * Instrutor: Prof. Walmes M. Zeviani.
-  * Carga horária: 4 horas.
   * Local: DEX-13.
-  * Período: 12/Mar/2019 das 9h às 11h e 14h às 16h.
+  * Período: 12 de Março de 2019 das 9h às 11h e 14h às 16h.
+  * Carga horária: 4 horas.
 
 ## V1.0: GEN-UFLA
 
@@ -55,7 +64,16 @@ output:
      * [`ggplot2`](https://ggplot2.tidyverse.org/).
      * [`lattice`](http://lmdvr.r-forge.r-project.org/figures/figures.html).
      * [`latticeExtra`](http://latticeextra.r-forge.r-project.org/).
-  3. Folhas de referência (*cheatsheets*):
+  3. Materiais de cursos:
+     * [Introduction to the R tidyverse - Erik Barry Erhardt](https://statacumen.com/teach/ShortCourses/R_Programming/IntroTidyverse_ACASA_201802/Erhardt_RTidyverse_20180216.pdf).
+     * [An Introduction to Tidyverse - Joey Stanley](http://joeystanley.com/downloads/171110-tidyverse_handout.pdf).
+     * [A Two Hour Tour of the Tidyverse - Aimee Gott](https://www.londonr.org/wp-content/uploads/sites/2/presentations/LondonR_-_A_tour_of_the_Tidyverse_-_Aimee_Gott_-_20170515.pdf).
+     * [Dplyr Introduction - Matthew Flickinger](https://genome.sph.umich.edu/w/images/8/8a/Dplyr_tidyverse_md.pdf).
+     * [Getting Started in R: Tidyverse Edition - Saghir Bashir](http://ilustat.com/shared/Getting-Started-in-R.pdf).
+     * [Introduction à R et au tidyverse - Julien Barnier](https://www.ecofog.gf/IMG/pdf/introduction_au_tidyverse.pdf).
+     * [The tidyverse style guide - Hadley Wickham](https://style.tidyverse.org/_main.pdf).
+     * [Une introduction à Tidyverse - Christophe Ambroise](http://www.math-evry.cnrs.fr/_media/members/cambroise/teaching/r4ds-slides.pdf).
+  4. Folhas de referência (*cheatsheets*):
      * [R Reference Card](https://cran.r-project.org/doc/contrib/Short-refcard.pdf).
      * [Base R](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf).
      * [Advanced R](https://www.rstudio.com/wp-content/uploads/2016/02/advancedR.pdf).
@@ -63,6 +81,7 @@ output:
      * [Data transformation](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf).
      * [Data visualization](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf).
      * [R Markdown](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf).
+     * [Data Wranglingwith dplyr and tidyr](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf).
      * [`data.table`](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/datatable_Cheat_Sheet_R.pdf).
 
 # Referências bibliográficas
