@@ -48,12 +48,11 @@ names(tb) <- sprintf("V%d", 1:ncol(tb))
 #-----------------------------------------------------------------------
 # Para retornar o gráfico de setores.
 
-my_plot <- function(tb, txt) {
+my_pie <- function(tb, txt) {
+    txt <- str_c(strwrap(txt, width = 20), collapse = "\n")
     ggplot(tb_aux,
            aes(x = 0, y = n, fill = lev)) +
         geom_col(color = "black") +
-        # scale_fill_brewer(name = txt, palette = "Spectral") +
-        # scale_fill_brewer(name = txt, palette = "RdYlBu") +
         scale_fill_brewer(name = txt, palette = "PuOr") +
         xlab(NULL) +
         ylab(NULL) +
@@ -61,6 +60,29 @@ my_plot <- function(tb, txt) {
                   position = position_stack(vjust = 0.5)) +
         coord_polar(theta = "y") +
         theme_minimal()
+}
+
+my_bar <- function(tb, txt) {
+    ggplot(tb_aux,
+           aes(x = lev, y = n)) +
+        geom_col(color = "black") +
+        xlab(txt) +
+        ylab(NULL) +
+        geom_text(mapping = aes(label = label),
+                  vjust = -0.2)
+}
+
+my_dot <- function(tb, txt) {
+    tb_large <- tb_aux[rep(1:nrow(tb_aux), times = tb_aux$n), ]
+    ggplot(tb_large,
+           aes(x = lev)) +
+        geom_dotplot(color = "black") +
+        xlab(txt) +
+        ylab(NULL) +
+        geom_text(data = tb_aux,
+                  mapping = aes(x = lev, y = 0, label = label),
+                  vjust = -0.1, hjust = 0, nudge_x = 0.1) +
+        scale_y_continuous(NULL, breaks = NULL)
 }
 
 # 1. -------------------------------------------------------------------
@@ -79,13 +101,15 @@ tb_aux <- x %>%
                     "\\1") %>%
     factor() %>%
     fct_other(keep = u,
-              other_level = "OUTRO") %>%
+              other_level = "Desconhecido") %>%
     # fct_infreq() %>%
     fct_count() %>%
     rename(lev = "f") %>%
-    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)))
+    mutate(label = sprintf("%d (%0.1f%%)", n, 100 * n/sum(n)))
 
-my_plot(tb_aux, "Nível")
+my_pie(tb_aux, "Nível")
+# my_bar(tb_aux, "Nível")
+# my_dot(tb_aux, "Nível")
 
 u <- c("GENETICA", "ESTATISTICA", "PRODUCAO VEGETAL","FITOPATOLOGIA")
 tb_aux <- x %>%
@@ -94,13 +118,14 @@ tb_aux <- x %>%
                     "\\1") %>%
     factor() %>%
     fct_other(keep = u,
-              other_level = "OUTRO") %>%
+              other_level = "Outro") %>%
     fct_infreq() %>%
     fct_count() %>%
     rename(lev = "f") %>%
-    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)))
+    mutate(label = sprintf("%d (%0.1f%%)", n, 100 * n/sum(n)))
 
-my_plot(tb_aux, "Programa")
+# my_pie(tb_aux, "Programa")
+my_bar(tb_aux, "Programa de Pós Graduação")
 
 # 2. -------------------------------------------------------------------
 
@@ -110,105 +135,123 @@ ggplot(tb, aes(x = V2)) +
     geom_rug() +
     xlab(nms[2])
 
-tb_aux <- tb %>%
-    mutate(lev = cut(V2,
-                     breaks = c(0, 1, 2, 5, Inf),
-                     right = TRUE,
-                     include.lowest = TRUE)) %>%
-    count(lev) %>%
-    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)))
+# tb_aux <- tb %>%
+#     mutate(lev = cut(V2,
+#                      breaks = c(0, 1, 2, 5, Inf),
+#                      right = TRUE,
+#                      include.lowest = TRUE)) %>%
+#     count(lev) %>%
+#     mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)))
+# my_pie(tb_aux, nms[2])
+# my_bar(tb_aux, nms[2])
 
-my_plot(tb_aux, nms[2])
+bks <- seq(0, max(tb$V2), by = 1)
+ggplot(tb, aes(x = V2)) +
+    geom_histogram(breaks = bks,
+                   col = "black",
+                   fill = "purple") +
+    geom_rug() +
+    stat_bin(breaks = bks,
+             geom = "text",
+             aes(label = ..count..),
+             vjust = -0.5) +
+    xlab(nms[2])
 
 # 3. -------------------------------------------------------------------
 
 i <- 3
 nms[i]
 lvl <- sort(unique(tb[[i]]))[c(4, 2, 1, 3)]
-txt <- str_c(strwrap(nms[i], width = 20), collapse = "\n")
+txt <- nms[i]
 tb_aux <- tb %>%
     count(lev = tb[[i]]) %>%
-    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)),
+    mutate(label = sprintf("%d (%0.1f%%)", n, 100 * n/sum(n)),
            lev = fct_relevel(lev, lvl))
 
-my_plot(tb_aux, txt)
+# my_pie(tb_aux, txt)
+my_dot(tb_aux, txt)
 
 # 4. -------------------------------------------------------------------
 
 i <- 4
 nms[i]
 lvl <- sort(unique(tb[[i]]))[c(3, 1, 4, 2)]
-txt <- str_c(strwrap(nms[i], width = 20), collapse = "\n")
+txt <- nms[i]
 tb_aux <- tb %>%
     count(lev = tb[[i]]) %>%
-    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)),
+    mutate(label = sprintf("%d (%0.1f%%)", n, 100 * n/sum(n)),
            lev = fct_relevel(lev, lvl))
 
-my_plot(tb_aux, txt)
+# my_pie(tb_aux, txt)
+my_bar(tb_aux, txt)
 
 # 5. -------------------------------------------------------------------
 
 i <- 5
 nms[i]
 lvl <- sort(unique(tb[[i]]))[c(1, 2, 3)]
-txt <- str_c(strwrap(nms[i], width = 20), collapse = "\n")
+txt <- nms[i]
 tb_aux <- tb %>%
     count(lev = tb[[i]]) %>%
-    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)),
+    mutate(label = sprintf("%d (%0.1f%%)", n, 100 * n/sum(n)),
            lev = fct_relevel(lev, lvl))
 
-my_plot(tb_aux, txt)
+my_pie(tb_aux, txt)
+# my_bar(tb_aux, txt)
 
 # 6. -------------------------------------------------------------------
 
 i <- 6
 nms[i]
 lvl <- sort(unique(tb[[i]]))[c(1, 2, 3)]
-txt <- str_c(strwrap(nms[i], width = 20), collapse = "\n")
+txt <- nms[i]
 tb_aux <- tb %>%
     count(lev = tb[[i]]) %>%
-    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)),
+    mutate(label = sprintf("%d (%0.1f%%)", n, 100 * n/sum(n)),
            lev = fct_relevel(lev, lvl))
 
-my_plot(tb_aux, txt)
+# my_pie(tb_aux, txt)
+my_bar(tb_aux, txt)
 
 # 7. -------------------------------------------------------------------
+
 i <- 7
 nms[i]
 lvl <- as.character(sort(unique(tb[[i]])))
-txt <- str_c(strwrap(nms[i], width = 20), collapse = "\n")
+txt <- nms[i]
 tb_aux <- tb %>%
     count(lev = tb[[i]]) %>%
-    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)),
+    mutate(label = sprintf("%d (%0.1f%%)", n, 100 * n/sum(n)),
            lev = fct_relevel(factor(lev), lvl))
 
-my_plot(tb_aux, txt)
+# my_pie(tb_aux, txt)
+my_bar(tb_aux, txt)
 
 # 8. -------------------------------------------------------------------
 
 i <- 8
 nms[i]
 lvl <- sort(unique(tb[[i]]))[c(1, 3, 2)]
-txt <- str_c(strwrap(nms[i], width = 20), collapse = "\n")
+txt <- nms[i]
 tb_aux <- tb %>%
     count(lev = tb[[i]]) %>%
-    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)),
+    mutate(label = sprintf("%d (%0.1f%%)", n, 100 * n/sum(n)),
            lev = fct_relevel(lev, lvl))
 
-my_plot(tb_aux, txt)
+my_pie(tb_aux, txt)
 
 # 9. -------------------------------------------------------------------
 
 i <- 9
 nms[i]
 lvl <- sort(unique(tb[[i]]))[c(2, 1)]
-txt <- str_c(strwrap(nms[i], width = 20), collapse = "\n")
+txt <- nms[i]
 tb_aux <- tb %>%
     count(lev = tb[[i]]) %>%
-    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)),
+    mutate(label = sprintf("%d (%0.1f%%)", n, 100 * n/sum(n)),
            lev = fct_relevel(lev, lvl))
 
-my_plot(tb_aux, txt)
+my_pie(tb_aux, txt)
 
 # 10. ------------------------------------------------------------------
 
@@ -232,7 +275,7 @@ tb_aux <- tb[[10]] %>%
 ggplot(tb_aux,
        aes(x = lev, y = n)) +
     geom_col(color = "black", fill = "purple") +
-    xlab(NULL) +
+    xlab("Cursos a serem realizados") +
     ylab(NULL) +
     geom_text(mapping = aes(label = label),
               vjust = 0,
