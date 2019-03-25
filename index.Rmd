@@ -13,6 +13,16 @@ output:
       after_body: config/site-footer.html
 ---
 
+<!--
+<div class="alert alert-info" role="alert">
+<center>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdKiXXUlP9n4MKUczhrx6RjVZa7eYebN4ST3V99hzAHTtceOA/viewform?usp=sf_link">
+Formulário de Avaliação do Curso
+</a>
+</center>
+</div>
+-->
+
 # Detalhes {.tabset}
 
 ## V2.2: GemMelhor-UFV
@@ -38,7 +48,7 @@ output:
   * Organização: [Núcleo de Estudos em Genética e Melhoramento de Plantas](http://www.nucleoestudo.ufla.br/gen/)
   * Público: Alunos do Programa de [Pós Graduação em Genética e Melhoramento de Plantas](http://prpg.ufla.br/_ppg/genetica/), UFLA.
   * Instrutor: Prof. Walmes M. Zeviani.
-  * Carga horária: 16 horas.
+  * Carga horária: 15 horas.
 
   | Local       | Terça 07/08/2018 | Quarta 08/08 | Quinta 09/08 |
   |:-----------:|:----------------:|:------------:|:------------:|
@@ -55,34 +65,42 @@ output:
 # Materiais úteis
 
   1. Livros online:
-     * [R for Data Science](http://r4ds.had.co.nz/).
-     * [Advanced R](https://adv-r.hadley.nz/).
-     * [Efficient R Programming](https://csgillespie.github.io/efficientR/).
-     * [Hands-On Programming with R](https://d1b10bmlvqabco.cloudfront.net/attach/ighbo26t3ua52t/igp9099yy4v10/igz7vp4w5su9/OReilly_HandsOn_Programming_with_R_2014.pdf).
+     1. [R for Data Science](http://r4ds.had.co.nz/).
+     2. [Advanced R](https://adv-r.hadley.nz/).
+     3. [Efficient R Programming](https://csgillespie.github.io/efficientR/).
+     4. [Hands-On Programming with R](https://d1b10bmlvqabco.cloudfront.net/attach/ighbo26t3ua52t/igp9099yy4v10/igz7vp4w5su9/OReilly_HandsOn_Programming_with_R_2014.pdf).
   2. Homepages:
-     * [`tidyverse`](https://www.tidyverse.org/).
-     * [`ggplot2`](https://ggplot2.tidyverse.org/).
-     * [`lattice`](http://lmdvr.r-forge.r-project.org/figures/figures.html).
-     * [`latticeExtra`](http://latticeextra.r-forge.r-project.org/).
+     1. [`tidyverse`](https://www.tidyverse.org/).
+     2. [`ggplot2`](https://ggplot2.tidyverse.org/).
+     3. [`lattice`](http://lmdvr.r-forge.r-project.org/figures/figures.html).
+     4. [`latticeExtra`](http://latticeextra.r-forge.r-project.org/).
   3. Materiais de cursos:
-     * [Introduction to the R tidyverse - Erik Barry Erhardt](https://statacumen.com/teach/ShortCourses/R_Programming/IntroTidyverse_ACASA_201802/Erhardt_RTidyverse_20180216.pdf).
-     * [An Introduction to Tidyverse - Joey Stanley](http://joeystanley.com/downloads/171110-tidyverse_handout.pdf).
-     * [A Two Hour Tour of the Tidyverse - Aimee Gott](https://www.londonr.org/wp-content/uploads/sites/2/presentations/LondonR_-_A_tour_of_the_Tidyverse_-_Aimee_Gott_-_20170515.pdf).
-     * [Dplyr Introduction - Matthew Flickinger](https://genome.sph.umich.edu/w/images/8/8a/Dplyr_tidyverse_md.pdf).
-     * [Getting Started in R: Tidyverse Edition - Saghir Bashir](http://ilustat.com/shared/Getting-Started-in-R.pdf).
-     * [Introduction à R et au tidyverse - Julien Barnier](https://www.ecofog.gf/IMG/pdf/introduction_au_tidyverse.pdf).
-     * [The tidyverse style guide - Hadley Wickham](https://style.tidyverse.org/_main.pdf).
-     * [Une introduction à Tidyverse - Christophe Ambroise](http://www.math-evry.cnrs.fr/_media/members/cambroise/teaching/r4ds-slides.pdf).
+     1. [Introduction to the R tidyverse - Erik Barry Erhardt](https://statacumen.com/teach/ShortCourses/R_Programming/IntroTidyverse_ACASA_201802/Erhardt_RTidyverse_20180216.pdf).
+     2. [An Introduction to Tidyverse - Joey Stanley](http://joeystanley.com/downloads/171110-tidyverse_handout.pdf).
+     3. [A Two Hour Tour of the Tidyverse - Aimee Gott](https://www.londonr.org/wp-content/uploads/sites/2/presentations/LondonR_-_A_tour_of_the_Tidyverse_-_Aimee_Gott_-_20170515.pdf).
+     4. [Dplyr Introduction - Matthew Flickinger](https://genome.sph.umich.edu/w/images/8/8a/Dplyr_tidyverse_md.pdf).
+     5. [Getting Started in R: Tidyverse Edition - Saghir Bashir](http://ilustat.com/shared/Getting-Started-in-R.pdf).
+     6. [Introduction à R et au tidyverse - Julien Barnier](https://www.ecofog.gf/IMG/pdf/introduction_au_tidyverse.pdf).
+     7. [The tidyverse style guide - Hadley Wickham](https://style.tidyverse.org/_main.pdf).
+     8. [Une introduction à Tidyverse - Christophe Ambroise](http://www.math-evry.cnrs.fr/_media/members/cambroise/teaching/r4ds-slides.pdf).
+     9. [Hadley Wickham - ggplot: Elegant graphics for data analysis](http://moderngraphics11.pbworks.com/f/ggplot2-Book09hWickham.pdf).
+     10. [Data Visualization Using R & ggplot - Karthik Ram](https://combine-australia.github.io/r-novice-gapminder/ggplot.pdf).
+     11. [A ggplot2 Primer](https://www.data-action-lab.com/wp-content/uploads/2018/11/DSRS_GGP2.pdf).
+     12. [ggplot2: Introduction and exercises - Umer Zeeshan Ijaz](http://userweb.eng.gla.ac.uk/umer.ijaz/bioinformatics/ecological/ggplot2.pdf).
+     13. [Getting started with ggplot2 - Gaston Sanchez](https://github.com/ucb-stat133/stat133-fall-2016/blob/master/notes/09-ggplot2/09-ggplot2.pdf).
+     14. [Concepts in Computing with Data - Gaston Sanchez](http://www.gastonsanchez.com/stat133/lectures/).
+     15. [STAT 408](http://www.math.montana.edu/ahoegh/teaching/stat408/lecturematerials/).
+     16. [Charts with ggplot2 -Andrew Ba Tran](https://journalismcourses.org/courses/RC0818/charts_with_ggplot.pdf).
   4. Folhas de referência (*cheatsheets*):
-     * [R Reference Card](https://cran.r-project.org/doc/contrib/Short-refcard.pdf).
-     * [Base R](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf).
-     * [Advanced R](https://www.rstudio.com/wp-content/uploads/2016/02/advancedR.pdf).
-     * [Data import](https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf).
-     * [Data transformation](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf).
-     * [Data visualization](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf).
-     * [R Markdown](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf).
-     * [Data Wranglingwith dplyr and tidyr](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf).
-     * [`data.table`](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/datatable_Cheat_Sheet_R.pdf).
+     1. [R Reference Card](https://cran.r-project.org/doc/contrib/Short-refcard.pdf).
+     2. [Base R](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf).
+     3. [Advanced R](https://www.rstudio.com/wp-content/uploads/2016/02/advancedR.pdf).
+     4. [Data import](https://github.com/rstudio/cheatsheets/raw/master/data-import.pdf).
+     5. [Data transformation](https://github.com/rstudio/cheatsheets/raw/master/data-transformation.pdf).
+     6. [Data visualization](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf).
+     7. [R Markdown](https://github.com/rstudio/cheatsheets/raw/master/rmarkdown-2.0.pdf).
+     8. [Data Wranglingwith dplyr and tidyr](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf).
+     9. [`data.table`](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/datatable_Cheat_Sheet_R.pdf).
 
 # Referências bibliográficas
 
