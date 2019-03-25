@@ -94,8 +94,8 @@ slides/*.html
 *.html
 tutorials/*.html
 
-!slides/config/template.tex
-!slides/config/template-chunk.tex
+!slides/config/preamble.tex
+!slides/config/preamble-chunk.tex
 !config/font-awesome.html
 !config/MathJax.html
 !config/site-footer.html

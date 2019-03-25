@@ -1,0 +1,217 @@
+%-----------------------------------------------------------------------
+
+\usepackage[math]{iwona}
+
+\usepackage[T1]{fontenc}
+\usepackage{csquotes}
+
+% Font for code. ----------------------------
+\usepackage[scaled=0.8]{beramono}
+
+%-----------------------------------------------------------------------
+
+% \usepackage{lmodern}
+\usepackage{amssymb, amsmath}
+\setcounter{MaxMatrixCols}{20} % bmatrix, max number of columns.
+
+% \usepackage{ifxetex, ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\usepackage[utf8]{inputenc}
+\usepackage[shorthands=off,main=brazil]{babel}
+\usepackage{graphicx}
+
+\usepackage{pdfpages}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{xspace}
+\usepackage{tabularx}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+
+% %-----------------------------------------------------------------------
+% % Bibliography.
+%
+% \usepackage[style=authoryear]{biblatex}
+% % Use:
+% %   \cite{<ref>}
+% %   \parencite{<ref>}
+% %   \fullcite{<ref>}
+% %   \footfullcite{<ref>}
+% % ATTENTION: Compilation = pdflatex > biber > pdflatex > pdflatex.
+% % Call refs.bib at preamble with: \addbibresource{refs.bib}
+% %
+%-----------------------------------------------------------------------
+
+\usepackage[hang]{caption}
+\captionsetup{font=footnotesize,
+  labelfont=footnotesize,
+  labelsep=period}
+\usepackage{subfig}
+
+\makeatletter
+\let\@@magyar@captionfix\relax
+\makeatother
+
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%-----------------------------------------------------------------------
+
+\usepackage{tikz}
+
+\usebackgroundtemplate{
+  \tikz[overlay, remember picture]
+  \node[% opacity=0.3,
+        at=(current page.south east),
+        anchor=south east,
+        inner sep=0pt] {
+          \includegraphics[height=\paperheight, width=\paperwidth]{config/ufpr-imprensa-blur-4x3.jpg}};
+}
+
+%-----------------------------------------------------------------------
+% Definições de esquema de cores.
+
+% Ubuntu.
+% http://www.color-hex.com/color-palette/2018
+\definecolor{mycolor1}{HTML}{5E2750} % Título.
+\definecolor{mycolor2}{HTML}{333333} % Texto.
+\definecolor{mycolor3}{HTML}{DD4814} % Estrutura.
+\definecolor{mycolor4}{HTML}{DD4814} % Links.
+\definecolor{mycolor5}{HTML}{AEA79F} % Preenchimentos.
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=mycolor4,
+  urlcolor=mycolor1,
+  citecolor=mycolor1
+}
+
+%-----------------------------------------------------------------------
+% ATTENTION: http://www.cpt.univ-mrs.fr/~masson/latex/Beamer-appearance-cheat-sheet.pdf
+
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamertemplate{caption}[numbered]{}
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+\setbeamertemplate{sections/subsections in toc}[ball]{}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{frametitle continuation}{\gdef\beamer@frametitle{}\vspace*{1ex}}
+
+\setbeamertemplate{enumerate items}[default]
+\setbeamertemplate{itemize items}{\scriptsize\raise1.25pt\hbox{\donotcoloroutermaths$\blacktriangleright$}}
+
+% Rodapé.
+\setbeamercolor{title in head/foot}{parent=subsection in head/foot}
+\setbeamercolor{author in head/foot}{bg=mycolor4, fg=white}
+\setbeamercolor{date in head/foot}{parent=subsection in head/foot, fg=mycolor3}
+
+% Cabeçalho.
+\setbeamercolor{section in head/foot}{bg=mycolor2, fg=mycolor4}
+\setbeamercolor{subsection in head/foot}{bg=mycolor2, fg=white}
+
+\setbeamercolor{title}{fg=mycolor1}       % Título dos slides.
+% \setbeamercolor{titlelike}{fg=title}
+\setbeamercolor{subtitle}{fg=mycolor3}    % Subtítulo.
+% \setbeamercolor{author}{}
+\setbeamercolor{institute}{fg=mycolor2}   % Instituição.
+\setbeamercolor{frametitle}{fg=mycolor1}  % De quadro.
+\setbeamercolor{structure}{fg=mycolor3}   % Listas e rodapé.
+\setbeamercolor{item projected}{bg=mycolor2}
+
+% Blocos.
+% \setbeamertemplate{blocks}[rounded]
+% \setbeamercolor{block title}{bg=mycolor5!75!white, fg=mycolor3}
+% \setbeamercolor{block body}{bg=mycolor5!25!white, fg=mycolor2}
+
+\setbeamercolor{normal text}{fg=mycolor2} % Texto.
+\setbeamercolor{caption name}{fg=normal text.fg}
+
+% To remove empty brackets of \institution.
+\makeatletter
+\setbeamertemplate{footline}{
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[
+      wd=0.3\paperwidth, ht=2.25ex, dp=1ex, right]{author in head/foot}%
+      \usebeamerfont{author in head/foot}\insertshortauthor{}\hspace*{1ex}
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[
+      wd=0.6\paperwidth, ht=2.25ex, dp=1ex, left]{title in head/foot}%
+      \usebeamerfont{title in head/foot}\hspace*{1ex}\bfseries\insertshorttitle{}
+      % \usebeamerfont{title in head/foot}\hspace*{1ex}\insertframetitle{}
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[
+      wd=0.1\paperwidth, ht=2.25ex, dp=1ex, right]{date in head/foot}%
+      \bfseries\insertframenumber{}\hspace*{2ex}
+    \end{beamercolorbox}
+  }%
+  \vskip0pt%
+}
+\makeatother
+
+% %-----------------------------------------------------------------------
+%
+% \newcommand{\mytwocolumns}[4]{
+%   % #1: Line width fraction for the left column , e.g. 0.5.
+%   % #2: Line width fraction for the right column.
+%   % #3: Content for the left column.
+%   % #4: Content for the right column.
+%   \begin{columns}[t]
+%     \begin{column}{#1\linewidth} %----------- left.
+%       #3
+%     \end{column} %--------------------------- left.
+%     \begin{column}{#2\linewidth} %----------- right.
+%       #4
+%     \end{column} %--------------------------- right.
+%   \end{columns}
+% }
+%
+% \newcommand{\myquote}[3]{
+%   \begin{center}
+%     \begin{minipage}[c]{0.19\linewidth}
+%       \begin{center}
+%         \includegraphics[height=2.7cm]{#1}
+%       \end{center}
+%     \end{minipage}
+%     \begin{minipage}[c]{0.7\linewidth}
+%       \begin{flushright}
+%         \textit{#2}
+%         \vspace{1ex}
+%
+%         -- #3
+%       \end{flushright}
+%     \end{minipage}
+%   \end{center}
+% }
+%
+% \newcommand{\hi}[1]{%
+%   \textcolor{mycolor4}{#1}\xspace
+% }
+%
+% \newcommand{\myurl}[1]{%
+%   \tiny{\url{#1}}\xspace
+% }
+%
+% \newcommand{\btn}[1]{%
+%   \beamergotobutton{#1}
+% }
+%
+% %-----------------------------------------------------------------------
+
+\author[Walmes Zeviani $\cdot$ UFPR]{%
+      \href{http://leg.ufpr.br/~walmes}{Prof.~Walmes Zeviani} \\
+      \href{mailto:walmes@ufpr.br}{\small\tt walmes@ufpr.br}
+}
+
+\institute[DEST/UFPR]{
+  {Laboratório de Estatística e Geoinformação}\\
+  {Departamento de Estatística}\\
+  {Universidade Federal do Paraná}}
+
+%-----------------------------------------------------------------------
