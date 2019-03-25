@@ -25,6 +25,9 @@ navbar:
     - icon: fa-television
       text: "Slides"
       menu:
+      - text: "Visualização de dados"
+        href: http://leg.ufpr.br/~walmes/talks/visualizacao-dados.pdf
+        icon: fa-file-pdf
       - text: "Introdução ao `tidyverse`"
         href: slides/01-tidyverse.pdf
         icon: fa-file-pdf
@@ -37,34 +40,30 @@ navbar:
       - text: "Arrumação de dados com `tidyr`"
         href: slides/04-tidyr.pdf
         icon: fa-file-pdf
+      - text: "Manipulação de dados com o `dplyr`"
+        href: slides/05-dplyr.pdf
+        icon: fa-file-pdf
+      - text: "Programação funcional com `purrr`"
+        href: slides/07-purrr.pdf
+        icon: fa-file-pdf
     - icon: fa-file-code
       text: "Tutoriais"
       menu:
-      - text: "Introdução ao graphics"
+      - text: "Introdução ao `graphics`"
         href: 01-vis-graphics.html
         icon: fa-file
-      - text: "Introdução ao lattice"
+      - text: "Introdução ao `lattice`"
         href: 02-vis-lattice.html
         icon: fa-file
-      - text: "Introdução ao ggplot2"
+      - text: "Introdução ao `ggplot2`"
         href: 03-vis-ggplot2.html
+        icon: fa-file
+      - text: "Gráficos reativos para WEB"
+        href: http://leg.ufpr.br/~walmes/ensino/pesq-reprod/slides/14-graph-react.html
         icon: fa-file
     - icon: fa-terminal
       text: "Scripts"
-      menu:
-#    - text: "Scripts"
-#      icon: fa-file-text
-#      href: scripts/
-      - text: "em breve"
-      # fa-code, fa-scroll, fa-file-code, fa-terminal.
-      # - text: "Introdução ao R"
-      #   href: 00-intro-R.html
-      # - text: "Visualização com o `graphics`"
-      #   href: 01-vis-graphics.html
-      # - text: "Visualização com o `lattice`"
-      #   href: 02-vis-lattice.html
-      # - text: "Visualização com o `ggplot2`"
-      #   href: 03-vis-ggplot2.html
+      href: ./scripts
     - text: "Datasets"
       icon: fa-table
       href: 99-datasets.html
@@ -72,4 +71,4 @@ navbar:
     - icon: fa-user
       href: http://leg.ufpr.br/~walmes
     - icon: fa-git-square fa-lg
-      href: https://github.com/walmes/data-vis
+      href: https://github.com/walmes/datavis
