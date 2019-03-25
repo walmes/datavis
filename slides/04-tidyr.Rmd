@@ -198,10 +198,29 @@ expand(tb, blc, trt)
      3. Desempilhar nas datas.
   2. Óleos essenciais.
      1. Ler o dados em <http://leg.ufpr.br/~walmes/data/oleos.txt>.
-     2. Empilhar nas avaliações, o 5 campos começados com `a`.
-     3. Desempilhar na `forma` de aplicação
+     2. Criar uma variável indicadora do registro: `1:nrow(tb)`.
+     3. Empilhar nas avaliações, i.e, os 5 campos começados com `a`.
+     4. Desempilhar na variável `forma` de aplicação.
   3. Futebol.
      1. Ler os dados em <http://leg.ufpr.br/~walmes/data/euro_football_players.txt>.
      2. Substituir os missings em `goal`, `red` e `yel` por 0.
+
+---
+
+  4. Avaliação de veículos.
+     1. Ler os dados em
+        <http://leg.ufpr.br/~walmes/data/aval_carros_nota.txt>.
+     2. Desempilhar na variável `item` os valores de `nota`.
+  5. Carros à venda.
+     1. Ler os dados em
+        <http://leg.ufpr.br/~walmes/data/duster_venda_260314.txt>.
+     2. Separar os campos ano e modelo na variável `ano`. Ex:
+        `2012/2013`.
+     3. Substituir o `NA` em `km` percorrido pela média de km
+        percorrido: `mean(..., na.rm = TRUE)`.
+  6. Condição domíliar dos municípios.
+     1. Ler os dados em
+        <http://leg.ufpr.br/~walmes/data/ipea_habitacao.csv>.
+     2. Contatenar o nome do município com o nome do estado.
 
 <!-- ## Referências -->

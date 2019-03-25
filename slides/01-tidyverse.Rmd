@@ -39,7 +39,7 @@ tm <- c(
   "Coletar dados" = 19,
   "Limpar e organizar dados" = 60,
   "Minerar de dados" = 9,
-  "Contruir dados de treino" = 3,
+  "Construir dados de treino" = 3,
   "Refinar algorítmos" = 4,
   "Outros" = 5) %>%
     enframe(value = "time")
@@ -47,7 +47,7 @@ te <- c(
   "Coletar dados" = 21,
   "Limpar e organizar dados" = 57,
   "Minerar de dados" = 3,
-  "Contruir dados de treino" = 10,
+  "Construir dados de treino" = 10,
   "Refinar algorítmos" = 4,
   "Outros" = 5) %>%
     enframe(value = "enjoy")
@@ -134,7 +134,6 @@ knitr::include_graphics("img/tidyverse-power-ranger.png")
 
   * Uma reimplementação do `data.frame` com muitas melhorias.
   * Método `print()` enxuto.
-  * O formato `triblle`.
   * Documentação: <https://tibble.tidyverse.org/>.
 
 ### `readr`
@@ -170,8 +169,8 @@ knitr::include_graphics("img/tidyverse-power-ranger.png")
   * Claro mapeamento das variáveis do BD em variáveis visuais e
     construção baseada em camadas.
   * Documentação: <https://ggplot2.tidyverse.org/>.
-  * [@wickham2016ggplot2] : `ggplot2` - Elegant Graphics for Data Analysis.
-  * [@teutonico2015ggplot2] : `ggplot2` Essentials.
+  * @wickham2016ggplot2: `ggplot2` - Elegant Graphics for Data Analysis.
+  * @teutonico2015ggplot2: `ggplot2` Essentials.
 
 ### `forcats`
 
@@ -212,7 +211,7 @@ knitr::include_graphics("img/tidyverse-power-ranger.png")
 ## Anatomia do `tibble`
 
   * Aperfeiçoamento do `data.frame`.
-  * A classe `tibble` e `tribble`.
+  * A classe `tibble`.
   * Formas ágeis de criar `tibble`s.
   * Formas ágeis de modificar objetos das classes.
   * Método print mais enxuto e informativo.
