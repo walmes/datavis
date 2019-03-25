@@ -61,6 +61,9 @@ navbar:
       - text: "Gráficos reativos para WEB"
         href: http://leg.ufpr.br/~walmes/ensino/pesq-reprod/slides/14-graph-react.html
         icon: fa-file
+      - text: "Avaliação do curso - UFV"
+        href: 98-aval-ufv.html
+        icon: fa-chart-pie
     - icon: fa-terminal
       text: "Scripts"
       href: ./scripts

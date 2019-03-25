@@ -1,0 +1,264 @@
+---
+title: "Resultados da avaliação do Curso na UFV"
+author: Prof. Walmes M. Zeviani
+date: '`r Sys.Date()`'
+---
+
+```{r, include = FALSE}
+source("./config/setup.R")
+opts_chunk$set(
+    cache = FALSE,
+    message = FALSE,
+    warning = FALSE)
+```
+
+```{r}
+#-----------------------------------------------------------------------
+
+rm(list = objects())
+
+library(tidyverse)
+library(RColorBrewer)
+
+# display.brewer.all()
+
+# Importação do questionário.
+tb <- read_csv("./data/Avaliacao-do-Curso- GenMelhor-UFV.csv")
+
+#-----------------------------------------------------------------------
+# Questões aplicadas.
+
+ques <- names(tb) %>%
+    tail(n = -1) %>%
+    str_c(1:length(.), ., sep = ". ") %>%
+    map(strwrap, width = 50, simplify = TRUE)
+
+# Questões do questionário.
+for (i in ques) {
+    cat(i, sep = "\n")
+    cat("\n")
+}
+
+# Elimina a coluna de estampa de tempo.
+tb[[1]] <- NULL
+
+nms <- names(tb)
+names(tb) <- sprintf("V%d", 1:ncol(tb))
+
+#-----------------------------------------------------------------------
+# Para retornar o gráfico de setores.
+
+my_plot <- function(tb, txt) {
+    ggplot(tb_aux,
+           aes(x = 0, y = n, fill = lev)) +
+        geom_col(color = "black") +
+        # scale_fill_brewer(name = txt, palette = "Spectral") +
+        # scale_fill_brewer(name = txt, palette = "RdYlBu") +
+        scale_fill_brewer(name = txt, palette = "PuOr") +
+        xlab(NULL) +
+        ylab(NULL) +
+        geom_text(mapping = aes(x = 0.2, label = label),
+                  position = position_stack(vjust = 0.5)) +
+        coord_polar(theta = "y") +
+        theme_minimal()
+}
+
+# 1. -------------------------------------------------------------------
+
+nms[1]
+x <- tb[[1]] %>%
+    str_to_upper() %>%
+    iconv(to = "ASCII//TRANSLIT") %>%
+    sort()
+x
+
+u <- c("MESTRADO", "DOUTORADO")
+tb_aux <- x %>%
+    str_replace_all(sprintf(".*(%s).*",
+                            paste(u, collapse = "|")),
+                    "\\1") %>%
+    factor() %>%
+    fct_other(keep = u,
+              other_level = "OUTRO") %>%
+    # fct_infreq() %>%
+    fct_count() %>%
+    rename(lev = "f") %>%
+    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)))
+
+my_plot(tb_aux, "Nível")
+
+u <- c("GENETICA", "ESTATISTICA", "PRODUCAO VEGETAL","FITOPATOLOGIA")
+tb_aux <- x %>%
+    str_replace_all(sprintf(".*(%s).*",
+                            paste(u, collapse = "|")),
+                    "\\1") %>%
+    factor() %>%
+    fct_other(keep = u,
+              other_level = "OUTRO") %>%
+    fct_infreq() %>%
+    fct_count() %>%
+    rename(lev = "f") %>%
+    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)))
+
+my_plot(tb_aux, "Programa")
+
+# 2. -------------------------------------------------------------------
+
+nms[2]
+ggplot(tb, aes(x = V2)) +
+    stat_ecdf() +
+    geom_rug() +
+    xlab(nms[2])
+
+tb_aux <- tb %>%
+    mutate(lev = cut(V2,
+                     breaks = c(0, 1, 2, 5, Inf),
+                     right = TRUE,
+                     include.lowest = TRUE)) %>%
+    count(lev) %>%
+    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)))
+
+my_plot(tb_aux, nms[2])
+
+# 3. -------------------------------------------------------------------
+
+i <- 3
+nms[i]
+lvl <- sort(unique(tb[[i]]))[c(4, 2, 1, 3)]
+txt <- str_c(strwrap(nms[i], width = 20), collapse = "\n")
+tb_aux <- tb %>%
+    count(lev = tb[[i]]) %>%
+    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)),
+           lev = fct_relevel(lev, lvl))
+
+my_plot(tb_aux, txt)
+
+# 4. -------------------------------------------------------------------
+
+i <- 4
+nms[i]
+lvl <- sort(unique(tb[[i]]))[c(3, 1, 4, 2)]
+txt <- str_c(strwrap(nms[i], width = 20), collapse = "\n")
+tb_aux <- tb %>%
+    count(lev = tb[[i]]) %>%
+    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)),
+           lev = fct_relevel(lev, lvl))
+
+my_plot(tb_aux, txt)
+
+# 5. -------------------------------------------------------------------
+
+i <- 5
+nms[i]
+lvl <- sort(unique(tb[[i]]))[c(1, 2, 3)]
+txt <- str_c(strwrap(nms[i], width = 20), collapse = "\n")
+tb_aux <- tb %>%
+    count(lev = tb[[i]]) %>%
+    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)),
+           lev = fct_relevel(lev, lvl))
+
+my_plot(tb_aux, txt)
+
+# 6. -------------------------------------------------------------------
+
+i <- 6
+nms[i]
+lvl <- sort(unique(tb[[i]]))[c(1, 2, 3)]
+txt <- str_c(strwrap(nms[i], width = 20), collapse = "\n")
+tb_aux <- tb %>%
+    count(lev = tb[[i]]) %>%
+    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)),
+           lev = fct_relevel(lev, lvl))
+
+my_plot(tb_aux, txt)
+
+# 7. -------------------------------------------------------------------
+i <- 7
+nms[i]
+lvl <- as.character(sort(unique(tb[[i]])))
+txt <- str_c(strwrap(nms[i], width = 20), collapse = "\n")
+tb_aux <- tb %>%
+    count(lev = tb[[i]]) %>%
+    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)),
+           lev = fct_relevel(factor(lev), lvl))
+
+my_plot(tb_aux, txt)
+
+# 8. -------------------------------------------------------------------
+
+i <- 8
+nms[i]
+lvl <- sort(unique(tb[[i]]))[c(1, 3, 2)]
+txt <- str_c(strwrap(nms[i], width = 20), collapse = "\n")
+tb_aux <- tb %>%
+    count(lev = tb[[i]]) %>%
+    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)),
+           lev = fct_relevel(lev, lvl))
+
+my_plot(tb_aux, txt)
+
+# 9. -------------------------------------------------------------------
+
+i <- 9
+nms[i]
+lvl <- sort(unique(tb[[i]]))[c(2, 1)]
+txt <- str_c(strwrap(nms[i], width = 20), collapse = "\n")
+tb_aux <- tb %>%
+    count(lev = tb[[i]]) %>%
+    mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)),
+           lev = fct_relevel(lev, lvl))
+
+my_plot(tb_aux, txt)
+
+# 10. ------------------------------------------------------------------
+
+nms[10]
+tb_aux <- tb[[10]] %>%
+    str_replace_all(pattern = ", ([[:upper:]])",
+                    replacement = ";\\1") %>%
+    str_split(pattern = ";") %>%
+    flatten_chr() %>%
+    fct_count() %>%
+    mutate(lev =
+               {
+                   as.character(.$f) %>%
+                       map(strwrap, width = 15) %>%
+                       map_chr(str_c, collapse = "\n") %>%
+                       factor()
+               },
+           lev = fct_reorder(lev, n),
+           label = sprintf("%d (%0.1f%%)", n, 100 * n/nrow(tb)))
+
+ggplot(tb_aux,
+       aes(x = lev, y = n)) +
+    geom_col(color = "black", fill = "purple") +
+    xlab(NULL) +
+    ylab(NULL) +
+    geom_text(mapping = aes(label = label),
+              vjust = 0,
+              nudge_y = 0.2)
+
+# 11. ------------------------------------------------------------------
+
+nms[11]
+
+x <- tb[[11]]
+x <- x[order(nchar(x))]
+
+comm <- x %>%
+    str_c(1:length(.), ., sep = ". ") %>%
+    map(strwrap, width = 60, simplify = TRUE)
+
+# # Questões do questionário.
+# for (i in comm) {
+#     cat(i, sep = "\n")
+#     cat("\n")
+# }
+```
+
+```{r, results = "asis"}
+comm %>%
+    map_chr(str_c, collapse = " ") %>%
+    str_c("  ", .) %>%
+    cat(sep = "\n")
+```
