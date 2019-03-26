@@ -535,9 +535,10 @@ ls("package:lubridate") %>% str_c(collapse = ", ") %>% strwrap()
 \caption{Cartão de referência para manipulação de *date-time* com \texttt{lubridate} e \texttt{hms}.}
 \end{figure}
 
-# Encadeando operações com o *pipe* do `magrittr`
 
-## Anatomia do `magrittr`
+# Encadeando com operadores do `magrittr`
+
+## Anatomia
 
   * O operador permite expressar de forma mais direta as operações.
   * É uma ideia inspirada no Shell.
