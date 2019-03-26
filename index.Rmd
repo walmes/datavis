@@ -1,13 +1,20 @@
 ---
 title: "Manipulação e Visualização de Dados"
-subtitle: "A abordagem `tidyverse`"
-author: |
-  Prof. [Walmes Marques Zeviani](http://www.leg.ufpr.br/~walmes)
+subtitle: >
+  <p><span style = "font-size: 120%;">A abordagem <code style = "font-size: 105%;">tidyverse</code></span></p>
+author: >
+  <br>
+  <br>
+  Prof. <a href="http://www.leg.ufpr.br/~walmes">Walmes Marques Zeviani</a><br>
+  Laboratório de Estatística e Geoinformação (LEG) <a href="leg.ufpr.br"><i class="fa fa-external-link fa-xs fa-xs"></i></a><br>
+  Departamento de Estatística (DEST) <a href="http://www.est.ufpr.br"><i class="fa fa-external-link fa-xs"></i></a><br>
+  Universidade Federal do Paraná (UFPR) <a href="http://www.ufpr.br"><i class="fa fa-external-link fa-xs"></i></a>
 bibliography: config/refs.bib
 csl: config/ABNT-UFPR-2011-Mendeley.csl
 output:
   html_document:
     toc: false
+    number_sections: false
     includes:
       before_body: config/site-header.html
       after_body: config/site-footer.html
@@ -23,7 +30,56 @@ Formulário de Avaliação do Curso
 </div>
 -->
 
-# Detalhes {.tabset}
+# Resumo
+
+A maior parte do esforço na análise de dados está na manipulação dos
+dados: leitura, preparo, higienização, imputação, aprimoramento,
+seleção, agregação, síntese e visualização. O ambiente R para computação
+estatística e gráficos, como linguagem de programação, dipõe recursos
+para manipulação de dados desde as primeiras versões. A recente
+abordagem [`tidyverse`], no entanto, se baseia em uma gramática clara
+para a manipulação de dados, o que reduz o tempo de confecção e
+entendimento de instruções de código, tornando-o mais portável e
+reproduzível. Em vários aspectos, também tem melhor performance
+computacional. Nesse Curso, é abordado o uso coordenado de pacotes da
+coleção [`tidyverse`], com ênfase nos seus principais recursos para
+manipulação e visualização de dados. Exemplos baseados em conjuntos de
+dados reais e scripts R são disponibilizados.
+
+A visualização permite rápida extração de *insights* de problemas
+baseados em dados. É a língua nativa para comunicação de padrões,
+tendências e fatos dos dados para humanos e entre humanos. Inúmeros
+softwares e planilhas eletrônicas oferecem recursos para confecção de
+gráficos. Ainda que haja tal disponibilidade, são vistos com frequência
+representações de má qualidade no âmbito profissional e acadêmico. Dessa
+forma, o conhecimento dos princípios de visualização gráfica e o domínio
+de recursos computacionais para elaboração ágil, interativa e
+reproduzível são fundamentais para obter visualizações que comuniquem
+valor de forma descomplicada em todos os aspectos: elaboração, leitura e
+interpretação. Esse Curso também são discutidos fundamentos da
+visualização de dados e sua aplicação no ambiente R. A ênfase é tanto
+instrumentar o uso coordenado de pacotes e funções do R como também
+desenvolver massa crítica para construção e apreciação de representações
+gráficas de dados.
+
+# Conteúdo
+
+  1. Revisão de princípios de programação em R.
+  2. Manipulação de dados com `tidyverse`.
+     1. A organização lógica e filosófica do `tidyverse`.
+     2. Importação, represetação e exportação de dados.
+     3. Organização e limpeza de dados.
+     4. Manipulação de dados.
+     5. Análise descritiva.
+     6. Tratatamento de strings e fatores.
+  3. Recursos gráficos estáticos e interativos.
+     1. Princípios de visualização de dados.
+     2. Recusos para visualização estática.
+     3. Recursos para visualização dinâmica.
+  4. Programação funcional.
+  5. Introdução aos relatórios dinâmicos.
+
+# Realizações do Curso {.tabset}
 
 ## V2.2: GemMelhor-UFV
 
@@ -54,13 +110,6 @@ Formulário de Avaliação do Curso
   |:-----------:|:----------------:|:------------:|:------------:|
   | PV3 sala 06 |                  | 09h -- 12h   | 09h -- 12h   |
   | PV3 sala 06 | 14h -- 17h       | 14h -- 17h   | 14h -- 17h   |
-
-# Conteúdo
-
-  1. Revisão de princípios de programação em R.
-  2. Manipulação de dados com `tidyverse`.
-  3. Recursos gráficos estáticos e interativos.
-  4. Programação funcional.
 
 # Materiais úteis
 
@@ -109,3 +158,6 @@ Formulário de Avaliação do Curso
   * SARKAR, D. [**Lattice: multivariate data visualization with R**](http://lmdvr.r-forge.r-project.org/figures/figures.html). New York London: Springer Science+Business Media, 2008.
   * GILLESPIE, C., & LOVELACE, R. [**Efficient R programming: a practical guide to smarter programming**](https://csgillespie.github.io/efficientR/). Sebastopol, CA: O'Reilly Media, 2016.
   * WICKHAM, H. [**Advanced R**](https://adv-r.hadley.nz/). Boca Raton, FL: CRC Press, 2015.
+
+<!------------------------------------------- -->
+[`tidyverse`]: https://www.tidyverse.org/

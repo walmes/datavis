@@ -283,13 +283,13 @@ pre code {
 
 code {
     padding: 1px 1px;
-    font-size: 90%;
+    font-size: 100%;
     background-color: none;
 }
 
 p code,
 table code {
-    font-size: 80%;
+    font-size: 100%;
     background-color: unset;
 }
 
