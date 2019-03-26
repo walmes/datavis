@@ -159,16 +159,6 @@ ggplot(tb, aes(x = V2)) +
     xlab(nms[2]) +
     ylab("Frequência relativa")
 
-# tb_aux <- tb %>%
-#     mutate(lev = cut(V2,
-#                      breaks = c(0, 1, 2, 5, Inf),
-#                      right = TRUE,
-#                      include.lowest = TRUE)) %>%
-#     count(lev) %>%
-#     mutate(label = sprintf("%d\n(%0.1f%%)", n, 100 * n/sum(n)))
-# my_pie(tb_aux, nms[2])
-# my_bar(tb_aux, nms[2])
-
 bks <- seq(0, max(tb$V2), by = 1)
 ggplot(tb, aes(x = V2)) +
     geom_histogram(breaks = bks,
