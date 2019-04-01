@@ -13,6 +13,10 @@
 source("config/setup.R")
 @
 
+<<include = FALSE>>=
+read_chunk("00-datavis.R")
+@
+
 %=======================================================================
 
 \begin{document}
@@ -21,7 +25,9 @@ source("config/setup.R")
   \frame{\titlepage} %--------------------------------------------------
 }
 
-%-----------------------------------------------------------------------
+%=======================================================================
+
+\section{Motivação}
 
 \begin{frame}
   \centertitle{Por que Visualização de Dados é tão importante?}
@@ -30,58 +36,477 @@ source("config/setup.R")
 %-----------------------------------------------------------------------
 \begin{frame}[allowframebreaks]{O poder de ver além}
 
-  TODO
+% TODO Descrição da rota de fuga e mapa da rota de fuga.
+
+  <<anscombe_table, echo = FALSE, results = "asis">>=
+  @
+
+  \framebreak
+
+  <<anscombe_regression, echo = FALSE, results = "asis">>=
+  @
+
+  \framebreak
+
+  <<anscombe_plot, echo = FALSE, message = FALSE, results = "hide", out.width = "11cm", fig.cap = cap>>=
+  @
+
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Rápida percepção, rápida reação}
+
+  \begin{figure}[h]
+    \centering
+    \begin{minipage}[c]{0.8\linewidth}
+
+      Saia desta sala. Vire à direita e caminhe 3 metros até o final do
+      corredor, onde você estará em frente a uma grande sala de
+      conferências. Vire à esquerda e caminhe mais 3 metros até chegar
+      ao final do corredor. À sua esquerda estará um alarme de incêndio,
+      perto do elevador. À sua direita, no final do corredor, há uma
+      escadaria. Não vá ao elevador. Vire à direita e caminhe mais 4
+      metros até o final do corredor, vire à esquerda e desça pelas
+      escadas. Desça dois lances de escadas e saia do prédio na porta na
+      parte inferior das escadas.
+
+    \end{minipage}
+    \caption{Plano de rota de fuga. Adapatado de \cite{berinato2016good}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 6cm]{img/plano-de-fuga.png}
+    \caption{Plano de rota de fuga. Adapatado de \cite{berinato2016good}.}
+  \end{figure}
+
+\end{frame}
+
+
+\begin{frame}[allowframebreaks]{Inspiração}
 
   % \myquote{img/tukey.jpg}{
   %   ``The greatest value of a picture is when it forces us to notice what we never expected to see.''}{
   %   John Tukey $\cdot$ Estatístico}
 
+  \myquote{img/tukey.jpg}{
+    ``O maior valor de um gráfico é quando ele nos força a perceber o que nós jamais esperávamos ver.''}{
+    John Tukey $\cdot$ Estatístico}
+
   % \myquote{img/schneiderman.jpg}{
   %   ``Visualization gives you answers to questions you didn't know you had.''}{
   %   Ben Schneiderman $\cdot$ Cientista da Computação}
+
+  \myquote{img/schneiderman.jpg}{
+    ``Visualizações dão a você respostas para questões que você não sabia que tinha.''}{
+    Ben Schneiderman $\cdot$ Cientista da Computação}
+
+  \framebreak
 
   % \myquote{img/shalloway.jpg}{
   %   ``Visualizations act as a campfire around which we gather to tell stories.''}{
   %   Al Shalloway $\cdot$ CEO Net Objectives}
 
-  \framebreak
+  \myquote{img/shalloway.jpg}{
+    ``Visualizações funcionam como uma fogueira na qual nos reunimos para contar histórias.''}{
+    Al Shalloway $\cdot$ CEO Net Objectives}
 
-<<echo = FALSE, message = FALSE, results = "hide", out.width = "11cm", fig.cap = cap>>=
-cap <- "O quarteto de Anscombe."
-library(tidyverse)
+  % ``Most of us need to listen to the music to understand how
+  % beautiful it is. But often that's how we present statistics: we
+  % just show the notes, we don't play the music.''
 
-anscombe_m <- data.frame()
-
-for (i in 1:4) {
-    anscombe_m <- rbind(anscombe_m,
-                        data.frame(set = i,
-                                   x = anscombe[, i],
-                                   y = anscombe[, i + 4]))
-}
-
-ggplot(anscombe_m, aes(x, y)) +
-    geom_point(size = 3,
-               fill = "orange",
-               shape = 21) +
-    facet_wrap(~set, ncol = 2)
-@
+  \myquote{img/rosling-hans.jpg}{``A maioria de nós precisa ouvir a
+    música para entender o quão bonita ela é. No entanto, é assim que
+    apresentamos estatísticas: nós apenas mostramos as notas, nós não
+    tocamos a música.''}{
+    Hans Rosling}
 
 \end{frame}
 
-\begin{frame}[fragile]{Código R}
+%-----------------------------------------------------------------------
 
-<<>>=
-mean(iris$Sepal.Length)
-sd(iris$Sepal.Length)
-table(iris$Species)
+\begin{frame}
+  \centertitle{A Era do Big Data \& Data Science}
+\end{frame}
 
-for (i in 1:4) {
-    if (i == 2) {
-        break
-    }
-}
-@
+\begin{frame}[allowframebreaks]{O fenônemo Big Data}
 
+  \mytwocolumns{0.45}{0.54}{
+    \begin{itemize}
+    \item \hi{Big data}: conjuntos de \textbf{dados grandes ou
+        complexos} na qual as abordagens tradicionais de processamento
+      são inadequadas/impraticáveis.
+    \item \hi{Desafios}: captura, armazenamento, beneficiamento,
+      consulta, transferência, \textbf{visualização}, análise e
+      privacidade.
+    \end{itemize}
+  }{
+    \begin{figure}
+      \centering
+      \includegraphics[width=5.5cm]{img/big-data-8v.png}
+      \caption{Os 8 V's do Big Data.}
+    \end{figure}
+  }
+
+  \framebreak
+
+  \begin{figure}
+    \centering
+    \includegraphics[height=5.8cm]{img/internet_minute_info2-edited.jpg}
+    \caption{Quanto de dados é produzido da cada minuto. Fonte: \href{https://www.socialmediatoday.com/news/how-much-data-is-generated-every-minute-infographic-1/525692/}{www.socialmediatoday.com}.}
+  \end{figure}
+
+  \framebreak
+
+  \mytwocolumns{0.49}{0.49}{
+    {\large \hi{Algumas estatísticas}}
+
+    \begin{itemize}
+    \item Mais de \hi{3.7 bilhões} de pessoas usam internet.
+      \footnote{\href{https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read/}{www.forbes.com}}
+    \item \hi{Mais da metade} de nossas buscas são feitas do smartphone.
+    \item IoT: \hi{17 bilhões} de dispositivos conectados em 2018.
+      \footnote{\href{https://iot-analytics.com/state-of-the-iot-update-q1-q2-2018-number-of-iot-devices-now-7b/}{iot-analytics.com}}
+    \end{itemize}
+  }{
+    \begin{figure}
+      \centering
+      \includegraphics[width=5cm]{img/big-data.png}
+      \caption{Infográfico sobre tipos de dados em Big Data.}
+    \end{figure}
+  }
+
+  \framebreak
+
+  {\large \hi{Comunicação}}
+
+  \begin{flushright}
+    % \textit{``The art of communication is the language of leadership.''}
+    \textit{``A arte da comunição é a linguagem da linderança.''}
+
+    -- James Humes
+  \end{flushright}
+
+  \begin{itemize}
+  \item Acesso/exame dos dados de forma visualmente \hi{disgestível}.
+  \item Visualização é a forma mais rápida de transformar dados em
+    \hi{informação acionável}.
+    \footnote[frame]{\href{https://www.tableau.com/pt-br/asset/top-10-big-data-trends}{www.tableau.com}}
+  \item Visualização permite encontrar \hi{oportunidades} nos dados.
+  \item Gráficos bem elaborados são uma forma \textbf{simples} e
+    \textbf{poderosa} de reconhecimento de padrões, extração de insights
+    e comunicação.
+  \end{itemize}
+
+\end{frame}
+
+%=======================================================================
+
+\begin{frame}{Objetivos}
+  \begin{itemize}
+  \item Importância.
+  \item História.
+  \item Fundamentos.
+  \item Recomendações.
+  \end{itemize}
+\end{frame}
+
+%=======================================================================
+
+\section{História}
+
+\begin{frame}
+  \centertitle{Uma breve passagem pela história da Visualização de Dados}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Linha do tempo da Visualização de Dados}
+
+  \vspace{-3.5em}
+  \begin{figure}[h]
+    \centering
+    \hspace*{-2.5em}
+    \includegraphics[height=6.5cm]{img/timeline_dataviz.pdf}
+    \caption{A linha do tempo da visualização de dados. Fonte: o autor.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=2.8cm]{img/playfair.jpg}\hspace{1px}
+    \includegraphics[height=2.8cm]{img/playfair-barplot.jpg}\hspace{1px}
+    \includegraphics[height=2.8cm]{img/playfair-timeseries.png}
+    \caption{William Playfair (esq.), gráfico de barras (meio) e gráfico
+      de linhas (dir.).}
+  \end{figure}
+
+  \hi{1786}: Willian Playfair produziu os primeiros gráficos de linhas,
+  barras e setores.
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=3cm]{img/johnsnow.png}
+    \caption{John Snow e as ocorrências de óbito por cólera em Londres,
+      1854.}
+  \end{figure}
+
+  \hi{1854}: John Snow (médico britânico) descobre a fonte transmissora
+  de cólera com um mapa registrou a coordenada das ocorrências dos
+  óbitos.
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=3cm]{img/nightingale.jpg}\hspace{1px}
+    \includegraphics[height=3cm]{img/nightingale-rose-diagram.jpg}
+    \caption{Florence Nightingale (esq.) e os diagramas de ``coxcomb''
+      (dir.).}
+  \end{figure}
+
+  % Florence Nightingale (enfermeira britânica) foi enfermeira
+  % voluntária na guerra da Crimeia (1853 a 1856).
+
+  \hi{1858}: Florence Nightingale (enfermeira britânica) produziu o
+  ``coxcomb diagrams'' que mostrou as baixas do exército britânico na
+  Guerra da Criméia.
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=3cm]{img/minard.jpg}\hspace{1px}
+    \includegraphics[height=3cm]{img/minard-diagram.png}
+    \caption{Charles Minard (esq.) e o diagrama retratando as baixas da
+      investida de Napoleão sobre o território da Rússia (dir.).}
+  \end{figure}
+
+  \hi{1861}: Charles Minard (engenheiro civil francês) retratou a
+  dizimação do exército de Napoleão durante sua condenada campanha
+  contra a Rússia.
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    % \includegraphics[height=3cm]{img/brinton.jpg}
+    \includegraphics[height=4cm]{img/brinton-1.jpeg}\hspace{1px}
+    \includegraphics[height=4cm]{img/brinton-2.png}
+    \caption{Páginas de ``Graphic Methods for presenting Facts'' de
+      W. Brinton.}
+  \end{figure}
+
+  \hi{1914}: Willard Brinton (engenheiro americano) publicou o primeiro
+  livro de visualização para negócios.
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=4cm]{img/spear-pratical-charting-techniques.jpg}\hspace{1px}
+    \includegraphics[height=4cm]{img/spear.jpg}
+    \caption{Capa e dobras de ``Pratical Charting Statistics'' de
+      E. Spear.}
+  \end{figure}
+
+  \hi{1952}: Mary Eleanor Spear publicou seu livro contendo boas
+  práticas do exercício baseadas em décadas de serviço no governo
+  Americano.
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=3.5cm]{img/bertin.jpg}\hspace{1px}
+    \includegraphics[height=3.5cm]{img/bertin-semiologie-graphique.jpg}\hspace{1px}
+    \includegraphics[height=3.5cm]{img/bertin-semioly-of-graphics.jpg}
+    \caption{Jacques Bertin (esq.) e sua obra ``Sémiologie Graphique''
+      em dois idiomas (meio, dir.).}
+  \end{figure}
+
+  \hi{1967}: Jacques Bertin (cartógrafo francês) publicou o primeiro
+  livro sobre teoria da visualização.
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=4.5cm]{img/visual_variables.png}
+    \caption{As 7 variáveis visuais definidas por Bertin.}
+  \end{figure}
+
+  \begin{itemize}
+  \item Descreveu \hi{7 variáveis visuais}: posição, tamanho, forma,
+    saturação, cor, orientação e
+    textura. \footnote{\href{https://mjfoster83.github.io/modern-cartography/lib/img/visual_variables.png}{mjfoster83.github.io}}
+  \item Definiu 2 princípios: a expressividade e a efetividade da
+    visualização.
+  \end{itemize}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=3.5cm]{img/tukey-computer.png}\hspace{1px}
+    \includegraphics[height=3.5cm]{img/tukey-exploratory.jpg}
+    \caption{John Tukey ao computador da época (esq.) e a capa de seu
+      livro ``Exploratory data analysis'' (dir.).}
+  \end{figure}
+
+  \hi{1970s}: John Tukey (matemático americano) foi pioneiro no uso de
+  computadores para visualização e popularizou o conceito de
+  visualização exploratória e confirmatória.
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=4cm]{img/tufte.jpg}\hspace{1px}
+    \includegraphics[height=4cm]{img/tufte-the-visual-display-of-quantitative-data.jpg}
+    \caption{Edward Tufte (esq.) e seu livro ``The visual display of
+      quantitative information'' (dir.).}
+  \end{figure}
+
+  \hi{1983}: Edward Tufte publicou em seu livro formas de combinar rigor
+  estatístico com clareza e princípios de design gráfico.
+
+  % TODO! Ver esses slides sobre Tufte:
+  % https://www.slideshare.net/mikamiks1/lessons-from-edward-tufte
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=4cm]{img/mackinlay.jpg}\hspace{1px}
+    % \includegraphics[height=4cm]{img/tableau-show-me.png}
+    \includegraphics[height=4cm]{img/tableau-desktop.png}
+    \caption{Jock Mackinlay (esq.) e a área de trabalho do Tableau
+      (dir.).}
+  \end{figure}
+
+  \hi{1986}: Jock Mackinlay publicou sua Tese de PhD que levou o
+  trabalho de Jacques Bertin para era digital.
+
+  Hoje Mackinlay é vice presidente de P\&D do
+  \href{https://www.tableau.com/}{Tableau}.
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=3.5cm]{img/wilkinson.jpg}\hspace{1px}
+    \includegraphics[height=3.5cm]{img/wilkinson-the-grammar-of-graphics.jpg}\hspace{1px}
+    \includegraphics[height=3.5cm]{img/ggplot-grammar-of-graphics.png}
+
+    \caption{Leland Wilkinson (esq.) autor de ``The grammar of
+      graphics'' (meio) e as camadas da gramática de gráficos que são
+      usadas no \texttt{ggplot2}.}
+  \end{figure}
+
+  \hi{1999}: Leland Wilkinson estabeleu uma grámatica concisa para
+  descrever os componentes de um gráfico.
+
+  \framebreak
+
+  \begin{itemize}
+  \item \hi{1990s -- 2000}: ramificações de abordagem para visualização.
+    \begin{itemize}
+    \item Orientadas aos computadores.
+    \item Orientadas ao design.
+    \item Orientados à comunidade científica.
+    \item Orientados aos negócios.
+    \end{itemize}
+  \item \hi{2010s}
+    \begin{itemize}
+    \item softwares acessíveis $+$ disposição de dados
+      $\rightarrow$ \hi{democratiza a prática da visualização}.
+    \item Cria-se uma atmosfera propícia para \hi{experiências}.
+    \item Visualização não é mais uma província de experts, é um
+      \hi{fenômeno}.
+    \end{itemize}
+  \end{itemize}
+
+  \framebreak
+
+  \hi{Hoje}
+
+  \begin{itemize}
+  \item Recursos/ferramentas \hi{evoluem}.
+  \item Representações gráficas mais apropriadas são desenvolvidas.
+  \item \hi{Novas dimensões}: animação, reatividade e interatividade.
+  \item Velocidade e acesso:
+    \begin{itemize}
+    \item Atualização em \hi{tempo real}.
+    \item Relatórios \hi{web dinâmicos}.
+    \item \textit{\hi{Smart things}}: smartwatch, \emph{apps} esportivos.
+    \end{itemize}
+  \item Monitoramento com \hi{dashboards}.
+  \end{itemize}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=6cm]{./img/dashboard-2.png}
+    \caption{Exemplo de dashboard produzido com o software Power BI.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=6.5cm]{./img/dashboard-3.png}
+    \caption{Exemplo de dashboard feito com o R usando o pacote
+      \texttt{shiny}.}
+  \end{figure}
+
+\end{frame}
+
+%=======================================================================
+
+\section{Fundamentos}
+
+\begin{frame}
+  \centertitle{Fundamentos da Visualização de Dados}
+\end{frame}
+
+% TODO inteções.
+% TODO duas questões, 4 tipos.
+% TODO o tom da visualização de dados: precisa e abstrata
+% Gráficos e infográficos.
+
+
+% TODO Variáveis visuais.
+% TODO Percepção e julgamento.
+% Recomendações de convenção e cores.
+
+\section{Atuação}
+
+% TODO os 8 papeis em visualização de dados
+
+\section{Recomendações finais}
+
+%-----------------------------------------------------------------------
+
+\begin{frame}
+  \cite{kirk2012data}
+  \cite{wickham2016ggplot2}
+  \cite{teutonico2015ggplot2}
+  \cite{berinato2016good}
+  \cite{wilkinson2013grammar}
+  \cite{rahlf2017data}
+  \cite{miller2017big}
+  \cite{wexler2017big}
+  \cite{knaflic2015storytelling}
+  \cite{telea2014data}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Referências}
+  \printbibliography
 \end{frame}
 
 \end{document}
