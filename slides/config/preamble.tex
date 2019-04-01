@@ -3,7 +3,16 @@
 \usepackage[T1]{fontenc}
 
 \usepackage[math]{iwona}
-\usepackage{csquotes}
+% \usepackage[math]{kurier}
+
+% \usepackage[sfdefault]{roboto}
+\usepackage[sfdefault, condensed]{roboto}
+% \usepackage[default]{sourcesanspro}
+
+% \usefonttheme[onlymath]{serif}
+% \usefonttheme[onlymath]{sans}
+
+% \usepackage{csquotes}
 
 % % Font for code. ----------------------------
 % \usepackage{inconsolata}
@@ -77,11 +86,14 @@
 
 \usebackgroundtemplate{
   \tikz[overlay, remember picture]
-  \node[% opacity=0.3,
-        at=(current page.south east),
-        anchor=south east,
-        inner sep=0pt] {
-          \includegraphics[height=\paperheight, width=\paperwidth]{config/ufpr-imprensa-blur-4x3.jpg}};
+  \node[at = (current page.center),
+        inner sep = 0pt] {%
+          % \includegraphics[keepaspectratio, height=\paperheight]{config/ufpr-imprensa-blur-4x3.jpg}
+          % \includegraphics[keepaspectratio, height=\paperheight]{/home/walmes/Projects/templates/COMMON/ufpr-perto-1.jpg}
+          % \includegraphics[keepaspectratio, height=\paperheight]{/home/walmes/Projects/templates/COMMON/ufpr-fachada-esq-1.jpg}
+          \includegraphics[keepaspectratio, height=\paperheight]{/home/walmes/Projects/templates/COMMON/ufpr-fachada-baixo-1.jpg}
+          % \includegraphics[keepaspectratio, height=\paperheight]{/home/walmes/Projects/templates/COMMON/ufpr-fundo-16x9.jpg}
+        };
 }
 
 %-----------------------------------------------------------------------
@@ -95,6 +107,10 @@
 
 %-----------------------------------------------------------------------
 % ATTENTION: http://www.cpt.univ-mrs.fr/~masson/latex/Beamer-appearance-cheat-sheet.pdf
+
+\setbeamerfont{title}{series=\bfseries, size=\huge, parent=structure}
+\setbeamerfont{subtitle}{series=\bfseries, size=\Large, parent=structure}
+\setbeamerfont{frametitle}{series=\bfseries, size=\LARGE, parent=structure}
 
 \setbeamertemplate{caption}[numbered]
 \setbeamertemplate{caption label separator}{: }
@@ -118,17 +134,16 @@
 \setbeamercolor{subsection in head/foot}{bg=ubuntu_purple, fg=white}
 
 \setbeamercolor{title}{fg=ubuntu_purple}       % Título dos slides.
-% \setbeamercolor{titlelike}{fg=title}
 \setbeamercolor{subtitle}{fg=ubuntu_orange}    % Subtítulo.
-% \setbeamercolor{author}{}
-\setbeamercolor{institute}{fg=gray_dark}   % Instituição.
+\setbeamercolor{institute}{fg=gray_dark}       % Instituição.
 \setbeamercolor{frametitle}{fg=ubuntu_purple}  % De quadro.
 \setbeamercolor{structure}{fg=ubuntu_orange}   % Listas e rodapé.
 \setbeamercolor{item projected}{bg=gray_dark}
+\setbeamercolor{normal text}{fg=gray_dark}     % Texto.
 
-\setbeamercolor{normal text}{fg=gray_dark} % Texto.
-
+%-----------------------------------------------------------------------
 % To remove empty brackets of \institution.
+
 \makeatletter
 \setbeamertemplate{footline}{
   \leavevmode%
@@ -140,7 +155,6 @@
     \begin{beamercolorbox}[
       wd=0.6\paperwidth, ht=2.25ex, dp=1ex, left]{title in head/foot}%
       \usebeamerfont{title in head/foot}\hspace*{1ex}\bfseries\insertshorttitle{}
-      % \usebeamerfont{title in head/foot}\hspace*{1ex}\insertframetitle{}
     \end{beamercolorbox}%
     \begin{beamercolorbox}[
       wd=0.1\paperwidth, ht=2.25ex, dp=1ex, right]{date in head/foot}%
