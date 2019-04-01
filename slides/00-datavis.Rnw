@@ -1,0 +1,87 @@
+\documentclass[serif, professionalfont, usenames, dvipsnames]{beamer}
+
+\input{config/preamble.tex}
+\input{config/preamble-commands.tex}
+\input{config/preamble-refs.tex}
+\input{config/preamble-chunk-rnw.tex}
+\input{config/preamble-author.tex}
+
+\title{Visualização de Dados}
+\subtitle{História e fundamentos}
+
+<<include = FALSE>>=
+source("config/setup.R")
+@
+
+%=======================================================================
+
+\begin{document}
+
+{\setbeamertemplate{footline}{}
+  \frame{\titlepage} %--------------------------------------------------
+}
+
+%-----------------------------------------------------------------------
+
+\begin{frame}
+  \centertitle{Por que Visualização de Dados é tão importante?}
+\end{frame}
+
+%-----------------------------------------------------------------------
+\begin{frame}[allowframebreaks]{O poder de ver além}
+
+  TODO
+
+  % \myquote{img/tukey.jpg}{
+  %   ``The greatest value of a picture is when it forces us to notice what we never expected to see.''}{
+  %   John Tukey $\cdot$ Estatístico}
+
+  % \myquote{img/schneiderman.jpg}{
+  %   ``Visualization gives you answers to questions you didn't know you had.''}{
+  %   Ben Schneiderman $\cdot$ Cientista da Computação}
+
+  % \myquote{img/shalloway.jpg}{
+  %   ``Visualizations act as a campfire around which we gather to tell stories.''}{
+  %   Al Shalloway $\cdot$ CEO Net Objectives}
+
+  \framebreak
+
+<<echo = FALSE, message = FALSE, results = "hide", out.width = "11cm", fig.cap = cap>>=
+cap <- "O quarteto de Anscombe."
+library(tidyverse)
+
+anscombe_m <- data.frame()
+
+for (i in 1:4) {
+    anscombe_m <- rbind(anscombe_m,
+                        data.frame(set = i,
+                                   x = anscombe[, i],
+                                   y = anscombe[, i + 4]))
+}
+
+ggplot(anscombe_m, aes(x, y)) +
+    geom_point(size = 3,
+               fill = "orange",
+               shape = 21) +
+    facet_wrap(~set, ncol = 2)
+@
+
+\end{frame}
+
+\begin{frame}[fragile]{Código R}
+
+<<>>=
+mean(iris$Sepal.Length)
+sd(iris$Sepal.Length)
+table(iris$Species)
+
+for (i in 1:4) {
+    if (i == 2) {
+        break
+    }
+}
+@
+
+\end{frame}
+
+\end{document}

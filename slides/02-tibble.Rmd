@@ -4,12 +4,6 @@ title: "A estrutura de dados `tibble`"
 # date: '23 Mar 2017'
 bibliography: ../config/refs.bib
 csl: ../config/ABNT-UFPR-2011-Mendeley.csl
-output:
-  beamer_presentation:
-    highlight: tango
-    keep_tex: true
-    includes:
-      in_header: [./config/preamble.tex, ./config/preamble-chunk.tex]
 ---
 
 ```{r, include = FALSE}

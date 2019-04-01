@@ -1,0 +1,4 @@
+beamer_presentation:
+  highlight: tango
+  includes:
+    in_header: [./config/preamble.tex, ./config/preamble-chunk-rmd.tex, ./config/preamble-author.tex]
