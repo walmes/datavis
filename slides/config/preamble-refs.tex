@@ -2,7 +2,9 @@
 
 % Bibliography.
 
-\usepackage[style=authoryear]{biblatex}
+%\usepackage[style=authoryear]{biblatex}
+\usepackage[authordate, bibencoding=auto, strict, backend=biber, natbib]{biblatex-chicago}
+
 
 % Use:
 %   \cite{<ref>}
@@ -14,6 +16,6 @@
 % Compilation: pdflatex > biber > pdflatex > pdflatex.
 
 % Calls refs.bib at preamble with:
-% \addbibresource{refs.bib}
+\addbibresource{config/refs.bib}
 
 %-----------------------------------------------------------------------
