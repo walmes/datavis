@@ -1,0 +1,69 @@
+%---- preamble-commands.tex --------------------------------------------
+
+\newcommand{\mytwocolumns}[4]{
+  % #1: Line width fraction for the left column , e.g. 0.5.
+  % #2: Line width fraction for the right column.
+  % #3: Content for the left column.
+  % #4: Content for the right column.
+  \begin{columns}[t]
+    \begin{column}{#1\linewidth} %----------- left.
+      #3
+    \end{column} %--------------------------- left.
+    \begin{column}{#2\linewidth} %----------- right.
+      #4
+    \end{column} %--------------------------- right.
+  \end{columns}
+}
+
+\newcommand{\myquote}[3]{
+  \begin{center}
+    \begin{minipage}[c]{0.19\linewidth}
+      \begin{center}
+        \includegraphics[height=2.7cm]{#1}
+      \end{center}
+    \end{minipage}
+    \begin{minipage}[c]{0.7\linewidth}
+      \begin{flushright}
+        \textit{#2}
+        \vspace{1ex}
+
+        -- #3
+      \end{flushright}
+    \end{minipage}
+  \end{center}
+}
+
+\newcommand{\myphrase}[2]{
+  \begin{center}
+    \begin{minipage}[c]{0.19\linewidth}
+    \end{minipage}
+    \begin{minipage}[c]{0.7\linewidth}
+      \begin{flushright}
+        \textit{#1}
+        \vspace{1ex}
+
+        -- #2
+      \end{flushright}
+    \end{minipage}
+  \end{center}
+}
+
+\newcommand{\hi}[1]{%
+  \textcolor{ubuntu_orange}{#1}\xspace
+}
+
+\newcommand{\myurl}[1]{%
+  {\tiny \url{#1}}\xspace
+}
+
+\newcommand{\btn}[1]{%
+  \beamergotobutton{#1}\xspace
+}
+
+\newcommand{\centertitle}[1]{%
+  \begin{center}
+    {\LARGE \hi{#1}}
+  \end{center}
+}
+
+%-----------------------------------------------------------------------

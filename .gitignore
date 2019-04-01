@@ -95,7 +95,12 @@ slides/*.html
 tutorials/*.html
 
 !slides/config/preamble.tex
-!slides/config/preamble-chunk.tex
+!slides/config/preamble-refs.tex
+!slides/config/preamble-commands.tex
+!slides/config/preamble-chunk-rmd.tex
+!slides/config/preamble-chunk-rnw.tex
+!slides/config/preamble-author.tex
+
 !config/font-awesome.html
 !config/MathJax.html
 !config/site-footer.html

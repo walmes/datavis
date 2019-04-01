@@ -1,0 +1,16 @@
+%---- preamble-chunk-rnw.tex -------------------------------------------
+
+% Knitr.
+
+% ATTENTION: this needs `\usepackage{xcolor}'.
+\definecolor{color_line}{HTML}{333333}
+\definecolor{color_back}{HTML}{DDDDDD}
+
+% Tamanho de fonte e distância entre linhas.
+\renewenvironment{knitrout}{%
+  \setlength{\topsep}{-1ex}
+  \renewcommand{\baselinestretch}{0.5}
+  \footnotesize
+}{}
+
+%-----------------------------------------------------------------------
