@@ -1,13 +1,45 @@
-%-----------------------------------------------------------------------
+%---- preamble-chunk.tex -----------------------------------------------
+
 % Knitr.
+
+% ATTENTION: this needs `\usepackage{xcolor}'.
+\definecolor{color_line}{HTML}{333333}
+\definecolor{color_back}{HTML}{DDDDDD}
 
 % R input.
 \DefineVerbatimEnvironment{Highlighting}{Verbatim}{
+  frame=lines,
+  framesep=1ex,
+  framerule=0.5pt,
+  rulecolor=\color{color_line},
+  numbers=right,
   fontsize=\footnotesize,
-  baselinestretch=0.6,
+  baselinestretch=0.75,
   commandchars=\\\{\}}
 
-% R output e todo verbatim.
+% Margens do ambiente `Shaded'.
+% \fvset{listparameters={\setlength{\topsep}{-1em}}}
+\renewenvironment{Shaded}{\vspace{-1ex}}{\vspace{-2ex}}
+
+% R output e todo `verbatim'.
 \makeatletter
-\def\verbatim@font{\linespread{0.8}\normalfont\ttfamily\footnotesize}
+\def\verbatim@font{\linespread{0.75}\normalfont\ttfamily\footnotesize}
 \makeatother
+
+% Cor de fundo e margens do `vertabim'.
+\let\oldv\verbatim
+\let\oldendv\endverbatim
+
+\def\verbatim{%
+  \par\setbox0\vbox\bgroup
+  \vspace{-1.5\topsep}
+  \oldv
+}
+\def\endverbatim{%
+  \oldendv
+  \vspace{-0.9\topsep}
+  \egroup\fboxsep0pt
+  \noindent{\colorbox{color_back}{\usebox0}}\par
+}
+
+%-----------------------------------------------------------------------

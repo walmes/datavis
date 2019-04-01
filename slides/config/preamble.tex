@@ -1,11 +1,12 @@
 %-----------------------------------------------------------------------
 
-\usepackage[math]{iwona}
-
 \usepackage[T1]{fontenc}
+
+\usepackage[math]{iwona}
 \usepackage{csquotes}
 
-% Font for code. ----------------------------
+% % Font for code. ----------------------------
+% \usepackage{inconsolata}
 \usepackage[scaled=0.8]{beramono}
 
 %-----------------------------------------------------------------------
@@ -20,7 +21,6 @@
 \usepackage[shorthands=off,main=brazil]{babel}
 \usepackage{graphicx}
 
-\usepackage{pdfpages}
 \usepackage{xcolor}
 \usepackage{setspace}
 \usepackage{xspace}
@@ -33,23 +33,34 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{0}
 
-% %-----------------------------------------------------------------------
-% % Bibliography.
-%
+%-----------------------------------------------------------------------
+% Definições de esquema de cores.
+
+% Ubuntu.
+% http://www.color-hex.com/color-palette/2018
+\definecolor{ubuntu_purple}{HTML}{5E2750} % Título.
+\definecolor{ubuntu_orange}{HTML}{DD4814} % Estrutura.
+\definecolor{gray_dark}{HTML}{333333}  % Texto.
+\definecolor{gray_light}{HTML}{DDDDDD} % Faixa.
+
+%-----------------------------------------------------------------------
+% Bibliography.
+
 % \usepackage[style=authoryear]{biblatex}
-% % Use:
-% %   \cite{<ref>}
-% %   \parencite{<ref>}
-% %   \fullcite{<ref>}
-% %   \footfullcite{<ref>}
-% % ATTENTION: Compilation = pdflatex > biber > pdflatex > pdflatex.
-% % Call refs.bib at preamble with: \addbibresource{refs.bib}
-% %
+% Use:
+%   \cite{<ref>}
+%   \parencite{<ref>}
+%   \fullcite{<ref>}
+%   \footfullcite{<ref>}
+% ATTENTION: Compilation = pdflatex > biber > pdflatex > pdflatex.
+% Call refs.bib at preamble with: \addbibresource{refs.bib}
+%
 %-----------------------------------------------------------------------
 
-\usepackage[hang]{caption}
-\captionsetup{font=footnotesize,
-  labelfont=footnotesize,
+\usepackage{caption}
+\captionsetup{
+  font=footnotesize,
+  labelfont={color=ubuntu_orange},
   labelsep=period}
 \usepackage{subfig}
 
@@ -74,21 +85,12 @@
 }
 
 %-----------------------------------------------------------------------
-% Definições de esquema de cores.
-
-% Ubuntu.
-% http://www.color-hex.com/color-palette/2018
-\definecolor{mycolor1}{HTML}{5E2750} % Título.
-\definecolor{mycolor2}{HTML}{333333} % Texto.
-\definecolor{mycolor3}{HTML}{DD4814} % Estrutura.
-\definecolor{mycolor4}{HTML}{DD4814} % Links.
-\definecolor{mycolor5}{HTML}{AEA79F} % Preenchimentos.
 
 \hypersetup{
   colorlinks=true,
-  linkcolor=mycolor4,
-  urlcolor=mycolor1,
-  citecolor=mycolor1
+  linkcolor=ubuntu_orange,
+  urlcolor=ubuntu_purple,
+  citecolor=ubuntu_purple
 }
 
 %-----------------------------------------------------------------------
@@ -108,29 +110,23 @@
 
 % Rodapé.
 \setbeamercolor{title in head/foot}{parent=subsection in head/foot}
-\setbeamercolor{author in head/foot}{bg=mycolor4, fg=white}
-\setbeamercolor{date in head/foot}{parent=subsection in head/foot, fg=mycolor3}
+\setbeamercolor{author in head/foot}{bg=ubuntu_orange, fg=white}
+\setbeamercolor{date in head/foot}{parent=subsection in head/foot, fg=ubuntu_orange}
 
 % Cabeçalho.
-\setbeamercolor{section in head/foot}{bg=mycolor2, fg=mycolor4}
-\setbeamercolor{subsection in head/foot}{bg=mycolor2, fg=white}
+\setbeamercolor{section in head/foot}{bg=ubuntu_purple, fg=ubuntu_orange}
+\setbeamercolor{subsection in head/foot}{bg=ubuntu_purple, fg=white}
 
-\setbeamercolor{title}{fg=mycolor1}       % Título dos slides.
+\setbeamercolor{title}{fg=ubuntu_purple}       % Título dos slides.
 % \setbeamercolor{titlelike}{fg=title}
-\setbeamercolor{subtitle}{fg=mycolor3}    % Subtítulo.
+\setbeamercolor{subtitle}{fg=ubuntu_orange}    % Subtítulo.
 % \setbeamercolor{author}{}
-\setbeamercolor{institute}{fg=mycolor2}   % Instituição.
-\setbeamercolor{frametitle}{fg=mycolor1}  % De quadro.
-\setbeamercolor{structure}{fg=mycolor3}   % Listas e rodapé.
-\setbeamercolor{item projected}{bg=mycolor2}
+\setbeamercolor{institute}{fg=gray_dark}   % Instituição.
+\setbeamercolor{frametitle}{fg=ubuntu_purple}  % De quadro.
+\setbeamercolor{structure}{fg=ubuntu_orange}   % Listas e rodapé.
+\setbeamercolor{item projected}{bg=gray_dark}
 
-% Blocos.
-% \setbeamertemplate{blocks}[rounded]
-% \setbeamercolor{block title}{bg=mycolor5!75!white, fg=mycolor3}
-% \setbeamercolor{block body}{bg=mycolor5!25!white, fg=mycolor2}
-
-\setbeamercolor{normal text}{fg=mycolor2} % Texto.
-\setbeamercolor{caption name}{fg=normal text.fg}
+\setbeamercolor{normal text}{fg=gray_dark} % Texto.
 
 % To remove empty brackets of \institution.
 \makeatletter
@@ -154,64 +150,5 @@
   \vskip0pt%
 }
 \makeatother
-
-% %-----------------------------------------------------------------------
-%
-% \newcommand{\mytwocolumns}[4]{
-%   % #1: Line width fraction for the left column , e.g. 0.5.
-%   % #2: Line width fraction for the right column.
-%   % #3: Content for the left column.
-%   % #4: Content for the right column.
-%   \begin{columns}[t]
-%     \begin{column}{#1\linewidth} %----------- left.
-%       #3
-%     \end{column} %--------------------------- left.
-%     \begin{column}{#2\linewidth} %----------- right.
-%       #4
-%     \end{column} %--------------------------- right.
-%   \end{columns}
-% }
-%
-% \newcommand{\myquote}[3]{
-%   \begin{center}
-%     \begin{minipage}[c]{0.19\linewidth}
-%       \begin{center}
-%         \includegraphics[height=2.7cm]{#1}
-%       \end{center}
-%     \end{minipage}
-%     \begin{minipage}[c]{0.7\linewidth}
-%       \begin{flushright}
-%         \textit{#2}
-%         \vspace{1ex}
-%
-%         -- #3
-%       \end{flushright}
-%     \end{minipage}
-%   \end{center}
-% }
-%
-% \newcommand{\hi}[1]{%
-%   \textcolor{mycolor4}{#1}\xspace
-% }
-%
-% \newcommand{\myurl}[1]{%
-%   \tiny{\url{#1}}\xspace
-% }
-%
-% \newcommand{\btn}[1]{%
-%   \beamergotobutton{#1}
-% }
-%
-% %-----------------------------------------------------------------------
-
-\author[Walmes Zeviani $\cdot$ UFPR]{%
-      \href{http://leg.ufpr.br/~walmes}{Prof.~Walmes Zeviani} \\
-      \href{mailto:walmes@ufpr.br}{\small\tt walmes@ufpr.br}
-}
-
-\institute[DEST/UFPR]{
-  {Laboratório de Estatística e Geoinformação}\\
-  {Departamento de Estatística}\\
-  {Universidade Federal do Paraná}}
 
 %-----------------------------------------------------------------------
