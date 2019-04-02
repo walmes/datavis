@@ -199,26 +199,29 @@ ls("package:geofacet")
 
 # br_states_grid1
 
-fls <- dir("../data/", pattern = "^ipeadata.*", full.names = TRUE)
-# y <- str_replace(fls, ".*-([0-9]{4})\\.csv", "\\1")
+# fls <- dir("../data/", pattern = "^ipeadata.*", full.names = TRUE)
+#
+# my_read <- function(path) {
+#     y <- str_replace(path, ".*-([0-9]{4})\\.csv", "\\1")
+#     tb <- read_csv2(path)
+#     tb <- tb %>%
+#         select(1:5)
+#     names(tb) <- c("uf", "cod", "estado", "urbana", "rural")
+#     tb <- tb %>%
+#         add_column(ano = y)
+#     return(tb)
+# }
+#
+# tbs <- map(fls, my_read)
+# tbs <- invoke(bind_rows, tbs)
+#
+# tbs <- tbs %>%
+#     mutate(prop_urb = 100 * urbana/(urbana + rural),
+#            ano = as.integer(ano))
+#
+# write_tsv(tbs, "../data/ipeadata_populacao_estados.txt")
 
-my_read <- function(path) {
-    y <- str_replace(path, ".*-([0-9]{4})\\.csv", "\\1")
-    tb <- read_csv2(path)
-    tb <- tb %>%
-        select(1:5)
-    names(tb) <- c("uf", "cod", "estado", "urbana", "rural")
-    tb <- tb %>%
-        add_column(ano = y)
-    return(tb)
-}
-
-tbs <- map(fls, my_read)
-tbs <- invoke(bind_rows, tbs)
-
-tbs <- tbs %>%
-    mutate(prop_urb = 100 * urbana/(urbana + rural),
-           ano = as.integer(ano))
+tbs <- read_tsv("../data/ipeadata_populacao_estados.txt")
 
 # aux <- tbs %>%
 #     distinct(uf) %>%
