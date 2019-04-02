@@ -1,0 +1,1807 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 1052.3622 744.09448"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="drawing-4-types.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4163"
+         style="fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round;stroke:#000000;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4151"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4148"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;"
+       inkscape:isstock="true">
+      <path
+         id="path4145"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1;fill:#ff0000;fill-opacity:1"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path4142"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1;fill:#ff0000;fill-opacity:1"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-3"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4148-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4151-5"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4148-9"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-5"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4151-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-3-6"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4148-6-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-7-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4151-5-3"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-8-0"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4148-9-7"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-5-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4151-0-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-3-6-0"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4148-6-0-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-7-8-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4151-5-3-7"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-8-5"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4148-9-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-5-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4151-0-1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-3-6-9"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4148-6-0-4"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-7-8-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4151-5-3-2"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-8-5-3"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4148-9-0-8"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-5-4-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4151-0-1-8"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-3-6-9-5"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4148-6-0-4-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-7-8-4-9"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4151-5-3-2-4"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-8-5-3-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4148-9-0-8-4"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-5-4-8-0"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4151-0-1-8-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-3-6-9-5-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4148-6-0-4-6-0"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-7-8-4-9-6"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4151-5-3-2-4-1"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-8-0-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4148-9-7-8"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-5-7-1"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4151-0-0-3"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-3-6-0-5"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4148-6-0-6-5"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-7-8-7-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4151-5-3-7-8"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-7"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4163-2"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4163-9"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-4-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4163-9-2"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow2Lend-5"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4163-96"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.24748737"
+     inkscape:cx="329.45863"
+     inkscape:cy="469.60716"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1627"
+     inkscape:window-height="1026"
+     inkscape:window-x="53"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-308.26772)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:Lato;-inkscape-font-specification:'Lato, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="181.42857"
+       y="548.07648"
+       id="text7011"
+       sodipodi:linespacing="89.999998%"><tspan
+         sodipodi:role="line"
+         id="tspan7013"
+         x="181.42857"
+         y="548.07648" /></text>
+    <g
+       id="g8206"
+       transform="translate(-1268.7516,755.5941)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <text
+         sodipodi:linespacing="89.999998%"
+         id="text7183-7"
+         y="-538.16235"
+         x="307.95682"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-538.16235"
+           x="307.95682"
+           id="tspan7185-8"
+           sodipodi:role="line">DESENVOLVIMENTO</tspan><tspan
+           id="tspan7187-2"
+           y="-513.41235"
+           x="307.95682"
+           sodipodi:role="line">DE IDEIA</tspan></text>
+      <g
+         id="g7155-1"
+         transform="translate(-29.186048,-1349.096)">
+        <path
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.99999952;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-8);marker-end:url(#Arrow1Mend-5);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 526.1811,395.85586 0,568.9182"
+           id="path4136-0"
+           inkscape:connector-curvature="0" />
+        <path
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-3-6);marker-end:url(#Arrow1Mend-7-8);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 915.7689,680.31496 -779.1756,0"
+           id="path4136-3-5"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="525.98639"
+           y="376.64792"
+           id="text7019-8"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7021-5"
+             x="525.98639"
+             y="376.64792">DECLARATIVO</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="525.98639"
+           y="1003.2194"
+           id="text7023-5"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7025-0"
+             x="525.98639"
+             y="1003.2194">EXPLORATÓRIO</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="199.12659"
+           y="666.09033"
+           id="text7027-7"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7029-3"
+             x="199.12659"
+             y="666.09033">CONCEITUAL</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="806.64136"
+           y="714.09033"
+           id="text7031-8"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7033-2"
+             x="806.64136"
+             y="714.09033">ORIENTADA A DADOS</tspan></text>
+      </g>
+      <text
+         sodipodi:linespacing="89.999998%"
+         id="text7167-3"
+         y="-822.44806"
+         x="307.90311"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-822.44806"
+           x="307.90311"
+           id="tspan7169-0"
+           sodipodi:role="line">ILUSTRAÇÃO</tspan><tspan
+           id="tspan7171-7"
+           y="-797.69806"
+           x="307.90311"
+           sodipodi:role="line">DE IDEIA</tspan></text>
+      <text
+         sodipodi:linespacing="89.999998%"
+         id="text7173-7"
+         y="-822.58234"
+         x="690.81396"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-822.58234"
+           x="690.81396"
+           id="tspan7175-7"
+           sodipodi:role="line">VISUALIZAÇÃO</tspan><tspan
+           id="tspan7177-6"
+           y="-797.83234"
+           x="690.81396"
+           sodipodi:role="line">DO COTIDIANO</tspan></text>
+      <text
+         sodipodi:linespacing="89.999998%"
+         id="text7179-9"
+         y="-525.92163"
+         x="690.35742"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="-525.92163"
+           x="690.35742"
+           id="tspan7181-1"
+           sodipodi:role="line">DESCOBERTA VISUAL</tspan></text>
+    </g>
+    <g
+       id="g7923"
+       transform="translate(-1280.8734,331.33007)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <g
+         id="g7155">
+        <path
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.99999952;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 526.1811,395.85586 0,568.9182"
+           id="path4136"
+           inkscape:connector-curvature="0" />
+        <path
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-3);marker-end:url(#Arrow1Mend-7);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 915.7689,680.31496 -779.1756,0"
+           id="path4136-3"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="525.98639"
+           y="376.64792"
+           id="text7019"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7021"
+             x="525.98639"
+             y="376.64792">DECLARATIVO</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="525.98639"
+           y="1003.2194"
+           id="text7023"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7025"
+             x="525.98639"
+             y="1003.2194">EXPLORATÓRIO</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="199.12659"
+           y="666.09033"
+           id="text7027"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7029"
+             x="199.12659"
+             y="666.09033">CONCEITUAL</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="806.64136"
+           y="714.09033"
+           id="text7031"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7033"
+             x="806.64136"
+             y="714.09033">ORIENTADA A DADOS</tspan></text>
+      </g>
+      <g
+         transform="translate(0,42)"
+         id="g7476">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="226.31775"
+           y="408.84082"
+           id="text7167"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             x="226.31775"
+             y="408.84082"
+             id="tspan7171">Ilustração de ideia</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="208.73596"
+           y="439.50507"
+           id="text7381"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7383"
+             x="208.73596"
+             y="439.50507"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Info</tspan><tspan
+             sodipodi:role="line"
+             x="208.73596"
+             y="459.75507"
+             id="tspan7385"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Tipo</tspan><tspan
+             sodipodi:role="line"
+             x="208.73596"
+             y="480.00507"
+             id="tspan7387"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Carac.</tspan><tspan
+             sodipodi:role="line"
+             x="208.73596"
+             y="500.25507"
+             id="tspan7389"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Contexto</tspan><tspan
+             sodipodi:role="line"
+             x="208.73596"
+             y="520.50507"
+             id="tspan7393"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Talento</tspan><tspan
+             sodipodi:role="line"
+             x="208.73596"
+             y="540.75507"
+             id="tspan7395"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Objetivo</tspan><tspan
+             sodipodi:role="line"
+             x="208.73596"
+             y="561.00507"
+             id="tspan7391"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end" /></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="216.67014"
+           y="439.24139"
+           id="text7381-9"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7383-5"
+             x="216.67014"
+             y="439.24139"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Processo, organização.</tspan><tspan
+             sodipodi:role="line"
+             x="216.67014"
+             y="459.49139"
+             id="tspan7385-3"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Simples, metafórica.</tspan><tspan
+             sodipodi:role="line"
+             x="216.67014"
+             y="479.74139"
+             id="tspan7387-5"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Convenção.</tspan><tspan
+             sodipodi:role="line"
+             x="216.67014"
+             y="499.99139"
+             id="tspan7389-1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Apresentações, ensino.</tspan><tspan
+             sodipodi:role="line"
+             x="216.67014"
+             y="520.24139"
+             id="tspan7393-1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Design, editoração.</tspan><tspan
+             sodipodi:role="line"
+             x="216.67014"
+             y="540.49139"
+             id="tspan7395-0"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Aprendizado, simplificação.</tspan><tspan
+             sodipodi:role="line"
+             x="216.67014"
+             y="560.74139"
+             id="tspan7391-0"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start" /></text>
+      </g>
+      <g
+         id="g7476-2"
+         transform="translate(0,386.85803)">
+        <g
+           id="g7565">
+          <text
+             sodipodi:linespacing="89.999998%"
+             id="text7167-4"
+             y="408.84082"
+             x="265.28503"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               id="tspan7171-74"
+               y="408.84082"
+               x="265.28503"
+               sodipodi:role="line">Desenvolvimento de ideia</tspan></text>
+          <text
+             sodipodi:linespacing="89.999998%"
+             id="text7381-1"
+             y="439.50507"
+             x="208.73596"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end"
+               y="439.50507"
+               x="208.73596"
+               id="tspan7383-6"
+               sodipodi:role="line">Info</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end"
+               id="tspan7385-1"
+               y="459.75507"
+               x="208.73596"
+               sodipodi:role="line">Tipo</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end"
+               id="tspan7387-6"
+               y="480.00507"
+               x="208.73596"
+               sodipodi:role="line">Carac.</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end"
+               id="tspan7389-8"
+               y="500.25507"
+               x="208.73596"
+               sodipodi:role="line">Contexto</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end"
+               id="tspan7393-7"
+               y="520.50507"
+               x="208.73596"
+               sodipodi:role="line">Talento</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end"
+               id="tspan7395-04"
+               y="540.75507"
+               x="208.73596"
+               sodipodi:role="line">Objetivo</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end"
+               id="tspan7391-9"
+               y="561.00507"
+               x="208.73596"
+               sodipodi:role="line" /></text>
+          <text
+             sodipodi:linespacing="89.999998%"
+             id="text7381-9-6"
+             y="439.24139"
+             x="216.67014"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+               y="439.24139"
+               x="216.67014"
+               id="tspan7383-5-9"
+               sodipodi:role="line">Complexo, indefinido.</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+               id="tspan7385-3-5"
+               y="459.49139"
+               x="216.67014"
+               sodipodi:role="line">Metafórico, criativo.</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+               id="tspan7387-5-1"
+               y="479.74139"
+               x="216.67014"
+               sodipodi:role="line">Convenção.</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+               id="tspan7389-1-6"
+               y="499.99139"
+               x="216.67014"
+               sodipodi:role="line">Sessão de brainstorm.</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+               id="tspan7393-1-0"
+               y="520.24139"
+               x="216.67014"
+               sodipodi:role="line">Colaboração, facilitação.</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+               id="tspan7395-0-2"
+               y="540.49139"
+               x="216.67014"
+               sodipodi:role="line">Descoberta, simplificação.</tspan><tspan
+               style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
+               id="tspan7391-0-2"
+               y="560.74139"
+               x="216.67014"
+               sodipodi:role="line" /></text>
+        </g>
+      </g>
+      <g
+         transform="translate(-82.65928,-73.359316)"
+         id="g7736">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="746.27539"
+           y="869.05817"
+           id="text7167-4-2"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             x="746.27539"
+             y="869.05817"
+             id="tspan7171-74-7">Descoberta visual</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="731.13745"
+           y="899.72241"
+           id="text7381-1-5"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7383-6-1"
+             x="731.13745"
+             y="899.72241"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Info</tspan><tspan
+             sodipodi:role="line"
+             x="731.13745"
+             y="919.97241"
+             id="tspan7385-1-9"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Tipo</tspan><tspan
+             sodipodi:role="line"
+             x="731.13745"
+             y="940.22241"
+             id="tspan7387-6-0"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Carac.</tspan><tspan
+             sodipodi:role="line"
+             x="731.13745"
+             y="960.47241"
+             id="tspan7389-8-0"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Contexto</tspan><tspan
+             sodipodi:role="line"
+             x="731.13745"
+             y="980.72241"
+             id="tspan7393-7-6"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Talento</tspan><tspan
+             sodipodi:role="line"
+             x="731.13745"
+             y="1000.9724"
+             id="tspan7395-04-2"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Objetivo</tspan><tspan
+             sodipodi:role="line"
+             x="731.13745"
+             y="1021.2224"
+             id="tspan7391-9-0"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end" /></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="739.07166"
+           y="899.45874"
+           id="text7381-9-6-2"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7383-5-9-4"
+             x="739.07166"
+             y="899.45874"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Complexo, dinâmico.</tspan><tspan
+             sodipodi:role="line"
+             x="739.07166"
+             y="919.70874"
+             id="tspan7385-3-5-9"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Avançado, não convencional.</tspan><tspan
+             sodipodi:role="line"
+             x="739.07166"
+             y="939.95874"
+             id="tspan7387-5-1-9"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Interativo, auto-dinâmico.</tspan><tspan
+             sodipodi:role="line"
+             x="739.07166"
+             y="960.20874"
+             id="tspan7389-1-6-9"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Brainstorm, exploração.</tspan><tspan
+             sodipodi:role="line"
+             x="739.07166"
+             y="980.45874"
+             id="tspan7393-1-0-5"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Programação, BI, colaboração.</tspan><tspan
+             sodipodi:role="line"
+             x="739.07166"
+             y="1000.7087"
+             id="tspan7395-0-2-0"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Descoberta, tendências, oportunides.</tspan><tspan
+             sodipodi:role="line"
+             x="739.07166"
+             y="1020.9587"
+             id="tspan7391-0-2-3"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start" /></text>
+      </g>
+      <g
+         transform="translate(-10.8668,-52.542114)"
+         id="g7843">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="718.67358"
+           y="503.38293"
+           id="text7167-4-2-7"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             x="718.67358"
+             y="503.38293"
+             id="tspan7171-74-7-3">Visualização do cotidiano</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="659.34497"
+           y="534.04718"
+           id="text7381-1-5-7"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7383-6-1-1"
+             x="659.34497"
+             y="534.04718"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Info</tspan><tspan
+             sodipodi:role="line"
+             x="659.34497"
+             y="554.29718"
+             id="tspan7385-1-9-9"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Tipo</tspan><tspan
+             sodipodi:role="line"
+             x="659.34497"
+             y="574.54718"
+             id="tspan7387-6-0-4"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Carac.</tspan><tspan
+             sodipodi:role="line"
+             x="659.34497"
+             y="594.79718"
+             id="tspan7389-8-0-0"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Contexto</tspan><tspan
+             sodipodi:role="line"
+             x="659.34497"
+             y="615.04718"
+             id="tspan7393-7-6-8"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Talento</tspan><tspan
+             sodipodi:role="line"
+             x="659.34497"
+             y="635.29718"
+             id="tspan7395-04-2-0"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Objetivo</tspan><tspan
+             sodipodi:role="line"
+             x="659.34497"
+             y="655.54718"
+             id="tspan7391-9-0-1"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end" /></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="667.27917"
+           y="533.78351"
+           id="text7381-9-6-2-4"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7383-5-9-4-7"
+             x="667.27917"
+             y="533.78351"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Simples, pouco volume.</tspan><tspan
+             sodipodi:role="line"
+             x="667.27917"
+             y="554.03351"
+             id="tspan7385-3-5-9-7"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Gráficos convencionais.</tspan><tspan
+             sodipodi:role="line"
+             x="667.27917"
+             y="574.28351"
+             id="tspan7387-5-1-9-3"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Clareza, narrativa simples.</tspan><tspan
+             sodipodi:role="line"
+             x="667.27917"
+             y="594.53351"
+             id="tspan7389-1-6-9-9"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Apresentações formas, acadêmicas.</tspan><tspan
+             sodipodi:role="line"
+             x="667.27917"
+             y="614.78351"
+             id="tspan7393-1-0-5-5"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Design, storytelling.</tspan><tspan
+             sodipodi:role="line"
+             x="667.27917"
+             y="635.03351"
+             id="tspan7395-0-2-0-8"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">Afirmar, estabelecer contexto.</tspan><tspan
+             sodipodi:role="line"
+             x="667.27917"
+             y="655.28351"
+             id="tspan7391-0-2-3-5"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start" /></text>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="545.71429"
+       y="872.36218"
+       id="text8166"
+       sodipodi:linespacing="89.999998%"><tspan
+         sodipodi:role="line"
+         id="tspan8168"
+         x="545.71429"
+         y="872.36218" /></text>
+    <g
+       id="g14994"
+       transform="translate(-294.96454,323.24882)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <g
+         transform="translate(10.101525,-44.446712)"
+         id="g8186">
+        <g
+           transform="translate(-41.307879,48.955115)"
+           id="g7155-1-9">
+          <path
+             inkscape:connector-curvature="0"
+             id="path4136-0-2"
+             d="m 526.1811,395.85586 0,568.9182"
+             style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.99999952;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-8-0);marker-end:url(#Arrow1Mend-5-7);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path4136-3-5-2"
+             d="m 915.7689,680.31496 -779.1756,0"
+             style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-3-6-0);marker-end:url(#Arrow1Mend-7-8-7);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+          <text
+             sodipodi:linespacing="89.999998%"
+             id="text7019-8-4"
+             y="376.64792"
+             x="525.98639"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               y="376.64792"
+               x="525.98639"
+               id="tspan7021-5-9"
+               sodipodi:role="line">DECLARATIVO</tspan></text>
+          <text
+             sodipodi:linespacing="89.999998%"
+             id="text7023-5-7"
+             y="1003.2194"
+             x="525.98639"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               y="1003.2194"
+               x="525.98639"
+               id="tspan7025-0-9"
+               sodipodi:role="line">EXPLORATÓRIO</tspan></text>
+          <text
+             sodipodi:linespacing="89.999998%"
+             id="text7027-7-4"
+             y="666.09033"
+             x="199.12659"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               y="666.09033"
+               x="199.12659"
+               id="tspan7029-3-4"
+               sodipodi:role="line">CONCEITUAL</tspan></text>
+          <text
+             sodipodi:linespacing="89.999998%"
+             id="text7031-8-8"
+             y="714.09033"
+             x="806.64136"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               y="714.09033"
+               x="806.64136"
+               id="tspan7033-2-7"
+               sodipodi:role="line">ORIENTADA A DADOS</tspan></text>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="585.71429"
+           y="890.5188"
+           id="text8170"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan8172"
+             x="585.71429"
+             y="890.5188">CONFIRMATÓRIA</tspan></text>
+        <path
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:12, 4;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 687.14286,880.37494 188.57143,0"
+           id="path8176"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="693.41748"
+           y="946.93359"
+           id="text8178"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan8180"
+             x="693.41748"
+             y="946.93359">Exploração visual</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="702.85718"
+           y="824.36218"
+           id="text8182"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan8184"
+             x="702.85718"
+             y="824.36218">Confirmação visual</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g14883"
+       transform="translate(561.64481,-1200.0612)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <g
+         id="g7155-1-0"
+         transform="translate(-994.89188,608.5796)">
+        <path
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.99999952;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-8-5);marker-end:url(#Arrow1Mend-5-4);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 526.1811,395.85586 0,568.9182"
+           id="path4136-0-6"
+           inkscape:connector-curvature="0" />
+        <path
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-3-6-9);marker-end:url(#Arrow1Mend-7-8-4);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 915.7689,680.31496 -779.1756,0"
+           id="path4136-3-5-4"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="525.98639"
+           y="376.64792"
+           id="text7019-8-0"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7021-5-5"
+             x="525.98639"
+             y="376.64792">DECLARATIVO</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="525.98639"
+           y="1003.2194"
+           id="text7023-5-5"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7025-0-5"
+             x="525.98639"
+             y="1003.2194">EXPLORATÓRIO</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="199.12659"
+           y="666.09033"
+           id="text7027-7-3"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7029-3-42"
+             x="199.12659"
+             y="666.09033">CONCEITUAL</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="806.64136"
+           y="714.09033"
+           id="text7031-8-3"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7033-2-1"
+             x="806.64136"
+             y="714.09033">ORIENTADA A DADOS</tspan></text>
+      </g>
+      <g
+         transform="translate(-2.020274,0)"
+         id="g8479">
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.9;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:#666666;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect8465"
+           width="480.83261"
+           height="105.05586"
+           x="-707.10681"
+           y="1365.5095" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="-467.25446"
+           y="1400.2699"
+           id="text8467"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan8469"
+             x="-467.25446"
+             y="1400.2699">Processo</tspan><tspan
+             sodipodi:role="line"
+             x="-467.25446"
+             y="1425.0199"
+             id="tspan8471">Novas ideias, insights</tspan><tspan
+             sodipodi:role="line"
+             x="-467.25446"
+             y="1449.7699"
+             id="tspan8473">Individual ou com equipe</tspan></text>
+      </g>
+      <g
+         id="g8479-4"
+         transform="translate(-2.020274,-268.7006)">
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.9;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:#666666;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect8465-8"
+           width="480.83261"
+           height="105.05586"
+           x="-707.10681"
+           y="1365.5095" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="-467.25446"
+           y="1400.2699"
+           id="text8467-1"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan8469-1"
+             x="-467.25446"
+             y="1400.2699">Resultado</tspan><tspan
+             sodipodi:role="line"
+             x="-467.25446"
+             y="1425.0199"
+             id="tspan8471-6">Simplicidade</tspan><tspan
+             sodipodi:role="line"
+             x="-467.25446"
+             y="1449.7699"
+             id="tspan8473-6">Audiência externa</tspan></text>
+      </g>
+    </g>
+    <g
+       id="g14908"
+       transform="translate(573.76665,-1713.2187)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <g
+         id="g7155-1-0-9"
+         transform="translate(-143.32396,1117.9182)">
+        <path
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.99999952;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-8-5-3);marker-end:url(#Arrow1Mend-5-4-8);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 526.1811,395.85586 0,568.9182"
+           id="path4136-0-6-8"
+           inkscape:connector-curvature="0" />
+        <path
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-3-6-9-5);marker-end:url(#Arrow1Mend-7-8-4-9);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 915.7689,680.31496 -779.1756,0"
+           id="path4136-3-5-4-9"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="525.98639"
+           y="376.64792"
+           id="text7019-8-0-7"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7021-5-5-3"
+             x="525.98639"
+             y="376.64792">DECLARATIVO</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="525.98639"
+           y="1003.2194"
+           id="text7023-5-5-1"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7025-0-5-4"
+             x="525.98639"
+             y="1003.2194">EXPLORATÓRIO</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="199.12659"
+           y="666.09033"
+           id="text7027-7-3-8"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7029-3-42-6"
+             x="199.12659"
+             y="666.09033">CONCEITUAL</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="806.64136"
+           y="714.09033"
+           id="text7031-8-3-3"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7033-2-1-9"
+             x="806.64136"
+             y="714.09033">ORIENTADA A DADOS</tspan></text>
+      </g>
+      <g
+         id="g8479-4-4"
+         transform="translate(849.54765,240.63799)">
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.9;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:#666666;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect8465-8-7"
+           width="480.83261"
+           height="105.05586"
+           x="-707.10681"
+           y="1365.5095" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="-467.25446"
+           y="1400.2699"
+           id="text8467-1-0"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan8469-1-1"
+             x="-467.25446"
+             y="1400.2699">Design</tspan><tspan
+             sodipodi:role="line"
+             x="-467.25446"
+             y="1425.0199"
+             id="tspan8471-6-4">Storytelling</tspan><tspan
+             sodipodi:role="line"
+             x="-467.25446"
+             y="1449.7699"
+             id="tspan8473-6-4">Editoração</tspan></text>
+      </g>
+      <g
+         transform="translate(1.4898557,0)"
+         id="g8973">
+        <g
+           id="g8824">
+          <rect
+             y="1874.8481"
+             x="24.461113"
+             height="105.05586"
+             width="319.40405"
+             id="rect8465-3"
+             style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.9;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:#666666;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+          <text
+             sodipodi:linespacing="89.999998%"
+             id="text8467-3"
+             y="1909.6085"
+             x="183.59918"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               y="1909.6085"
+               x="183.59918"
+               id="tspan8469-4"
+               sodipodi:role="line">Trabalho em equipe</tspan><tspan
+               id="tspan8471-67"
+               y="1934.3585"
+               x="183.59918"
+               sodipodi:role="line">Facilitação</tspan><tspan
+               id="tspan8473-7"
+               y="1959.1085"
+               x="183.59918"
+               sodipodi:role="line">Brainstorm</tspan></text>
+        </g>
+        <g
+           transform="translate(394.40829,0)"
+           id="g8824-5">
+          <rect
+             y="1874.8481"
+             x="24.461113"
+             height="105.05586"
+             width="319.40405"
+             id="rect8465-3-3"
+             style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.9;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:#666666;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+          <text
+             sodipodi:linespacing="89.999998%"
+             id="text8467-3-8"
+             y="1909.6085"
+             x="183.59918"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               y="1909.6085"
+               x="183.59918"
+               id="tspan8469-4-5"
+               sodipodi:role="line">Análise</tspan><tspan
+               id="tspan8471-67-6"
+               y="1934.3585"
+               x="183.59918"
+               sodipodi:role="line">Programação</tspan><tspan
+               id="tspan8473-7-3"
+               y="1959.1085"
+               x="183.59918"
+               sodipodi:role="line">Inteligência de mercado</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g14940"
+       transform="translate(319.2082,-1612.2035)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <g
+         id="g7155-1-0-9-8"
+         transform="translate(985.24747,1006.4896)">
+        <path
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.99999952;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-8-5-3-8);marker-end:url(#Arrow1Mend-5-4-8-0);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 526.1811,395.85586 0,568.9182"
+           id="path4136-0-6-8-0"
+           inkscape:connector-curvature="0" />
+        <path
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-3-6-9-5-7);marker-end:url(#Arrow1Mend-7-8-4-9-6);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 915.7689,680.31496 -779.1756,0"
+           id="path4136-3-5-4-9-9"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="525.98639"
+           y="376.64792"
+           id="text7019-8-0-7-6"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7021-5-5-3-6"
+             x="525.98639"
+             y="376.64792">DECLARATIVO</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="525.98639"
+           y="1003.2194"
+           id="text7023-5-5-1-8"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7025-0-5-4-0"
+             x="525.98639"
+             y="1003.2194">EXPLORATÓRIO</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="199.12659"
+           y="666.09033"
+           id="text7027-7-3-8-4"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7029-3-42-6-1"
+             x="199.12659"
+             y="666.09033">CONCEITUAL</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="806.64136"
+           y="714.09033"
+           id="text7031-8-3-3-4"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7033-2-1-9-7"
+             x="806.64136"
+             y="714.09033">ORIENTADA A DADOS</tspan></text>
+      </g>
+      <g
+         id="g8479-4-4-8"
+         transform="translate(1978.1191,129.20942)">
+        <rect
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.9;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:#666666;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           id="rect8465-8-7-9"
+           width="480.83261"
+           height="105.05586"
+           x="-707.10681"
+           y="1365.5095" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="-467.25446"
+           y="1400.2699"
+           id="text8467-1-0-0"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan8469-1-1-3"
+             x="-467.25446"
+             y="1400.2699">Impresso</tspan><tspan
+             sodipodi:role="line"
+             x="-467.25446"
+             y="1425.0199"
+             id="tspan8471-6-4-6">Apresentação</tspan><tspan
+             sodipodi:role="line"
+             x="-467.25446"
+             y="1449.7699"
+             id="tspan8473-6-4-6">Web</tspan></text>
+      </g>
+      <g
+         transform="translate(1130.0613,-111.4286)"
+         id="g8973-5">
+        <g
+           id="g8824-9">
+          <rect
+             y="1874.8481"
+             x="24.461113"
+             height="105.05586"
+             width="319.40405"
+             id="rect8465-3-2"
+             style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.9;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:#666666;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+          <text
+             sodipodi:linespacing="89.999998%"
+             id="text8467-3-0"
+             y="1923.662"
+             x="183.59918"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               y="1923.662"
+               x="183.59918"
+               id="tspan8469-4-3"
+               sodipodi:role="line">Papel de rascunho</tspan><tspan
+               id="tspan8473-7-8"
+               y="1948.412"
+               x="183.59918"
+               sodipodi:role="line">Quadro</tspan></text>
+        </g>
+        <g
+           transform="translate(394.40829,0)"
+           id="g8824-5-0">
+          <rect
+             y="1874.8481"
+             x="24.461113"
+             height="105.05586"
+             width="319.40405"
+             id="rect8465-3-3-1"
+             style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.9;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:#666666;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+          <text
+             sodipodi:linespacing="89.999998%"
+             id="text8467-3-8-8"
+             y="1922.4736"
+             x="183.59918"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             xml:space="preserve"><tspan
+               y="1922.4736"
+               x="183.59918"
+               id="tspan8469-4-5-9"
+               sodipodi:role="line">Software de análise e</tspan><tspan
+               id="tspan8473-7-3-7"
+               y="1947.2236"
+               x="183.59918"
+               sodipodi:role="line">visualização de dados</tspan></text>
+        </g>
+      </g>
+    </g>
+    <g
+       id="g14976"
+       transform="translate(-735.39105,270.72088)"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <g
+         id="g7155-1-9-3"
+         transform="translate(1325.2475,49.346786)">
+        <path
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.99999952;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-8-0-7);marker-end:url(#Arrow1Mend-5-7-1);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 526.1811,395.85586 0,568.9182"
+           id="path4136-0-2-1"
+           inkscape:connector-curvature="0" />
+        <path
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-3-6-0-5);marker-end:url(#Arrow1Mend-7-8-7-7);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 915.7689,680.31496 -779.1756,0"
+           id="path4136-3-5-2-9"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="525.98639"
+           y="376.64792"
+           id="text7019-8-4-6"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7021-5-9-5"
+             x="525.98639"
+             y="376.64792">DECLARATIVO</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="525.98639"
+           y="1003.2194"
+           id="text7023-5-7-0"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7025-0-9-5"
+             x="525.98639"
+             y="1003.2194">EXPLORATÓRIO</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="199.12659"
+           y="666.09033"
+           id="text7027-7-4-6"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7029-3-4-1"
+             x="199.12659"
+             y="666.09033">CONCEITUAL</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="806.64136"
+           y="714.09033"
+           id="text7031-8-8-3"
+           sodipodi:linespacing="89.999998%"><tspan
+             sodipodi:role="line"
+             id="tspan7033-2-7-3"
+             x="806.64136"
+             y="714.09033">ORIENTADA A DADOS</tspan></text>
+      </g>
+      <path
+         inkscape:connector-curvature="0"
+         id="path8176-4"
+         d="m 1858.7389,880.76663 383.5308,0"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:12.00000011, 4.00000003;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9583-1"
+         d="m 1944.4701,827.07784 0,147.50738"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Lend-4);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9583-1-8"
+         d="m 2068.8981,940.61541 0,-147.50733"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Lend-4-8);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9583"
+         d="m 2007.205,825.07784 0,-273.01641"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:5.99999952;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Lend);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path9583-9"
+         d="m 1695.8636,825.07784 0,-273.01641"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:5.99999952;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Lend-5);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    </g>
+  </g>
+</svg>
