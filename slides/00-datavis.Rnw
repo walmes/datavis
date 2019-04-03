@@ -74,7 +74,8 @@ read_chunk("00-datavis.R")
       parte inferior das escadas.
 
     \end{minipage}
-    \caption{Plano de rota de fuga. Adapatado de \cite{berinato2016good}.}
+    \caption{Plano de rota de fuga. Adapatado de
+      \citeonline{berinato2016good}.}
   \end{figure}
 
   \framebreak
@@ -82,7 +83,8 @@ read_chunk("00-datavis.R")
   \begin{figure}[h]
     \centering
     \includegraphics[width = 6cm]{img/plano-de-fuga.png}
-    \caption{Plano de rota de fuga. Adapatado de \cite{berinato2016good}.}
+    \caption{Mapa de rota de fuga. Adapatado de
+      \citeonline{berinato2016good}.}
   \end{figure}
 
 \end{frame}
@@ -158,7 +160,9 @@ read_chunk("00-datavis.R")
   \begin{figure}
     \centering
     \includegraphics[height=5.8cm]{img/internet_minute_info2-edited.jpg}
-    \caption{Quanto de dados é produzido da cada minuto. Fonte: \href{https://www.socialmediatoday.com/news/how-much-data-is-generated-every-minute-infographic-1/525692/}{www.socialmediatoday.com}.}
+    \caption{Quanto de dados é produzido a cada minuto em diferentes
+      serviços. Fonte:
+      \href{https://www.socialmediatoday.com/news/how-much-data-is-generated-every-minute-infographic-1/525692/}{www.socialmediatoday.com}.}
   \end{figure}
 
   \framebreak
@@ -177,7 +181,7 @@ read_chunk("00-datavis.R")
     \begin{figure}
       \centering
       \includegraphics[width=5cm]{img/big-data.png}
-      \caption{Infográfico sobre tipos de dados em Big Data.}
+      \caption{Infográfico sobre fluxo de dados.}
     \end{figure}
   }
 
@@ -211,9 +215,9 @@ read_chunk("00-datavis.R")
   \begin{itemize}
   \item Importância da visualização de dados.
   \item História com as principais contribuições.
-  \item Fundamentos de visualiação de dados.
+  \item Fundamentos de visualização de dados.
     \begin{itemize}
-    \item Tipo de visualiação.
+    \item Tipo de visualização.
     \item Variáveis visuais.
     \item Principais competências.
     \end{itemize}
@@ -349,8 +353,8 @@ read_chunk("00-datavis.R")
   \end{figure}
 
   \hi{1952}: Mary Eleanor Spear publicou seu livro contendo boas
-  práticas do exercício baseadas em décadas de serviço no governo
-  Americano.
+  práticas em construção de gráficos baseadas em décadas de serviço no
+  governo Americano.
 
   \framebreak
 
@@ -503,15 +507,14 @@ read_chunk("00-datavis.R")
 
 \begin{frame}{O que vimos até aqui}
 
-  A história da visualização de dados:
-  \begin{itemize}
-  \item Fase 1: As contribuições pontuais.
-  \item Fase 2: Os manuais/livros.
-  \item Fase 3: Os estudos aprofundados.
-  \item Fase 4: A informatização.
-  \item Fase 5: Hoje $\rightarrow$ volume, velocidade, variedade: Big
-    Data.
-  \end{itemize}
+  A história da visualização de dados em fases:
+  \begin{enumerate}
+  \item As contribuições pontuais.
+  \item Os manuais/livros.
+  \item Os estudos aprofundados.
+  \item A informatização.
+  \item Hoje $\rightarrow$ volume, velocidade, variedade: Big Data.
+  \end{enumerate}
 
 \end{frame}
 
@@ -528,9 +531,9 @@ read_chunk("00-datavis.R")
     \begin{block}{\Large Visualização de dados}
       \Large
 
-      A representação e apresentação de dados que exploram nossa
-      habilidade de percepção visual com a finalidade de aumentar a
-      compreensão \cite{kirk2012data}.
+      A \hi{representação} e \hi{apresentação} de dados que exploram
+      nossa habilidade de \hi{percepção visual} com a finalidade de
+      aumentar a \hi{compreensão} \cite{kirk2012data}.
     \end{block}
 
 \end{frame}
@@ -540,7 +543,7 @@ read_chunk("00-datavis.R")
   \begin{itemize}
   \item \hi{Representação}: como retratar conceitos e dados, a escolha
     das formas geométricas, variáveis visuais, princípios de design.
-  \item \hi{Apresentação}: como comunicar-se com a visualização.
+  \item \hi{Apresentação}: como comunicar-se usando a visualização.
   \item \hi{Percepção visual}: como percebemos e processamos informação
     visual.
   \item \hi{Compreensão}: como maximizar a eficiência e efetividade da
@@ -668,8 +671,8 @@ read_chunk("00-datavis.R")
   \begin{figure}[h]
     \centering
     \includegraphics[height=6cm]{./img/phd070618s.png}
-    \caption{Ilustração conceitual do processo de correção de manuscrito
-      para submissão entre orientado e orientador. Fonte:
+    \caption{O processo de correção de manuscrito para submissão entre
+      orientado e orientador. Fonte:
       \href{http://phdcomics.com}{phdcomics.com}.}
   \end{figure}
 
@@ -678,9 +681,9 @@ read_chunk("00-datavis.R")
   \begin{figure}[h]
     \centering
     \includegraphics[height=6.5cm]{./img/phd120415s.png}
-    \caption{Ilustração conceitual do sentimento de ser confundido com
-      um aluno de doutorado em diferentes fases da vida
-      acadêmica. Fonte: \href{http://phdcomics.com}{phdcomics.com}.}
+    \caption{O sentimento de ser confundido com um aluno de doutorado em
+      diferentes fases da vida acadêmica. Fonte:
+      \href{http://phdcomics.com}{phdcomics.com}.}
   \end{figure}
 
   \framebreak
@@ -700,9 +703,9 @@ read_chunk("00-datavis.R")
     \includegraphics[height=4.75cm]{./img/data-science-venn-1.png}\hspace{1px}
     \includegraphics[height=4.75cm]{./img/data-science-venn-2.png}
     \caption{Ilustração baseada em diagramas de Venn sobre a composição
-      de habilidades de um profissional de um cientista de dados (esq.)
-      e o fluxo de ações de tarefas em ciência de dados. Fonte: o
-      autor. Visite \url{https://github.com/walmes/Tikz}.}
+      de habilidades de um cientista de dados (esq.)  e o fluxo de ações
+      em projetos de ciência de dados. Fonte: o autor. Visite
+      \url{https://github.com/walmes/Tikz}.}
   \end{figure}
 
   \framebreak
@@ -1019,7 +1022,7 @@ read_chunk("00-datavis.R")
     \centering
     \includegraphics[height=4cm]{img/chapeus-grid.png}
     \caption{Os 8 ``chapeús'' de Kirk ilustrando as diferentes
-      competências e papeis em visualização de dados. Fonte dos ícones:
+      competências e papéis em visualização de dados. Fonte dos ícones:
       \href{https://www.flaticon.com/authors/freepik}{www.flaticon.com/authors/freepik}.}
   \end{figure}
 
