@@ -40,7 +40,8 @@ if [ "$2" = "-b" ]
 then
     echo "Run biber."
     # Split file name from extension.
-    biber $FILENAME
+    # biber $FILENAME
+    bibtex $FILENAME
     pdflatex $FILENAME
     pdflatex $FILENAME
 fi

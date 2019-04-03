@@ -2,20 +2,42 @@
 
 % Bibliography.
 
-%\usepackage[style=authoryear]{biblatex}
-\usepackage[authordate, bibencoding=auto, strict, backend=biber, natbib]{biblatex-chicago}
+% %\usepackage[style=authoryear]{biblatex}
+% \usepackage[authordate, bibencoding=auto, strict, backend=biber, natbib]{biblatex-chicago}
+%
+% % Use:
+% %   \cite{<ref>}
+% %   \parencite{<ref>}
+% %   \fullcite{<ref>}
+% %   \footfullcite{<ref>}
+%
+% % ATTENTION
+% % Compilation: pdflatex > biber > pdflatex > pdflatex.
+%
+% % Calls refs.bib at preamble with:
+% \addbibresource{config/refs.bib}
 
+% abntex2cite -------------------------------
 
+\usepackage[
+  alf,
+  abnt-emphasize=bf,
+  abnt-etal-list=2,
+  abnt-and-type=&]{abntex2cite}
 % Use:
 %   \cite{<ref>}
-%   \parencite{<ref>}
-%   \fullcite{<ref>}
-%   \footfullcite{<ref>}
+%   \citeonline{<ref>}
 
 % ATTENTION
-% Compilation: pdflatex > biber > pdflatex > pdflatex.
+% Compilation: pdflatex > bibtex > pdflatex > pdflatex.
 
-% Calls refs.bib at preamble with:
-\addbibresource{config/refs.bib}
+% Calls refs.bib at last frame with:
+% \bibliography{config.refs}
 
-%-----------------------------------------------------------------------
+\let\oldbibliography\thebibliography
+\renewcommand{\thebibliography}[1]{%
+  \oldbibliography{#1}%
+  \setlength{\itemsep}{1em}%
+}
+
+%--------------------------------------------
