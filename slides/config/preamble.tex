@@ -34,6 +34,7 @@
 \usepackage{setspace}
 \usepackage{xspace}
 \usepackage{tabularx}
+\usepackage{comment}
 
 \setlength{\belowcaptionskip}{-0.5em}
 \setlength{\parindent}{0pt}
@@ -145,6 +146,14 @@
 
 \setbeamercolor{block title}{fg=black, bg=ubuntu_orange!50!white}
 \setbeamercolor{block body}{bg=black!5!white}
+
+%-----------------------------------------------------------------------
+
+\AtBeginSection{
+  \let\insertsectionnumber\relax
+  \let\sectionname\relax
+  \frame{\sectionpage}
+}
 
 %-----------------------------------------------------------------------
 % To remove empty brackets of \institution.
