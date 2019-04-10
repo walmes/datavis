@@ -984,154 +984,196 @@ read_chunk("00-graphics-gallery.R")
 %
 % \end{frame}
 %
-% \section{Mapa}\label{mapa}
-%
-% \begin{frame}{Choropleth map}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Choropleth map (grego: \enquote{área/região} $+$
-%   \enquote{magnitude}).
-% \item
-%   \textbf{Função}: retratar uma variável quantitativa em um espaço
-%   demarcado.
-% \item
-%   \textbf{Tipo de escala}: quantitativa $\times$ geográfica.
-% \item
-%   \textbf{Variáveis visuais}: preenchimento.
-% \item
-%   \textbf{Geometria}: polígonos.
-% \item
-%   \textbf{Aplicação Shiny}:
-%   \url{http://shiny.leg.ufpr.br/walmes/mapaufpr/}.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Bubble map}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Bubble map (mapa de bolhas).
-% \item
-%   \textbf{Função}: exibir a ocorrência e magnitude de variável
-%   quantitativa.
-% \item
-%   \textbf{Tipo de escala}: quantitativa.
-% \item
-%   \textbf{Variáveis visuais}: latitude, longitude e tamanho.
-% \item
-%   \textbf{Geometria}: pontos e polígonos.
-% \item
-%   \textbf{Variações}: uso de símbolos/marcadores para representar
-%   variável qualitativa.
-% \item
-%   \textbf{Aplicação Shiny}: \url{http://shiny.leg.ufpr.br/walmes/geor/}.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Mapa topográfico ou de elevação}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Mapa topográfico ou de elevação.
-% \item
-%   \textbf{Função}: exibir uma variável contínua no espaço geográfico.
-% \item
-%   \textbf{Tipo de escala}: quantitativa.
-% \item
-%   \textbf{Variáveis visuais}: latitude, longitude e cor.
-% \item
-%   \textbf{Geometria}: pontos ou pixels.
-% \item
-%   \textbf{Variações}: uso de isolinhas de contorno.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Mapa de contornos de nível}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Mapa de contornos de nível.
-% \item
-%   \textbf{Função}: exibir uma variável contínua no espaço geográfico
-%   classificada em intervalos.
-% \item
-%   \textbf{Tipo de escala}: quantitativa.
-% \item
-%   \textbf{Variáveis visuais}: latitude, longitude e cor.
-% \item
-%   \textbf{Geometria}: polígonos.
-% \item
-%   \textbf{Requisitos definíveis}: intervalos de classe.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Mapa de densidade}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Mapa de desidade.
-% \item
-%   \textbf{Função}: exibe a intersidade da ocorrência de eventos no
-%   espaço.
-% \item
-%   \textbf{Tipo de escala}: quantitativa.
-% \item
-%   \textbf{Variáveis visuais}: latitude, longitude e cor.
-% \item
-%   \textbf{Geometria}: pontos.
-% \item
-%   \textbf{Requisitos definíveis}: função de densidade, largura de banda.
-% \item
-%   \textbf{Variáveis calculadas}: densidade.
-% \item
-%   \textbf{Inspiração}: gráfico de densidade empírica.
-% \item
-%   \textbf{Variação}: intensidade por píxel/hexágono.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Mapa de conexões}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Mapa de conexões.
-% \item
-%   \textbf{Função}: exibe rotas e conexões entre elementos no mapa.
-% \item
-%   \textbf{Tipo de escala}: quantitativa.
-% \item
-%   \textbf{Variáveis visuais}: latitude, longitude e tamanho.
-% \item
-%   \textbf{Geometria}: linhas/arcos.
-% \end{itemize}
-% \url{https://datavizcatalogue.com/methods/connection_map.html}.
-%
-% \end{frame}
-%
-% \begin{frame}{Cartograma}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Cartograma (\emph{cartogram}).
-% \item
-%   \textbf{Função}: retrata uma variável quantitatica pelo tamanho dos
-%   polígonos ou distância fazendo distorção dos mesmos.
-% \item
-%   \textbf{Tipo de escala}: quantitativa.
-% \item
-%   \textbf{Variáveis visuais}: latitude, longitude e tamanho.
-% \item
-%   \textbf{Geometria}: polígonos.
-% \end{itemize}
-%
-% \end{frame}
-%
+\section{Mapa}\label{mapa}
+
+\begin{frame}[allowframebreaks]{Choropleth map}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 5.5cm]{img/brasil-populacao.jpg}
+    \caption{Mapa de densidade populacional por Estado. Fonte:
+      \url{https://gl.maps-brazil.com/brasil-densidade-de-poboación-mapa}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Choropleth map (grego: \enquote{área/região} $+$
+    \enquote{magnitude}).
+  \item \textbf{Função}: retratar uma variável quantitativa em um espaço
+    demarcado.
+  \item \textbf{Tipo de escala}: quantitativa $\times$ geográfica.
+  \item \textbf{Variáveis visuais}: preenchimento.
+  \item \textbf{Geometria}: polígonos.
+  \item \textbf{Aplicação Shiny}:
+    \url{http://shiny.leg.ufpr.br/walmes/mapaufpr/}.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Bubble map}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 5.5cm]{img/brasil-tradicoes-indigenas.png}
+    \caption{Tradição indígenas no Brasil. Fonte:
+      \url{https://journals.openedition.org/confins/7785}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Bubble map (mapa de bolhas).
+  \item \textbf{Função}: exibir a ocorrência e magnitude de variável
+    quantitativa.
+  \item \textbf{Tipo de escala}: quantitativa.
+  \item \textbf{Variáveis visuais}: latitude, longitude e tamanho.
+  \item \textbf{Geometria}: pontos e polígonos.
+  \item \textbf{Variações}: uso de símbolos/marcadores para representar
+    variável qualitativa.
+  \item \textbf{Aplicação Shiny}:
+    \url{http://shiny.leg.ufpr.br/walmes/geor/}.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Mapa topográfico ou de elevação}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 10cm]{img/parana-geor.png}
+    \caption{Mapa de densidade populacional por Estado. Fonte:
+      \url{http://www.leg.ufpr.br/geoR/PASI/}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 10cm]{img/geor-mo.png}
+    \caption{Valores para matéria orgânica do solo. Fonte:
+      \url{http://shiny.leg.ufpr.br/walmes/geor/}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Mapa topográfico ou de elevação.
+  \item \textbf{Função}: exibir uma variável contínua no espaço
+    geográfico.
+  \item \textbf{Tipo de escala}: quantitativa.
+  \item \textbf{Variáveis visuais}: latitude, longitude e cor.
+  \item \textbf{Geometria}: pontos ou pixels.
+  \item \textbf{Variações}: uso de isolinhas de contorno.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Mapa de contornos de nível}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 5cm]{img/brasil-anomalias.jpg}
+    \caption{Anomalias de temperaturas médias no Brasil para Abril de 2016. Fonte:
+      \url{https://www.bbc.com/portuguese/internacional/2016/05/160516_nasa_aquecimento_np}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Mapa de contornos de nível.
+  \item \textbf{Função}: exibir uma variável contínua no espaço
+    geográfico classificada em intervalos.
+  \item \textbf{Tipo de escala}: quantitativa.
+  \item \textbf{Variáveis visuais}: latitude, longitude e cor.
+  \item \textbf{Geometria}: polígonos.
+  \item \textbf{Requisitos definíveis}: intervalos de classe.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Mapa de densidade}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 6cm]{img/snow-map.pdf}
+    \caption{Mapa de densidade de ocorrência. Fonte:
+      \url{https://cran.r-project.org/package=HistData}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Mapa de desidade.
+  \item \textbf{Função}: exibe a intersidade da ocorrência de eventos no
+    espaço.
+  \item \textbf{Tipo de escala}: quantitativa.
+  \item \textbf{Variáveis visuais}: latitude, longitude e cor.
+  \item \textbf{Geometria}: pontos.
+  \item \textbf{Requisitos definíveis}: função de densidade, largura de
+    banda.
+  \item \textbf{Variáveis calculadas}: densidade.
+  \item \textbf{Inspiração}: gráfico de densidade empírica.
+  \item \textbf{Variação}: intensidade por píxel/hexágono.
+  \end{itemize}
+
+\end{frame}
+
+% \url{http://www.datavis.ca/courses/RGraphics/R-Graphics1.pdf}
+
+\begin{frame}[allowframebreaks]{Mapa de conexões}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 10cm]{img/connection_map.png}
+    \caption{Mapa de conexões. Fonte:
+      \url{https://datavizcatalogue.com/methods/connection_map.html}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 8cm]{img/parana-paulo-jhony.png}
+    \caption{Mapa de conexões entre empresas e prefeituras no
+      Paraná. Fonte: Trabalho de Conclusão de Curso de Especialização em
+      Data Science \& Big Data, Paulo Jhonny Scheleder da Costa Rosa.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Mapa de conexões.
+  \item \textbf{Função}: exibe rotas e conexões entre elementos no mapa.
+  \item \textbf{Tipo de escala}: quantitativa.
+  \item \textbf{Variáveis visuais}: latitude, longitude e tamanho.
+  \item \textbf{Geometria}: linhas/arcos.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Cartograma}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 10cm]{img/cartograma-populacao.png}
+    \caption{Cartograma da população mundial em 2020. Fonte:
+      \url{https://giphy.com/gifs/geography-jpJ6VkD9k17cA}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Cartograma (\emph{cartogram}).
+  \item \textbf{Função}: retrata uma variável quantitatica pelo tamanho
+    dos polígonos ou distância fazendo distorção dos mesmos.
+  \item \textbf{Tipo de escala}: quantitativa.
+  \item \textbf{Variáveis visuais}: latitude, longitude e tamanho.
+  \item \textbf{Geometria}: polígonos.
+  \end{itemize}
+
+\end{frame}
+
 % \section{Organização}\label{organizacao}
 %
 % \begin{frame}{Dendrograma}
@@ -1215,93 +1257,169 @@ read_chunk("00-graphics-gallery.R")
 %
 % \end{frame}
 %
-% \section{Fluxo}\label{fluxo}
-%
-% \begin{frame}{Network}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: \emph{Network} (rede) ou grafo.
-% \item
-%   \textbf{Função}: compreender o relacionamento entre um grupo de
-%   entidades.
-% \item
-%   \textbf{Tipo de escala}: qualitativa e quantitativa.
-% \item
-%   \textbf{Variáveis visuais}: tamanho e preenchimento.
-% \item
-%   \textbf{Geometria}: pontos e segmentos.
-% \item
-%   \textbf{Variações}: \emph{radial network}.
-% \item
-%   \url{http://yasiv.com/}.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Radial network}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: \emph{Radial network} ou \emph{hierarchical edge
-%   bundling}.
-% \item
-%   \textbf{Função}: visualizar a conexão entre todas entidades de uma
-%   coleção.
-% \item
-%   \textbf{Variações}: digrama de arcos.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Diagrama de arcos}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Diagrama de arcos (\emph{arc diagram}).
-% \item
-%   \textbf{Função}: visualizar a conexão entre entidades de uma coleção.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Sankey diagram ou alluvial chart}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: \emph{Sankey diagram} ou \emph{alluvial chart}.
-% \item
-%   \textbf{Função}: exibe o fluxo de quantidade/proporção de uma
-%   variável.
-% \item
-%   \textbf{Tipo de escala}: quantitativa.
-% \item
-%   \textbf{Variáveis visuais}: tamanho.
-% \item
-%   \textbf{Geometria}: arcos.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Chord diagram}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Diagrama de cordas (\emph{chord diagram})
-% \item
-%   \textbf{Função}: exibe o fluxo de quantidade/proporção de uma
-%   variável.
-% \item
-%   \textbf{Tipo de escala}: quantitativa $\times$ categórica.
-% \item
-%   \textbf{Variáveis visuais}: tamanho.
-% \item
-%   \textbf{Geometria}: arcos.
-% \item
-%   \textbf{Inspiração}: \emph{Sankey diagram} e \emph{radial network}.
-% \end{itemize}
-%
-% \end{frame}
+\section{Fluxo}\label{fluxo}
+
+\begin{frame}[allowframebreaks]{Network}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 9.5cm]{img/visNetwork-3.png}
+    \caption{Exemplos de redes. Fonte: \url{https://kateto.net/network-visualization}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 8cm]{img/network-mcglm.png}
+    \caption{Relação entre as funções do pacote \texttt{mcglm}. Fonte:
+      \url{http://leg.ufpr.br/~leg/mcglm/vignettes/functions_network.html}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 5cm]{img/yasiv.png}
+    \caption{Relação entre livros sobre visualização de dados comprados
+      na Amazon. \texttt{mcglm}. Fonte:
+      \url{http://yasiv.com/\#/Search?q=Data\%20visualization}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: \emph{Network} (rede) ou grafo.
+  \item \textbf{Função}: compreender o relacionamento entre um grupo de
+    entidades.
+  \item \textbf{Tipo de escala}: qualitativa e quantitativa.
+  \item \textbf{Variáveis visuais}: tamanho e preenchimento.
+  \item \textbf{Geometria}: pontos e segmentos.
+  \item \textbf{Variações}: \emph{radial network}.
+  \item Rede de relacionamento de livros na Amazon:
+    \url{http://yasiv.com/}.
+  \item Redes com o R: \url{https://kateto.net/network-visualization}.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Radial network}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height = 3.7cm]{img/radial-network-1.jpg}\hspace{1px}
+    \includegraphics[height = 3.7cm]{img/radial-network-2.jpg}
+    \caption{Exemplo de rede radial. Fonte: \url{https://truth-and-beauty.net/projects/muesli-ingredient-network}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: \emph{Radial network} ou \emph{hierarchical edge
+      bundling}.
+  \item \textbf{Função}: visualizar a conexão entre todas entidades de
+    uma coleção.
+  \item \textbf{Variações}: digrama de arcos.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Diagrama de arcos}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 10cm]{img/arc-diagram.png}
+    \caption{Exemplo de diagrama de arco. Fonte: \url{https://plot.ly/~empet/13574/arc-diagram-of-star-wars-characters-that-interacted-in-the-force-awakens}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Diagrama de arcos (\emph{arc diagram}).
+  \item \textbf{Função}: visualizar a conexão entre entidades de uma
+    coleção.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Sankey diagram ou alluvial chart}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 7.5cm]{img/sankey-1.png}
+    \caption{Exemplo de \emph{Sankey diagram}. Fonte: \url{https://www.theinformationlab.co.uk/2018/03/09/build-sankey-diagram-tableau-without-data-prep-beforehand/}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 10cm]{img/sankey-2.png}
+    \caption{Exemplo de \emph{Sankey diagram}. Fonte: \url{https://www.r-graph-gallery.com/sankey-diagram/}.}
+  \end{figure}
+
+    \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 8cm]{img/Sankey-Chord.png}
+    \caption{Exemplo de \emph{Sankey diagram}. Fonte: \url{https://plotdb.com/chart/1039}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: \emph{Sankey diagram} ou \emph{alluvial chart}.
+  \item \textbf{Função}: exibe o fluxo de quantidade/proporção de uma
+    variável.
+  \item \textbf{Tipo de escala}: quantitativa.
+  \item \textbf{Variáveis visuais}: tamanho.
+  \item \textbf{Geometria}: arcos.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Chord diagram}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 6cm]{img/chord-diagram-2.png}
+    \caption{Exemplos de diagramas de corda. Fonte: \url{https://www.data-to-viz.com/graph/chord.html}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 9.5cm]{img/chord-diagram-1.png}
+    \caption{Exemplos de diagramas de corda. Fonte: \url{https://learningtableaublog.wordpress.com/2016/08/04/chord-diagrams/}.}
+  \end{figure}
+
+  \framebreak
+
+    \begin{figure}[h]
+    \centering
+    \includegraphics[width = 5.5cm]{img/chord-diagram-bruna-rogerio.png}
+    \caption{Disposição dos acordes em sequência na música
+      brasileira. Trabalho de conclusão de curso de Bruna Wunderwald e
+      Rogério Filho (2017).}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Diagrama de cordas (\emph{chord diagram})
+  \item \textbf{Função}: exibe o fluxo de quantidade/proporção de uma
+    variável.
+  \item \textbf{Tipo de escala}: quantitativa $\times$ categórica.
+  \item \textbf{Variáveis visuais}: tamanho.
+  \item \textbf{Geometria}: arcos.
+  \item \textbf{Inspiração}: \emph{Sankey diagram} e \emph{radial
+      network}.
+  \end{itemize}
+
+\end{frame}
+
 %
 % \section{Outros}\label{outros}
 %
@@ -1370,6 +1488,7 @@ read_chunk("00-graphics-gallery.R")
 %   \url{https://www.fusioncharts.com/charts?product=fusioncharts}.
 % \item
 %   \url{https://news-explorer.mybluemix.net/?query=data\%20science}.
+% \item \url{https://truth-and-beauty.net/}.
 % \end{enumerate}
 %
 % \end{frame}

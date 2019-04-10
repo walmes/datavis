@@ -6,10 +6,10 @@ suppressPackageStartupMessages(library(ggjoy))
 
 path <- "../data/euro_football_players.txt"
 
-# if (!file.exists(url)) {
-#     url <- "http://leg.ufpr.br/~walmes/data/euro_football_players.txt"
-#     download.file(url = url, destfile = path)
-# }
+if (!file.exists(path)) {
+    url <- "http://leg.ufpr.br/~walmes/data/euro_football_players.txt"
+    download.file(url, destfile = path)
+}
 
 # Importação.
 tb <- read_tsv(file = path,
@@ -212,6 +212,13 @@ grid.arrange(gg + geom_boxplot(fill = "yellow", alpha = 0.5),
              ncol = 1)
 
 cap <- "Distribuição da altura dos jogadores por função em campo."
+
+#-----------------------------------------------------------------------
+
+library(HistData)
+pdf("img/snow-map.pdf")
+SnowMap(density=TRUE, main="Snow's Cholera Map, Death Intensity")
+dev.off()
 
 #-----------------------------------------------------------------------
 
