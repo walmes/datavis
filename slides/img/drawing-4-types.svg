@@ -14,7 +14,7 @@
    viewBox="0 0 1052.3622 744.09448"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="drawing-4-types.svg">
   <defs
      id="defs4">
@@ -538,6 +538,66 @@
          d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
          transform="matrix(-1.1,0,0,-1.1,-1.1,0)" />
     </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-8-0-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4148-9-7-9"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-5-7-10"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4151-0-0-7"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart-3-6-0-58"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4148-6-0-6-7"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(0.4,0,0,0.4,4,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend-7-8-7-0"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path4151-5-3-7-4"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)" />
+    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -546,17 +606,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="329.45863"
-     inkscape:cy="469.60716"
+     inkscape:zoom="0.35"
+     inkscape:cx="173.03102"
+     inkscape:cy="-1258.2075"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1627"
-     inkscape:window-height="1026"
-     inkscape:window-x="53"
+     inkscape:window-width="1863"
+     inkscape:window-height="1056"
+     inkscape:window-x="57"
      inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:snap-global="false" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -565,7 +626,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -576,35 +637,36 @@
      transform="translate(0,-308.26772)">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:Lato;-inkscape-font-specification:'Lato, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:Lato;-inkscape-font-specification:'Lato, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="181.42857"
        y="548.07648"
-       id="text7011"
-       sodipodi:linespacing="89.999998%"><tspan
+       id="text7011"><tspan
          sodipodi:role="line"
          id="tspan7013"
          x="181.42857"
-         y="548.07648" /></text>
+         y="548.07648"
+         style="font-size:22.5px;line-height:0.89999998"> </tspan></text>
     <g
        id="g8206"
        transform="translate(-1268.7516,755.5941)"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300">
       <text
-         sodipodi:linespacing="89.999998%"
          id="text7183-7"
          y="-538.16235"
          x="307.95682"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            y="-538.16235"
            x="307.95682"
            id="tspan7185-8"
-           sodipodi:role="line">DESENVOLVIMENTO</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:27.5px;line-height:0.89999998">DESENVOLVIMENTO</tspan><tspan
            id="tspan7187-2"
            y="-513.41235"
            x="307.95682"
-           sodipodi:role="line">DE IDEIA</tspan></text>
+           sodipodi:role="line"
+           style="font-size:27.5px;line-height:0.89999998">DE IDEIA</tspan></text>
       <g
          id="g7155-1"
          transform="translate(-29.186048,-1349.096)">
@@ -620,90 +682,92 @@
            inkscape:connector-curvature="0" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="525.98639"
            y="376.64792"
-           id="text7019-8"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7019-8"><tspan
              sodipodi:role="line"
              id="tspan7021-5"
              x="525.98639"
-             y="376.64792">DECLARATIVO</tspan></text>
+             y="376.64792"
+             style="font-size:27.5px;line-height:0.89999998">DECLARATIVO</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="525.98639"
            y="1003.2194"
-           id="text7023-5"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7023-5"><tspan
              sodipodi:role="line"
              id="tspan7025-0"
              x="525.98639"
-             y="1003.2194">EXPLORATÓRIO</tspan></text>
+             y="1003.2194"
+             style="font-size:27.5px;line-height:0.89999998">EXPLORATÓRIO</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="199.12659"
            y="666.09033"
-           id="text7027-7"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7027-7"><tspan
              sodipodi:role="line"
              id="tspan7029-3"
              x="199.12659"
-             y="666.09033">CONCEITUAL</tspan></text>
+             y="666.09033"
+             style="font-size:27.5px;line-height:0.89999998">CONCEITUAL</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="806.64136"
            y="714.09033"
-           id="text7031-8"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7031-8"><tspan
              sodipodi:role="line"
              id="tspan7033-2"
              x="806.64136"
-             y="714.09033">ORIENTADA A DADOS</tspan></text>
+             y="714.09033"
+             style="font-size:27.5px;line-height:0.89999998">ORIENTADA A DADOS</tspan></text>
       </g>
       <text
-         sodipodi:linespacing="89.999998%"
          id="text7167-3"
          y="-822.44806"
          x="307.90311"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            y="-822.44806"
            x="307.90311"
            id="tspan7169-0"
-           sodipodi:role="line">ILUSTRAÇÃO</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:27.5px;line-height:0.89999998">ILUSTRAÇÃO</tspan><tspan
            id="tspan7171-7"
            y="-797.69806"
            x="307.90311"
-           sodipodi:role="line">DE IDEIA</tspan></text>
+           sodipodi:role="line"
+           style="font-size:27.5px;line-height:0.89999998">DE IDEIA</tspan></text>
       <text
-         sodipodi:linespacing="89.999998%"
          id="text7173-7"
          y="-822.58234"
          x="690.81396"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            y="-822.58234"
            x="690.81396"
            id="tspan7175-7"
-           sodipodi:role="line">VISUALIZAÇÃO</tspan><tspan
+           sodipodi:role="line"
+           style="font-size:27.5px;line-height:0.89999998">VISUALIZAÇÃO</tspan><tspan
            id="tspan7177-6"
            y="-797.83234"
            x="690.81396"
-           sodipodi:role="line">DO COTIDIANO</tspan></text>
+           sodipodi:role="line"
+           style="font-size:27.5px;line-height:0.89999998">DO COTIDIANO</tspan></text>
       <text
-         sodipodi:linespacing="89.999998%"
          id="text7179-9"
          y="-525.92163"
          x="690.35742"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            y="-525.92163"
            x="690.35742"
            id="tspan7181-1"
-           sodipodi:role="line">DESCOBERTA VISUAL</tspan></text>
+           sodipodi:role="line"
+           style="font-size:27.5px;line-height:0.89999998">DESCOBERTA VISUAL</tspan></text>
     </g>
     <g
        id="g7923"
@@ -724,70 +788,69 @@
            inkscape:connector-curvature="0" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="525.98639"
            y="376.64792"
-           id="text7019"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7019"><tspan
              sodipodi:role="line"
              id="tspan7021"
              x="525.98639"
-             y="376.64792">DECLARATIVO</tspan></text>
+             y="376.64792"
+             style="font-size:27.5px;line-height:0.89999998">DECLARATIVO</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="525.98639"
            y="1003.2194"
-           id="text7023"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7023"><tspan
              sodipodi:role="line"
              id="tspan7025"
              x="525.98639"
-             y="1003.2194">EXPLORATÓRIO</tspan></text>
+             y="1003.2194"
+             style="font-size:27.5px;line-height:0.89999998">EXPLORATÓRIO</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="199.12659"
            y="666.09033"
-           id="text7027"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7027"><tspan
              sodipodi:role="line"
              id="tspan7029"
              x="199.12659"
-             y="666.09033">CONCEITUAL</tspan></text>
+             y="666.09033"
+             style="font-size:27.5px;line-height:0.89999998">CONCEITUAL</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="806.64136"
            y="714.09033"
-           id="text7031"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7031"><tspan
              sodipodi:role="line"
              id="tspan7033"
              x="806.64136"
-             y="714.09033">ORIENTADA A DADOS</tspan></text>
+             y="714.09033"
+             style="font-size:27.5px;line-height:0.89999998">ORIENTADA A DADOS</tspan></text>
       </g>
       <g
          transform="translate(0,42)"
          id="g7476">
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="226.31775"
            y="408.84082"
-           id="text7167"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7167"><tspan
              sodipodi:role="line"
              x="226.31775"
              y="408.84082"
-             id="tspan7171">Ilustração de ideia</tspan></text>
+             id="tspan7171"
+             style="font-size:27.5px;line-height:0.89999998">Ilustração de ideia</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="208.73596"
            y="439.50507"
-           id="text7381"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7381"><tspan
              sodipodi:role="line"
              id="tspan7383"
              x="208.73596"
@@ -819,17 +882,16 @@
              id="tspan7395"
              style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Objetivo</tspan><tspan
              sodipodi:role="line"
-             x="208.73596"
+             x="213.92151"
              y="561.00507"
              id="tspan7391"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end" /></text>
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end"> </tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="216.67014"
            y="439.24139"
-           id="text7381-9"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7381-9"><tspan
              sodipodi:role="line"
              id="tspan7383-5"
              x="216.67014"
@@ -864,7 +926,7 @@
              x="216.67014"
              y="560.74139"
              id="tspan7391-0"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start" /></text>
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"> </tspan></text>
       </g>
       <g
          id="g7476-2"
@@ -872,22 +934,21 @@
         <g
            id="g7565">
           <text
-             sodipodi:linespacing="89.999998%"
              id="text7167-4"
              y="408.84082"
              x="265.28503"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              xml:space="preserve"><tspan
                id="tspan7171-74"
                y="408.84082"
                x="265.28503"
-               sodipodi:role="line">Desenvolvimento de ideia</tspan></text>
+               sodipodi:role="line"
+               style="font-size:27.5px;line-height:0.89999998">Desenvolvimento de ideia</tspan></text>
           <text
-             sodipodi:linespacing="89.999998%"
              id="text7381-1"
              y="439.50507"
              x="208.73596"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              xml:space="preserve"><tspan
                style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end"
                y="439.50507"
@@ -922,14 +983,13 @@
                style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end"
                id="tspan7391-9"
                y="561.00507"
-               x="208.73596"
-               sodipodi:role="line" /></text>
+               x="213.92151"
+               sodipodi:role="line"> </tspan></text>
           <text
-             sodipodi:linespacing="89.999998%"
              id="text7381-9-6"
              y="439.24139"
              x="216.67014"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              xml:space="preserve"><tspan
                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"
                y="439.24139"
@@ -965,7 +1025,7 @@
                id="tspan7391-0-2"
                y="560.74139"
                x="216.67014"
-               sodipodi:role="line" /></text>
+               sodipodi:role="line"> </tspan></text>
         </g>
       </g>
       <g
@@ -973,22 +1033,21 @@
          id="g7736">
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="746.27539"
            y="869.05817"
-           id="text7167-4-2"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7167-4-2"><tspan
              sodipodi:role="line"
              x="746.27539"
              y="869.05817"
-             id="tspan7171-74-7">Descoberta visual</tspan></text>
+             id="tspan7171-74-7"
+             style="font-size:27.5px;line-height:0.89999998">Descoberta visual</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="731.13745"
            y="899.72241"
-           id="text7381-1-5"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7381-1-5"><tspan
              sodipodi:role="line"
              id="tspan7383-6-1"
              x="731.13745"
@@ -1020,17 +1079,16 @@
              id="tspan7395-04-2"
              style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Objetivo</tspan><tspan
              sodipodi:role="line"
-             x="731.13745"
+             x="736.323"
              y="1021.2224"
              id="tspan7391-9-0"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end" /></text>
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end"> </tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="739.07166"
            y="899.45874"
-           id="text7381-9-6-2"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7381-9-6-2"><tspan
              sodipodi:role="line"
              id="tspan7383-5-9-4"
              x="739.07166"
@@ -1065,29 +1123,28 @@
              x="739.07166"
              y="1020.9587"
              id="tspan7391-0-2-3"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start" /></text>
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"> </tspan></text>
       </g>
       <g
          transform="translate(-10.8668,-52.542114)"
          id="g7843">
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="718.67358"
            y="503.38293"
-           id="text7167-4-2-7"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7167-4-2-7"><tspan
              sodipodi:role="line"
              x="718.67358"
              y="503.38293"
-             id="tspan7171-74-7-3">Visualização do cotidiano</tspan></text>
+             id="tspan7171-74-7-3"
+             style="font-size:27.5px;line-height:0.89999998">Visualização do cotidiano</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="659.34497"
            y="534.04718"
-           id="text7381-1-5-7"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7381-1-5-7"><tspan
              sodipodi:role="line"
              id="tspan7383-6-1-1"
              x="659.34497"
@@ -1119,17 +1176,16 @@
              id="tspan7395-04-2-0"
              style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end">Objetivo</tspan><tspan
              sodipodi:role="line"
-             x="659.34497"
+             x="664.53052"
              y="655.54718"
              id="tspan7391-9-0-1"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end" /></text>
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end"> </tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="667.27917"
            y="533.78351"
-           id="text7381-9-6-2-4"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7381-9-6-2-4"><tspan
              sodipodi:role="line"
              id="tspan7383-5-9-4-7"
              x="667.27917"
@@ -1164,20 +1220,20 @@
              x="667.27917"
              y="655.28351"
              id="tspan7391-0-2-3-5"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start" /></text>
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start"> </tspan></text>
       </g>
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="545.71429"
        y="872.36218"
-       id="text8166"
-       sodipodi:linespacing="89.999998%"><tspan
+       id="text8166"><tspan
          sodipodi:role="line"
          id="tspan8168"
-         x="545.71429"
-         y="872.36218" /></text>
+         x="548.85638"
+         y="872.36218"
+         style="font-size:27.5px;line-height:0.89999998"> </tspan></text>
     <g
        id="g14994"
        transform="translate(-294.96454,323.24882)"
@@ -1200,61 +1256,61 @@
              d="m 915.7689,680.31496 -779.1756,0"
              style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-3-6-0);marker-end:url(#Arrow1Mend-7-8-7);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
           <text
-             sodipodi:linespacing="89.999998%"
              id="text7019-8-4"
              y="376.64792"
              x="525.98639"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              xml:space="preserve"><tspan
                y="376.64792"
                x="525.98639"
                id="tspan7021-5-9"
-               sodipodi:role="line">DECLARATIVO</tspan></text>
+               sodipodi:role="line"
+               style="font-size:27.5px;line-height:0.89999998">DECLARATIVO</tspan></text>
           <text
-             sodipodi:linespacing="89.999998%"
              id="text7023-5-7"
              y="1003.2194"
              x="525.98639"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              xml:space="preserve"><tspan
                y="1003.2194"
                x="525.98639"
                id="tspan7025-0-9"
-               sodipodi:role="line">EXPLORATÓRIO</tspan></text>
+               sodipodi:role="line"
+               style="font-size:27.5px;line-height:0.89999998">EXPLORATÓRIO</tspan></text>
           <text
-             sodipodi:linespacing="89.999998%"
              id="text7027-7-4"
              y="666.09033"
              x="199.12659"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              xml:space="preserve"><tspan
                y="666.09033"
                x="199.12659"
                id="tspan7029-3-4"
-               sodipodi:role="line">CONCEITUAL</tspan></text>
+               sodipodi:role="line"
+               style="font-size:27.5px;line-height:0.89999998">CONCEITUAL</tspan></text>
           <text
-             sodipodi:linespacing="89.999998%"
              id="text7031-8-8"
              y="714.09033"
              x="806.64136"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              xml:space="preserve"><tspan
                y="714.09033"
                x="806.64136"
                id="tspan7033-2-7"
-               sodipodi:role="line">ORIENTADA A DADOS</tspan></text>
+               sodipodi:role="line"
+               style="font-size:27.5px;line-height:0.89999998">ORIENTADA A DADOS</tspan></text>
         </g>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="585.71429"
            y="890.5188"
-           id="text8170"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text8170"><tspan
              sodipodi:role="line"
              id="tspan8172"
              x="585.71429"
-             y="890.5188">CONFIRMATÓRIA</tspan></text>
+             y="890.5188"
+             style="font-size:27.5px;line-height:0.89999998">CONFIRMATÓRIA</tspan></text>
         <path
            style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:12, 4;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
            d="m 687.14286,880.37494 188.57143,0"
@@ -1262,26 +1318,26 @@
            inkscape:connector-curvature="0" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="693.41748"
            y="946.93359"
-           id="text8178"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text8178"><tspan
              sodipodi:role="line"
              id="tspan8180"
              x="693.41748"
-             y="946.93359">Exploração visual</tspan></text>
+             y="946.93359"
+             style="font-size:27.5px;line-height:0.89999998">Exploração visual</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="702.85718"
            y="824.36218"
-           id="text8182"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text8182"><tspan
              sodipodi:role="line"
              id="tspan8184"
              x="702.85718"
-             y="824.36218">Confirmação visual</tspan></text>
+             y="824.36218"
+             style="font-size:27.5px;line-height:0.89999998">Confirmação visual</tspan></text>
       </g>
     </g>
     <g
@@ -1304,48 +1360,48 @@
            inkscape:connector-curvature="0" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="525.98639"
            y="376.64792"
-           id="text7019-8-0"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7019-8-0"><tspan
              sodipodi:role="line"
              id="tspan7021-5-5"
              x="525.98639"
-             y="376.64792">DECLARATIVO</tspan></text>
+             y="376.64792"
+             style="font-size:27.5px;line-height:0.89999998">DECLARATIVO</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="525.98639"
            y="1003.2194"
-           id="text7023-5-5"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7023-5-5"><tspan
              sodipodi:role="line"
              id="tspan7025-0-5"
              x="525.98639"
-             y="1003.2194">EXPLORATÓRIO</tspan></text>
+             y="1003.2194"
+             style="font-size:27.5px;line-height:0.89999998">EXPLORATÓRIO</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="199.12659"
            y="666.09033"
-           id="text7027-7-3"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7027-7-3"><tspan
              sodipodi:role="line"
              id="tspan7029-3-42"
              x="199.12659"
-             y="666.09033">CONCEITUAL</tspan></text>
+             y="666.09033"
+             style="font-size:27.5px;line-height:0.89999998">CONCEITUAL</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="806.64136"
            y="714.09033"
-           id="text7031-8-3"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7031-8-3"><tspan
              sodipodi:role="line"
              id="tspan7033-2-1"
              x="806.64136"
-             y="714.09033">ORIENTADA A DADOS</tspan></text>
+             y="714.09033"
+             style="font-size:27.5px;line-height:0.89999998">ORIENTADA A DADOS</tspan></text>
       </g>
       <g
          transform="translate(-2.020274,0)"
@@ -1359,23 +1415,25 @@
            y="1365.5095" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="-467.25446"
            y="1400.2699"
-           id="text8467"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text8467"><tspan
              sodipodi:role="line"
              id="tspan8469"
              x="-467.25446"
-             y="1400.2699">Processo</tspan><tspan
+             y="1400.2699"
+             style="font-size:27.5px;line-height:0.89999998">Processo</tspan><tspan
              sodipodi:role="line"
              x="-467.25446"
              y="1425.0199"
-             id="tspan8471">Novas ideias, insights</tspan><tspan
+             id="tspan8471"
+             style="font-size:27.5px;line-height:0.89999998">Novas ideias, insights</tspan><tspan
              sodipodi:role="line"
              x="-467.25446"
              y="1449.7699"
-             id="tspan8473">Individual ou com equipe</tspan></text>
+             id="tspan8473"
+             style="font-size:27.5px;line-height:0.89999998">Individual ou com equipe</tspan></text>
       </g>
       <g
          id="g8479-4"
@@ -1389,23 +1447,25 @@
            y="1365.5095" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="-467.25446"
            y="1400.2699"
-           id="text8467-1"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text8467-1"><tspan
              sodipodi:role="line"
              id="tspan8469-1"
              x="-467.25446"
-             y="1400.2699">Resultado</tspan><tspan
+             y="1400.2699"
+             style="font-size:27.5px;line-height:0.89999998">Resultado</tspan><tspan
              sodipodi:role="line"
              x="-467.25446"
              y="1425.0199"
-             id="tspan8471-6">Simplicidade</tspan><tspan
+             id="tspan8471-6"
+             style="font-size:27.5px;line-height:0.89999998">Simplicidade</tspan><tspan
              sodipodi:role="line"
              x="-467.25446"
              y="1449.7699"
-             id="tspan8473-6">Audiência externa</tspan></text>
+             id="tspan8473-6"
+             style="font-size:27.5px;line-height:0.89999998">Audiência externa</tspan></text>
       </g>
     </g>
     <g
@@ -1428,48 +1488,48 @@
            inkscape:connector-curvature="0" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="525.98639"
            y="376.64792"
-           id="text7019-8-0-7"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7019-8-0-7"><tspan
              sodipodi:role="line"
              id="tspan7021-5-5-3"
              x="525.98639"
-             y="376.64792">DECLARATIVO</tspan></text>
+             y="376.64792"
+             style="font-size:27.5px;line-height:0.89999998">DECLARATIVO</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="525.98639"
            y="1003.2194"
-           id="text7023-5-5-1"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7023-5-5-1"><tspan
              sodipodi:role="line"
              id="tspan7025-0-5-4"
              x="525.98639"
-             y="1003.2194">EXPLORATÓRIO</tspan></text>
+             y="1003.2194"
+             style="font-size:27.5px;line-height:0.89999998">EXPLORATÓRIO</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="199.12659"
            y="666.09033"
-           id="text7027-7-3-8"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7027-7-3-8"><tspan
              sodipodi:role="line"
              id="tspan7029-3-42-6"
              x="199.12659"
-             y="666.09033">CONCEITUAL</tspan></text>
+             y="666.09033"
+             style="font-size:27.5px;line-height:0.89999998">CONCEITUAL</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="806.64136"
            y="714.09033"
-           id="text7031-8-3-3"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7031-8-3-3"><tspan
              sodipodi:role="line"
              id="tspan7033-2-1-9"
              x="806.64136"
-             y="714.09033">ORIENTADA A DADOS</tspan></text>
+             y="714.09033"
+             style="font-size:27.5px;line-height:0.89999998">ORIENTADA A DADOS</tspan></text>
       </g>
       <g
          id="g8479-4-4"
@@ -1483,23 +1543,25 @@
            y="1365.5095" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="-467.25446"
            y="1400.2699"
-           id="text8467-1-0"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text8467-1-0"><tspan
              sodipodi:role="line"
              id="tspan8469-1-1"
              x="-467.25446"
-             y="1400.2699">Design</tspan><tspan
+             y="1400.2699"
+             style="font-size:27.5px;line-height:0.89999998">Design</tspan><tspan
              sodipodi:role="line"
              x="-467.25446"
              y="1425.0199"
-             id="tspan8471-6-4">Storytelling</tspan><tspan
+             id="tspan8471-6-4"
+             style="font-size:27.5px;line-height:0.89999998">Storytelling</tspan><tspan
              sodipodi:role="line"
              x="-467.25446"
              y="1449.7699"
-             id="tspan8473-6-4">Editoração</tspan></text>
+             id="tspan8473-6-4"
+             style="font-size:27.5px;line-height:0.89999998">Editoração</tspan></text>
       </g>
       <g
          transform="translate(1.4898557,0)"
@@ -1514,24 +1576,26 @@
              id="rect8465-3"
              style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.9;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:#666666;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
           <text
-             sodipodi:linespacing="89.999998%"
              id="text8467-3"
              y="1909.6085"
              x="183.59918"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              xml:space="preserve"><tspan
                y="1909.6085"
                x="183.59918"
                id="tspan8469-4"
-               sodipodi:role="line">Trabalho em equipe</tspan><tspan
+               sodipodi:role="line"
+               style="font-size:27.5px;line-height:0.89999998">Trabalho em equipe</tspan><tspan
                id="tspan8471-67"
                y="1934.3585"
                x="183.59918"
-               sodipodi:role="line">Facilitação</tspan><tspan
+               sodipodi:role="line"
+               style="font-size:27.5px;line-height:0.89999998">Facilitação</tspan><tspan
                id="tspan8473-7"
                y="1959.1085"
                x="183.59918"
-               sodipodi:role="line">Brainstorm</tspan></text>
+               sodipodi:role="line"
+               style="font-size:27.5px;line-height:0.89999998">Brainstorm</tspan></text>
         </g>
         <g
            transform="translate(394.40829,0)"
@@ -1544,24 +1608,26 @@
              id="rect8465-3-3"
              style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.9;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:#666666;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
           <text
-             sodipodi:linespacing="89.999998%"
              id="text8467-3-8"
              y="1909.6085"
              x="183.59918"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              xml:space="preserve"><tspan
                y="1909.6085"
                x="183.59918"
                id="tspan8469-4-5"
-               sodipodi:role="line">Análise</tspan><tspan
+               sodipodi:role="line"
+               style="font-size:27.5px;line-height:0.89999998">Análise</tspan><tspan
                id="tspan8471-67-6"
                y="1934.3585"
                x="183.59918"
-               sodipodi:role="line">Programação</tspan><tspan
+               sodipodi:role="line"
+               style="font-size:27.5px;line-height:0.89999998">Programação</tspan><tspan
                id="tspan8473-7-3"
                y="1959.1085"
                x="183.59918"
-               sodipodi:role="line">Inteligência de mercado</tspan></text>
+               sodipodi:role="line"
+               style="font-size:27.5px;line-height:0.89999998">Inteligência de mercado</tspan></text>
         </g>
       </g>
     </g>
@@ -1585,48 +1651,48 @@
            inkscape:connector-curvature="0" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="525.98639"
            y="376.64792"
-           id="text7019-8-0-7-6"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7019-8-0-7-6"><tspan
              sodipodi:role="line"
              id="tspan7021-5-5-3-6"
              x="525.98639"
-             y="376.64792">DECLARATIVO</tspan></text>
+             y="376.64792"
+             style="font-size:27.5px;line-height:0.89999998">DECLARATIVO</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="525.98639"
            y="1003.2194"
-           id="text7023-5-5-1-8"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7023-5-5-1-8"><tspan
              sodipodi:role="line"
              id="tspan7025-0-5-4-0"
              x="525.98639"
-             y="1003.2194">EXPLORATÓRIO</tspan></text>
+             y="1003.2194"
+             style="font-size:27.5px;line-height:0.89999998">EXPLORATÓRIO</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="199.12659"
            y="666.09033"
-           id="text7027-7-3-8-4"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7027-7-3-8-4"><tspan
              sodipodi:role="line"
              id="tspan7029-3-42-6-1"
              x="199.12659"
-             y="666.09033">CONCEITUAL</tspan></text>
+             y="666.09033"
+             style="font-size:27.5px;line-height:0.89999998">CONCEITUAL</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="806.64136"
            y="714.09033"
-           id="text7031-8-3-3-4"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7031-8-3-3-4"><tspan
              sodipodi:role="line"
              id="tspan7033-2-1-9-7"
              x="806.64136"
-             y="714.09033">ORIENTADA A DADOS</tspan></text>
+             y="714.09033"
+             style="font-size:27.5px;line-height:0.89999998">ORIENTADA A DADOS</tspan></text>
       </g>
       <g
          id="g8479-4-4-8"
@@ -1640,23 +1706,25 @@
            y="1365.5095" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="-467.25446"
            y="1400.2699"
-           id="text8467-1-0-0"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text8467-1-0-0"><tspan
              sodipodi:role="line"
              id="tspan8469-1-1-3"
              x="-467.25446"
-             y="1400.2699">Impresso</tspan><tspan
+             y="1400.2699"
+             style="font-size:27.5px;line-height:0.89999998">Impresso</tspan><tspan
              sodipodi:role="line"
              x="-467.25446"
              y="1425.0199"
-             id="tspan8471-6-4-6">Apresentação</tspan><tspan
+             id="tspan8471-6-4-6"
+             style="font-size:27.5px;line-height:0.89999998">Apresentação</tspan><tspan
              sodipodi:role="line"
              x="-467.25446"
              y="1449.7699"
-             id="tspan8473-6-4-6">Web</tspan></text>
+             id="tspan8473-6-4-6"
+             style="font-size:27.5px;line-height:0.89999998">Web</tspan></text>
       </g>
       <g
          transform="translate(1130.0613,-111.4286)"
@@ -1671,20 +1739,21 @@
              id="rect8465-3-2"
              style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.9;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:#666666;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
           <text
-             sodipodi:linespacing="89.999998%"
              id="text8467-3-0"
              y="1923.662"
              x="183.59918"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              xml:space="preserve"><tspan
                y="1923.662"
                x="183.59918"
                id="tspan8469-4-3"
-               sodipodi:role="line">Papel de rascunho</tspan><tspan
+               sodipodi:role="line"
+               style="font-size:27.5px;line-height:0.89999998">Papel de rascunho</tspan><tspan
                id="tspan8473-7-8"
                y="1948.412"
                x="183.59918"
-               sodipodi:role="line">Quadro</tspan></text>
+               sodipodi:role="line"
+               style="font-size:27.5px;line-height:0.89999998">Quadro</tspan></text>
         </g>
         <g
            transform="translate(394.40829,0)"
@@ -1697,20 +1766,21 @@
              id="rect8465-3-3-1"
              style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.9;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff6600;fill-opacity:1;fill-rule:nonzero;stroke:#666666;stroke-width:1;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
           <text
-             sodipodi:linespacing="89.999998%"
              id="text8467-3-8-8"
              y="1922.4736"
              x="183.59918"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
              xml:space="preserve"><tspan
                y="1922.4736"
                x="183.59918"
                id="tspan8469-4-5-9"
-               sodipodi:role="line">Software de análise e</tspan><tspan
+               sodipodi:role="line"
+               style="font-size:27.5px;line-height:0.89999998">Software de análise e</tspan><tspan
                id="tspan8473-7-3-7"
                y="1947.2236"
                x="183.59918"
-               sodipodi:role="line">visualização de dados</tspan></text>
+               sodipodi:role="line"
+               style="font-size:27.5px;line-height:0.89999998">visualização de dados</tspan></text>
         </g>
       </g>
     </g>
@@ -1734,48 +1804,48 @@
            inkscape:connector-curvature="0" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="525.98639"
            y="376.64792"
-           id="text7019-8-4-6"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7019-8-4-6"><tspan
              sodipodi:role="line"
              id="tspan7021-5-9-5"
              x="525.98639"
-             y="376.64792">DECLARATIVO</tspan></text>
+             y="376.64792"
+             style="font-size:27.5px;line-height:0.89999998">DECLARATIVO</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="525.98639"
            y="1003.2194"
-           id="text7023-5-7-0"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7023-5-7-0"><tspan
              sodipodi:role="line"
              id="tspan7025-0-9-5"
              x="525.98639"
-             y="1003.2194">EXPLORATÓRIO</tspan></text>
+             y="1003.2194"
+             style="font-size:27.5px;line-height:0.89999998">EXPLORATÓRIO</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="199.12659"
            y="666.09033"
-           id="text7027-7-4-6"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7027-7-4-6"><tspan
              sodipodi:role="line"
              id="tspan7029-3-4-1"
              x="199.12659"
-             y="666.09033">CONCEITUAL</tspan></text>
+             y="666.09033"
+             style="font-size:27.5px;line-height:0.89999998">CONCEITUAL</tspan></text>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
            x="806.64136"
            y="714.09033"
-           id="text7031-8-8-3"
-           sodipodi:linespacing="89.999998%"><tspan
+           id="text7031-8-8-3"><tspan
              sodipodi:role="line"
              id="tspan7033-2-7-3"
              x="806.64136"
-             y="714.09033">ORIENTADA A DADOS</tspan></text>
+             y="714.09033"
+             style="font-size:27.5px;line-height:0.89999998">ORIENTADA A DADOS</tspan></text>
       </g>
       <path
          inkscape:connector-curvature="0"
@@ -1802,6 +1872,265 @@
          id="path9583-9"
          d="m 1695.8636,825.07784 0,-273.01641"
          style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:5.99999952;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Lend-5);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+    </g>
+    <g
+       id="g1919"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <rect
+         y="1745.3318"
+         x="-26.902145"
+         height="334.7023"
+         width="402.88757"
+         id="rect1686-9"
+         style="opacity:0.59600004;fill:#666666;fill-opacity:1;stroke:none;stroke-width:6.21800613;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="2082.0754"
+         x="-26.902145"
+         height="334.70227"
+         width="402.88754"
+         id="rect1686"
+         style="opacity:0.59600004;fill:#cccccc;fill-opacity:1;stroke:none;stroke-width:6.21800566;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <g
+         id="g7155-1-9-4"
+         transform="translate(-552.96681,1400.7754)">
+        <path
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.99999952;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-8-0-4);marker-end:url(#Arrow1Mend-5-7-10);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="m 526.1811,395.85586 v 568.9182"
+           id="path4136-0-2-2"
+           inkscape:connector-curvature="0" />
+        <path
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#Arrow1Mstart-3-6-0-58);marker-end:url(#Arrow1Mend-7-8-7-0);color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           d="M 915.7689,680.31496 H 136.5933"
+           id="path4136-3-5-2-96"
+           inkscape:connector-curvature="0" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="525.98639"
+           y="376.64792"
+           id="text7019-8-4-1"><tspan
+             style="font-size:27.5px;line-height:0.89999998"
+             sodipodi:role="line"
+             id="tspan7021-5-9-0"
+             x="525.98639"
+             y="376.64792">DECLARATIVO</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="525.98639"
+           y="1003.2194"
+           id="text7023-5-7-4"><tspan
+             style="font-size:27.5px;line-height:0.89999998"
+             sodipodi:role="line"
+             id="tspan7025-0-9-2"
+             x="525.98639"
+             y="1003.2194">EXPLORATÓRIO</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="199.12659"
+           y="666.09033"
+           id="text7027-7-4-2"><tspan
+             style="font-size:27.5px;line-height:0.89999998"
+             sodipodi:role="line"
+             id="tspan7029-3-4-2"
+             x="199.12659"
+             y="666.09033">CONCEITUAL</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="806.64136"
+           y="714.09033"
+           id="text7031-8-8-0"><tspan
+             style="font-size:27.5px;line-height:0.89999998"
+             sodipodi:role="line"
+             id="tspan7033-2-7-5"
+             x="806.64136"
+             y="714.09033">ORIENTADA A DADOS</tspan></text>
+      </g>
+      <text
+         id="text8170-5"
+         y="2257.3391"
+         x="74.055367"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-size:27.5px;line-height:0.89999998"
+           y="2257.3391"
+           x="74.055367"
+           id="tspan8172-2"
+           sodipodi:role="line">CONFIRMATÓRIA</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path8176-9"
+         d="M 175.48393,2247.1952 H 364.05536"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:12, 4;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+      <text
+         id="text8178-0"
+         y="2291.2539"
+         x="181.75854"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-size:27.5px;line-height:0.89999998"
+           y="2291.2539"
+           x="181.75854"
+           id="tspan8180-2"
+           sodipodi:role="line">Exploração visual</tspan></text>
+      <text
+         id="text8182-8"
+         y="2217.4324"
+         x="191.19824"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-size:27.5px;line-height:0.89999998"
+           y="2217.4324"
+           x="191.19824"
+           id="tspan8184-3"
+           sodipodi:role="line">Confirmação visual</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.5px;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="175.03175"
+         y="1912.5474"
+         id="text7173-7-4"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.5px;line-height:0.89999998;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ff6600;stroke-width:1px"
+           sodipodi:role="line"
+           id="tspan7175-7-0"
+           x="175.03175"
+           y="1912.5474">VISUALIZAÇÃO</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.5px;line-height:0.89999998;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ff6600;stroke-width:1px"
+           sodipodi:role="line"
+           x="175.03175"
+           y="1937.2974"
+           id="tspan7177-6-9">DO COTIDIANO</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.5px;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="174.11195"
+         y="2166.2556"
+         id="text7179-9-1"><tspan
+           id="tspan1688"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.5px;line-height:0.89999998;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#ff6600;stroke-width:1px"
+           sodipodi:role="line"
+           x="174.11195"
+           y="2166.2556">DESCOBERTA VISUAL</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="434.7019"
+         y="2012.819"
+         id="text8467-3-8-4"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:0.89999998;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1px"
+           sodipodi:role="line"
+           x="434.7019"
+           y="2012.819"
+           id="tspan8473-7-3-4"><tspan
+   id="tspan1809"
+   style="font-weight:bold">Competências</tspan>:</tspan><tspan
+           id="tspan1807"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:0.89999998;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1px"
+           sodipodi:role="line"
+           x="434.7019"
+           y="2037.569">· Análise</tspan><tspan
+           id="tspan1801"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:0.89999998;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1px"
+           sodipodi:role="line"
+           x="434.7019"
+           y="2062.3188">· Programação</tspan></text>
+      <text
+         id="text8467-1-0-0-8"
+         y="1895.2539"
+         x="434.33936"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:0.89999998;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1px"
+           id="tspan8473-6-4-6-8"
+           y="1895.2539"
+           x="434.33936"
+           sodipodi:role="line"><tspan
+   id="tspan1805"
+   style="font-weight:bold">Mídia</tspan>:</tspan><tspan
+           id="tspan1803"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:0.89999998;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1px"
+           y="1920.0039"
+           x="434.33936"
+           sodipodi:role="line">· Impresso</tspan><tspan
+           id="tspan1797"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:0.89999998;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1px"
+           y="1944.7539"
+           x="434.33936"
+           sodipodi:role="line">· Apresentação</tspan><tspan
+           id="tspan1799"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.5px;line-height:0.89999998;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1px"
+           y="1969.5039"
+           x="434.33936"
+           sodipodi:role="line">· Web</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="435.9104"
+         y="2110.2529"
+         id="text8467-3-8-8-6"><tspan
+           style="font-size:27.5px;line-height:0.89999998;text-align:start;text-anchor:start;stroke-width:1px"
+           sodipodi:role="line"
+           id="tspan8469-4-5-9-2"
+           x="435.9104"
+           y="2110.2529"><tspan
+   id="tspan1813"
+   style="font-weight:bold">Recursos</tspan>:</tspan><tspan
+           id="tspan1811"
+           style="font-size:27.5px;line-height:0.89999998;text-align:start;text-anchor:start;stroke-width:1px"
+           sodipodi:role="line"
+           x="435.9104"
+           y="2135.0029">· Software de análise e</tspan><tspan
+           style="font-size:27.5px;line-height:0.89999998;text-align:start;text-anchor:start;stroke-width:1px"
+           sodipodi:role="line"
+           x="435.9104"
+           y="2159.7529"
+           id="tspan8473-7-3-7-4">  visualização de dados</tspan><tspan
+           id="tspan1850"
+           style="font-size:27.5px;line-height:0.89999998;text-align:start;text-anchor:start;stroke-width:1px"
+           sodipodi:role="line"
+           x="435.9104"
+           y="2184.5029">· Gráficos prototipados</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:0%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         x="434.67505"
+         y="2233.1355"
+         id="text8467-3-8-8-6-5"><tspan
+           style="font-size:27.5px;line-height:0.89999998;text-align:start;text-anchor:start;stroke-width:1px"
+           sodipodi:role="line"
+           id="tspan8469-4-5-9-2-0"
+           x="434.67505"
+           y="2233.1355"><tspan
+   id="tspan1842"
+   style="font-weight:bold">Objetivos</tspan>:</tspan><tspan
+           style="font-size:27.5px;line-height:0.89999998;text-align:start;text-anchor:start;stroke-width:1px"
+           sodipodi:role="line"
+           x="434.67505"
+           y="2240.9453"
+           id="tspan8473-7-3-7-4-3" /><tspan
+           id="tspan1846"
+           style="font-size:27.5px;line-height:0.89999998;text-align:start;text-anchor:start;stroke-width:1px"
+           sodipodi:role="line"
+           x="434.67505"
+           y="2257.8855">· Descoberta</tspan><tspan
+           id="tspan1848"
+           style="font-size:27.5px;line-height:0.89999998;text-align:start;text-anchor:start;stroke-width:1px"
+           sodipodi:role="line"
+           x="434.67505"
+           y="2282.6355">· Comunicação</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="path1852"
+         d="m 380.70125,2416.3908 54.92704,-121.2183"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.875;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path1852-9"
+         d="M 380.70125,1745.7187 435.6283,1866.937"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.875;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
   </g>
 </svg>
