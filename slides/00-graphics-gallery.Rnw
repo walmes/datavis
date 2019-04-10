@@ -16,7 +16,6 @@ source("config/setup.R")
 read_chunk("00-graphics-gallery.R")
 @
 
-
 %=======================================================================
 
 \begin{document}
@@ -26,6 +25,12 @@ read_chunk("00-graphics-gallery.R")
 }
 
 %=======================================================================
+
+\begin{comment}
+  <<>>=
+  2 + 2
+  @
+\end{comment}
 
 \section{Motivação}\label{motivacao}
 
@@ -38,6 +43,17 @@ read_chunk("00-graphics-gallery.R")
   \item Desenvolver senso crítico para escolha de represetações.
   \item Nutrir a criatividade para desenvolver novas visualizações.
   \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Tipos de visualização}
+
+  \begin{figure}
+    {\centering
+      \includegraphics[width = 9cm]{img/vis-4-dados.png}
+    }
+    \caption{Aspectos da visualização orientada a dados. Fonte: o autor.}
+  \end{figure}
 
 \end{frame}
 
@@ -76,7 +92,6 @@ read_chunk("00-graphics-gallery.R")
 % \end{itemize}
 %
 % \end{frame}
-
 
 \begin{frame}{Taxonomia}
 
@@ -139,13 +154,6 @@ read_chunk("00-graphics-gallery.R")
 \end{frame}
 
 %-----------------------------------------------------------------------
-
-\begin{comment}
-  <<>>=
-  2 + 2
-  @
-\end{comment}
-
 \section{Distribuição}\label{distribuicao}
 
 \begin{frame}[fragile, allowframebreaks]{Dataset}
@@ -347,276 +355,346 @@ read_chunk("00-graphics-gallery.R")
 
 \end{frame}
 
-% \begin{frame}{Gráfico de barras}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Gráfico de barras (\emph{bar chart}).
-% \item
-%   \textbf{Função}: exibir a frequência de categorias.
-% \item
-%   \textbf{Tipo de escala}: qualitativa.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$.
-% \item
-%   \textbf{Geometria}: barras.
-% \item
-%   \textbf{Variáveis calculadas}: frequência absoluta ou relativa.
-% \item
-%   \textbf{Variações}:
-%
-%   \begin{itemize}
-%   \item
-%     Barras agrupadas (\emph{grouped bar chart}).
-%   \item
-%     Barras empilhadas (\emph{stacked bar chart}).
-%   \item
-%     Barras normalizadas (\emph{normalized stacked bar chart}).
-%   \end{itemize}
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Gráfico de setores}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Gráfico de setores (\emph{pie chart}).
-% \item
-%   \textbf{Função}: exibir a frequência relativa de categorias.
-% \item
-%   \textbf{Tipo de escala}: qualitativa.
-% \item
-%   \textbf{Variáveis visuais}: ângulo.
-% \item
-%   \textbf{Geometria}: setores circulares.
-% \item
-%   \textbf{Variáveis calculadas}: frequência relativa.
-% \item
-%   \textbf{Variações}: \emph{donut chart} ou \emph{doughnut chart}.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Gráfico de rosca}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Gráfico de rosca (\emph{donut chart}).
-% \item
-%   \textbf{Inspiração}: gráfico de setores.
-% \item
-%   \textbf{Geometria}: arcos.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Waffle chart}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: \emph{Waffle chart}.
-% \item
-%   \textbf{Função}: exibir a frequência relativa de categorias.
-% \item
-%   \textbf{Tipo de escala}: qualitativa.
-% \item
-%   \textbf{Variáveis visuais}: área e cor.
-% \item
-%   \textbf{Geometria}: pixels.
-% \item
-%   \textbf{Variáveis calculadas}: frequência relativa.
-% \item
-%   \textbf{Variações}: \emph{area size chart}.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Recomendações}
-%
-% Qual usar para:
-%
-% \begin{enumerate}
-% \def\labelenumi{\arabic{enumi}.}
-% \item
-%   Reconhecer a distribuição dos valores?
-% \item
-%   Comparar as proporções?
-% \item
-%   Enfatizar categorias de baixa frequência?
-% \end{enumerate}
-%
-% \end{frame}
-%
-% \begin{frame}{Gráfico quantil-quantil}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: gráfico quantil-quantil.
-% \item
-%   \textbf{Função}: examinar a adequação de uma distribuição de
-%   probabilidades.
-% \item
-%   \textbf{Tipo de escala}: quantitativa.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$.
-% \item
-%   \textbf{Geometria}: pontos e linhas.
-% \item
-%   \textbf{Variáveis calculadas}: quantis teóricos da distribuição
-%   atribuída.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \section{Relação}\label{relacao}
-%
-% \begin{frame}{Gráficos de barras agrupadas e empilhadas}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Gráfico de barras (\emph{bar plot}).
-% \item
-%   \textbf{Função}: permitir a comparação de quantidades entre
-%   categorias.
-% \item
-%   \textbf{Tipo de escala}: qualitativa $\times$ qualitativas.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$.
-% \item
-%   \textbf{Geometria}: barras.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Gráfico de mosaico}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Gráfico de mosaico (\emph{mosaic plot} ou
-%   \emph{Marimekko chart}).
-% \item
-%   \textbf{Função}: exibir a frequência de combinações de categorias.
-% \item
-%   \textbf{Tipo de escala}: qualitativa.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$ e área.
-% \item
-%   \textbf{Geometria}: retângulos.
-% \item
-%   \textbf{Variáveis calculadas}: frequência relativa.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Recomendações}
-%
-% Qual usar para:
-%
-% \begin{enumerate}
-% \def\labelenumi{\arabic{enumi}.}
-% \item
-%   Comparar valores totais entre categorias?
-% \item
-%   Comparar valores relativos entre categorias?
-% \item
-%   Examinar a relação entre variáveis categóricas?
-% \end{enumerate}
-%
-% \end{frame}
-%
-% \begin{frame}{Diagrama de dispersão}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: diagrama de dispersão (scatter plot).
-% \item
-%   \textbf{Função}: relação entre variáveis.
-% \item
-%   \textbf{Tipo de escala}: quantitativa $\times$ quantitativa.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$.
-% \item
-%   \textbf{Geometria}: pontos.
-% \item
-%   \textbf{Variações}: diagrama de dispersão 3D, diagrama ternário.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Bubble chart}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: diagrama de dispersão (scatter plot).
-% \item
-%   \textbf{Função}: relação entre variáveis.
-% \item
-%   \textbf{Tipo de escala}: quantitativa $\times$ quantitativa
-%   $\times$ quantitativa.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$ e tamanho.
-% \item
-%   \textbf{Geometria}: pontos.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Boxplot}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: diagrama de dispersão (scatter plot).
-% \item
-%   \textbf{Função}: relação entre variáveis.
-% \item
-%   \textbf{Tipo de escala}: quantitativa $\times$ qualitativa.
-% \item
-%   \textbf{Inspiração}: boxplot.
-% \item
-%   \textbf{Variação}: \emph{minimal box plot}.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Matriz de diagramas de dispersão}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: matriz de diagramas de dispersão (scatter plot matrix).
-% \item
-%   \textbf{Função}: relação entre variáveis e distribuição.
-% \item
-%   \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$.
-% \item
-%   \textbf{Geometria}: pontos, linhas e/ou barras.
-% \item
-%   \textbf{Inspiração}: diagrama de dispersão e gráficos para
-%   distribuição.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Cleveland dot plot}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: \emph{Cleveland dot plot}.
-% \item
-%   \textbf{Função}: relação entre variável contínua e categóricas.
-% \item
-%   \textbf{Tipo de escala}: quantitativas $\times$ qualitativa
-%   $\times$ qualitativa.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$.
-% \item
-%   \textbf{Geometria}: pontos e segmentos.
-% \end{itemize}
-%
-% \end{frame}
-%
+\begin{frame}[fragile, allowframebreaks]{Gráfico de barras}
+
+  <<position_bar, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Gráfico de barras (\emph{bar chart}).
+  \item \textbf{Função}: exibir a frequência de categorias.
+  \item \textbf{Tipo de escala}: qualitativa.
+  \item \textbf{Variáveis visuais}: posição $x \times y$.
+  \item \textbf{Geometria}: barras.
+  \item \textbf{Variáveis calculadas}: frequência absoluta ou relativa.
+  \item \textbf{Variações}:
+
+    \begin{itemize}
+    \item Barras agrupadas (\emph{grouped bar chart}).
+    \item Barras empilhadas (\emph{stacked bar chart}).
+    \item Barras normalizadas (\emph{normalized stacked bar chart}).
+    \end{itemize}
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Gráfico de setores}
+
+  <<position_pie, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Gráfico de setores (\emph{pie chart}).
+  \item \textbf{Função}: exibir a frequência relativa de categorias.
+  \item \textbf{Tipo de escala}: qualitativa.
+  \item \textbf{Variáveis visuais}: ângulo.
+  \item \textbf{Geometria}: setores circulares.
+  \item \textbf{Variáveis calculadas}: frequência relativa.
+  \item \textbf{Variações}: \emph{donut chart} ou \emph{doughnut chart}.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Gráfico de rosca}
+
+  <<position_donut, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Gráfico de rosca (\emph{donut chart}).
+  \item \textbf{Inspiração}: gráfico de setores.
+  \item \textbf{Geometria}: arcos.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Waffle chart}
+
+  <<redcard_waffle, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: \emph{Waffle chart}.
+  \item \textbf{Função}: exibir a frequência relativa de categorias.
+  \item \textbf{Tipo de escala}: qualitativa.
+  \item \textbf{Variáveis visuais}: área e cor.
+  \item \textbf{Geometria}: pixels.
+  \item \textbf{Variáveis calculadas}: frequência relativa.
+  \item \textbf{Variações}: \emph{area size chart}.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Recomendações}
+
+Qual usar para:
+
+\begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+\item Reconhecer a distribuição dos valores?
+\item Comparar as proporções?
+\item Enfatizar categorias de baixa frequência?
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Gráfico quantil-quantil}
+
+  <<bmi_qq, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: gráfico quantil-quantil.
+  \item \textbf{Função}: examinar a adequação de uma distribuição de
+    probabilidades.
+  \item \textbf{Tipo de escala}: quantitativa.
+  \item \textbf{Variáveis visuais}: posição $x \times y$.
+  \item \textbf{Geometria}: pontos e linhas.
+  \item \textbf{Variáveis calculadas}: quantis teóricos da distribuição
+    atribuída.
+  \end{itemize}
+
+\end{frame}
+
+%-----------------------------------------------------------------------
+\section{Relação}\label{relacao}
+
+\begin{frame}[fragile, allowframebreaks]{Gráficos de barras agrupadas e empilhadas}
+
+  <<yel_stacked_bar, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  <<yel_grouped_bar, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  <<yel_filled_bar, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Gráfico de barras (\emph{bar plot}).
+  \item \textbf{Função}: permitir a comparação de quantidades entre
+    categorias.
+  \item \textbf{Tipo de escala}: qualitativa $\times$ qualitativas.
+  \item \textbf{Variáveis visuais}: posição $x \times y$.
+  \item \textbf{Geometria}: barras.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Gráfico de mosaico}
+
+  <<yel_mosaic, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Gráfico de mosaico (\emph{mosaic plot} ou
+    \emph{Marimekko chart}).
+  \item \textbf{Função}: exibir a frequência de combinações de
+    categorias.
+  \item \textbf{Tipo de escala}: qualitativa.
+  \item \textbf{Variáveis visuais}: posição $x \times y$ e área.
+  \item \textbf{Geometria}: retângulos.
+  \item \textbf{Variáveis calculadas}: frequência relativa.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Recomendações}
+
+Qual usar para:
+
+\begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+\item Comparar valores totais entre categorias?
+\item Comparar valores relativos entre categorias?
+\item Examinar a relação entre variáveis categóricas?
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Diagrama de dispersão}
+
+  <<cm_x_kg, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: diagrama de dispersão (scatter plot).
+  \item \textbf{Função}: relação entre variáveis.
+  \item \textbf{Tipo de escala}: quantitativa $\times$ quantitativa.
+  \item \textbf{Variáveis visuais}: posição $x \times y$.
+  \item \textbf{Geometria}: pontos.
+  \item \textbf{Variações}: diagrama de dispersão 3D, diagrama ternário.
+  \end{itemize}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 5.5cm]{img/ggtern.png}
+    \caption{Diagrama de dispersão ternário. Fonte:
+      \url{http://www.ggtern.com/2013/12/16/pps-3-state-model/}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 5.5cm]{img/scatter3d.png}
+    \caption{Diagrama de dispersão 3D. Fonte:
+      \url{https://stackoverflow.com/questions/30904198/how-to-export-an-interactive-rgl-3d-plot-to-share-or-publish}.}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Bubble chart}
+
+  <<cm_x_kg_x_age, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: diagrama de dispersão (scatter plot).
+  \item \textbf{Função}: relação entre variáveis.
+  \item \textbf{Tipo de escala}: quantitativa $\times$ quantitativa
+    $\times$ quantitativa.
+  \item \textbf{Variáveis visuais}: posição $x \times y$ e tamanho.
+  \item \textbf{Geometria}: pontos.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Matriz de diagramas de dispersão}
+
+  <<ggpairs, results = "hide", out.width = "6cm", fig.dim = c(5, 5), echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: matriz de diagramas de dispersão (scatter plot
+    matrix).
+  \item \textbf{Função}: relação entre variáveis e distribuição.
+  \item \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
+  \item \textbf{Variáveis visuais}: posição $x \times y$.
+  \item \textbf{Geometria}: pontos, linhas e/ou barras.
+  \item \textbf{Inspiração}: diagrama de dispersão e gráficos para
+    distribuição.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Correlograma}
+
+  <<correlogram, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Correlograma (\emph{correlogram}).
+  \item \textbf{Função}: corelação entre várias variáveis contínuas.
+  \item \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
+  \item \textbf{Variáveis visuais}: área, inclinação ou outra retinal
+    quantitativa.
+  \item \textbf{Geometria}: elipses, círculos ou retângulos.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Mapa de calor}
+
+  <<heatmap, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Mapa de calor (\emph{heatmap}).
+  \item \textbf{Função}: relação entre várias variáveis contínuas.
+  \item \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
+  \item \textbf{Variáveis visuais}: posição $x \times y$, cor ou
+    saturação.
+  \item \textbf{Geometria}: pixels coloridos.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Parallel plot}
+
+  <<parallel, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: \emph{Parallel plot}.
+  \item \textbf{Função}: relação entre várias variáveis contínuas.
+  \item \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
+  \item \textbf{Variáveis visuais}: posição $x \times y$.
+  \item \textbf{Geometria}: linhas.
+  \item \textbf{Inspiração}: \emph{slopegraph}.
+  \item \textbf{Variações}: radar/spider plot.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Radial/Spider plot}
+
+  <<spider, results = "hide", out.width = "6cm", fig.dim = c(5, 5), echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: \emph{Radar plot} ou \emph{Spider plot}.
+  \item \textbf{Função}: relação entre várias variáveis contínuas.
+  \item \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
+  \item \textbf{Variáveis visuais}: posição $r \times \theta$.
+  \item \textbf{Geometria}: linhas.
+  \item \textbf{Inspiração}: \emph{parallel plot}.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Cleveland dot plot}
+
+  <<cleveland, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: \emph{Cleveland dot plot}.
+  \item \textbf{Função}: relação entre variável contínua e categóricas.
+  \item \textbf{Tipo de escala}: quantitativas $\times$ qualitativa
+    $\times$ qualitativa.
+  \item \textbf{Variáveis visuais}: posição $x \times y$.
+  \item \textbf{Geometria}: pontos e segmentos.
+  \end{itemize}
+
+\end{frame}
+
 % \begin{frame}{Diff charts}
 %
 % \begin{itemize}
@@ -635,136 +713,99 @@ read_chunk("00-graphics-gallery.R")
 % \end{itemize}
 %
 % \end{frame}
-%
-% \begin{frame}{Parallel plot}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: \emph{Slopegraph}.
-% \item
-%   \textbf{Função}: relação entre várias variáveis contínuas.
-% \item
-%   \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$.
-% \item
-%   \textbf{Geometria}: linhas.
-% \item
-%   \textbf{Inspiração}: \emph{slopegraph}.
-% \item
-%   \textbf{Variações}: radar/spider plot.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Correlograma}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Correlograma (\emph{correlogram}).
-% \item
-%   \textbf{Função}: corelação entre várias variáveis contínuas.
-% \item
-%   \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
-% \item
-%   \textbf{Variáveis visuais}: área, inclinação ou outra retinal
-%   quantitativa.
-% \item
-%   \textbf{Geometria}: elipses, círculos ou retângulos.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Mapa de calor}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Mapa de calor (\emph{heatmap}).
-% \item
-%   \textbf{Função}: relação entre várias variáveis contínuas.
-% \item
-%   \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$, cor ou saturação.
-% \item
-%   \textbf{Geometria}: pixels coloridos.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Densidade 2D}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Densidade 2D.
-% \item
-%   \textbf{Função}: relação e distribuição de valores.
-% \item
-%   \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$, cor ou saturação.
-% \item
-%   \textbf{Geometria}: pixels coloridos ou linhas de contorno.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Faces de Chernoff}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Faces de Chernoff (\emph{Chernoff faces}).
-% \item
-%   \textbf{Função}: relação entre várias variáveis .
-% \item
-%   \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
-% \item
-%   \textbf{Variáveis visuais}: posição e comprimentos.
-% \item
-%   \textbf{Geometria}: elementos do rosto humano.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Recomendações}
-%
-% Qual usar para:
-%
-% \begin{enumerate}
-% \def\labelenumi{\arabic{enumi}.}
-% \item
-%   Examinar a forma da relação entre variáveis?
-% \item
-%   Comparar valores entre categorias?
-% \item
-%   Comparar a distribuição entre categorias?
-% \item
-%   Exibir a estrutura de correlação entre várias variáveis?
-% \end{enumerate}
-%
-% \end{frame}
-%
-% \section{Ordenação}\label{ordenacao}
-%
-% \begin{frame}{Barras ordenadas Pareto}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: barras ordenadas.
-% \item
-%   \textbf{Função}: ordenar as categorias por variável quantitativa.
-% \item
-%   \textbf{Tipo de escala}: quantitativa $\times$ quantitativa.
-% \item
-%   \textbf{Variáveis visuais}: posição e comprimento.
-% \item
-%   \textbf{Geometria}: barras.
-% \item
-%   \textbf{Variação}: gráfico de Pareto.
-% \end{itemize}
-%
-% \end{frame}
-%
+
+\begin{frame}[fragile, allowframebreaks]{Boxplot}
+
+  <<boxplots, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: diagrama de dispersão (scatter plot).
+  \item \textbf{Função}: relação entre variáveis.
+  \item \textbf{Tipo de escala}: quantitativa $\times$ qualitativa.
+  \item \textbf{Inspiração}: boxplot.
+  \item \textbf{Variação}: \emph{minimal box plot}.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Densidade 2D}
+
+  <<hexbin, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Densidade 2D.
+  \item \textbf{Função}: relação e distribuição de valores.
+  \item \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
+  \item \textbf{Variáveis visuais}: posição $x \times y$, cor ou
+    saturação.
+  \item \textbf{Geometria}: pixels coloridos ou linhas de contorno.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Faces de Chernoff}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 7.5cm]{img/football_chernoff.pdf}
+    \caption{Faces de Chernoff para medidas descritivas dos jogadores
+      conforme função em campo.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Faces de Chernoff (\emph{Chernoff faces}).
+  \item \textbf{Função}: relação entre várias variáveis.
+  \item \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
+  \item \textbf{Variáveis visuais}: posição e comprimentos.
+  \item \textbf{Geometria}: elementos do rosto humano.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Recomendações}
+
+Qual usar para:
+
+\begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+\item Examinar a forma da relação entre variáveis?
+\item Comparar valores entre categorias?
+\item Comparar a distribuição entre categorias?
+\item Exibir a estrutura de correlação entre várias variáveis?
+\end{enumerate}
+
+\end{frame}
+
+%-----------------------------------------------------------------------
+\section{Ordenação}\label{ordenacao}
+
+\begin{frame}[fragile, allowframebreaks]{Barras ordenadas}
+
+  <<ordered_bar, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: barras ordenadas.
+  \item \textbf{Função}: ordenar as categorias por variável
+    quantitativa.
+  \item \textbf{Tipo de escala}: quantitativa $\times$ quantitativa.
+  \item \textbf{Variáveis visuais}: posição e comprimento.
+  \item \textbf{Geometria}: barras.
+  \item \textbf{Variação}: gráfico de Pareto.
+  \end{itemize}
+
+\end{frame}
+
 % \begin{frame}{Gráfico de Pareto}
 %
 % \begin{itemize}
@@ -781,210 +822,258 @@ read_chunk("00-graphics-gallery.R")
 % \end{itemize}
 %
 % \end{frame}
-%
-% \begin{frame}{Lollipop ou Clevaland dot plot}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Lollipop (pirulito) ou Cleveland dot plot.
-% \item
-%   \textbf{Função}: ordenar as categorias por variável quantitativa.
-% \item
-%   \textbf{Tipo de escala}: quantitativa $\times$ quantitativa.
-% \item
-%   \textbf{Variáveis visuais}: posição e comprimento.
-% \item
-%   \textbf{Geometria}: pontos e segmentos.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Núvem de palavras}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Wordcloud ou núvem de palavras.
-% \item
-%   \textbf{Função}: retratar a frequência de ocorrência de palavras.
-% \item
-%   \textbf{Variáveis visuais}: posição e tamanho.
-% \item
-%   \textbf{Geometria}: texto.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \section{Evolução}\label{evolucao}
-%
-% \begin{frame}{Série ou pontos conectados}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Pontos conectados (\emph{connected scatterplot}).
-% \item
-%   \textbf{Função}: mostrar a trejetória de uma variável ao longo do
-%   tempo.
-% \item
-%   \textbf{Tipo de escala}: quantitativa $\times$ ordenada.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$.
-% \item
-%   \textbf{Geometria}: linhas ou pontos conectados.
-% \item
-%   \textbf{Variação}:
-%
-%   \begin{itemize}
-%   \item
-%     Área preenchida entre série e de origem.
-%   \item
-%     Dois eixos verticais para séries de grandeza diferentes.
-%   \end{itemize}
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Séries com dois eixos verticais}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Série com dois eixos verticais.
-% \item
-%   \textbf{Inspiração}: linhas ou pontos conectados.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Áreas empilhadas}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Áreas empilhadas (\emph{stacked area plot}).
-% \item
-%   \textbf{Função}: mostrar a trejetória várias séries.
-% \item
-%   \textbf{Tipo de escala}: quantitativa $\times$ ordenada $\times$
-%   categórica.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$ e preenchimento.
-% \item
-%   \textbf{Geometria}: polígono preenchido.
-% \item
-%   \textbf{Variáveis calculadas}: valores acumulados em cada ponto.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Slopegraph}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Pontos conectados (connected scatterplot).
-% \item
-%   \textbf{Função}: mostrar a trejetória de uma variável ao longo do
-%   tempo.
-% \item
-%   \textbf{Tipo de escala}: quantitativa $\times$ ordenada.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$.
-% \item
-%   \textbf{Geometria}: pontos conectados e texto.
-% \end{itemize}
-%
-% \end{frame}
-%
+
+\begin{frame}[fragile, allowframebreaks]{Lollipop}
+
+  <<lillipop, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Lollipop (pirulito) ou Cleveland dot plot.
+  \item \textbf{Função}: ordenar as categorias por variável
+    quantitativa.
+  \item \textbf{Tipo de escala}: quantitativa $\times$ quantitativa.
+  \item \textbf{Variáveis visuais}: posição e comprimento.
+  \item \textbf{Geometria}: pontos e segmentos.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Núvem de palavras}
+
+  <<wordcloud, results = "hide", echo = FALSE, fig.cap = cap>>=
+  @
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Wordcloud ou núvem de palavras.
+  \item \textbf{Função}: retratar a frequência de ocorrência de
+    palavras.
+  \item \textbf{Variáveis visuais}: posição e tamanho.
+  \item \textbf{Geometria}: texto.
+  \end{itemize}
+
+\end{frame}
+
+%-----------------------------------------------------------------------
+\section{Evolução}\label{evolucao}
+
+\begin{frame}[fragile, allowframebreaks]{Série ou pontos conectados}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 9cm]{img/ggplot_masterlist_39.png}
+    \caption{Gráfico de uma série temporal. Fonte: \url{http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Pontos conectados (\emph{connected scatterplot}).
+  \item \textbf{Função}: mostrar a trejetória de uma variável ao longo
+    do tempo.
+  \item \textbf{Tipo de escala}: quantitativa $\times$ ordenada.
+  \item \textbf{Variáveis visuais}: posição $x \times y$.
+  \item \textbf{Geometria}: linhas ou pontos conectados.
+  \item \textbf{Variação}:
+
+    \begin{itemize}
+    \item Área preenchida entre série e de origem.
+    \item Dois eixos verticais para séries de grandeza diferentes.
+    \end{itemize}
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Séries com dois eixos verticais}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 9cm]{img/0051-dualgood.png}
+    \caption{Séries com dois eixos. Fonte: \url{http://freerangestats.info/blog/2016/08/18/dualaxes}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Série com dois eixos verticais.
+  \item \textbf{Inspiração}: linhas ou pontos conectados.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Áreas empilhadas}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 7cm]{img/cZ1Dw.png}
+    \caption{Gráfico de áreas empilhadas. Fonte:
+      \url{https://stackoverflow.com/questions/35587571/make-a-stacked-area-graph-in-ggplot2}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Áreas empilhadas (\emph{stacked area plot}).
+  \item \textbf{Função}: mostrar a trejetória várias séries.
+  \item \textbf{Tipo de escala}: quantitativa $\times$ ordenada $\times$
+    categórica.
+  \item \textbf{Variáveis visuais}: posição $x \times y$ e
+    preenchimento.
+  \item \textbf{Geometria}: polígono preenchido.
+  \item \textbf{Variáveis calculadas}: valores acumulados em cada ponto.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Slopegraph}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 5.5cm]{img/SlopegraphProgression_7A.png}
+    \caption{Um exemplo de \emph{Slopegraph}. Fonte:
+      \url{http://www.storytellingwithdata.com/blog/2018/6/1/swdchallenge-slopegraph}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 5.5cm]{img/slope-survival.png}
+    \caption{\emph{Slopegraph} com mais condições. Fonte:
+      \url{https://shivathudi.com/2017/04/19/data-visualization-in-r-using-ggplot-and-shiny/}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Pontos conectados (connected scatterplot).
+  \item \textbf{Função}: mostrar a trejetória de uma variável ao longo
+    do tempo.
+  \item \textbf{Tipo de escala}: quantitativa $\times$ ordenada.
+  \item \textbf{Variáveis visuais}: posição $x \times y$.
+  \item \textbf{Geometria}: pontos conectados e texto.
+  \end{itemize}
+
+\end{frame}
+
 % \begin{frame}{Sparklines}
 %
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: \emph{Sparklines}.
-% \item
-%   \textbf{Função}: mostrar a trejetória de uma variável ao longo do
-%   tempo.
-% \item
-%   \textbf{Tipo de escala}: quantitativa $\times$ ordenada.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$.
-% \item
-%   \textbf{Geometria}: linhas.
-% \end{itemize}
+%   \begin{itemize}
+%   \item \textbf{Nome}: \emph{Sparklines}.
+%   \item \textbf{Função}: mostrar a trejetória de uma variável ao longo
+%     do tempo.
+%   \item \textbf{Tipo de escala}: quantitativa $\times$ ordenada.
+%   \item \textbf{Variáveis visuais}: posição $x \times y$.
+%   \item \textbf{Geometria}: linhas.
+%   \end{itemize}
 %
 % \end{frame}
-%
-% \begin{frame}{Calendar plot}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Diagrama de calendário (\emph{calendar plot}).
-% \item
-%   \textbf{Função}: retratar uma variável a disposição das datas no
-%   calendário.
-% \item
-%   \textbf{Tipo de escala}: quantitativa $\times$ ordenada.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$ e preenchimento.
-% \item
-%   \textbf{Geometria}: linhas, colunas e cédulas (grid).
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Waterfall chart}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: \emph{Waterfall chart} (gráfico de cascata)
-% \item
-%   \textbf{Função}: exibe a decomposição/evolução de uma quantidade
-%   inicial em termos de somas e diferenças.
-% \item
-%   \textbf{Tipo de escala}: quantitativa $\times$ qualitativa ou
-%   ordenada.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$.
-% \item
-%   \textbf{Geometria}: retângulos.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Gantt chart}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Diagrama de Gantt (\emph{Gantt chart}).
-% \item
-%   \textbf{Função}: descreve uma variável de duração.
-% \item
-%   \textbf{Tipo de escala}: quantitativa $\times$ categórica.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$.
-% \item
-%   \textbf{Geometria}: barras ou segmentos.
-% \item
-%   \textbf{Inspiração}: \emph{Cleveland dot plot}.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Candlestick chart}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: \emph{Candlestick chart} (gráfico de candelabro).
-% \item
-%   \textbf{Função}: Exibir valores de abertura, fechamento, máximo e
-%   mínimo por intervalo de tempo.
-% \item
-%   \textbf{Tipo de escala}: quantitativa $\times$ ordenada.
-% \item
-%   \textbf{Variáveis visuais}: posição $x \times y$ e cor.
-% \item
-%   \textbf{Geometria}: segmentos e/ou retângulos.
-% \end{itemize}
-%
-% \end{frame}
-%
+
+\begin{frame}[fragile, allowframebreaks]{Calendar plot}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 9cm]{img/Calendar_Chart.png}
+    \caption{Exemplo de gráfico de calendário. Fonte: \url{https://d2mvzyuse3lwjc.cloudfront.net/www/resources/graph_gallery/images_galleries_new/Calendar_Chart.png}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Diagrama de calendário (\emph{calendar plot}).
+  \item \textbf{Função}: retratar uma variável a disposição das datas no
+    calendário.
+  \item \textbf{Tipo de escala}: quantitativa $\times$ ordenada.
+  \item \textbf{Variáveis visuais}: posição $x \times y$ e
+    preenchimento.
+  \item \textbf{Geometria}: linhas, colunas e cédulas (grid).
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Waterfall chart}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 8cm]{img/waterfall-chart.png}
+    \caption{Exemplo de um gráfico de barras em cascata. Fonte:
+      \url{https://www.ablebits.com/office-addins-blog/2014/07/25/waterfall-chart-in-excel/}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 10cm]{img/waterfall.jpg}
+    \caption{Diferença de exibição com barras ou barras em
+      cascata. Fonte:
+      \url{https://twitter.com/BrodieGaslam/status/1002932910696157186}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: \emph{Waterfall chart} (gráfico de cascata)
+  \item \textbf{Função}: exibe a decomposição/evolução de uma quantidade
+    inicial em termos de somas e diferenças.
+  \item \textbf{Tipo de escala}: quantitativa $\times$ qualitativa ou
+    ordenada.
+  \item \textbf{Variáveis visuais}: posição $x \times y$.
+  \item \textbf{Geometria}: retângulos.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Gantt chart}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 8.5cm]{img/gantt.png}
+    \caption{Exemplo de diagrama de Gantt. Fonte: \url{http://curiousgnu1.rssing.com/chan-66482562/all_p1.html}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Diagrama de Gantt (\emph{Gantt chart}).
+  \item \textbf{Função}: descreve uma variável de duração.
+  \item \textbf{Tipo de escala}: quantitativa $\times$ categórica.
+  \item \textbf{Variáveis visuais}: posição $x \times y$.
+  \item \textbf{Geometria}: barras ou segmentos.
+  \item \textbf{Inspiração}: \emph{Cleveland dot plot}.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Candlestick chart}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 6.5cm]{img/candle-stick-1.png}
+    \caption{Exemplo de gráfico de candelabro. Fonte:
+      \url{https://stackoverflow.com/questions/28201587/ggplot-for-ohlc-chart-using-bars-not-candles}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: \emph{Candlestick chart} (gráfico de candelabro).
+  \item \textbf{Função}: Exibir valores de abertura, fechamento, máximo
+    e mínimo por intervalo de tempo.
+  \item \textbf{Tipo de escala}: quantitativa $\times$ ordenada.
+  \item \textbf{Variáveis visuais}: posição $x \times y$ e cor.
+  \item \textbf{Geometria}: segmentos e/ou retângulos.
+  \end{itemize}
+
+\end{frame}
+
+%-----------------------------------------------------------------------
 \section{Mapa}\label{mapa}
+
 
 \begin{frame}[allowframebreaks]{Choropleth map}
 
@@ -1174,89 +1263,108 @@ read_chunk("00-graphics-gallery.R")
 
 \end{frame}
 
-% \section{Organização}\label{organizacao}
-%
-% \begin{frame}{Dendrograma}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Dendrorama (dendro = árvore).
-% \item
-%   \textbf{Função}: retrata o grau similaridade ou estrutura hierárquica
-%   (perfilhamento) entre categorias.
-% \item
-%   \textbf{Tipo de escala}: quantitativa.
-% \item
-%   \textbf{Variáveis visuais}: comprimento.
-% \item
-%   \textbf{Geometria}: linhas.
-% \item
-%   \textbf{Requisitos definíveis}: medida de similaridade, método de
-%   agrupamento.
-% \item
-%   \textbf{Variáveis calculadas}: similaridade ou distância entre
-%   categorias.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Treemap}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Treemap (mapa da árvore).
-% \item
-%   \textbf{Função}: retrata a organização hierárquica com o curso de
-%   divisões.
-% \item
-%   \textbf{Tipo de escala}: quantitativa.
-% \item
-%   \textbf{Variáveis visuais}: área.
-% \item
-%   \textbf{Geometria}: retângulos.
-% \item
-%   \textbf{Inspiração}: dendrograma e gráfico de mosaico.
-% \item
-%   \textbf{Variação}: \emph{circular packing}.
-% \item
-%   \url{http://newsmap.jp/}.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Circular packing}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: \emph{Circular packing}.
-% \item
-%   \textbf{Inspiração}: \emph{treemap} e diagrama de Venn.
-% \item
-%   \textbf{Geometria}: círculos.
-% \item
-%   \textbf{Variação}: \emph{circular packing}.
-% \end{itemize}
-%
-% \end{frame}
-%
-% \begin{frame}{Sunburst}
-%
-% \begin{itemize}
-% \item
-%   \textbf{Nome}: Sunburst ($=$ raios de sol).
-% \item
-%   \textbf{Função}: retrata a organização hierárquica com o curso de
-%   divisões.
-% \item
-%   \textbf{Tipo de escala}: quantitativa.
-% \item
-%   \textbf{Variáveis visuais}: ângulo.
-% \item
-%   \textbf{Geometria}: arcos.
-% \end{itemize}
-%
-% \end{frame}
-%
+%-----------------------------------------------------------------------
+\section{Organização}\label{organizacao}
+
+\begin{frame}[fragile, allowframebreaks]{Dendrograma}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 5.5cm]{img/dendrogram.png}
+    \caption{Exemplo de dendrograma. Fonte: \url{https://www.datanovia.com/en/courses/hierarchical-clustering-in-r-the-essentials/}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 7.5cm]{img/clustergram.png}
+    \caption{Ideia para a construção do dendrograma. Fonte: \url{https://www.statisticshowto.datasciencecentral.com/hierarchical-clustering/}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Dendrorama (dendro = árvore).
+  \item \textbf{Função}: retrata o grau similaridade ou estrutura
+    hierárquica (perfilhamento) entre categorias.
+  \item \textbf{Tipo de escala}: quantitativa.
+  \item \textbf{Variáveis visuais}: comprimento.
+  \item \textbf{Geometria}: linhas.
+  \item \textbf{Requisitos definíveis}: medida de similaridade, método
+    de agrupamento.
+  \item \textbf{Variáveis calculadas}: similaridade ou distância entre
+    categorias.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Treemap}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 8.5cm]{img/treemap-population.png}
+    \caption{Exemplo de \emph{treemap}. Fonte:
+      \url{https://github.com/mtennekes/treemap}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: \emph{Treemap} (mapa da árvore).
+  \item \textbf{Função}: retrata a organização hierárquica com o curso
+    de divisões.
+  \item \textbf{Tipo de escala}: quantitativa.
+  \item \textbf{Variáveis visuais}: área.
+  \item \textbf{Geometria}: retângulos.
+  \item \textbf{Inspiração}: dendrograma e gráfico de mosaico.
+  \item \textbf{Variação}: \emph{circular packing}.
+  \item \url{http://newsmap.jp/}.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Circular packing}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 5.5cm]{img/circular-pack.png}
+    \caption{Exemplo de \emph{circular packing}. Fonte: \url{https://d3indepth.com/layouts/}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: \emph{Circular packing}.
+  \item \textbf{Inspiração}: \emph{treemap} e diagrama de Venn.
+  \item \textbf{Geometria}: círculos.
+  \item \textbf{Variação}: \emph{circular packing}.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile, allowframebreaks]{Sunburst}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 8.5cm]{img/sunburst.png}
+    \caption{Exemplo de diagrama \emph{sunburst}. Fonte: \url{https://www.debugpoint.com/2018/07/apps-visual-disk-usage-linux-ubuntu-mint/}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{itemize}
+  \item \textbf{Nome}: Sunburst ($=$ raios de sol).
+  \item \textbf{Função}: retrata a organização hierárquica com o curso
+    de divisões.
+  \item \textbf{Tipo de escala}: quantitativa.
+  \item \textbf{Variáveis visuais}: ângulo.
+  \item \textbf{Geometria}: arcos.
+  \end{itemize}
+
+\end{frame}
+
+%-----------------------------------------------------------------------
 \section{Fluxo}\label{fluxo}
 
 \begin{frame}[allowframebreaks]{Network}
@@ -1375,6 +1483,7 @@ read_chunk("00-graphics-gallery.R")
   \item \textbf{Tipo de escala}: quantitativa.
   \item \textbf{Variáveis visuais}: tamanho.
   \item \textbf{Geometria}: arcos.
+  % \item \url{https://www.datisticsblog.com/2019/04/visualising-model-response-with-easyalluvial/}.
   \end{itemize}
 
 \end{frame}
@@ -1397,7 +1506,7 @@ read_chunk("00-graphics-gallery.R")
 
   \framebreak
 
-    \begin{figure}[h]
+  \begin{figure}[h]
     \centering
     \includegraphics[width = 5.5cm]{img/chord-diagram-bruna-rogerio.png}
     \caption{Disposição dos acordes em sequência na música
@@ -1420,82 +1529,201 @@ read_chunk("00-graphics-gallery.R")
 
 \end{frame}
 
-%
+%-----------------------------------------------------------------------
 % \section{Outros}\label{outros}
-%
 % \begin{frame}{Gauge diagram}
-%
-% TODO
-%
 % \end{frame}
-%
 % \begin{frame}{Info box}
-%
-% TODO
-%
 % \end{frame}
+
+%-----------------------------------------------------------------------
+
+\section{O que você deve evitar}
+
+\begin{frame}[allowframebreaks]{O problema do viés de disponibilidade?}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 10cm]{img/excel-uteis-lixo.png}
+    \caption{Apenas 11\% dos gráficos do MS Excel são úteis conforme
+      Jorge Camoes. Adaptado:
+      \url{https://excelcharts.com/excel-chart-gallery-a-difficult-equilibrium/}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 10cm]{img/excel-banir.png}
+    \caption{Gráficos de devem ser banidos.}
+  \end{figure}
+
+\end{frame}
+
+% \begin{frame}
+%   \centertitle{O que você deve evitar}
 %
-% \begin{frame}{O que você deve evitar (BAD)}
+%   \begin{flushright}
+%     \textit{``The human eye is a wonderful device. With a little effort,
+%       it can fail to see even the most glaring injustice.''}
 %
-% TODO
-%
+%    -- Richard K. Morgan $\cdot$ Altered Carbon
+%   \end{flushright}
 % \end{frame}
-%
-% \begin{frame}{Galeria de gráficos}
-%
-% \begin{figure}
-%
-% {\centering \includegraphics[width=7 cm]{img/graphics-icons}
-%
-% }
-%
-% \caption{Tipos de gráficos para visualização de dados}\label{fig:unnamed-chunk-6}
-% \end{figure}
-%
-% \end{frame}
-%
-% \begin{frame}{Galerias online}
-%
-% \begin{enumerate}
-% \def\labelenumi{\arabic{enumi}.}
-% \item
-%   \url{https://www.data-to-viz.com/}.
-% \item
-%   \url{https://datavizcatalogue.com/}.
-% \item
-%   R: \url{https://www.r-graph-gallery.com/}.
-% \item
-%   Python Matplotlib: \url{https://matplotlib.org/gallery/index.html}.
-% \item
-%   Tableau: \url{https://public.tableau.com/en-us/s/gallery}.
-% \item
-%   D3: \url{https://github.com/d3/d3/wiki/Gallery},
-%   \url{http://biovisualize.github.io/d3visualization/}.
-% \item
-%   Highcharter: \url{http://jkunst.com/highcharter/}.
-% \item
-%   Google charts:
-%   \url{https://developers.google.com/chart/interactive/docs/gallery}.
-% \item
-%   Dash: \url{https://dash.plot.ly/gallery}.
-% \item
-%   Zingchart: \url{https://www.zingchart.com/gallery/}.
-% \item
-%   Original Lab:
-%   \url{https://www.originlab.com/www/products/graphgallery.aspx}.
-% \item
-%   Fusion charts:
-%   \url{https://www.fusioncharts.com/charts?product=fusioncharts}.
-% \item
-%   \url{https://news-explorer.mybluemix.net/?query=data\%20science}.
-% \item \url{https://truth-and-beauty.net/}.
-% \end{enumerate}
-%
-% \end{frame}
-%
-% \begin{frame}[fragile]{Referências}
-%
-% \end{frame}
+
+\begin{frame}[allowframebreaks]{Gráficos ruins}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=6cm]{img/pie1.png}
+    \caption{Gráfico de setores com perspectiva tridimensional gera
+      distorção dos ângulos.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=6cm]{img/donout1.png}
+    \caption{Comparação de comprimentos angulares é menos precisa,
+      principalmente em uma perspectiva 3D.}
+  \end{figure}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=6cm]{img/bar3D1.png}
+    \caption{Perpectiva 3D e pontos de fuga deformam o sistema de
+      coordenadas e dificultam parceber comprimentos.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=6cm]{img/bar3D2.png}
+    \caption{Mais do mesmo. Softwares comerciais de planilha eletrônica
+      oferencem vários recusos gráficos tridimensionais com baixa
+      efetividade. Isso popularizou ou mal uso de gráficos
+      (\textit{availability bias}).}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=6cm]{img/cone3D2.jpg}
+    \caption{Gráficos que violam os princípios de expressividade e
+      efetividade.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=6cm]{img/Stacked_3D_Bar.png}
+    \caption{Perspectiva e ornamentação que não agregam funcionalidade. \url{https://www.originlab.com/www/products/graphgallery.aspx}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=6cm]{img/line3D1.png}
+    \caption{A falta de sistema de coordenadas para compreensão da
+      informação o torna simplesmente uma alegoria.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=6cm]{img/3D_Waterfall_with_Smooth_Lines.png}
+    \caption{A perspectiva reduz a acurácia da
+      percepção. \url{https://www.originlab.com/www/products/graphgallery.aspx}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=6cm]{img/3DHistogramsWithDistributionFit.png}
+    \caption{A perspectiva reduz a acurácia da
+      percepção. \url{https://www.originlab.com/www/products/graphgallery.aspx}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=6cm]{img/donut_chart.png}
+    \caption{Viasualizações polares tem menor acurácia para comparação dos comprimentos. \url{https://www.originlab.com/www/products/graphgallery.aspx}.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+
+  \begin{flushright}
+  % \textit{``The human eye is a wonderful device. With a little effort,
+  %   it can fail to see even the most glaring injustice.''}
+
+  \textit{``O olho humano é um dispositivo maravilhoso. Com um pouco de
+    esforço, pode deixar de ver até mesmo a injustiça mais flagrante.''}
+
+   -- Richard K. Morgan $\cdot$ Altered Carbon
+  \end{flushright}
+
+  \begin{flushright}
+    % \textit{``You can achieve simplicity in the design of effective
+    %   charts, graphs and tables by remembering three fundamental
+    %   principles: restrain, reduce, emphasize.''}
+
+    \textit{``Você obtém simplicidade na elaboração de gráficos e
+      tabelas eficazes, lembrando três princípios fundamentais:
+      restringir, reduzir, enfatizar.''}
+
+    -- Garr Reynolds
+  \end{flushright}
+
+\end{frame}
+
+\begin{frame}{Galerias online}
+
+  \begin{enumerate}
+    \def\labelenumi{\arabic{enumi}.}
+  \item \url{https://www.data-to-viz.com/}.
+  \item \url{https://datavizcatalogue.com/}.
+  \item \url{https://www.r-graph-gallery.com/}.
+  \item \url{https://matplotlib.org/gallery/index.html}.
+  \item \url{https://public.tableau.com/en-us/s/gallery}.
+  \item \url{https://github.com/d3/d3/wiki/Gallery},
+    \url{http://biovisualize.github.io/d3visualization/}.
+  \item \url{http://jkunst.com/highcharter/}.
+  \item \url{https://developers.google.com/chart/interactive/docs/gallery}.
+  \item \url{https://dash.plot.ly/gallery}.
+  \item \url{https://www.zingchart.com/gallery/}.
+  \item \url{https://news-explorer.mybluemix.net/?query=data\%20science}.
+  \item \url{https://truth-and-beauty.net/}.
+  \end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Próximo encontro}
+
+  \begin{itemize}
+  \item Recursos para elaboração de gráficos no R.
+  \item Análise exploratória com \emph{data storytelling}.
+  \item Introdução ao pacote \texttt{ggplot2}.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \centertitle{Pela oportunidade e atenção, agradeço.}
+
+  \begin{center}
+    Prof. Walmes Zeviani\\
+    \url{walmes@ufpr.br}\\
+  \end{center}
+\end{frame}
 
 \end{document}
 
