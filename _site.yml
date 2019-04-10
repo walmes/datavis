@@ -28,6 +28,9 @@ navbar:
       - text: "Visualização de dados"
         href: slides/00-datavis.pdf
         icon: fa-file-pdf
+      - text: "Galeria de gráficos"
+        href: slides/00-graphics-gallery.pdf
+        icon: fa-file-pdf
       - text: "Introdução ao `tidyverse`"
         href: slides/01-tidyverse.pdf
         icon: fa-file-pdf
