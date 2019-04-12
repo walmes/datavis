@@ -7,6 +7,7 @@
 \input{config/preamble-commands.tex}
 
 \title{Almanaque de gráficos para visualização de dados}
+\subtitle{Taxonomia, funções \& formas}
 
 <<include = FALSE>>=
 source("config/setup.R")
@@ -40,7 +41,7 @@ read_chunk("00-graphics-gallery.R")
   \item Conhecer os tipos de gráficos mais usados.
   \item Compreender os aspectos físicos, funcionais e de forma
     dos gráficos.
-  \item Desenvolver senso crítico para escolha de represetações.
+  \item Desenvolver senso crítico para escolha de representações.
   \item Nutrir a criatividade para desenvolver novas visualizações.
   \end{itemize}
 
@@ -62,9 +63,11 @@ read_chunk("00-graphics-gallery.R")
   A escolha de um gráfico depende de uma série de elementos. Os
   principais são:
   \begin{itemize}
-  \item Escala das variáveis.
-  \item Propósito da visualização $\rightarrow$ \hi{função} do gráfico.
-  \item Ênfases e destaques $\rightarrow$ \hi{forma} do gráfico.
+  \item \hi{Escala} das variáveis.
+  \item \hi{Propósito} da visualização $\rightarrow$ \hi{função} do
+    gráfico.
+  \item Questões \hi{visuais/estéticas} $\rightarrow$ \hi{forma} do
+    gráfico.
   \end{itemize}
 
 \end{frame}
@@ -99,9 +102,8 @@ read_chunk("00-graphics-gallery.R")
     {\centering
       \includegraphics[width=7 cm]{img/abela-chart-type}
     }
-    \caption{Tipos de gráficos organizados por função de Andrew
-      Abela. Visite:
-      \url{https://extremepresentation.com/}.}\label{fig:unnamed-chunk-4}
+    \caption{Taxonomia de gráficos beseada na função por Andrew
+      Abela. Visite: \url{https://extremepresentation.com/}.}
   \end{figure}
 
 \end{frame}
@@ -115,14 +117,14 @@ read_chunk("00-graphics-gallery.R")
     \item Classificação princial: função do gráfico.
     \item Relacionado às quantidades a serem representadas.
     \item Quais quantidades/propriedades serão exibidas $\rightarrow$
-      \hi{o que?}.
+      \hi{o que?}
     \end{itemize}
   \item \hi{Forma}
     \begin{itemize}
     \item Classificação secundária: forma do gráfico.
     \item Relacionado às decisões estéticas e de mídia.
     \item Como as quantidades/propriedades serão exibidas $\rightarrow$
-      \hi{como?}.
+      \hi{como?}
     \end{itemize}
   \end{itemize}
 
@@ -141,14 +143,15 @@ read_chunk("00-graphics-gallery.R")
     variáveis qualitativas ou quantitativas.
   \item[Relação] Exibem a forma da \textbf{relação ou contraste} entre
     variáveis.
-  \item[Ordenação] Exibem os dados considerando a \textbf{classificação}
-    baseada nas variáveis.
-  \item[Evolução] Exploram o curso de dados \textbf{cronológicos}.
-  \item[Mapa] Representam dados com propriedades \textbf{geoespaciais}.
-  \item[Organização] Retratam a \textbf{estrutura} hierárquica de
-    coleções de elementos.
+  \item[Ordenação] Priorizam exibir a \textbf{classificação} de
+    categorias/elementos baseada nas variáveis.
+  \item[Evolução] Exploram o comportamento de dados
+    \textbf{cronológicos}.
+  \item[Mapa] Representam dados com propriedades \textbf{geográficas}.
+  \item[Organização] Retratam a \textbf{estrutura} de organização de
+    coleções de categorias/elementos.
   \item[Fluxo] Descrevem o \textbf{movimento ou conexão} entre
-    elementos.
+    categorias/elementos.
   \end{description}
 
 \end{frame}
@@ -192,7 +195,7 @@ read_chunk("00-graphics-gallery.R")
 
   \begin{itemize}
   \item \textbf{Nome}: diagrama de ramos e folhas.
-  \item \textbf{Função}: distribuição de valores.
+  \item \textbf{Função}: representar a distribuição dos valores.
   \item \textbf{Tipo de escala}: quantitativa.
   \item \textbf{Variáveis visuais}: posição $x \times y$.
   \item \textbf{Geometria}: pontos empilhados.
@@ -211,7 +214,7 @@ read_chunk("00-graphics-gallery.R")
 
   \begin{itemize}
   \item \textbf{Nome}: \emph{stacked dot plot}.
-  \item \textbf{Função}: distribuição de valores.
+  \item \textbf{Função}: representar a distribuição dos valores.
   \item \textbf{Tipo de escala}: quantitativa.
   \item \textbf{Variáveis visuais}: posição $x \times y$.
   \item \textbf{Geometria}: pontos empilhados.
@@ -226,9 +229,11 @@ read_chunk("00-graphics-gallery.R")
   <<height_histogram, results = "hide", echo = FALSE, fig.cap = cap>>=
   @
 
+  \framebreak
+
   \begin{itemize}
   \item \textbf{Nome}: histograma.
-  \item \textbf{Função}: distribuição de valores.
+  \item \textbf{Função}: representar a distribuição dos valores.
   \item \textbf{Tipo de escala}: quantitativa.
   \item \textbf{Variáveis visuais}: posição $x \times y$.
   \item \textbf{Geometria}: barras.
@@ -248,7 +253,7 @@ read_chunk("00-graphics-gallery.R")
 
   \begin{itemize}
   \item \textbf{Nome}: distribuição empírica de densidade.
-  \item \textbf{Função}: distribuição de valores.
+  \item \textbf{Função}: representar a distribuição dos valores.
   \item \textbf{Tipo de escala}: quantitativa.
   \item \textbf{Variáveis visuais}: posição $x \times y$.
   \item \textbf{Geometria}: linhas.
@@ -271,7 +276,8 @@ read_chunk("00-graphics-gallery.R")
   \begin{itemize}
   \item \textbf{Nome}: \emph{empirical cumulative distribution function}
     (ECDF).
-  \item \textbf{Função}: distribuição acumulada de valores.
+  \item \textbf{Função}: representar a distribuição acumulada dos
+    valores.
   \item \textbf{Tipo de escala}: quantitativa.
   \item \textbf{Variáveis visuais}: posição $x \times y$.
   \item \textbf{Geometria}: linhas.
@@ -291,7 +297,8 @@ read_chunk("00-graphics-gallery.R")
     \begin{itemize}
     \item \textbf{Nome}: diagrama de caixas (e bigodes) (box (and
       whiskers)).
-    \item \textbf{Função}: distribuição de valores pelas separatrizes.
+    \item \textbf{Função}: representar a distribuição dos valores
+      demarcando as separatrizes.
     \item \textbf{Tipo de escala}: quantitativa.
     \item \textbf{Variáveis visuais}: posição $x \times y$.
     \item \textbf{Geometria}: caixas, segmentos e pontos.
@@ -364,7 +371,7 @@ read_chunk("00-graphics-gallery.R")
 
   \begin{itemize}
   \item \textbf{Nome}: Gráfico de barras (\emph{bar chart}).
-  \item \textbf{Função}: exibir a frequência de categorias.
+  \item \textbf{Função}: exibir a frequência das categorias.
   \item \textbf{Tipo de escala}: qualitativa.
   \item \textbf{Variáveis visuais}: posição $x \times y$.
   \item \textbf{Geometria}: barras.
@@ -423,11 +430,11 @@ read_chunk("00-graphics-gallery.R")
 
   \begin{itemize}
   \item \textbf{Nome}: \emph{Waffle chart}.
-  \item \textbf{Função}: exibir a frequência relativa de categorias.
+  \item \textbf{Função}: exibir a frequência de categorias.
   \item \textbf{Tipo de escala}: qualitativa.
   \item \textbf{Variáveis visuais}: área e cor.
   \item \textbf{Geometria}: pixels.
-  \item \textbf{Variáveis calculadas}: frequência relativa.
+  \item \textbf{Variáveis calculadas}: frequência absoluta ou relativa.
   \item \textbf{Variações}: \emph{area size chart}.
   \end{itemize}
 
@@ -461,7 +468,7 @@ Qual usar para:
   \item \textbf{Variáveis visuais}: posição $x \times y$.
   \item \textbf{Geometria}: pontos e linhas.
   \item \textbf{Variáveis calculadas}: quantis teóricos da distribuição
-    atribuída.
+    sob hipótese.
   \end{itemize}
 
 \end{frame}
@@ -538,8 +545,8 @@ Qual usar para:
   \framebreak
 
   \begin{itemize}
-  \item \textbf{Nome}: diagrama de dispersão (scatter plot).
-  \item \textbf{Função}: relação entre variáveis.
+  \item \textbf{Nome}: diagrama de dispersão (\emph{scatter plot}).
+  \item \textbf{Função}: retratar a relação entre variáveis.
   \item \textbf{Tipo de escala}: quantitativa $\times$ quantitativa.
   \item \textbf{Variáveis visuais}: posição $x \times y$.
   \item \textbf{Geometria}: pontos.
@@ -574,10 +581,11 @@ Qual usar para:
   \framebreak
 
   \begin{itemize}
-  \item \textbf{Nome}: diagrama de dispersão (scatter plot).
-  \item \textbf{Função}: relação entre variáveis.
-  \item \textbf{Tipo de escala}: quantitativa $\times$ quantitativa
-    $\times$ quantitativa.
+  \item \textbf{Nome}: diagrama de dispersão com bolhas (\emph{bubble
+      plot}).
+  \item \textbf{Função}: retrarar a relação entre variáveis
+    quantitativas.
+  \item \textbf{Tipo de escala}: todas quantitativas.
   \item \textbf{Variáveis visuais}: posição $x \times y$ e tamanho.
   \item \textbf{Geometria}: pontos.
   \end{itemize}
@@ -592,10 +600,11 @@ Qual usar para:
   \framebreak
 
   \begin{itemize}
-  \item \textbf{Nome}: matriz de diagramas de dispersão (scatter plot
-    matrix).
-  \item \textbf{Função}: relação entre variáveis e distribuição.
-  \item \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
+  \item \textbf{Nome}: matriz de diagramas de dispersão (\emph{scatter
+      plot matrix}).
+  \item \textbf{Função}: exibir a relação entre variáveis e
+    distribuições marginais.
+  \item \textbf{Tipo de escala}: preferencialmente quantitativas.
   \item \textbf{Variáveis visuais}: posição $x \times y$.
   \item \textbf{Geometria}: pontos, linhas e/ou barras.
   \item \textbf{Inspiração}: diagrama de dispersão e gráficos para
@@ -613,8 +622,10 @@ Qual usar para:
 
   \begin{itemize}
   \item \textbf{Nome}: Correlograma (\emph{correlogram}).
-  \item \textbf{Função}: corelação entre várias variáveis contínuas.
-  \item \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
+  \item \textbf{Função}: mostrar a estrutura de correlação entre várias
+    variáveis contínuas (admite qualitativas mas requer especificar
+    apropriadamente uma medida de correlação).
+  \item \textbf{Tipo de escala}: preferencialmente para quantitativas.
   \item \textbf{Variáveis visuais}: área, inclinação ou outra retinal
     quantitativa.
   \item \textbf{Geometria}: elipses, círculos ou retângulos.
@@ -631,8 +642,9 @@ Qual usar para:
 
   \begin{itemize}
   \item \textbf{Nome}: Mapa de calor (\emph{heatmap}).
-  \item \textbf{Função}: relação entre várias variáveis contínuas.
-  \item \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
+  \item \textbf{Função}: comparar variável quantitativa entre
+    categorias.
+  \item \textbf{Tipo de escala}: quantitativas $\times$ categorias.
   \item \textbf{Variáveis visuais}: posição $x \times y$, cor ou
     saturação.
   \item \textbf{Geometria}: pixels coloridos.
@@ -649,8 +661,9 @@ Qual usar para:
 
   \begin{itemize}
   \item \textbf{Nome}: \emph{Parallel plot}.
-  \item \textbf{Função}: relação entre várias variáveis contínuas.
-  \item \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
+  \item \textbf{Função}: comparar variável quantitativa entre categorias
+    e examinar a relação entre variáveis (perfil).
+  \item \textbf{Tipo de escala}: quantitativa.
   \item \textbf{Variáveis visuais}: posição $x \times y$.
   \item \textbf{Geometria}: linhas.
   \item \textbf{Inspiração}: \emph{slopegraph}.
@@ -668,8 +681,9 @@ Qual usar para:
 
   \begin{itemize}
   \item \textbf{Nome}: \emph{Radar plot} ou \emph{Spider plot}.
-  \item \textbf{Função}: relação entre várias variáveis contínuas.
-  \item \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
+  \item \textbf{Função}: comparar variável quantitativa entre
+    categorias.
+  \item \textbf{Tipo de escala}: quantitativa.
   \item \textbf{Variáveis visuais}: posição $r \times \theta$.
   \item \textbf{Geometria}: linhas.
   \item \textbf{Inspiração}: \emph{parallel plot}.
@@ -686,9 +700,8 @@ Qual usar para:
 
   \begin{itemize}
   \item \textbf{Nome}: \emph{Cleveland dot plot}.
-  \item \textbf{Função}: relação entre variável contínua e categóricas.
-  \item \textbf{Tipo de escala}: quantitativas $\times$ qualitativa
-    $\times$ qualitativa.
+  \item \textbf{Função}: comprar variável contínua entre categorias.
+  \item \textbf{Tipo de escala}: quantitativa $\times$ qualitativas.
   \item \textbf{Variáveis visuais}: posição $x \times y$.
   \item \textbf{Geometria}: pontos e segmentos.
   \end{itemize}
@@ -722,10 +735,11 @@ Qual usar para:
   \framebreak
 
   \begin{itemize}
-  \item \textbf{Nome}: diagrama de dispersão (scatter plot).
-  \item \textbf{Função}: relação entre variáveis.
+  \item \textbf{Nome}: diagrama de caixas (\emph{boxplot}).
+  \item \textbf{Função}: comparar aspectos da distribuição de variável
+    quantitativa entre categorias.
   \item \textbf{Tipo de escala}: quantitativa $\times$ qualitativa.
-  \item \textbf{Inspiração}: boxplot.
+  \item \textbf{Inspiração}: boxplot para única grupo.
   \item \textbf{Variação}: \emph{minimal box plot}.
   \end{itemize}
 
@@ -740,11 +754,15 @@ Qual usar para:
 
   \begin{itemize}
   \item \textbf{Nome}: Densidade 2D.
-  \item \textbf{Função}: relação e distribuição de valores.
-  \item \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
+  \item \textbf{Função}: relação entre variáveis e distribuição de
+    valores agrupados em classe.
+  \item \textbf{Tipo de escala}: quantitativa.
   \item \textbf{Variáveis visuais}: posição $x \times y$, cor ou
     saturação.
   \item \textbf{Geometria}: pixels coloridos ou linhas de contorno.
+  \item \textbf{Requisitos definíveis}: aspectos da determinação das
+    classes (dimensões, forma e posição dos pixels.
+  \item \textbf{Variáveis calculadas}: frequência absoluta ou relativa.
   \end{itemize}
 
 \end{frame}
@@ -762,8 +780,9 @@ Qual usar para:
 
   \begin{itemize}
   \item \textbf{Nome}: Faces de Chernoff (\emph{Chernoff faces}).
-  \item \textbf{Função}: relação entre várias variáveis.
-  \item \textbf{Tipo de escala}: quantitativas $\times$ quantitativas.
+  \item \textbf{Função}: contraste entre un conjunto de variáveis
+    quantitativas entre categorias/elementos.
+  \item \textbf{Tipo de escala}: quantitativas $\times$ categorias.
   \item \textbf{Variáveis visuais}: posição e comprimentos.
   \item \textbf{Geometria}: elementos do rosto humano.
   \end{itemize}

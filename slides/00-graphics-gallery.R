@@ -1,15 +1,19 @@
 #---- read_futbol ------------------------------------------------------
 
-suppressPackageStartupMessages(library(lattice))
-suppressPackageStartupMessages(library(latticeExtra))
-suppressPackageStartupMessages(library(tidyverse))
-suppressPackageStartupMessages(library(gridExtra))
-suppressPackageStartupMessages(library(ggjoy))
-suppressPackageStartupMessages(library(waffle))
-suppressPackageStartupMessages(library(ggmosaic))
-suppressPackageStartupMessages(library(GGally))
-suppressPackageStartupMessages(library(corrplot))
-suppressPackageStartupMessages(library(wordcloud))
+library(lattice)
+library(latticeExtra)
+library(RColorBrewer)
+library(tidyverse)
+library(gridExtra)
+library(ggjoy)
+library(waffle)
+library(ggmosaic)
+library(GGally)
+library(corrplot)
+library(wordcloud)
+library(ggridges)
+library(ggradar) # ricardo-bion/ggradar
+library(fmsb)
 
 path <- "../data/euro_football_players.txt"
 
@@ -168,7 +172,7 @@ cap <- "Distribuição da altura dos goleiros."
 gg1 <- ggplot(data = data.frame(x = x),
        mapping = aes(x = 1, group = 1, y = x)) +
     geom_violin(fill = "orange", alpha = 0.5) +
-    ylab("Altura dos jogadores ingleses (cm)") +
+    ylab("Altura dos goleiros (cm)") +
     scale_x_continuous(name = NULL, breaks = NULL) +
     geom_rug(sides = "l") +
     geom_vline(xintercept = 1, linetype = 2)
@@ -176,7 +180,7 @@ gg1 <- ggplot(data = data.frame(x = x),
 gg0 <- ggplot(data = data.frame(x = x),
        mapping = aes(x = 1, group = 1, y = x)) +
     geom_boxplot(fill = "orange", alpha = 0.5) +
-    ylab("Altura dos jogadores ingleses (cm)") +
+    ylab("Altura dos goleiros (cm)") +
     scale_x_continuous(name = NULL, breaks = NULL) +
     geom_rug(sides = "l")
 
@@ -185,8 +189,6 @@ grid.arrange(gg1, gg0, nrow = 1)
 cap <- "Distribuição da altura dos goleiros."
 
 #---- height_joy -------------------------------------------------------
-
-suppressPackageStartupMessages(library(ggridges))
 
 gg0 <- ggplot(tb2,
        aes(x = cm, y = position)) +
@@ -212,7 +214,7 @@ cap <- "Distribuição da altura dos jogadores por função em campo."
 
 gg <- ggplot(tb2,
              aes(x = position, y = cm)) +
-    ylab("Altura dos jogadores (cm)") +
+    ylab("Altura (cm)") +
     xlab("Função em campo")
 
 grid.arrange(gg + geom_boxplot(fill = "yellow", alpha = 0.5),
@@ -272,8 +274,10 @@ gg0 <- ggplot(tb2,
     coord_polar(theta = "y") +
     ylab(NULL) +
     xlab(NULL) +
-    scale_x_continuous(name = NULL, breaks = NULL) +
-    xlim(c(-2, 0.5)) +
+    scale_x_continuous(name = NULL,
+                       breaks = NULL,
+                       limits = c(-2, 0.5)) +
+    scale_y_continuous(breaks = NULL) +
     labs(fill = "Função")
 
 gg1 <- ggplot(tb2,
@@ -283,6 +287,7 @@ gg1 <- ggplot(tb2,
     ylab(NULL) +
     xlab(NULL) +
     scale_x_continuous(name = NULL, breaks = NULL) +
+    scale_y_continuous(breaks = NULL) +
     labs(fill = "Função")
 
 grid.arrange(gg0, gg1, nrow = 1)
@@ -291,25 +296,29 @@ cap <- "Distribuição dos jogadores quanto a função em campo."
 
 #---- redcard_waffle ---------------------------------------------------
 
-waffle(table(tb2$red),
-       rows = 30,
-       size = 1,
-       xlab = "Cada unidade é um cartão vermelho")
+tbf <- table(tb2$red)
+r <- 25
+g <- sprintf("Cada unidade é um jogador (grid %d x %d)",
+             r,
+             ceiling(sum(tbf)/r))
+
+waffle(tbf, rows = r, size = 1, xlab = g)
 
 cap <- "Distribuição dos jogadores quanto ao número de cartões vermelhos."
 
 #---- bmi_qq -----------------------------------------------------------
 
 gg0 <- ggplot(tb2, aes(sample = age)) +
-    geom_qq() +
+    geom_qq(pch = 1) +
+    geom_qq_line(linetype = 3) +
     ylab("Idade dos jogadores (anos)") +
-    xlab("Quantis teóricos da distribuição normal padrão")
+    xlab("Quantis teóricos da\ndistribuição normal padrão")
 
 gg1 <- ggplot(tb2, aes(sample = bmi)) +
-    # facet_wrap(facets = ~position) +
-    geom_qq() +
+    geom_qq(pch = 1) +
+    geom_qq_line(linetype = 3) +
     ylab("Índice de massa corporal") +
-    xlab("Quantis teóricos da distribuição normal padrão")
+    xlab("Quantis teóricos da\ndistribuição normal padrão")
 
 grid.arrange(gg0, gg1, nrow = 1)
 
@@ -319,8 +328,10 @@ cap <- "Distribuição da idade e índice de massa corportal dos jogadores."
 
 tb2 <- tb2 %>%
     mutate(yelg = cut(yel,
-                      c(0, 0.5, 1, 2, 4, Inf),
-                      c("0", "1", "2", "3 a 4", "5+"),
+                      # c(0, 0.5, 1, 2, 4, Inf),
+                      # c("0", "1", "2", "3 a 4", "5+"),
+                      c(0, 0.5, 2, Inf),
+                      c("0", "1 a 2", "2+"),
                       include.lowest = TRUE))
 
 gg0 <- ggplot(tb2, aes(x = position, fill = fct_rev(yelg))) +
@@ -331,7 +342,7 @@ gg0 <- ggplot(tb2, aes(x = position, fill = fct_rev(yelg))) +
     scale_fill_brewer(palette = 7, direction = -1)
 gg0
 
-cap <- "Cartões amarelos por função em campo."
+cap <- "Quantidade de cartões amarelos e a relação com a função em campo."
 
 #---- yel_grouped_bar --------------------------------------------------
 
@@ -343,7 +354,7 @@ gg0 <- ggplot(tb2, aes(x = position, fill = yelg)) +
     scale_fill_brewer(palette = 7, direction = 1)
 gg0
 
-cap <- "Cartões amarelos por função em campo."
+cap <- "Quantidade de cartões amarelos e a relação com a função em campo."
 
 #---- yel_filled_bar ---------------------------------------------------
 
@@ -355,7 +366,7 @@ gg0 <- ggplot(tb2, aes(x = position, fill = fct_rev(yelg))) +
     scale_fill_brewer(palette = 7, direction = -1)
 gg0
 
-cap <- "Cartões amarelos por função em campo."
+cap <- "Quantidade de cartões amarelos e a relação com a função em campo."
 
 #---- yel_mosaic -------------------------------------------------------
 
@@ -364,13 +375,15 @@ ggplot(data = tb2) +
                     fill = yelg,
                     na.rm = TRUE),
                 alpha = 1,
+                size = 0.6,
                 color = "black") +
     ylab("Número de cartões") +
     xlab("Função em campo") +
     labs(fill = "Cartões\namarelos") +
+    theme(legend.key = element_rect(colour = "black", size = 1)) +
     scale_fill_brewer(palette = 7, direction = 1)
 
-cap <- "Cartões amarelos por função em campo."
+cap <- "Quantidade de cartões amarelos e a relação com a função em campo."
 
 #---- cm_x_kg ----------------------------------------------------------
 
@@ -396,15 +409,18 @@ gg0 <- ggplot(data = tb2_gk,
     xlab("Peso do goleiro (kg)")
 
 gg1 <- gg0 +
-    geom_point(aes(color = age), size = 2) +
-    scale_color_distiller(palette = "Spectral", direction = -1) +
+    geom_point(aes(fill = age), pch = 21, size = 3) +
+    scale_fill_distiller(palette = "Spectral", direction = -1) +
+    labs(color = "Idade") +
     theme_light()
 
-grid.arrange(gg0 + geom_point(aes(size = age), pch = 1),
+grid.arrange(gg0 +
+             geom_point(aes(size = age), pch = 1) +
+             labs(size = "Idade"),
              gg1,
              nrow = 1)
 
-cap <- "Relação altura, peso dos goleiros e idade dos goleiros."
+cap <- "Relação altura, peso e idade dos goleiros."
 
 #---- ggpairs ----------------------------------------------------------
 
@@ -424,9 +440,13 @@ cap <- "Correlograma das variáveis para os goleiros."
 
 #---- heatmap ----------------------------------------------------------
 
+scale01 <- function(x) {
+    (x - min(x, na.rm = TRUE))/diff(range(x, na.rm = TRUE))
+}
+
 tb2_gk2 <- tb2_gk %>%
     top_n(games, n = 20) %>%
-    mutate_at(vars(cm, kg, age, bmi, aw), scale) %>%
+    mutate_at(vars(cm, kg, age, bmi, aw), scale01) %>%
     select(name, cm, kg, age, bmi, aw) %>%
     drop_na() %>%
     gather(key = "var", value = "value", -name)
@@ -435,9 +455,9 @@ ggplot(tb2_gk2, aes(var, name)) +
     geom_tile(aes(fill = value), colour = "black") +
     ylab("Goleiro") +
     xlab("Variável") +
-    scale_fill_gradient(name = "Valor\npadronizado",
+    scale_fill_gradient(name = "Valor\nrelativizado",
                         low = "white",
-                        high = "navyblue")
+                        high = "orange")
 
 cap <- "Mapa de calor das variáveis para os goleiros."
 
@@ -467,8 +487,6 @@ cap <- "Gráfico de eixos paralelos das variáveis para os goleiros."
 
 #---- spider -----------------------------------------------------------
 
-library(fmsb)
-
 u <- tb2_gk2 %>%
     spread(key = "var", value = "value")
 u <- bind_rows(u %>% summarise_if(is.numeric, min),
@@ -480,8 +498,9 @@ u <- bind_rows(u %>% summarise_if(is.numeric, min),
 oldpar <- par()
 par(mar = c(0, 0, 0, 0))
 radarchart(u[, -1])
+par(oldpar)
 
-# par(oldpar)
+# ggradar(u[-(1:2), ])
 
 cap <- "Gráfico de radar das variáveis para os goleiros."
 
@@ -503,6 +522,9 @@ ggplot(u, aes(cm, team, color = goleiro)) +
 cap <- "Altura média por equipe para goleiros e jogadores da linha."
 
 #---- boxplots ---------------------------------------------------------
+# Tufte boxplot e tema Tufte para o ggplot2.
+# https://stackoverflow.com/questions/6973394/functions-available-for-tufte-boxplots-in-r
+# https://www.datanovia.com/en/blog/ggplot-themes-gallery/
 
 gg <- ggplot(tb2, aes(x = position)) +
     xlab("Função em campo")
@@ -525,13 +547,17 @@ cap <- "Diagramas de caixa para altura, peso e idade dos jogadores por função.
 
 #---- hexbin -----------------------------------------------------------
 
-gg <- ggplot(tb2, aes(x = cm, y = kg))
+gg <- ggplot(tb2, aes(x = cm, y = kg)) +
+    labs(fill = "Frequência", x = "Altura (cm)", y = "Peso (kg)") +
+    scale_fill_distiller(palette = "RdBu", direction = -1) +
+    theme(legend.position = c(0.05, 0.95),
+          legend.justification = c(0, 1))
 
 grid.arrange(gg + geom_bin2d(),
              gg + geom_hex(),
              nrow = 1)
 
-cap <- "Densidade de pontos."
+cap <- "Densidade de jogadores conforme a classificação por altura e peso."
 
 #---- ordered_bar ------------------------------------------------------
 
@@ -581,10 +607,10 @@ cap <- "Países conforme o número de jogadores de cada nacionalidade e jogadore
 
 #-----------------------------------------------------------------------
 
-library(HistData)
-pdf("img/snow-map.pdf")
-SnowMap(density=TRUE, main="Snow's Cholera Map, Death Intensity")
-dev.off()
+# library(HistData)
+# pdf("img/snow-map.pdf")
+# SnowMap(density=TRUE, main="Snow's Cholera Map, Death Intensity")
+# dev.off()
 
 #-----------------------------------------------------------------------
 
