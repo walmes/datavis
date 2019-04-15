@@ -1,0 +1,65 @@
+---
+title: "Visualização de dados com `ggplot2`"
+# subtitle: "a abordagem `tidyverse`"
+# date: '23 Mar 2017'
+bibliography: ../config/refs.bib
+csl: ../config/ABNT-UFPR-2011-Mendeley.csl
+---
+
+```{r, include = FALSE}
+source("config/setup.R")
+```
+
+# Um overview do `ggplot2`
+
+## Motivação
+
+TODO
+
+## Galerias
+
+  * <https://www.r-graph-gallery.com/portfolio/ggplot2-package/>.
+  * <http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html>.
+  * <https://r4stats.com/examples/graphics-ggplot2/>.
+  * <http://girke.bioinformatics.ucr.edu/GEN242/pages/mydoc/Rgraphics.html>.
+  
+### Extensões
+
+  * <http://www.ggplot2-exts.org/gallery/>.
+  * <https://mode.com/blog/r-ggplot-extension-packages>.
+
+### Mapas
+
+  * <https://rstudio-pubs-static.s3.amazonaws.com/176768_ec7fb4801e3a4772886d61e65885fbdd.html>.
+  * <http://girke.bioinformatics.ucr.edu/GEN242/pages/mydoc/Rgraphics.html>.
+  * <https://timogrossenbacher.ch/2016/12/beautiful-thematic-maps-with-ggplot2-only/>.
+  
+
+## A ficha técnica
+
+```{r, echo = FALSE, out.width = "10.5 cm", fig.cap = cap}
+cap <- "Ficha técnica do \\texttt{ggplot2}."
+knitr::include_graphics("img/cran-ggplot2.png")
+```
+
+---
+
+\vspace{-1.5em}
+\begin{figure}
+\includegraphics[page=1, width=11cm]{img/data-visualization.pdf}
+\caption{Cartão de referência dos recursos do \texttt{ggplot2}.}
+\end{figure}
+
+---
+
+\vspace{-1.5em}
+\begin{figure}
+\includegraphics[page=2, width=11cm]{img/data-visualization.pdf}
+\caption{Cartão de referência dos recursos do \texttt{ggplot2}.}
+\end{figure}
+
+# Exercícios para usar o `ggplot2`
+
+## TODO
+
+<!-- ## Referências -->
