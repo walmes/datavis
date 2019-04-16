@@ -92,6 +92,7 @@ index.html
 _site/
 css/
 js/
+tempdir/
 piecewise.html
 slides/*.html
 *.html

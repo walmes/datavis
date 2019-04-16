@@ -1,6 +1,6 @@
 name: "DATAVIS"
 # output_dir: "docs"
-exclude: ["README.md", "build.sh", "_site.yml", "*.Rmd"]
+exclude: ["tempdir", "README.md", "_build.sh", "_deploy.sh", "_site.yml", "*.Rmd"]
 output:
   html_document:
     theme: united
