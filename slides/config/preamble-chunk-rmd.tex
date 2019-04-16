@@ -7,19 +7,23 @@
 \definecolor{color_back}{HTML}{DDDDDD}
 
 % R input.
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{
-  frame=lines,
-  framesep=1ex,
-  framerule=0.5pt,
-  rulecolor=\color{color_line},
-  numbers=right,
-  fontsize=\footnotesize,
-  baselinestretch=0.75,
-  commandchars=\\\{\}}
-
-% Margens do ambiente `Shaded'.
-% \fvset{listparameters={\setlength{\topsep}{-1em}}}
-\renewenvironment{Shaded}{\vspace{-1ex}}{\vspace{-2ex}}
+\ifcsmacro{Highlighting}{
+  % Statment if it exists. ------------------
+  \DefineVerbatimEnvironment{Highlighting}{Verbatim}{
+    frame=lines,
+    framesep=1ex,
+    framerule=0.5pt,
+    rulecolor=\color{color_line},
+    numbers=right,
+    fontsize=\footnotesize,
+    baselinestretch=0.75,
+    commandchars=\\\{\}}
+  % Margens do ambiente `Shaded'.
+  % \fvset{listparameters={\setlength{\topsep}{-1em}}}
+  \renewenvironment{Shaded}{\vspace{-1ex}}{\vspace{-2ex}}
+  }{
+  % Statment if it not exists. --------------
+}
 
 % R output e todo `verbatim'.
 \makeatletter
