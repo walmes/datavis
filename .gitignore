@@ -90,6 +90,9 @@ config/template.html
 config/Refs.bib
 index.html
 _site/
+css/
+js/
+piecewise.html
 slides/*.html
 *.html
 tutorials/*.html
