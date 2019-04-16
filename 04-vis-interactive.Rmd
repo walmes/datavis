@@ -2,16 +2,15 @@
 title: "Recursos de visualização com o R"
 author: Prof. Walmes M. Zeviani
 date: '`r Sys.Date()`'
-#bibliography: ../config/Refs.bib
-#csl: ../config/ABNT-UFPR-2011-Mendeley.csl
 ---
 
 ```{r, include = FALSE}
-source("./config/setup.R")
-opts_chunk$set(cache = FALSE, message = FALSE, warning = FALSE)
-
 # Carregar primeiro para não dar BO.
 library(geojsonio)
+library(ggplot2)
+
+source("./config/setup.R")
+opts_chunk$set(cache = FALSE, message = FALSE, warning = FALSE)
 ```
 
 # Motivação
@@ -358,6 +357,9 @@ leaflet(data = tb2) %>%
                      radius = 5)
 ```
 
+```{r, eval = FALSE}
+library(geojsonio)
+```
 ```{r}
 # ATTENTION: não usar `what = "sp"` na chamada da `geojson_read()` para
 # poder usar `addGeoJSON()`. Se o objeto for de classe baseada em `sp`
