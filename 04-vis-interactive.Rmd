@@ -1,0 +1,555 @@
+---
+title: "Recursos de visualização com o R"
+author: Prof. Walmes M. Zeviani
+date: '`r Sys.Date()`'
+#bibliography: ../config/Refs.bib
+#csl: ../config/ABNT-UFPR-2011-Mendeley.csl
+---
+
+```{r, include = FALSE}
+source("./config/setup.R")
+opts_chunk$set(cache = FALSE, message = FALSE, warning = FALSE)
+
+# Carregar primeiro para não dar BO.
+library(geojsonio)
+```
+
+# Motivação
+
+**Justificativa**
+
+  * Relatórios impressos são inanimados.
+  * Relatórios para WEB permitem elementos reativos/animados.
+    * Consulta ao banco de dados.
+    * Atualização do conteúdo exibido.
+    * Gráficos reativos.
+    * GIFs/vídeos.
+  * Elementos interativos na visualização de dados potencializam a
+    absorção de informação.
+  * Mas o uso incorreto por comprometer a compreensão ou afastar o
+    leitor.
+
+**Objetivo**
+
+  * Apresentar pacotes no R para confecção de gráficos reativos.
+    * Gráficos estatísticos tradicionais.
+    * Dados geográficos (mapas).
+    * Dados em rede de relacionamento (network).
+    * Animações.
+
+# Recursos para gráficos interativos
+
+## `googleVis`
+
+**Ficha técnica**
+
+  * Documentação do `googleVis`:
+    <https://cran.r-project.org/package=googleVis>.
+  * Mantenedor: [Markus Gesmann](https://magesblog.com).
+  * Exemplos de gráficos:
+    [googleVis_examples.html](https://cran.r-project.org/web/packages/googleVis/vignettes/googleVis_examples.html).
+  * É uma interface R para gráficos do Google:
+    [Galeria](https://google-developers.appspot.com/chart/interactive/docs/gallery).
+  * Usa os gráficos do Google nos seus dados.
+
+**Uso do `googleVis`**
+
+```{r}
+library(googleVis)
+ls("package:googleVis")
+```
+
+```{r, results = "hide"}
+# Diagrama de dispersão.
+p <- gvisScatterChart(
+    data = cars[, c("speed", "dist")],
+    options = list(legend = "none",
+                   lineWidth = 0,
+                   pointSize = 1,
+                   title = "Distância x Velocidade",
+                   vAxis = "{title: 'Distância'}",
+                   hAxis = "{title: 'Velocidade'}",
+                   width = 700,
+                   height = 500))
+
+# Exibe o código fonte completo.
+p
+```
+
+Para que embutir o código fonte que faz o arquivo dentro de uma página
+html é necessário modificar as opções conforme abaixo.  Assim o `print`
+vai exibir um fragmento de html e não uma página completa.
+
+```{r gvis_cars, results = "hide"}
+# getOption("gvis.tags")
+# Configure o options() e use `results = "asis"` no chunk.
+options(gvis.plot.tag = "chart")
+
+# Para não exibir metadados.
+# p$html$footer <- NULL
+# p$html$caption <- NULL
+
+# Exibe um fragmento HTML.
+plot(p)
+```
+
+```{r, ref.label = "gvis_cars", echo = FALSE, results = "asis"}
+```
+
+```{r}
+br <- data.frame(
+    Estado = c("São Paulo", "Minas Gerais", "Rio de Janeiro", "Bahia",
+               "Rio Grande do Sul", "Paraná", "Pernambuco", "Ceará",
+               "Pará", "Maranhão", "Santa Catarina", "Goiás", "Paraíba",
+               "Amazonas", "Espírito Santo", "Rio Grande do Norte",
+               "Alagoas", "Mato Grosso", "Piauí", "Distrito Federal",
+               "Mato Grosso do Sul", "Sergipe", "Rondônia", "Tocantins",
+               "Acre", "Amapá", "Roraima"),
+    População = c(44396484L, 20869101L, 16550024L, 15203934L, 11247972L,
+                  11163018L, 9345173L, 8904459L, 8175113L, 6904241L,
+                  6819190L, 6610681L, 3972202L, 3938336L, 3929911L,
+                  3442175L, 3340932L, 3270973L, 3204028L, 2914830L,
+                  2651235L, 2242937L, 1768204L, 1515126L, 803513L,
+                  766679L, 505665L),
+    stringsAsFactors = FALSE)
+
+br$População <- log10(br$População)
+str(br)
+
+breaks <- seq(floor(min(br$População)),
+              ceiling(max(br$População)),
+              by = 0.5)
+
+library(RColorBrewer)
+pal <- brewer.pal(n = length(breaks), name = "Blues")
+
+# Dicionário para os intervalos de classe e cores associadas.
+cl <- sprintf("{values:[%s],\n colors:[%s]}",
+              paste0(sprintf("'%0.1f'", breaks), collapse = ", "),
+              paste0(sprintf("'%s'", pal), collapse = ", "))
+cat(cl)
+```
+
+```{r gvis_map, results = "asis"}
+map <- gvisGeoChart(
+    data = br,
+    locationvar = "Estado",
+    colorvar = "População",
+    options = list(title = "lala",
+                   region = "BR",
+                   displayMode = "regions",
+                   resolution = "provinces",
+                   colorAxis = cl,
+                   width = 700,
+                   height = 500))
+plot(map)
+```
+
+```{r}
+br <- data.frame(
+    capital = c("Aracaju - SE", "Belém - PA", "Belo Horizonte - MG",
+                "Boa Vista - RR", "Brasília - DF", "Campo Grande - MS",
+                "Cuiabá - MT", "Curitiba - PR", "Florianópolis - SC",
+                "Fortaleza - CE", "Goiânia - GO", "João Pessoa - PB",
+                "Macapá - AP", "Maceió - AL", "Manaus - AM",
+                "Natal - RN", "Palmas - TO", "Porto Alegre - RS",
+                "Porto Velho - RO", "Recife - PE", "Rio Branco - AC",
+                "Rio de Janeiro - RJ", "Salvador - BA", "São Luís - MA",
+                "São Paulo - SP", "Teresina - PI", "Vitória - ES"),
+    lat = c(-10.911, -1.456, -19.921, 2.82, -15.78, -20.443, -15.596,
+            -25.428, -27.597, -3.717, -16.679, -7.115, 0.039, -9.666,
+            -3.102, -5.795, -10.213, -30.033, -8.762, -8.054, -9.975,
+            -22.903, -12.971, -2.53, -23.548, -5.089, -20.319),
+    lon = -c(37.072, 48.504, 43.938, 60.673, 47.93, 54.646, 56.097,
+             49.273, 48.549, 38.543, 49.254, 34.863, 51.066, 35.735,
+             60.025, 35.209, 48.36, 51.23, 63.904, 34.881, 67.81,
+             43.208, 38.511, 44.303, 46.636, 42.802, 40.338),
+    stringsAsFactors = FALSE)
+br$latlon <- with(br, paste(lat, lon, sep = ":"))
+str(br)
+```
+```{r gvis_mark, results = "asis"}
+map <- gvisMap(data = br,
+               locationvar = "latlon",
+               tipvar = "capital",
+               options = list(showTip = TRUE,
+                              showLine = TRUE,
+                              enableScrollWheel = TRUE,
+                              mapType = "terrain",
+                              useMapTypeControl = TRUE,
+                              width = "700px",
+                              height = "500px"))
+plot(map)
+```
+
+**Detalhes**
+
+  * O principal argumento da função é um `data.frame`.
+  * Para alguns gráficos é necessário computar valores antes (boxplot).
+  * Para mapas os polígonos tem que estar com nome conforme a base do
+    Google.
+  * Customização do gráfico é feita em JavaScript no parâmetro
+    `options`.
+  * É necessário conhecer detalhes da implementação em JS para ajuste
+    fino.
+  * Consultar documentação do Google:
+    <https://developers.google.com/chart/>.
+
+
+## `highcharter`
+
+**Ficha técnica**
+
+  * Documentação do `highcharter`: <https://cran.r-project.org/package=highcharter>.
+  * Mantenedor: [Joshua Kunst](http://jkunst.com/).
+  * Exemplos de gráficos: <http://jkunst.com/highcharter/>.
+  * É uma interface R para gráficos do `highcharts`: <https://www.highcharts.com/demo>.
+
+---
+
+**Uso do `highcharter`**
+
+Para usar o `highcharter` em apresentações é necessário incluir algumas
+linhas adicionais de código:
+<https://stackoverflow.com/questions/35641110/highcharter-markdown-presentation>.
+
+```{r high_mpg}
+library("highcharter")
+
+data(mpg, package = "ggplot2")
+
+hc <- hchart(mpg,
+             "scatter",
+             hcaes(x = displ, y = hwy, group = class))
+hc
+```
+
+```{r, high_dia}
+data(diamonds, package = "ggplot2")
+
+hc <- hchart(diamonds$price,
+             color = "#B71C1C",
+             name = "Price") %>%
+    hc_title(text = "You can zoom me")
+hc
+```
+
+## `plotly`
+
+**Ficha técnica**
+
+  * Documentação do `plotly`:
+    <https://cran.r-project.org/package=plotly>.
+  * Mantenedor: [Carson Sievert](https://cpsievert.me/).
+  * Galeria de exemplos: <https://plot.ly/r/>.
+  * É uma interface R para gráficos do `plot.ly`: <https://plot.ly/>.
+  * Converte gráficos do `ggplot2` para formas reativas:
+    <https://plot.ly/ggplot2/>.
+  * Tem recursos para o Python também.
+  * Livro sobre o pacote: <https://plotly-book.cpsievert.me/>.
+
+**Uso do `plotly`**
+
+```{r, message = FALSE}
+library(plotly)
+head(ls("package:plotly"), n = 20)
+
+gg <-
+    ggplot(data = cars,
+           mapping = aes(x = speed, y = dist)) +
+    geom_point() +
+    geom_smooth() +
+    xlab("Velocidade") +
+    ylab("Distância")
+
+ggplotly(gg, width = 600, height = 400)
+```
+
+```{r}
+data(iris)
+
+irisw <- reshape2::melt(iris, id.vars = "Species")
+
+gg <-
+    ggplot(data = irisw,
+           mapping = aes(fill = Species, x = value)) +
+    geom_density(alpha = 0.3) +
+    facet_wrap(facets = ~variable, scales = "free")
+
+ggplotly(gg, width = 800, height = 600)
+```
+
+
+```{r}
+gg <-
+    ggplot(irisw, aes(x = Species, y = value)) +
+    geom_boxplot() +
+    facet_wrap(facets = ~variable, scales = "free")
+
+ggplotly(gg, width = 800, height = 600)
+```
+
+## Resumo dos recursos gráficos tradicionais
+
+  1. `plotly`
+     * É o mais fácil de usar considerando que o usuário já saiba
+       `ggplot2`.
+     * A customização é feita na `ggplot2`.
+     * O gráfico tem recurso de mouse hover, zoom, screenshot, etc.
+  2. `highchater`
+     * Tem uma bilioteca grande de gráficos (tradicionais, mapas, etc).
+     * Boa aparência e recursos de zoom e mouse hover.
+     * Possui integração com Shiny.
+  3. `googleVis`
+     * Dá acesso via R aos gráficos do Google Charts.
+     * A biblioteca é grande mas a customização é em JS.
+
+# Mapas
+
+## `leaflet`
+
+```{r}
+library(leaflet)
+
+# NOTE: As coordenadas do Google não batem exato com as coordenadas do
+# leaflet.
+
+coords <- data.frame(lat = c(-25.4503, -25.4508577),
+                     lng = c(-49.2306, -49.2314582),
+                     text = c("<strong>LEG</strong><br/>2º Andar, Sala 232",
+                              "<strong>PET Estatística UFPR</strong><br/>PC-09"))
+
+# names(providers)
+
+leaflet() %>%
+    setView(lat = mean(coords$lat),
+            lng = mean(coords$lng),
+            zoom = 18) %>%
+    addProviderTiles("OpenStreetMap") %>%
+    addPopups(lng = coords$lng,
+              lat = coords$lat,
+              coords$text,
+              options = popupOptions(closeButton = FALSE))
+```
+
+```{r}
+#-----------------------------------------------------------------------
+# Plotando no mapa de Curitiba.
+
+url <- "http://leg.ufpr.br/~walmes/data/coberturas-venda-cwb-26Jan2018.txt"
+tb <- read.table(url,
+                 header = TRUE,
+                 quote = "",
+                 sep = "\t",
+                 comment.char = "",
+                 skip = 5,
+                 stringsAsFactors = FALSE)
+str(tb)
+
+tb2 <- subset(tb, is.finite(lat), select = c("lat", "lon", "price"))
+str(tb2)
+
+leaflet(data = tb2) %>%
+    addProviderTiles("OpenStreetMap") %>%
+    addCircleMarkers(lng = ~lon,
+                     lat = ~lat,
+                     stroke = FALSE,
+                     fillOpacity = 0.5,
+                     radius = 5)
+```
+
+```{r}
+# ATTENTION: não usar `what = "sp"` na chamada da `geojson_read()` para
+# poder usar `addGeoJSON()`. Se o objeto for de classe baseada em `sp`
+# tem-se que usar `addPolygons()`.
+
+mp <- geojson_read("http://leg.ufpr.br/~walmes/data/bairros-cwb.kml",
+                   method = "local")
+class(mp)
+
+leaflet() %>%
+    setView(lat = -25.4842287,
+            lng = -49.370973,
+            zoom = 11) %>%
+    # addTiles() %>%
+    # addProviderTiles("OpenStreetMap") %>%
+    addGeoJSON(geojson = mp,
+               weight = 2,
+               color = "green",
+               fillColor = "yellow") %>%
+    addCircleMarkers(data = tb2, lng = ~lon,
+                     lat = ~lat,
+                     stroke = FALSE,
+                     fillOpacity = 0.5,
+                     radius = 5)
+```
+
+# Animações
+
+## `animation`
+
+**Ficha técnica**
+
+  * Documentação do `animation`: <https://yihui.name/animation/>.
+  * Mantenedor: [Yihui Xie](https://yihui.name/en/about/).
+  * Galeria de exemplos: <https://yihui.name/animation/examples/>.
+  * Permite incluir animações em documentos PDF/HTML com controles de
+    execução.
+
+**Uso do animation**
+
+```{r, eval = TRUE, echo = TRUE, message = FALSE, warning = FALSE}
+library(animation)
+
+da <- data.frame(x = seq(0, 2, by = 0.1))
+da$y <- c(5.5, 7.2, 10.4, 7.4, 7.2, 9.1, 15.9, 12.7, 11.3, 14.4, 14.8,
+          17.1, 31.4, 17.5, 27.6, 19.6, 27.1, 21, 33.8, 30.2, 45.1)
+
+x_grid <- seq(0, 2, lenght.out = 1000)
+b_grid <- seq(0, 2, by = 0.05)
+b_grid <- b_grid[-c(1, length(grid))]
+desvios <- rep(NA, length(b_grid))
+
+# Demostração de uma regressão segmentada com diferentes pontos de
+# quebra.
+anim_fun <- function() {
+    xlim <- extendrange(da$x, f = 0.025)
+    for (i in 1:length(b_grid)) {
+        #------------------------------------
+        # Ajuste do modelo com valor do ponto de quebra fixo.
+        b <- b_grid[i]
+        m0 <- lm(y ~ x + I(pmax(x - b, 0)),
+                 data = da)
+        beta <- coefficients(m0)
+        desvios[i] <- sum(residuals(m0)^2)
+        cols <- c(rep(3, sum(da$x < b_grid[i])),
+                  rep(4, sum(da$x > b_grid[i] | da$x == b_grid[i])))
+        #------------------------------------
+        # Gráfico.
+        par(mfrow = c(1, 2), mar = c(3, 3, 1, 1))
+        #------------------------------------
+        # Gráfico 1.
+        plot(y ~ x, xlim = xlim, data = da, ann = FALSE, pch = 19,
+             col = cols)
+        mtext(text = "x", side = 1, line = 2)
+        mtext(text = "y", side = 2, line = 2)
+        curve(beta[1] + beta[2] * x,
+              from = 0, to = b, col = 3, add = TRUE)
+        curve(beta[1] + beta[2] * b + (beta[3] + beta[2]) * (x - b),
+              from = b, to = 2, col = 4, lwd = 2, add = TRUE)
+        abline(v = b)
+        #------------------------------------
+        # Gráfico 2.
+        plot(b_grid, xlim = xlim, ylim = c(300, 500), desvios,
+             type = "o", pch = 1, xlab = "Pontos de Quebra")
+        mtext(text = "x", side = 1, line = 2)
+        mtext(text = "SQE", side = 2, line = 2)
+        abline(v = b)
+        ani.pause(interval = 0.1)
+    }
+}
+```
+```{r, eval = FALSE}
+anim_fun()
+```
+```{r, eval = FALSE, include = FALSE, fig.show = "animate", interval = 0.05}
+# Insere como vídeo.
+anim_fun()
+```
+```{r}
+# Salva em HTML.
+wname <- "piecewise.html"
+saveHTML(anim_fun(),
+         interval = 0.1,
+         autobrowse = FALSE,
+         htmlfile = wname,
+         img.name = sub(x = wname, "\\.html$", ""),
+         imgdir = sub(x = wname, "\\.html$", ""),
+         verbose = FALSE,
+         ani.height = 300,
+         ani.width = 600)
+```
+```{r, echo = FALSE, results = "asis"}
+# Embute o HTML na página.
+iframetxt <- sprintf(paste("<iframe frameBorder=\"0\"",
+                           "src=\"%s\"",
+                           "width=\"100%%\"",
+                           "height=\"500\"",
+                           "frameborder=\"0\"",
+                           "scrolling=\"no\"",
+                           "marginheight=\"0\"",
+                           "marginwidth=\"0\"",
+                           "\b></iframe>",
+                           collapse = " "), wname)
+cat(iframetxt)
+```
+
+# Gráficos tridimensionais
+
+## `rgl`
+
+**Ficha técnica**
+
+  * Documentação do `rgl`: <https://cran.r-project.org/package=rgl>.
+  * Mantenedor: [Duncan Murdoch](http://www.stats.uwo.ca/faculty/murdoch/).
+  * Galeria de exemplos: <https://cran.r-project.org/web/packages/rgl/vignettes/rgl.html>.
+  * Gráficos interativos 3D usando OpenGL/WebGL.
+  * Tem botões para seleção de categorias, executar rotação gravada,
+    etc: <https://cran.r-project.org/web/packages/rgl/vignettes/WebGL.html>.
+
+```{r setup}
+library(knitr)
+library(rgl)
+knit_hooks$set(webgl = hook_webgl)
+```
+
+**Uso do rgl**
+
+```{r, webgl = TRUE, fig.width = 10}
+library(rgl)
+
+str(volcano)
+
+persp3d(volcano, col = "green")
+```
+
+```{r}
+da <- expand.grid(r = 1:2, C = -1:1, B = -1:1, A = -1:1,
+                  KEEP.OUT.ATTRS = FALSE)
+da$y <- c(-35, -25, 110, 75, 4, 5, -45, -60, -10, 30, -40, -30, -40, 15,
+          80, 54, 31, 36, 17, 24, 55, 120, -23, -5, -65, -58, -55, -44,
+          -64, -62, 20, 4, 110, 44, -20, -31, -39, -35, 90, 113, -30,
+          -55, -55, -67, -28, -26, -61, -52, 15, -30, 110, 135, 54, 4)
+str(da)
+
+# Modelo reduzido.
+m0 <- lm(y ~ (poly(A, 2) + poly(B, 2) + poly(C, 2))^2,
+         data = da)
+
+pred <- list(B = seq(-1.2, 1.2, by = 0.05),
+             C = seq(-1.2, 1.2, by = 0.05))
+pred$fxy <- outer(pred$B,
+                  pred$C,
+                  FUN = function(x, y) {
+                      predict(m0,
+                              newdata = data.frame(B = x,
+                                                   C = y,
+                                                   A = 0))
+                  })
+```
+
+```{r, webgl = TRUE, fig.width = 10}
+persp3d(x = pred$B,
+        y = pred$C,
+        z = pred$fxy,
+        zlim = range(da$y),
+        alpha = 0.7,
+        color = "tomato")
+with(subset(da, A == 0), {
+    plot3d(x = B,
+           y = C,
+           z = y,
+           type = "s",
+           size = 1)
+})
+```
