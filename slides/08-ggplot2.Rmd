@@ -31,9 +31,18 @@ TODO
 ### Mapas
 
   * <https://rstudio-pubs-static.s3.amazonaws.com/176768_ec7fb4801e3a4772886d61e65885fbdd.html>.
+  * <https://www.curso-r.com/blog/2017-05-04-mapas-tematicos-3-minutos/>.
   * <http://girke.bioinformatics.ucr.edu/GEN242/pages/mydoc/Rgraphics.html>.
-  * <https://timogrossenbacher.ch/2016/12/beautiful-thematic-maps-with-ggplot2-only/>.
   
+### Tutoriais em português
+
+  * <https://rpubs.com/mnunes/ggplot2>.
+  * <https://analisereal.com/2015/09/19/introducao-ao-ggplot2/>.
+  * <https://timogrossenbacher.ch/2016/12/beautiful-thematic-maps-with-ggplot2-only/>.
+  * <http://recologia.com.br/tag/graficos/>.
+  * <http://rstudio-pubs-static.s3.amazonaws.com/24563_3b7b0a6414824e3b91769a95309380f1.html>.
+  * <http://eduardogutierres.com/inteligencia-geografica-gerando-mapas-em-r/>.
+  * <https://pt.stackoverflow.com/questions/332053/r-mapa-de-cidades-brasileiras>.
 
 ## A ficha técnica
 
