@@ -51,13 +51,15 @@ tb_2010 <- tb %>%
 
 # Download do ZIP com arquivos shape.
 url <- "ftp://geoftp.ibge.gov.br/organizacao_do_territorio/malhas_territoriais/malhas_municipais/municipio_2018/Brasil/BR/br_unidades_da_federacao.zip"
-download.file(url, basename(url))
+dir.create("../tempdir")
+path <- paste0("../tempdir/", basename(url))
+download.file(url, path)
 
 # Descompacta dentro do diretório de trabalho.
-unzip(basename(url), exdir = "br_estados")
+unzip(path, exdir = "../tempdir/br_estados")
 
 # Lê o arquivo para criar o objeto espacial
-br <- readOGR("br_estados",
+br <- readOGR("../tempdir/br_estados",
               use_iconv = TRUE,
               encoding = "UTF-8")
 class(br)
@@ -122,12 +124,12 @@ ggplot(data = br_data_2010,
 #   Error in data.frame(x = x.major, y = y.range[1]) :
 #     arguments imply differing number of rows: 0, 1
 
-# Usando as facetas.
-
 # Junta a informação.
-br_data_dec <- inner_join(br_data,
-                          filter(tb, ano %in% c(1980, 1991, 2000, 2010)))
+br_data_dec <-
+    inner_join(br_data,
+               filter(tb, ano %in% c(1980, 1991, 2000, 2010)))
 
+# Usando as facetas.
 ggplot(data = br_data_dec,
        mapping = aes(map_id = region)) +
     facet_wrap(facets = ~ano) +
@@ -145,16 +147,17 @@ ggplot(data = br_data_dec,
 # Baseado em:
 # http://eduardogutierres.com/inteligencia-geografica-gerando-mapas-em-r/
 
-# Baixar arquivo ZIP deste endereço.
+# OBS: Baixar arquivo ZIP deste endereço manualmente.
 # https://www.dropbox.com/s/gngl79c8gpiwf5r/municipios_2010.zip
 
 # Descompacta.
-unzip("../data/municipios_2010.zip", exdir = "../data/")
+unzip("../tempdir/municipios_2010.zip", exdir = "../tempdir/")
 
 # NOTE: tem o polígono de todos os municípios do Brasil.
 # Lê o shape file.
-# mapa <- readShapeSpatial("../data/Shapefiles/municipios_2010.shp")
-mapa <- readOGR("../data/Shapefiles", use_iconv = TRUE, encoding = "UTF-8")
+mapa <- readOGR("../tempdir/Shapefiles",
+                use_iconv = TRUE,
+                encoding = "UTF-8")
 summary(mapa)
 
 # Tabela de dados de cada polígono.
@@ -244,29 +247,26 @@ gg_cwb <-
 gg_cwb
 
 # Adicionar a coordenada das coberturas à venda.
-tb <- read_tsv("http://leg.ufpr.br/~walmes/data/coberturas-venda-cwb-26Jan2018.txt",
-               skip = 5,
-               quote = "")
+url <- "http://leg.ufpr.br/~walmes/data/coberturas-venda-cwb-26Jan2018.txt"
+tb <- read_tsv(url, skip = 5, quote = "")
 
+# Distribuição das localizações.
 ggplot(data = tb,
        mapping = aes(x = lon, y = lat)) +
     geom_point()
 
-gg_cwb +
-    geom_point(data = tb,
-               mapping = aes(x = lon, y = lat, map_id = NA))
-
+# Adiciona sobre o mapa.
 ggplot(data = cwb_poly,
        mapping = aes(x = long,
                      y = lat,
                      map_id = region)) +
-           geom_map(map = cwb_poly,
-                    alpha = 0.3,
-                    colour = "white",
-                    fill = "orange",
-                    size = 0.25) +
-           theme_light() +
-           coord_map() +
+    geom_map(map = cwb_poly,
+             alpha = 0.3,
+             colour = "white",
+             fill = "orange",
+             size = 0.25) +
+    theme_light() +
+    coord_map() +
     geom_point(data = cbind(tb, region = NA),
                mapping = aes(x = lon, y = lat),
                pch = 1, alpha = 0.5)
