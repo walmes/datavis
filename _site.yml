@@ -61,8 +61,8 @@ navbar:
       - text: "Introdução ao `ggplot2`"
         href: 03-vis-ggplot2.html
         icon: fa-file
-      - text: "Gráficos reativos para WEB"
-        href: http://leg.ufpr.br/~walmes/ensino/pesq-reprod/slides/14-graph-react.html
+      - text: "Introdução aos gráficos interativos"
+        href: 04-vis-interactive.html
         icon: fa-file
       - text: "Avaliação do curso - UFV"
         href: 98-aval-ufv.html
