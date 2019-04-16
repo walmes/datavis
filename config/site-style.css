@@ -199,7 +199,7 @@ ol > li:before {
 
 /* Figuras ---------------------------------- */
 
-img {
+img:not([class]) {
     max-width: 100% !important;
     display: block;
     margin: auto;
