@@ -49,6 +49,9 @@ navbar:
       - text: "Programação funcional com `purrr`"
         href: slides/07-purrr.pdf
         icon: fa-file-pdf
+      - text: "Visualização de dados com `ggplot2`"
+        href: slides/08-ggplot2.pdf
+        icon: fa-file-pdf
     - icon: fa-file-code
       text: "Tutoriais"
       menu:
@@ -66,7 +69,7 @@ navbar:
         icon: fa-file
       - text: "Avaliação do curso - UFV"
         href: 98-aval-ufv.html
-        icon: fa-chart-pie
+        icon: fa-chart-line
     - icon: fa-terminal
       text: "Scripts"
       href: ./scripts
