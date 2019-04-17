@@ -20,6 +20,10 @@ output:
       after_body: config/site-footer.html
 ---
 
+```{r, include = FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
 <!--
 <div class="alert alert-info" role="alert">
 <center>
