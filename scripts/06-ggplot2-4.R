@@ -359,13 +359,15 @@ imo <- imo %>%
 # Cria a classificação em cédulas da malha para os estabelecimentos.
 alv <- alv %>%
     mutate(clon = cut(lon1, breaks = cx),
-           clat = cut(lat1, breaks = cy))
+           clat = cut(lat1, breaks = cy)) %>%
+    ungroup()
 
 # Agregação dos imóveis por cédula.
 imo_cxy <- imo %>%
     group_by(clon, clat) %>%
     summarise(n_imo = n(),
-              price_area = mean(price_area))
+              price_area = mean(price_area)) %>%
+    ungroup()
 
 # Agregação dos estabelecimentos por cédula.
 alv_cxy <- alv %>%
@@ -389,5 +391,42 @@ ggplot(imo_alv) +
     geom_point() +
     scale_x_log10() +
     geom_smooth(method = "lm")
+
+#-----------------------------------------------------------------------
+# Visualização do índice de Moran.
+
+imo_alv <- imo_alv %>%
+    mutate(clonf = as.integer(clon),
+           clatf = as.integer(clat))
+
+
+my_pair <- function(i, j) {
+    tb_cell <- imo_alv %>%
+        filter(between(clonf, i - 1, i + 1),
+               between(clatf, j - 1, j + 1))
+    u <- which(tb_cell$clonf == i & tb_cell$clatf == j)
+    data.frame(mean = ifelse(nrow(tb_cell),
+                             mean(tb_cell$price_area[-u]),
+                             NA),
+               value = ifelse(length(u),
+                              tb_cell$price_area[u],
+                              NA),
+               nnei = ifelse(nrow(tb_cell),
+                             nrow(tb_cell) - length(u),
+                             NA))
+}
+
+crx <- crossing(i = 1:nlevels(imo_alv$clon),
+                j = 1:nlevels(imo_alv$clat))
+
+crx <- crx %>%
+    mutate(pair = map2(i, j, my_pair))
+crx <- crx %>%
+    unnest()
+
+ggplot(crx) +
+    aes(mean, value) +
+    geom_point(pch = 1) +
+    geom_smooth(se = FALSE, color = "orange")
 
 #-----------------------------------------------------------------------
