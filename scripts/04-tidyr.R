@@ -25,6 +25,7 @@ url <- "http://leg.ufpr.br/~walmes/data/ninfas.txt"
 tb <- read_tsv(file = url)
 tb
 
+View(tb)
 glimpse(tb)
 
 # Empilhar o número de ninfas dos terços.

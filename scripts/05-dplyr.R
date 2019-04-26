@@ -39,6 +39,7 @@ tb %>% filter(variedade == "BRS 245 RR")
 
 tb %>% filter(variedade == "BRS 245 RR" | variedade == "EMBRAPA 48")
 tb %>% filter(variedade %in% c("BRS 245 RR", "EMBRAPA 48"))
+tb %>% filter(is.element(variedade, c("BRS 245 RR", "EMBRAPA 48")))
 
 tb %>% filter(variedade != "EMBRAPA 48")
 tb %>% filter(!(variedade == "EMBRAPA 48"))
@@ -98,6 +99,11 @@ tb %>% sample_frac(size = 0.1)
 # Seleção baseada nos maior/menores valores de uma variável.
 
 tb %>% top_n(superior, n = 10)  # Maiores valores de `superior`.
+tb %>% top_n(superior, n = -10) # Menores valores de `superior`.
+
+i <- order(tb$superior, decreasing = TRUE)[1:10]
+tb[i, ]
+
 tb %>% top_n(superior, n = -10) # Menores valores de `superior`.
 
 #-----------------------------------------------------------------------
