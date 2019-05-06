@@ -324,7 +324,7 @@ u <- append(u, rep("", a))
 MASS::write.matrix(matrix(u, ncol = k))
 ```
 
-```{r, eval = FALSE}
+```{r, include = FALSE, eval = FALSE}
 TODO WALMES FIXME e quais as funções que sobram?
 ls_ggplot %>%
     str_subset("[[:upper:]]", negate = TRUE)
