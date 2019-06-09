@@ -136,7 +136,7 @@ read_chunk("00-datavis.R")
   \centertitle{A Era do Big Data \& Data Science}
 \end{frame}
 
-\begin{frame}[allowframebreaks]{O fenônemo Big Data}
+\begin{frame}[allowframebreaks]{O fenômeno Big Data}
 
   \mytwocolumns{0.45}{0.54}{
     \begin{itemize}
