@@ -25,6 +25,9 @@ navbar:
     - icon: fa-television
       text: "Slides"
       menu:
+      - text: "Visualização de dados (resumido)"
+        href: slides/datavis.pdf
+        icon: fa-file-pdf
       - text: "Visualização de dados"
         href: slides/00-datavis.pdf
         icon: fa-file-pdf

@@ -1,0 +1,465 @@
+\documentclass[serif, professionalfont, usenames, dvipsnames]{beamer}
+
+\input{config/preamble.tex}
+\input{config/preamble-refs.tex}
+\input{config/preamble-chunk-rnw.tex}
+\input{config/preamble-author.tex}
+\input{config/preamble-commands.tex}
+
+\title{Importância, tendências e competências}
+\subtitle{em visualização de dados}
+
+<<include = FALSE>>=
+source("config/setup.R")
+@
+
+<<include = FALSE>>=
+read_chunk("00-datavis.R")
+@
+
+%=======================================================================
+
+\begin{document}
+
+{\setbeamertemplate{footline}{}
+  \frame{\titlepage} %--------------------------------------------------
+}
+
+%=======================================================================
+
+\begin{frame}
+  \centertitle{Por que visualização de dados é tão importante?}
+\end{frame}
+
+%-----------------------------------------------------------------------
+\begin{frame}[allowframebreaks]{O poder de ver além}
+
+  <<anscombe_table, echo = FALSE, results = "asis">>=
+  @
+
+  \framebreak
+
+  <<anscombe_plot, echo = FALSE, message = FALSE, results = "hide", out.width = "11cm", fig.cap = cap>>=
+  @
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Rápida percepção, rápida reação}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 5.5cm]{img/plano-de-fuga.png}
+    \caption{Mapa de rota de fuga. Adapatado de
+      \citeonline{berinato2016good}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \begin{minipage}[c]{0.8\linewidth}
+
+      Saia desta sala. Vire à direita e caminhe 3 metros até o final do
+      corredor, onde você estará em frente a uma grande sala de
+      conferências. Vire à esquerda e caminhe mais 3 metros até chegar
+      ao final do corredor. À sua esquerda estará um alarme de incêndio,
+      perto do elevador. À sua direita, no final do corredor, há uma
+      escadaria. Não vá ao elevador. Vire à direita e caminhe mais 4
+      metros até o final do corredor, vire à esquerda e desça pelas
+      escadas. Desça dois lances de escadas e saia do prédio na porta na
+      parte inferior das escadas.
+
+    \end{minipage}
+    \caption{Plano de rota de fuga. Adapatado de
+      \citeonline{berinato2016good}.}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}
+
+  % \myquote{img/tukey.jpg}{
+  %   ``The greatest value of a picture is when it forces us to notice what we never expected to see.''}{
+  %   John Tukey $\cdot$ Estatístico}
+
+  \myquote{img/tukey.jpg}{
+    ``O maior valor de um gráfico é quando ele nos força a \textbf{perceber} o que nós jamais esperávamos ver.''}{
+    John Tukey $\cdot$ Estatístico}
+
+  % \myquote{img/shalloway.jpg}{
+  %   ``Visualizations act as a campfire around which we gather to tell stories.''}{
+  %   Al Shalloway $\cdot$ CEO Net Objectives}
+
+  \vspace*{-1em}
+  \myquote{img/shalloway.jpg}{
+    ``Visualizações funcionam como uma fogueira na qual nos reunimos para \textbf{contar histórias}.''}{
+    Al Shalloway $\cdot$ CEO Net Objectives}
+
+  % ``Most of us need to listen to the music to understand how
+  % beautiful it is. But often that's how we present statistics: we
+  % just show the notes, we don't play the music.''
+
+  \vspace*{-1em}
+  \myquote{img/rosling-hans.jpg}{``A maioria de nós precisa ouvir a
+    música para \textbf{entender} o quão bonita ela é. No entanto, é assim que
+    apresentamos estatísticas: nós apenas mostramos as notas, nós não
+    tocamos a \textbf{música}.''}{
+    Hans Rosling}
+
+\end{frame}
+
+%-----------------------------------------------------------------------
+
+\begin{frame}[allowframebreaks]{O fenômeno Big Data}
+
+  \mytwocolumns{0.45}{0.54}{
+    \begin{itemize}
+    \item \hi{Big data}: conjuntos de \textbf{dados grandes ou
+        complexos} na qual as abordagens tradicionais de processamento
+      são inadequadas/impraticáveis.
+    \item \hi{Desafios}: captura, armazenamento, qualidade,
+      beneficiamento, consulta, transferência, \textbf{visualização},
+      análise, privacidade e governança.
+    \end{itemize}
+  }{
+    \begin{figure}
+      \centering
+      \includegraphics[width=5.5cm]{img/big-data-8v.png}
+      \caption{Os 8 V's do Big Data.}
+    \end{figure}
+  }
+
+\end{frame}
+
+%=======================================================================
+
+\begin{frame}
+  \centertitle{Visualização de dados}
+\end{frame}
+
+\begin{frame}{Definição de como deve ser}
+  \begin{center}
+    \includegraphics[height=5cm]{img/twitter-martin-leblanc.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Definição}
+
+    \begin{block}{\Large Visualização de dados}
+      \Large
+
+      A \hi{representação} e \hi{apresentação} de dados que exploram
+      nossa habilidade de \hi{percepção visual} com a finalidade de
+      aumentar a \hi{compreensão} \cite{kirk2012data}.
+    \end{block}
+
+\end{frame}
+
+\begin{frame}{Tipos de visualização}
+
+  Segundo \citeonline{berinato2016good}, dois aspectos determinam o tipo
+  de visualização:
+
+  \begin{enumerate}
+  \item A informação é \hi{conceitual} ou \hi{orientada a dados}?
+  \item Está se \hi{declarando} ou \hi{explorando} algo?
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Os 4 tipos de visualização}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=6.00cm]{./img/vis-4-plano.png}
+    \caption{Os 4 tipos de visualização que resultam das respostas às
+      duas perguntas. Fonte: adaptado de \citeonline{berinato2016good}.}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Desenvolvimento de ideia}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=6.25cm]{./img/large_453078_f_cCGSZhQ9oWETQYCM3uDfTfT.jpg}
+    \caption{Fonte: \url{https://www.coroflot.com/harriettemachin/TAG-Heuer-Branding-Project}.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Ilustração de ideia}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=5.50cm]{./img/logistics-supply-chain-diagram.png}
+    \caption{Fonte: \url{https://icograms.com/usage-supply-chain-diagram.php}.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Descoberta visual}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=6.00cm]{./img/groups-ggpairs-1.png}
+    \caption{Fonte: \url{http://www.sthda.com/english/articles/32-r-graphics-essentials/130-plot-multivariate-continuous-data/}.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Visualização do cotidiano}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=5.5cm]{./img/4304w_F3_Graph_850_478.jpg}
+    \caption{Fonte: \url{http://inthesetimes.com/article/21771/new-optimists-bill-gates-steven-pinker-hans-rosling-world-health}.}
+  \end{figure}
+\end{frame}
+
+%=======================================================================
+
+\begin{frame}{A visualização orientadas a dados}
+
+  \textbf{A escolha de um gráfico} depende de uma série de elementos. Os
+  principais são:
+  \begin{itemize}
+  \item \hi{Escala} das variáveis.
+  \item \hi{Propósito} da visualização $\rightarrow$ \hi{função} do
+    gráfico.
+  \item Questões \hi{visuais/estéticas} $\rightarrow$ \hi{forma} do
+    gráfico.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Os 4 tipos de escala}
+
+  \begin{center}
+    \includegraphics[width = 11cm]{img/tipos-variaveis}
+  \end{center}
+
+\end{frame}
+
+\begin{frame}{Forma e função de um gráfico}
+
+  \begin{itemize}
+  \item Agrupamento dos gráficos baseado nas características comuns.
+  \item \hi{Função}
+    \begin{itemize}
+    \item Classificação princial: função do gráfico.
+    \item Relacionado às quantidades a serem representadas.
+    \item Quais quantidades/propriedades serão exibidas $\rightarrow$
+      \hi{o que?}
+    \end{itemize}
+  \item \hi{Forma}
+    \begin{itemize}
+    \item Classificação secundária: forma do gráfico.
+    \item Relacionado às decisões estéticas e de mídia.
+    \item Como as quantidades/propriedades serão exibidas $\rightarrow$
+      \hi{como?}
+    \end{itemize}
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Função de um gráfico}
+
+  \begin{center}
+    \includegraphics[width = 10cm]{img/funcao-grafico}
+  \end{center}
+
+  \framebreak
+
+  \begin{description}
+  \item[Distribuição] Caracterizam a \textbf{distribuição ou divisão} de
+    variáveis qualitativas ou quantitativas.
+  \item[Relação] Exibem a forma da \textbf{relação ou contraste} entre
+    variáveis.
+  \item[Ordenação] Priorizam exibir a \textbf{classificação} de
+    categorias/elementos baseada nas variáveis.
+  \item[Evolução] Exploram o comportamento de dados
+    \textbf{cronológicos}.
+  \item[Mapa] Representam dados com propriedades \textbf{geográficas}.
+  \item[Organização] Retratam a \textbf{estrutura} de organização de
+    coleções de categorias/elementos.
+  \item[Fluxo] Descrevem o \textbf{movimento ou conexão} entre
+    categorias/elementos.
+  \end{description}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Variáveis visuais}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=4.75cm]{img/visual_variables.png}
+    \caption{As 7 variáveis visuais definidas por Bertin.}
+  \end{figure}
+
+  As \hi{7 variáveis visuais}: posição, tamanho, forma, saturação, cor,
+  orientação e
+  textura. \footnote[frame]{\href{https://www.axismaps.com/guide/general/visual-variables/}{www.axismaps.com}}
+
+\end{frame}
+
+\begin{frame}{Propriedades das variáveis visuais}
+
+  \mytwocolumns{0.4}{0.59}{
+    \begin{enumerate}
+    \item Seletiva.
+    \item Associativa.
+    \item Quantitativa.
+    \item Ordenativa.
+    \item Dissociativa.
+    \end{enumerate}
+  }{
+    \begin{figure}[h]
+      \centering
+      \includegraphics[height=6.5cm]{img/PropertiesVisualVariables.png}
+      \caption{As 7 variáveis visuais.}
+    \end{figure}
+  }
+
+\end{frame}
+
+\begin{frame}{Recomendação de uso}
+  \begin{figure}
+    \centering
+    \includegraphics[width=10cm]{./img/Ranking-of-visual-variables-by-data-type-Mackinlay-1986.png}
+    \caption{Ranking de Mackinlay das variáveis visuais para o
+      mapeamento de variáveis quantitativas, qualitativas ordinais e
+      nominais.}
+  \end{figure}
+
+  % http://vis.berkeley.edu/courses/cs294-10-fa13/wiki/images/4/4e/Lec294-10-20130911.pdf
+  \myurl{https://www.researchgate.net/publication/312530613_Images_of_Time}
+  % \myurl{https://richardbrath.wordpress.com/2015/10/05/meta-ranking-of-visual-attributes-in-data-visualization/}
+
+\end{frame}
+
+%=======================================================================
+
+\begin{frame}
+  \centertitle{Tendências em visualização de dados}
+\end{frame}
+
+\begin{frame}{Linha do tempo da Visualização de Dados}
+
+  \vspace{-3.5em}
+  \begin{figure}[h]
+    \centering
+    \hspace*{-2.5em}
+    \includegraphics[height=6.5cm]{img/timeline_dataviz.pdf}
+    \caption{A linha do tempo da visualização de dados. Fonte: o autor.}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}{O presente}
+
+  \begin{itemize}
+  \item \hi{2010s}
+    \begin{itemize}
+    \item softwares acessíveis $+$ disposição de dados
+      $\rightarrow$ \hi{democratiza a prática da visualização}.
+    \item Cria-se uma atmosfera propícia para \hi{experiências}.
+    \item Visualização não é mais uma província de experts, é um
+      \hi{fenômeno}.
+    \end{itemize}
+  \item \hi{Hoje}
+    \begin{itemize}
+    \item Recursos/ferramentas \hi{evoluem}.
+    \item Representações gráficas mais apropriadas são desenvolvidas.
+    \item \hi{Novas dimensões}: animação, reatividade e interatividade.
+    \item Velocidade e acesso:
+      \begin{itemize}
+      \item Atualização em \hi{tempo real}.
+      \item Relatórios \hi{web dinâmicos}.
+      \item \textit{\hi{Smart things}}: smartwatch, \emph{apps} esportivos.
+      \end{itemize}
+    \item Monitoramento com \hi{dashboards}.
+    \end{itemize}
+  \end{itemize}
+
+\end{frame}
+\begin{frame}[allowframebreaks]{Paineis de visualização · Dashboards}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=6cm]{./img/dashboard-2.png}
+    \caption{Exemplo de dashboard produzido com o software Power BI.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=6.5cm]{./img/dashboard-3.png}
+    \caption{Exemplo de dashboard feito com o R usando o pacote
+      \texttt{shiny}.}
+  \end{figure}
+
+\end{frame}
+
+%=======================================================================
+
+\begin{frame}
+  \centertitle{Competências em visualização de dados}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Os 8 chapéus da visualização de dados}
+
+  \vspace*{-1em}
+  \begin{figure}
+    \centering
+    \includegraphics[height=6.00cm]{img/chapeus-cartesiano.png}
+    \caption{Os 8 ``chapeús'' de Kirk considerando os eixos: competência
+      técnica-artística sobre visualização de dados e habilidades de
+      programação (hard skills) e comunicação/gestão (soft
+      skills). Fonte: o autor.}
+  \end{figure}
+
+\end{frame}
+
+%=======================================================================
+
+\begin{frame}
+  \centertitle{Considerações finais}
+\end{frame}
+
+\begin{frame}{Recomendações}
+
+  \begin{flushright}
+    % \textit{``Numbers have an important story to tell. They rely on you
+    %   to give them a clear and convincing voice.''}
+
+    \textit{``Os números tem uma importante história para contar. Eles
+      dependem de você dar-lhes um clara e convincente voz.''}
+
+    -- Stephen Few
+  \end{flushright}
+
+  \begin{itemize}
+  \item Esforce-se para compreender melhor os seus dados: veja-os.
+  \item Uma apropriada visualização impacta mais do que
+    múltiplas tabelas, testes e índices de ajuste.
+  \item Invista em recursos para \hi{manipulação e visualização} de
+    dados: $\rightarrow$ \textbf{\hi{R}}, Python, Inkscape, Gimp,
+    JavaScript.
+  \end{itemize}
+
+\end{frame}
+
+%=======================================================================
+
+\begin{frame}[allowframebreaks]{Referências}
+  % \printbibliography
+  \bibliography{config/refs} % abnt
+\end{frame}
+
+\begin{frame}
+  \centertitle{Pela oportunidade e atenção, agradeço.}
+
+  \begin{center}
+    \LARGE
+
+    Prof. Walmes Zeviani\\
+    \url{walmes@ufpr.br}\\
+    \url{leg.ufpr.br/~walmes}
+  \end{center}
+\end{frame}
+
+\end{document}
