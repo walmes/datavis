@@ -1,12 +1,18 @@
-#!/bin/sh
+#!/bin/bash
 
 # Tree of the directories.
 echo "------------------------------------------------------------------------"
-echo "Directory tree.\n"
-tree -h -F _site/ -L 1
-# tree -h -F _site/slides
-# tree -h -F _site/scripts
-# tree -h -F _site/tutorials
+if [ -d "_site" ]
+then
+    echo "Directory tree.\n"
+    tree -h -F _site/ -L 1
+    # tree -h -F _site/slides
+    # tree -h -F _site/scripts
+    # tree -h -F _site/tutorials
+else
+    echo "Directory \"_site/\" does not exists."
+    exit 1
+fi
 
 # Upload.
 echo "------------------------------------------------------------------------"
