@@ -218,8 +218,8 @@ library("highcharter")
 data(mpg, package = "ggplot2")
 
 hc <- hchart(mpg,
-             "scatter",
-             hcaes(x = displ, y = hwy, group = class))
+             type = "scatter",
+             mapping = hcaes(x = "displ", y = "hwy", group = "class"))
 hc
 ```
 
