@@ -216,6 +216,6 @@ expand(tb, blc, trt)
   6. Condição domicíliar dos municípios.
      1. Ler os dados em
         <http://leg.ufpr.br/~walmes/data/ipea_habitacao.csv>.
-     2. Contatenar o nome do município com o nome do estado.
+     2. Concatenar o nome do município com o nome do estado.
 
 <!-- ## Referências -->
