@@ -1,4 +1,4 @@
-\documentclass[serif, professionalfont, usenames, dvipsnames]{beamer}
+\documentclass[serif, professionalfont, usenames, dvipsnames, aspectratio=169]{beamer}
 
 \input{config/preamble.tex}
 \input{config/preamble-refs.tex}
@@ -114,7 +114,7 @@ read_chunk("00-graphics-gallery.R")
   \item Agrupamento dos gráficos baseado nas características comuns.
   \item \hi{Função}
     \begin{itemize}
-    \item Classificação princial: função do gráfico.
+    \item Classificação principal: função do gráfico.
     \item Relacionado às quantidades a serem representadas.
     \item Quais quantidades/propriedades serão exibidas $\rightarrow$
       \hi{o que?}
@@ -171,7 +171,7 @@ read_chunk("00-graphics-gallery.R")
     \end{itemize}
   }{
     \begin{center}
-      \includegraphics[width = 1\linewidth]{img/UEFA-Europa-League.png}
+      \includegraphics[width = 5.5 cm]{img/UEFA-Europa-League.png}
     \end{center}
   }
 
@@ -307,7 +307,7 @@ read_chunk("00-graphics-gallery.R")
     \end{itemize}
   }{
     \begin{figure}[h]
-      \centering \includegraphics[width = 6.5cm, angle = 90]{img/box-and-whisker-plot.png}
+      \centering \includegraphics[width = 5.5cm, angle = 90]{img/box-and-whisker-plot.png}
       \caption{Componentes do gráfico de caixas e bigodes.}
     \end{figure}
   }
@@ -322,7 +322,7 @@ read_chunk("00-graphics-gallery.R")
     \item \textbf{Inspiração}: densidade empírica.
     \end{itemize}
   }{
-    <<height_violin, fig.dim = c(3, 3.5), results = "hide", echo = FALSE, fig.cap = cap>>=
+    <<height_violin, fig.dim = c(3, 3.5), out.width = "5.5 cm", results = "hide", echo = FALSE, fig.cap = cap>>=
     @
 }
 
