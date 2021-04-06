@@ -411,7 +411,7 @@ gg0 <- ggplot(data = tb2_gk,
 gg1 <- gg0 +
     geom_point(aes(fill = age), pch = 21, size = 3) +
     scale_fill_distiller(palette = "Spectral", direction = -1) +
-    labs(color = "Idade") +
+    labs(fill = "Idade") +
     theme_light()
 
 grid.arrange(gg0 +
@@ -424,7 +424,8 @@ cap <- "Relação altura, peso e idade dos goleiros."
 
 #---- ggpairs ----------------------------------------------------------
 
-ggpairs(tb2_gk[, c("cm", "kg", "age")])
+ggpairs(tb2_gk[, c("cm", "kg", "age")],
+        upper = list(continuous = wrap("cor", family = "sans")))
 cap <- "Matriz de diagramas de dispersão."
 
 #---- correlogram ------------------------------------------------------
@@ -432,8 +433,8 @@ cap <- "Matriz de diagramas de dispersão."
 M <- cor(tb2_gk[, c("cm", "kg", "age", "bmi", "aw")], use = "complete")
 
 par(mfrow = c(1, 2))
-corrplot(M, method = "square", order = "AOE", addCoef.col = "grey")
-corrplot(M, method = "ellipse", order = "AOE", addCoef.col = "grey")
+corrplot(M, method = "square", order = "AOE", addCoef.col = "grey", bg = NA)
+corrplot(M, method = "ellipse", order = "AOE", addCoef.col = "grey", bg = NA)
 layout(1)
 
 cap <- "Correlograma das variáveis para os goleiros."
@@ -609,6 +610,9 @@ cap <- "Países conforme o número de jogadores de cada nacionalidade e jogadore
 
 # library(HistData)
 # pdf("img/snow-map.pdf")
+# SnowMap(density=TRUE, main="Snow's Cholera Map, Death Intensity")
+# dev.off()
+# png("img/snow-map.png")
 # SnowMap(density=TRUE, main="Snow's Cholera Map, Death Intensity")
 # dev.off()
 

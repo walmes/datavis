@@ -1,0 +1,1556 @@
+##=============================================================================
+## Dados retirados do http://www.whoscored.com/Regions/250/Tournaments/30/Seasons/3871/Stages/8466/TeamStatistics/Europe-UEFA-Europa-League-2013-2014
+## country: País de origem do jogador;
+## team   : Time no qual joga;
+## name   : Nome do jogador;
+## pos    : Posição em que joga;
+##   FW      : forward;
+##   AM      : attack midfielder;
+##   M       : midfielder;
+##   DM      : defender midfielder;
+##   D       : defender;
+##   GK      : goalkeeper;
+##   C, L, R : center, left, right;
+## age    : Idade (anos);
+## cm     : altura (cm);
+## kg     : Peso (kg);
+## apps   : Vezes que jogou como titular (vezes que jogou como substituto);
+## goal   : Gols feitos;
+## a      : Assistências ou passes para gol;
+## yel    : Número de cartões amarelos;
+## red    : Número de cartões vermelhos;
+## spg    : Chutes a gol por partida;
+## ps     : Porcentagem de passes com sucesso;
+## aw     : Duelos aéreos ganho por jogo;
+## mom    : Man of the match (homem da partida)??
+## rt     : Average rating;
+##=============================================================================
+country	team	name	pos	age	cm	kg	apps	goal	ass	yel	red	spg	ps	aw	mom	rt
+Austria	Salzburg	Sadio Mané	M(L)	21	175	69	9	4	3	1	1	2	77	1.2	3	7.98
+Austria	Salzburg	Kevin Kampl	M(R)	23	180	63	9	2	4	2	NA	2	83.9	0.3	1	7.93
+Austria	Salzburg	Alan	FW	24	182	73	8(1)	4	2	NA	1	4.2	60.8	3.8	2	7.91
+Austria	Salzburg	André Ramalho	D(C)	22	182	77	9	1	NA	4	NA	0.9	72.3	3.2	1	7.67
+Austria	Salzburg	Stefan Hierländer	M	23	180	71	1(1)	NA	NA	NA	NA	0.5	86.3	3	NA	7.59
+Austria	Salzburg	Christoph Leitgeb	M(C)	28	172	69	7(1)	NA	1	3	NA	1.6	79.4	0.5	NA	7.55
+Austria	Salzburg	Jonatan Soriano	FW	28	180	71	7	8	1	1	NA	4.1	72.8	0.3	NA	7.54
+Austria	Salzburg	Stefan Ilsanker	M(C)	24	186	74	8(1)	NA	NA	1	NA	0.8	74.7	4	NA	7.46
+Austria	Salzburg	Martin Hinteregger	D(C)	21	184	78	8(1)	NA	NA	3	NA	1.1	69.1	3.4	NA	7.38
+Austria	Salzburg	Andreas Ulmer	D(L)	28	175	69	8	NA	NA	NA	NA	0.9	64.5	2.8	NA	7.27
+Austria	Salzburg	Christian Schwegler	D(R)	29	177	73	8	NA	1	3	NA	0.5	71.5	1.6	NA	7.14
+Austria	Salzburg	Florian Klein	D	27	180	68	3(2)	NA	NA	1	NA	1	79.8	1.4	NA	7.08
+Austria	Salzburg	Rodnei	D(C)	28	190	90	3	NA	NA	1	NA	0.3	88.6	1.7	NA	7.07
+Austria	Salzburg	Peter Gulacsi	GK	23	190	75	10	NA	NA	NA	NA	NA	56.1	0.3	NA	6.97
+Austria	Salzburg	Franz Schiemer	D	28	185	77	2(2)	NA	NA	NA	NA	0.5	68.9	1.3	NA	6.87
+Austria	Salzburg	Valon Berisha	M	21	181	75	4(5)	NA	2	NA	NA	0.8	72.2	1.8	NA	6.73
+Austria	Salzburg	Marco Meilinger	M	22	181	77	1(3)	1	NA	NA	NA	1	71.8	1	1	6.71
+Austria	Salzburg	Dusan Svento	M	28	178	70	3(2)	1	1	NA	NA	1	68.6	0.6	NA	6.64
+Austria	Salzburg	Georg Teigl	M	23	178	74	0(2)	NA	NA	NA	NA	1	75	NA	NA	6.4
+Austria	Salzburg	Havard Nielsen	FW	20	187	80	1(3)	NA	NA	NA	NA	0.8	69.4	0.8	NA	6.21
+Austria	Salzburg	Robert Zulj	M	22	189	81	1(3)	NA	NA	NA	NA	0.3	53.7	1.8	NA	6.15
+Austria	Salzburg	Valentino Lazaro	M	18	180	73	0(1)	NA	NA	NA	NA	NA	100	NA	NA	6
+Austria	Salzburg	Yordy Reyna	FW	20	169	68	0(2)	NA	NA	1	NA	0.5	100	NA	NA	5.94
+Austria	Salzburg	Alexander Walke	GK	30	189	88	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Juventus	Carlos Tévez	AM(CL),FW	30	173	75	26(3)	18	6	4	NA	3.8	82.3	0.4	5	7.71
+Italy	Juventus	Paul Pogba	DM(C)	21	186	80	26(3)	6	5	4	NA	1.9	83.5	2.2	4	7.61
+Italy	Juventus	Giorgio Chiellini	D(CL)	29	186	76	25	3	3	4	NA	0.9	91	3.2	2	7.58
+Italy	Juventus	Andrea Pirlo	M(C)	34	177	68	23(1)	4	4	4	NA	1.7	88.5	0.2	3	7.56
+Italy	Juventus	Arturo Vidal	M(C)	26	180	75	28(2)	11	5	8	NA	1.9	83.8	1.4	5	7.52
+Italy	Juventus	Kwadwo Asamoah	DM(C),M(L)	25	178	78	26(2)	2	3	6	NA	1	85	0.8	1	7.28
+Italy	Juventus	Leonardo Bonucci	D(C)	26	190	82	25	2	3	7	NA	0.4	89.7	1.2	NA	7.14
+Italy	Juventus	Fernando Llorente	FW	29	195	90	23(5)	11	4	3	NA	1.8	72.4	2.8	3	7.11
+Italy	Juventus	Andrea Barzagli	D(C)	32	186	79	22	NA	NA	3	NA	0.1	90.7	1.1	NA	6.95
+Italy	Juventus	Claudio Marchisio	M(CL)	28	179	76	15(7)	2	NA	5	NA	1.4	87	0.4	NA	6.92
+Italy	Juventus	Angelo Obinze Ogbonna	D(C)	25	189	86	9(2)	NA	NA	1	1	0.2	89.8	2.4	NA	6.91
+Italy	Juventus	Paolo De Ceglie	D(L),M(L)	27	184	75	2(2)	NA	NA	NA	NA	0.5	83.5	1.5	NA	6.9
+Italy	Juventus	Martín Cáceres	D(CLR),M(R)	26	182	77	11(2)	NA	NA	1	NA	0.2	89.7	1.2	NA	6.89
+Italy	Juventus	Gianluigi Buffon	GK	36	191	83	28	NA	NA	NA	1	NA	79.7	NA	2	6.88
+Italy	Juventus	Stephan Lichtsteiner	D(R),M(R)	30	180	77	19(2)	2	6	3	NA	0.8	75.4	1.2	1	6.87
+Italy	Juventus	Mauricio Isla	D(R),M(CR)	25	177	72	8(7)	NA	1	1	NA	0.5	83.1	0.7	NA	6.74
+Italy	Juventus	Federico Peluso	D(CL),M(L)	30	187	71	3(5)	1	1	2	NA	0.1	82.7	1	NA	6.71
+Italy	Juventus	Mirko Vucinic	AM(L),FW	30	186	76	4(6)	2	NA	2	NA	1.1	70.7	0.3	NA	6.4
+Italy	Juventus	Marco Storari	GK	37	187	76	3(1)	NA	NA	NA	NA	NA	73.1	NA	NA	6.34
+Italy	Juventus	Sebastian Giovinco	AM(CLR),FW	27	164	59	3(10)	1	1	2	NA	1.2	75	NA	NA	6.32
+Italy	Juventus	Simone Padoin	DM(C),M(LR)	30	179	73	6(11)	NA	NA	1	NA	0.1	89.1	0.2	NA	6.26
+Italy	Juventus	Fabio Quagliarella	AM(C),FW	31	180	79	3(13)	1	NA	1	NA	1.4	78.1	0.3	NA	6.19
+Italy	Juventus	Marco Motta	D(R),M(R)	27	186	76	0(2)	NA	NA	1	NA	NA	91.7	NA	NA	5.95
+Italy	Juventus	Pablo Daniel Osvaldo	AM(CL),FW	28	182	81	3(4)	NA	1	1	NA	1.3	75.7	1	NA	5.95
+Italy	Juventus	Alessandro Matri	FW	29	183	80	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Juventus	Federico Mattiello	M	18	182	74	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Juventus	Filippo Penna	D	19	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Juventus	Filippo Romagna	D	16	185	75	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Juventus	Gianmarco Vannucchi	GK	18	179	68	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Juventus	Leonardo Citti	GK	18	186	78	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Juventus	Luca Marrone	D(C),DM(C)	24	186	75	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Juventus	Matteo Gerbaudo	M	18	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Juventus	Ouasim Bouy	M	20	180	72	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Juventus	Rubinho	GK	30	186	82	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Juventus	Simone Pepe	AM(LR)	30	178	73	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Juventus	Vykintas Slivka	M	18	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Juventus	Younes Bnou Marzouk	FW	18	175	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Germany	Eintracht Frankfurt	Marco Russ	D(C),DM(C)	28	190	75	22(1)	3	2	5	NA	1	79.2	5.2	3	7.32
+Germany	Eintracht Frankfurt	Alexander Meier	M(C),FW	31	196	84	15(1)	6	2	1	NA	3.1	76.2	6.3	NA	7.28
+Germany	Eintracht Frankfurt	Bastian Oczipka	D(L)	25	184	87	14(3)	NA	1	2	NA	0.4	80.4	1.1	1	7.04
+Germany	Eintracht Frankfurt	Constant Djakpa	D(L),DM(C)	27	177	71	14(3)	NA	NA	4	NA	1.2	63.7	1.4	1	7.04
+Germany	Eintracht Frankfurt	Joselu	FW	24	191	80	12(6)	7	2	2	NA	2.7	73.7	5.6	2	7.02
+Germany	Eintracht Frankfurt	Pirmin Schwegler	DM(C)	27	178	76	12(2)	NA	NA	6	NA	0.8	80.5	2.4	1	6.99
+Germany	Eintracht Frankfurt	Tranquillo Barnetta	AM(CLR)	28	178	68	16(2)	1	2	2	NA	1.2	74.2	1.3	NA	6.98
+Germany	Eintracht Frankfurt	Carlos Zambrano	D(C)	24	185	78	24	NA	NA	11	NA	0.1	85.6	2.2	NA	6.97
+Germany	Eintracht Frankfurt	Stefan Aigner	AM(R),FW	26	185	72	18(4)	4	5	3	NA	1.7	74.9	1.9	1	6.97
+Germany	Eintracht Frankfurt	Anderson	D(C)	26	188	80	15	NA	1	3	NA	0.3	86.5	3.3	NA	6.96
+Germany	Eintracht Frankfurt	Martin Lanig	M(C)	29	190	79	6(3)	NA	NA	NA	1	0.8	76.6	3.7	NA	6.9
+Germany	Eintracht Frankfurt	Stephan Schröck	M(R)	27	170	68	6(3)	NA	NA	1	NA	0.3	68.3	0.3	1	6.89
+Germany	Eintracht Frankfurt	Alexander Madlung	D(C)	31	193	92	9(2)	2	NA	NA	NA	0.8	78.2	4.1	1	6.85
+Germany	Eintracht Frankfurt	Johannes Flum	D(C),M(C)	26	190	80	22(3)	3	2	8	1	0.8	80	2.1	NA	6.84
+Germany	Eintracht Frankfurt	Sebastian Rode	DM(C)	23	179	67	17	NA	NA	4	NA	0.9	84.3	1.3	NA	6.84
+Germany	Eintracht Frankfurt	Vaclav Kadlec	FW	21	180	68	14(5)	5	3	1	NA	1.8	76.1	1.5	1	6.78
+Germany	Eintracht Frankfurt	Kevin Trapp	GK	23	189	83	28	NA	NA	1	NA	NA	65.7	0.5	1	6.76
+Germany	Eintracht Frankfurt	Sebastian Jung	D(R)	23	179	72	24	NA	5	3	NA	0.5	80.3	1.4	NA	6.76
+Germany	Eintracht Frankfurt	Takashi Inui	AM(L)	25	169	59	10(4)	NA	NA	NA	NA	1.1	78.2	0.1	NA	6.47
+Germany	Eintracht Frankfurt	Jan Rosenthal	AM(CLR),FW	27	186	76	7(9)	2	NA	1	NA	0.9	74.9	1.6	NA	6.46
+Germany	Eintracht Frankfurt	Marvin Bakalorz	M	24	180	76	0(3)	NA	NA	NA	NA	1	84.6	0.7	NA	6.32
+Germany	Eintracht Frankfurt	Marc-Oliver Kempf	D	19	185	82	0(2)	NA	NA	1	NA	NA	90.7	1.5	NA	6.3
+Germany	Eintracht Frankfurt	Stefano Celozzi	D(R)	25	171	65	2(6)	NA	NA	1	NA	0.3	77.9	0.4	NA	6.3
+Germany	Eintracht Frankfurt	Srdjan Lakic	FW	30	186	85	0(8)	NA	NA	NA	NA	0.6	71.4	0.9	NA	6.24
+Germany	Eintracht Frankfurt	Marc Stendera	M	18	171	64	0(4)	NA	NA	NA	NA	0.5	71.4	0.5	NA	6.16
+Germany	Eintracht Frankfurt	Felix Wiedwald	GK	24	190	80	0(1)	NA	NA	NA	NA	NA	33.3	NA	NA	6.1
+Germany	Eintracht Frankfurt	Tobias Weis	DM(C)	28	170	67	1(3)	NA	NA	NA	NA	0.3	62.1	NA	NA	5.91
+Germany	Eintracht Frankfurt	Sonny Kittel	M	21	178	65	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Netherlands	AZ Alkmaar	Celso Ortiz	DM(C)	25	182	75	22(1)	NA	1	3	NA	0.7	86.9	1.3	2	7.35
+Netherlands	AZ Alkmaar	Jeffrey Gouweleeuw	D(C)	22	187	84	29	1	NA	2	NA	0.6	81.7	1.4	NA	7.26
+Netherlands	AZ Alkmaar	Mattias Johansson	D(R)	22	171	64	23(1)	4	2	5	NA	1	81.3	0.8	1	7.26
+Netherlands	AZ Alkmaar	Simon Poulsen	D(L)	29	187	76	5(3)	NA	NA	1	NA	0.3	81	0.9	NA	7.25
+Netherlands	AZ Alkmaar	Roy Beerens	AM(LR)	26	173	63	29	5	5	1	NA	2.1	82.7	0.1	2	7.21
+Netherlands	AZ Alkmaar	Nick Viergever	D(CL)	24	182	72	29	3	2	3	1	0.6	79.6	0.8	1	7.1
+Netherlands	AZ Alkmaar	Steven Berghuis	AM(R)	22	183	72	11(10)	8	3	NA	NA	2.1	78.5	0.1	2	7.08
+Netherlands	AZ Alkmaar	Aron Jóhannsson	FW	23	184	70	27(2)	16	6	3	NA	2.2	76.4	0.8	1	7.04
+Netherlands	AZ Alkmaar	Esteban	GK	24	193	88	30	NA	NA	1	NA	NA	61.3	0.2	NA	6.99
+Netherlands	AZ Alkmaar	Nemanja Gudelj	M(C)	22	177	73	26	4	3	5	1	1.7	85.3	1.4	3	6.99
+Netherlands	AZ Alkmaar	Viktor Elm	M(C)	28	192	87	21(6)	3	NA	2	NA	1.2	73.2	5	1	6.97
+Netherlands	AZ Alkmaar	Etiënne Reijnen	D(R)	26	189	80	7(1)	NA	1	1	NA	0.6	82.7	0.9	NA	6.95
+Netherlands	AZ Alkmaar	Jan Wuytens	D(C)	28	189	77	24	NA	1	7	NA	0.5	81.8	1.8	NA	6.9
+Netherlands	AZ Alkmaar	Maarten Martens	AM(CL)	29	176	59	12(5)	1	10	1	NA	0.9	80.1	0.4	NA	6.82
+Netherlands	AZ Alkmaar	Johann Berg Gudmund...	AM(LR)	23	186	78	17(10)	2	1	3	NA	1.6	74.8	1	1	6.76
+Netherlands	AZ Alkmaar	Ridgeciano Haps	FW	20	175	66	1(1)	NA	NA	1	NA	1.5	65.7	0.5	NA	6.71
+Netherlands	AZ Alkmaar	Donny Gorter	D	25	175	70	3(3)	NA	NA	1	NA	0.8	79.4	0.3	NA	6.4
+Netherlands	AZ Alkmaar	Markus Henriksen	M(C)	21	187	85	12(10)	NA	NA	NA	NA	0.6	75.4	1.3	NA	6.31
+Netherlands	AZ Alkmaar	Willie Overtoom	M	27	170	67	0(7)	NA	NA	NA	NA	1.4	82.8	0.4	NA	6.3
+Netherlands	AZ Alkmaar	Fernando Lewis	FW	21	180	75	0(5)	NA	NA	NA	NA	0.8	66.7	1.2	NA	6.26
+Netherlands	AZ Alkmaar	Denni Avdic	FW	25	192	94	2(8)	NA	NA	1	NA	0.4	69.8	1.9	NA	6.13
+Netherlands	AZ Alkmaar	Thom Haye	M	18	177	74	0(2)	NA	NA	NA	NA	NA	93.8	NA	NA	6.06
+Netherlands	AZ Alkmaar	Dirk Marcellis	D	25	181	80	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Netherlands	AZ Alkmaar	Hobie Verhulst	GK	20	189	78	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Netherlands	AZ Alkmaar	Joris van Overeem	M	19	181	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Netherlands	AZ Alkmaar	Thomas Lam	D	20	188	76	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Netherlands	AZ Alkmaar	Wesley Hoedt	D	20	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Netherlands	AZ Alkmaar	Yves de Winter	GK	26	188	75	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Fiorentina	Juan Guillermo Cuadrado	D(R),M(CLR)	25	176	66	24(1)	5	3	6	1	2.6	84.3	0.4	5	7.51
+Italy	Fiorentina	Giuseppe Rossi	AM(L),FW	27	173	72	18	14	3	1	NA	3.3	82.3	0.6	2	7.44
+Italy	Fiorentina	Stefan Savic	D(C)	23	186	73	27	NA	NA	4	NA	0.1	89.3	4.1	2	7.39
+Italy	Fiorentina	Gonzalo Rodríguez	D(C)	29	182	79	26	2	1	12	NA	0.5	85.4	2.3	2	7.33
+Italy	Fiorentina	Borja Valero	M(CLR)	29	175	73	25(1)	5	7	4	1	1.8	87.9	0.3	2	7.2
+Italy	Fiorentina	Alberto Aquilani	M(C)	29	186	77	25	4	1	7	NA	1.6	87	1.2	2	7.11
+Italy	Fiorentina	Facundo Roncaglia	D(CR)	27	179	76	9(2)	NA	NA	2	NA	1.1	86.6	1.2	NA	6.99
+Italy	Fiorentina	Nenad Tomovic	D(CLR)	26	184	79	19(1)	NA	1	4	NA	0.2	83.3	2.3	NA	6.99
+Italy	Fiorentina	Neto	GK	24	191	83	31	NA	NA	2	NA	NA	61.2	0.3	2	6.98
+Italy	Fiorentina	Manuel Pasqual	D(L),M(L)	32	178	71	21	NA	3	3	NA	1	85.4	1	NA	6.94
+Italy	Fiorentina	David Pizarro	DM(C)	34	170	65	18(3)	1	1	4	1	0.9	90.9	0.2	1	6.93
+Italy	Fiorentina	Matías Fernández	AM(C)	27	178	72	11(10)	3	3	1	NA	1.3	93.1	0.3	NA	6.92
+Italy	Fiorentina	Modibo Diakité	D(CR)	27	192	84	6	NA	NA	NA	1	NA	85.8	1.5	NA	6.92
+Italy	Fiorentina	Marcos Alonso	D(L)	23	188	81	1(2)	NA	NA	NA	NA	1.7	79.7	3.3	NA	6.88
+Italy	Fiorentina	Massimo Ambrosini	DM(C)	36	182	72	14(4)	NA	NA	6	NA	0.5	88.7	2.7	NA	6.88
+Italy	Fiorentina	Joaquín	AM(CR)	32	179	75	14(8)	2	2	NA	NA	0.8	88	0.4	NA	6.78
+Italy	Fiorentina	Marvin Compper	D(CL)	28	185	80	8(1)	NA	NA	3	NA	0.1	90.3	1.7	NA	6.74
+Italy	Fiorentina	Juan Vargas	M(CL)	30	180	77	11(8)	4	NA	NA	NA	1.3	82.1	1.3	1	6.71
+Italy	Fiorentina	Mario Gomez	FW	28	189	88	5(4)	3	1	1	NA	1.4	70.5	1.1	NA	6.69
+Italy	Fiorentina	Alessandro Matri	FW	29	183	80	9(2)	3	2	2	NA	2	64.4	0.6	1	6.58
+Italy	Fiorentina	Josip Ilicic	AM(CLR),FW	26	190	79	8(8)	2	1	1	NA	1.6	83	0.1	NA	6.57
+Italy	Fiorentina	Rafal Wolski	M	21	179	66	4(6)	1	NA	2	NA	0.6	73.8	0.3	NA	6.44
+Italy	Fiorentina	Matias Vecino	M(C)	22	187	81	1(5)	NA	1	NA	NA	0.3	77.2	1.2	NA	6.43
+Italy	Fiorentina	Anderson	DM(C)	25	176	69	4(2)	NA	NA	NA	NA	0.3	80.2	NA	NA	6.34
+Italy	Fiorentina	Ryder	FW	21	179	71	1(17)	NA	NA	3	NA	0.4	88.1	0.3	NA	6.21
+Italy	Fiorentina	Marko Bakic	M(C)	20	185	73	1(1)	NA	NA	NA	NA	NA	90.5	0.5	NA	6.1
+Italy	Fiorentina	Oleksandr Iakovenko	M	26	182	74	0(3)	NA	NA	NA	NA	NA	77.8	0.3	NA	6.1
+Italy	Fiorentina	Ante Rebic	FW	20	182	80	0(3)	NA	NA	1	NA	0.3	61.5	0.3	NA	6.01
+Italy	Fiorentina	Ruben Olivera	AM(CL)	30	184	84	0(1)	NA	NA	NA	NA	NA	100	NA	NA	5.99
+Italy	Fiorentina	Antonio Rosati	GK	30	194	88	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Fiorentina	Cristiano Lupatelli	GK	35	189	84	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Fiorentina	Gustavo Munúa	GK	36	188	87	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Fiorentina	Lorenzo Venuti	D	18	176	65	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Fiorentina	Nicolò Fazzi	FW	19	183	75	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Portugal	FC Porto	Alex Sandro	D(L)	23	177	75	6	NA	NA	2	NA	1	79.6	1.3	2	7.8
+Portugal	FC Porto	Danilo	D(R)	22	184	74	6	NA	2	NA	NA	1.5	79.9	1.2	NA	7.53
+Portugal	FC Porto	Maicon	D(C)	25	190	74	2	NA	NA	NA	NA	0.5	79.2	5	NA	7.25
+Portugal	FC Porto	Fernando	DM(C)	26	183	76	6	NA	NA	1	NA	0.8	89.3	0.8	NA	7.21
+Portugal	FC Porto	Lucho González	M(C)	33	185	75	6	2	NA	2	NA	2.3	81.4	0.5	NA	7.11
+Portugal	FC Porto	Jackson Martinez	FW	27	184	75	6	2	NA	2	NA	4.3	73.4	3.8	NA	7.04
+Portugal	FC Porto	Josué	M	23	174	70	6	NA	1	2	NA	1.7	81.2	0.2	NA	6.83
+Portugal	FC Porto	Eliaquim Mangala	D(C)	23	187	74	6	NA	1	2	NA	1	87	1.8	NA	6.75
+Portugal	FC Porto	Silvestre Varela	AM(LR)	29	180	75	4(2)	NA	NA	1	NA	2.7	83.7	0.8	NA	6.73
+Portugal	FC Porto	Nicolás Otamendi	D(C)	26	183	75	4	NA	NA	NA	NA	1	83.2	1	NA	6.59
+Portugal	FC Porto	Licá	FW	25	180	71	3(3)	NA	NA	NA	NA	0.8	79.5	0.5	NA	6.47
+Portugal	FC Porto	Steven Defour	DM(C)	25	173	64	4(1)	NA	NA	1	NA	0.6	90	0.4	NA	6.47
+Portugal	FC Porto	Helton	GK	35	189	85	6	NA	NA	NA	NA	NA	77.1	0.2	NA	6.44
+Portugal	FC Porto	Marat Izmailov	FW	31	173	63	0(1)	NA	NA	NA	NA	NA	73.9	NA	NA	6.41
+Portugal	FC Porto	Juan Quintero	AM(C)	21	168	62	0(3)	NA	NA	NA	NA	0.3	88.2	NA	NA	6.23
+Portugal	FC Porto	Nabil Ghilas	FW	23	183	85	0(4)	NA	NA	NA	NA	0.5	83.3	0.8	NA	6.12
+Portugal	FC Porto	Ricardo Pereira	FW	20	175	70	0(1)	NA	NA	NA	NA	NA	81.8	NA	NA	5.88
+Portugal	FC Porto	Héctor Herrera	M	23	175	69	1(2)	NA	NA	NA	1	NA	86.4	NA	NA	5.84
+Portugal	FC Porto	Diego Reyes	D	21	190	66	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Portugal	FC Porto	Fabiano	GK	26	197	90	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Portugal	FC Porto	Jorge Fucile	D(R)	29	178	77	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Portugal	FC Porto	Mikel Agu	M	20	184	77	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Lazio	Antonio Candreva	AM(CLR)	27	180	70	29(1)	8	5	2	1	3.1	83	0.1	2	7.32
+Italy	Lazio	Stefan Radu	D(CL)	27	183	79	20	1	NA	8	NA	0.5	83.6	1.2	1	7.2
+Italy	Lazio	Senad Lulic	D(L),M(CL)	28	183	78	22(2)	4	2	8	NA	1.3	77.6	1.8	2	7.17
+Italy	Lazio	Giuseppe Biava	D(C)	36	180	73	14(1)	NA	NA	2	NA	0.3	85.7	1.2	NA	7.1
+Italy	Lazio	Lorik Cana	D(C),DM(C)	30	186	86	19(2)	2	NA	7	NA	0.6	81.7	3.1	2	7.08
+Italy	Lazio	André Dias	D(C)	34	184	80	12(2)	1	NA	1	1	0.4	90.2	2.6	1	7.04
+Italy	Lazio	Lucas Biglia	DM(C)	28	178	63	17(3)	1	1	5	NA	0.9	87.4	1	NA	7.03
+Italy	Lazio	Miroslav Klose	AM(C),FW	35	184	84	20(2)	7	2	2	NA	1.8	73.2	2.8	2	7.02
+Italy	Lazio	Michaël Ciani	D(C)	29	189	88	11(5)	1	NA	6	NA	0.3	85	2.2	NA	6.98
+Italy	Lazio	Hernanes	M(C)	28	180	76	14(3)	3	NA	3	1	2.5	84.1	0.9	1	6.92
+Italy	Lazio	Bruno Pereirinha	D(R)	26	173	68	6(1)	NA	1	2	NA	0.1	82.6	0.3	NA	6.92
+Italy	Lazio	Luis Pedro Cavanda	D(LR),M(R)	24	190	82	14(3)	1	1	3	NA	0.1	83	0.9	NA	6.9
+Italy	Lazio	Cristian Ledesma	DM(C)	31	180	78	20(1)	NA	3	6	1	0.5	75.3	1.2	NA	6.84
+Italy	Lazio	Etrit Berisha	GK	25	194	92	10	NA	NA	NA	NA	NA	54.2	0.3	1	6.82
+Italy	Lazio	Abdoulay Konko	D(LR),M(R)	30	182	77	18	NA	1	1	NA	0.6	81.7	0.9	NA	6.79
+Italy	Lazio	Diego Novaretti	D(C)	28	193	85	8(1)	NA	NA	2	NA	0.3	75.6	1.8	NA	6.76
+Italy	Lazio	Keita	AM(L)	19	184	80	8(11)	4	1	1	NA	1.7	79.5	0.6	2	6.75
+Italy	Lazio	Ogenyi Onazi	DM(C)	21	170	65	15(10)	NA	2	3	1	1.3	85.4	0.5	NA	6.61
+Italy	Lazio	Honorato Ederson	AM(CLR)	28	181	74	6(9)	1	1	NA	NA	1.1	83	1	1	6.6
+Italy	Lazio	Federico Marchetti	GK	31	188	83	21	NA	NA	1	NA	NA	54.9	0.1	1	6.59
+Italy	Lazio	Brayan Perea	FW	21	189	79	8(9)	1	1	3	NA	0.7	68.4	2.1	NA	6.42
+Italy	Lazio	Sergio Floccari	FW	32	178	74	5(9)	NA	1	1	NA	1.4	75	1.3	NA	6.34
+Italy	Lazio	Felipe Anderson	AM(L)	20	175	70	5(2)	NA	NA	NA	NA	0.9	84.7	0.4	NA	6.33
+Italy	Lazio	Stefano Mauri	AM(CLR)	34	184	79	4(3)	1	NA	1	NA	0.7	76.8	0.7	NA	6.3
+Italy	Lazio	Luca Crecco	FW	18	183	74	0(1)	NA	NA	NA	NA	NA	100	NA	NA	6
+Italy	Lazio	Gaël Kakuta	AM(CR)	22	172	65	0(1)	NA	NA	NA	NA	NA	50	NA	NA	5.96
+Italy	Lazio	Helder Postiga	FW	31	180	76	0(2)	NA	NA	NA	NA	NA	75	NA	NA	5.96
+Italy	Lazio	Albano Bizzarri	GK	36	193	89	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Lazio	Antonio Rozzi	FW	19	180	76	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Lazio	Cristiano Lombardi	FW	18	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Lazio	Guido Guerrieri	GK	18	184	78	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Lazio	Joseph Minala	M	17	184	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Lazio	Josip Elez	D	19	189	81	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Lazio	Libor Kozák	FW	24	192	84	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Lazio	Mamadou Tounkara	FW	18	184	79	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Lazio	Thomas Strakosha	GK	19	186	78	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Lazio	Vinicius	D	21	183	79	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Spain	Sevilla	Ivan Rakitic	M(C)	26	184	72	27(1)	11	10	7	NA	2.6	78.7	1.2	6	7.77
+Spain	Sevilla	Federico Fazio	D(C),DM(C)	27	195	85	21	2	1	6	NA	0.8	74.8	4.7	1	7.37
+Spain	Sevilla	Daniel Carriço	D(C),DM(C)	25	180	75	18	2	NA	6	NA	0.8	79.3	2.5	2	7.17
+Spain	Sevilla	Coke	D(R)	26	182	78	19(2)	3	NA	7	NA	1	76.9	2.1	3	7.1
+Spain	Sevilla	Carlos Bacca	FW	27	181	76	24(6)	14	5	4	NA	2.2	67.2	1.2	3	7.04
+Spain	Sevilla	Stéphane Mbia	D(C),DM(C)	27	189	82	14(1)	1	4	5	1	1	82.4	2.1	NA	7.04
+Spain	Sevilla	Vicente Iborra	DM(C)	26	190	76	20(2)	1	2	9	1	1	77	4	NA	7.03
+Spain	Sevilla	Vitolo	AM(LR)	24	183	80	22(2)	3	5	5	NA	1.2	78.9	0.6	NA	6.91
+Spain	Sevilla	Alberto Moreno	D(L),M(L)	21	170	65	22(2)	3	NA	5	1	0.8	78.2	1	2	6.89
+Spain	Sevilla	Nicolás Pareja	D(C)	30	183	75	19(1)	NA	NA	3	NA	0.2	77.3	2.4	NA	6.78
+Spain	Sevilla	Beto	GK	31	180	80	29	NA	NA	3	NA	NA	56.5	0.5	NA	6.76
+Spain	Sevilla	Diogo Figueiras	D(R)	23	170	62	14(3)	1	NA	7	NA	0.9	71.2	0.5	NA	6.76
+Spain	Sevilla	Fernando Navarro	D(CL)	31	178	70	19(1)	NA	NA	2	NA	0.1	71.9	1.7	NA	6.76
+Spain	Sevilla	Reyes	AM(CLR)	30	178	73	13(4)	NA	5	4	NA	1.1	67.8	0.5	NA	6.76
+Spain	Sevilla	Diego Perotti	AM(CLR)	25	179	70	3(7)	1	1	2	NA	1.1	86.4	0.2	1	6.74
+Spain	Sevilla	Cala	D(C)	24	180	76	9	1	NA	5	2	0.8	77.4	2	NA	6.66
+Spain	Sevilla	Kevin Gameiro	FW	26	172	69	15(15)	9	2	2	NA	1.4	78.9	0.2	2	6.6
+Spain	Sevilla	Jairo	AM(LR)	20	170	65	13(6)	3	1	3	1	1.3	64.1	0.6	2	6.57
+Spain	Sevilla	Marko Marin	AM(CLR),FW	25	170	64	7(7)	NA	3	3	NA	0.9	83.9	NA	NA	6.56
+Spain	Sevilla	Javi Varas	GK	31	182	73	2(1)	NA	NA	NA	NA	NA	47.4	NA	NA	6.53
+Spain	Sevilla	Carlos Fernández	FW	17	188	77	0(2)	NA	NA	NA	NA	NA	87.5	1	NA	6.51
+Spain	Sevilla	Sebastián Cristóforo	DM(C)	20	174	65	4(8)	NA	1	3	NA	0.2	88.3	0.4	NA	6.49
+Spain	Sevilla	Geoffrey Kondogbia	DM(C)	21	188	74	0(2)	NA	NA	2	NA	0.5	93.2	0.5	NA	6.45
+Spain	Sevilla	Bryan Rabello	M	19	163	60	2(4)	NA	NA	NA	NA	0.8	81.5	0.2	NA	6.32
+Spain	Sevilla	Piotr Trochowski	M(CLR)	30	169	72	4(8)	NA	NA	1	NA	0.5	80.7	0.3	NA	6.22
+Spain	Sevilla	Raul Rusescu	FW	25	180	73	0(1)	NA	NA	NA	NA	3	100	NA	NA	6.15
+Spain	Sevilla	Israel	D	20	187	74	0(2)	NA	NA	NA	NA	NA	96.3	NA	NA	6.12
+Spain	Sevilla	Denis Cheryshev	M	23	179	71	1(3)	NA	NA	1	1	0.8	72.2	0.8	NA	6.08
+Spain	Sevilla	Cicinho	D(R)	27	170	68	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Spain	Sevilla	Julián	GK	23	195	94	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Spain	Sevilla	Luismi	D	21	186	84	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Spain	Sevilla	Moi	D	19	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Spain	Sevilla	Sergio Rico	GK	20	194	88	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+England	Tottenham	Vlad Chiriches	D(C)	24	183	75	13	1	NA	1	NA	0.3	89.3	1.5	1	7.19
+England	Tottenham	Michael Dawson	D(C)	30	188	76	28(1)	NA	NA	6	NA	0.6	82.1	4	3	7.15
+England	Tottenham	Mousa Dembélé	M(CR),FW	26	185	82	22(5)	1	1	5	NA	0.5	90.9	1.1	3	7.15
+England	Tottenham	Emmanuel Adebayor	FW	30	191	82	14(1)	8	3	NA	NA	2	81.5	2.2	3	7.07
+England	Tottenham	Christian Eriksen	AM(CL)	22	175	71	17(2)	5	4	2	NA	2	80.2	0.4	2	7.04
+England	Tottenham	Kyle Walker	D(R)	23	178	70	26	1	2	5	NA	0.7	82.2	1.8	1	7.04
+England	Tottenham	Andros Townsend	AM(LR)	22	181	81	12(9)	1	NA	2	NA	2.6	85	NA	3	7.01
+England	Tottenham	Brad Friedel	GK	42	191	92	1	NA	NA	NA	NA	NA	81	NA	NA	7
+England	Tottenham	Jan Vertonghen	D(CL)	26	189	86	23	NA	NA	4	NA	0.6	82.9	2.3	1	6.92
+England	Tottenham	Danny Rose	D(L)	23	173	72	16	NA	2	2	1	0.4	79.5	1.2	NA	6.9
+England	Tottenham	Etienne Capoue	D(C),DM(C)	25	189	80	8(4)	1	NA	1	NA	0.5	84.2	0.9	NA	6.89
+England	Tottenham	Paulinho	M(C)	25	181	77	22(2)	4	2	4	1	2.4	84.8	0.5	NA	6.88
+England	Tottenham	Nabil Bentaleb	DM(C)	19	187	68	11(3)	NA	1	2	NA	1.1	87.6	0.6	NA	6.72
+England	Tottenham	Aaron Lennon	AM(LR)	26	165	63	21(1)	1	1	1	NA	0.8	84.9	0.1	1	6.71
+England	Tottenham	Nacer Chadli	AM(CL)	24	187	80	11(9)	1	2	1	NA	1.5	84.7	1.6	NA	6.67
+England	Tottenham	Hugo Lloris	GK	27	188	73	31	NA	NA	2	NA	NA	42.9	0.2	1	6.66
+England	Tottenham	Lewis Holtby	M(CLR)	23	176	72	6(7)	1	NA	1	NA	1.5	82.2	0.2	NA	6.62
+England	Tottenham	Ezekiel Fryers	D(L)	21	183	75	2(2)	NA	NA	NA	NA	0.3	73	0.5	NA	6.6
+England	Tottenham	Gylfi Sigurdsson	AM(CLR)	24	186	79	12(8)	4	NA	2	NA	1.8	83	0.2	1	6.58
+England	Tottenham	Roberto Soldado	FW	28	179	72	22(4)	6	5	5	NA	2.1	75.8	0.5	NA	6.57
+England	Tottenham	Kyle Naughton	D(LR)	25	175	73	13(3)	NA	NA	3	NA	0.4	84.3	1.1	NA	6.53
+England	Tottenham	Sandro	DM(C)	25	187	75	9(6)	1	NA	5	NA	0.8	84.9	0.9	NA	6.48
+England	Tottenham	Younes Kaboul	D(CR)	28	182	75	6(2)	NA	NA	1	1	0.8	72.7	1.9	NA	6.41
+England	Tottenham	Erik Lamela	AM(CLR),FW	22	183	79	3(6)	NA	1	1	NA	0.9	80.1	0.1	NA	6.34
+England	Tottenham	Jermain Defoe	FW	31	171	65	3(11)	1	NA	1	NA	1.4	80.6	0.1	NA	6.26
+England	Tottenham	Harry Kane	FW	20	183	65	0(4)	NA	NA	NA	NA	0.5	79.2	0.5	NA	6.11
+England	Tottenham	Harry Winks	M	18	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+England	Tottenham	Heurelho Gomes	GK	33	191	91	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+England	Tottenham	Milos Veljkovic	D	18	173	69	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+England	Tottenham	Ryan Fredericks	D(R)	21	190	80	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+England	Tottenham	Tom Carroll	M(C)	21	177	71	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Spain	Valencia	Daniel Parejo	M(C)	24	180	75	21(3)	2	4	6	NA	1	87.3	0.8	2	7.42
+Spain	Valencia	Pablo Piatti	AM(CLR),FW	25	163	63	10(1)	3	2	2	NA	2	75.6	0.9	1	7.16
+Spain	Valencia	Antonio Barragán	D(LR)	26	182	76	15(1)	NA	4	1	1	0.3	79.9	1.3	NA	7.09
+Spain	Valencia	Adil Rami	D(C)	28	190	82	3	NA	NA	1	NA	1	84.6	3.7	1	7.03
+Spain	Valencia	Jonathan Viera	AM(CL)	24	170	64	1	NA	NA	NA	NA	1	84.2	NA	NA	7.03
+Spain	Valencia	Jeremy Mathieu	D(CL),M(L)	30	192	82	28	2	NA	5	1	0.6	82.8	1.9	NA	7.01
+Spain	Valencia	Juan Bernat	D(L),M(L)	21	172	67	20(6)	1	2	2	NA	0.4	86.6	0.8	1	6.98
+Spain	Valencia	Sofiane Feghouli	AM(LR)	24	177	71	17(9)	3	7	3	NA	1.5	73.2	1.1	1	6.94
+Spain	Valencia	Jonas	AM(CLR),FW	29	181	73	20(5)	9	1	3	NA	2.9	78	2	1	6.93
+Spain	Valencia	Paco Alcácer	FW	20	183	74	12(4)	6	2	5	NA	1.9	71.6	1.7	1	6.91
+Spain	Valencia	Javi Fuego	DM(C)	30	181	76	20(2)	2	NA	3	NA	0.6	86.5	1.5	1	6.9
+Spain	Valencia	Ricardo Costa	D(C)	32	183	80	17	3	NA	5	1	0.7	88	1.9	NA	6.9
+Spain	Valencia	Seydou Keita	DM(C)	34	183	75	6(1)	1	NA	2	NA	0.9	76.9	2.6	NA	6.87
+Spain	Valencia	Víctor Ruiz	D(C)	26	184	75	8(3)	1	NA	3	NA	0.2	83.4	2.4	NA	6.83
+Spain	Valencia	Diego Alves	GK	28	188	83	24	NA	NA	2	NA	NA	52.9	0.5	3	6.81
+Spain	Valencia	Fede	AM(LR)	21	170	69	13(7)	NA	1	3	NA	1.8	81.4	0.3	2	6.81
+Spain	Valencia	Rubén Vezo	D	19	184	76	2(2)	1	NA	NA	NA	1	78.1	2.3	NA	6.76
+Spain	Valencia	Andrés Guardado	D(L),M(L)	27	169	67	12(4)	NA	NA	3	NA	0.3	82.1	0.9	NA	6.75
+Spain	Valencia	Oriol Romeu	DM(C)	22	182	79	10(1)	NA	NA	3	NA	0.2	89.4	2.1	NA	6.68
+Spain	Valencia	Dorlan Pabón	AM(LR),FW	26	170	69	11(2)	3	NA	NA	NA	2.8	80.1	0.1	NA	6.66
+Spain	Valencia	Eduardo Vargas	AM(CR),FW	24	175	69	7(3)	3	1	1	NA	1.9	77.2	1.7	NA	6.62
+Spain	Valencia	Vicente Guaita	GK	27	190	80	7(2)	NA	NA	1	NA	NA	57.8	0.7	NA	6.62
+Spain	Valencia	João Pereira	D(R)	30	172	64	17(2)	NA	2	6	NA	0.2	81.2	0.2	NA	6.57
+Spain	Valencia	Philippe Senderos	D(C)	29	190	84	5(1)	NA	NA	3	NA	0.5	77.8	2.3	NA	6.56
+Spain	Valencia	Helder Postiga	FW	31	180	76	9(6)	3	NA	1	NA	1.6	75	1.8	NA	6.5
+Spain	Valencia	Míchel	M(CR)	25	180	73	4(6)	NA	1	3	NA	0.6	86.2	0.8	NA	6.48
+Spain	Valencia	Portu	M	21	177	73	1	NA	NA	1	NA	NA	74.2	3	NA	6.38
+Spain	Valencia	Sergio Canales	AM(CLR)	23	176	70	7(12)	NA	1	1	NA	1.2	86.8	0.2	NA	6.3
+Spain	Valencia	Vinícius Araújo	FW	21	176	76	0(3)	NA	NA	NA	NA	0.3	100	0.3	NA	5.99
+Spain	Valencia	Sivera	GK	17	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Spain	Valencia	Jaume	GK	23	185	79	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Portugal	Benfica	Guillherme Siqueira	D(L)	27	184	76	3	NA	NA	NA	NA	0.3	78.8	1	NA	7.17
+Portugal	Benfica	Lubomir Fejsa	DM(C)	25	185	80	4	NA	NA	NA	NA	0.3	81.8	2	NA	7.13
+Portugal	Benfica	Luisão	D(C)	33	192	90	6	1	1	NA	NA	1.2	88	1.5	1	7.04
+Portugal	Benfica	Enzo Pérez	M(C)	28	177	71	6	NA	1	2	NA	0.8	82.8	0.5	NA	7.04
+Portugal	Benfica	Silvio	D(LR)	26	178	72	2	NA	NA	1	NA	1	84.4	2.5	NA	7
+Portugal	Benfica	André Almeida	D(R)	23	178	71	4	NA	1	1	NA	0.3	87.5	0.3	NA	6.88
+Portugal	Benfica	Nemanja Matic	DM(C)	25	194	84	6	1	NA	1	NA	1	83.2	1.3	NA	6.82
+Portugal	Benfica	Nicolas Gaitán	AM(CLR)	26	173	68	5	1	NA	2	NA	1.2	74.6	NA	NA	6.8
+Portugal	Benfica	Filip Djuricic	M	22	176	67	2(1)	1	NA	NA	NA	1.3	73.8	NA	NA	6.72
+Portugal	Benfica	Ezequiel Garay	D(C)	27	185	80	6	NA	NA	NA	NA	0.7	85.7	1.5	NA	6.64
+Portugal	Benfica	Artur Moraes	GK	33	192	90	6	NA	NA	1	NA	NA	52.7	0.2	NA	6.6
+Portugal	Benfica	Rodrigo	FW	23	180	70	0(2)	1	NA	NA	NA	0.5	50	0.5	NA	6.52
+Portugal	Benfica	Maxi Pereira	D(R)	29	173	72	3(1)	NA	NA	2	NA	0.5	79.8	0.5	NA	6.5
+Portugal	Benfica	Miralem Sulejmani	AM(R)	25	176	75	0(3)	NA	1	NA	NA	0.3	95	NA	NA	6.42
+Portugal	Benfica	Lima	FW	30	178	78	3(2)	1	NA	NA	NA	2.2	78.4	0.4	NA	6.39
+Portugal	Benfica	Lazar Markovic	AM(LR)	20	175	65	4(1)	NA	NA	NA	NA	0.8	80.3	NA	NA	6.37
+Portugal	Benfica	Rubén Amorim	M(C)	29	180	78	1(1)	NA	NA	1	NA	NA	81	0.5	NA	6.32
+Portugal	Benfica	André Gomes	M(C)	20	188	83	0(2)	NA	NA	NA	NA	0.5	96.6	1	NA	6.3
+Portugal	Benfica	Ivan Cavaleiro	FW	20	175	70	0(4)	NA	NA	NA	NA	0.3	64	0.3	NA	6.11
+Portugal	Benfica	Ola John	AM(LR)	21	180	80	1(1)	NA	NA	NA	NA	1	84.8	NA	NA	6.11
+Portugal	Benfica	Jan Oblak	GK	21	185	79	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Portugal	Benfica	Jardel	D(C)	28	192	85	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Portugal	Benfica	Paulo Lopes	GK	35	184	76	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Switzerland	Basel	Fabian Schär	D(C)	22	186	85	6	NA	1	3	NA	0.7	79.2	2.5	1	7.64
+Switzerland	Basel	Geoffrey Serey Die	M(C)	29	179	74	4	NA	NA	1	NA	1.3	88.9	1	NA	7.29
+Switzerland	Basel	Kay Voser	D(R)	27	173	69	6	NA	NA	2	NA	0.2	80.4	1.2	NA	7.02
+Switzerland	Basel	Fabian Frei	DM(C),M(L)	25	181	74	6	NA	NA	1	NA	1.2	88.5	1.5	NA	6.86
+Switzerland	Basel	Ivan Ivanov	D(C)	26	186	77	6	NA	NA	1	1	0.7	89.3	2.3	NA	6.85
+Switzerland	Basel	Mohamed Salah	AM(R)	21	175	72	6	2	NA	NA	NA	1.7	76.5	NA	NA	6.81
+Switzerland	Basel	Yann Sommer	GK	25	182	79	6	NA	NA	NA	NA	NA	71	NA	NA	6.8
+Switzerland	Basel	Behrang Safari	D(L)	29	184	73	3	NA	NA	NA	NA	0.7	82.5	1.3	NA	6.66
+Switzerland	Basel	Marcelo Diaz	M(C)	27	166	63	3(1)	1	NA	1	NA	0.8	85.2	0.3	NA	6.66
+Switzerland	Basel	Valentin Stocker	AM(L)	24	179	72	6	NA	1	NA	NA	1.3	70.7	0.7	NA	6.64
+Switzerland	Basel	Mohamed Elneny	M(C)	21	180	70	2(1)	NA	NA	NA	NA	0.7	84.6	1	NA	6.56
+Switzerland	Basel	Marco Streller	FW	32	195	83	6	1	2	NA	NA	1.2	62.3	2.3	NA	6.54
+Switzerland	Basel	Giovanni Sio	FW	25	180	70	1(4)	1	NA	1	NA	1	70.7	1	NA	6.51
+Switzerland	Basel	Taulant Xhaka	D	23	171	72	4(2)	NA	NA	1	NA	NA	77.2	0.8	NA	6.5
+Switzerland	Basel	Matías Delgado	M	31	182	77	1(3)	NA	1	1	NA	0.3	80.6	0.5	NA	6.45
+Switzerland	Basel	Arlind Ajeti	D	20	177	67	0(4)	NA	NA	NA	NA	NA	64.7	0.8	NA	6.27
+Switzerland	Basel	Philipp Degen	D(R),M(R)	31	185	81	0(1)	NA	NA	NA	NA	1	100	1	NA	6.06
+Switzerland	Basel	Gastón Sauro	D(C)	24	190	78	0(1)	NA	NA	NA	NA	NA	NA	NA	NA	6
+Switzerland	Basel	David Degen	M(R)	31	185	82	0(1)	NA	NA	1	NA	NA	50	NA	NA	5.99
+Switzerland	Basel	Germano Vailati	GK	33	186	82	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Ukraine	Dnipro	Sergiy Kravchenko	M	30	183	75	1	1	NA	NA	NA	4	88.5	2	1	9.29
+Ukraine	Dnipro	Yevheniy Konoplyanka	AM(L)	24	176	69	7	4	2	NA	NA	3.9	81.3	0.1	2	8.14
+Ukraine	Dnipro	Ruslan Rotan	DM(C)	32	176	73	7	2	3	2	NA	1.6	80.1	1.1	2	7.91
+Ukraine	Dnipro	Ondrej Mazuch	D(C)	25	189	88	6	NA	NA	1	NA	0.5	88.5	2.2	NA	7.3
+Ukraine	Dnipro	Aleksandr Kobakhidze	M	27	184	73	1	NA	NA	NA	NA	2	70.3	2	NA	7.26
+Ukraine	Dnipro	Jaba Kankava	DM(C)	28	176	75	7	NA	NA	1	NA	1	77	1.3	NA	7.2
+Ukraine	Dnipro	Alexandru Vlad	D	24	173	67	4	NA	NA	NA	NA	0.3	83.2	0.8	NA	7.03
+Ukraine	Dnipro	Artem Fedetskiy	D(R)	28	184	82	6	NA	1	NA	NA	0.8	69.8	0.8	NA	7.01
+Ukraine	Dnipro	Ivan Strinic	D(L)	26	186	78	4	NA	NA	1	NA	NA	78.4	0.8	NA	6.98
+Ukraine	Dnipro	Vitaliy Mandzyuk	D(R)	28	180	73	4	NA	NA	NA	NA	0.3	78.1	1.3	NA	6.96
+Ukraine	Dnipro	Evgen Cheberyachko	D(C)	30	180	75	8	NA	NA	NA	NA	NA	78.3	0.5	NA	6.81
+Ukraine	Dnipro	Denys Boyko	GK	26	191	84	8	NA	NA	NA	NA	NA	39.3	0.1	NA	6.76
+Ukraine	Dnipro	Roman Zozulya	FW	24	175	62	7(1)	2	3	2	1	1.5	77	1.5	NA	6.74
+Ukraine	Dnipro	Evgeniy Shakhov	M	23	187	79	0(2)	1	NA	1	NA	0.5	72	1	NA	6.68
+Ukraine	Dnipro	Matheus	FW	31	175	68	4(2)	1	NA	NA	NA	2.2	64.4	0.7	NA	6.67
+Ukraine	Dnipro	Nikola Kalinic	FW	26	187	80	3(1)	1	2	NA	NA	2.5	72	1.3	NA	6.63
+Ukraine	Dnipro	Bruno Gama	AM(R)	26	178	68	5(1)	NA	NA	NA	NA	0.5	81.3	0.5	NA	6.59
+Ukraine	Dnipro	Andriy Bliznichenko	FW	19	189	70	0(1)	NA	NA	NA	NA	1	88	NA	NA	6.57
+Ukraine	Dnipro	Sergiy Polytilo	M	25	165	63	2(2)	NA	NA	NA	NA	0.3	89	0.5	NA	6.54
+Ukraine	Dnipro	Giuliano	AM(C)	23	171	68	2(2)	NA	NA	NA	NA	0.5	82.9	NA	NA	6.35
+Ukraine	Dnipro	Evgen Seleznyov	FW	28	185	77	1(4)	1	NA	1	NA	2	76.9	0.8	NA	6.3
+Ukraine	Dnipro	Denys Kulakov	M	27	182	76	1(4)	NA	NA	2	NA	NA	82.2	0.2	NA	6.22
+Ukraine	Dnipro	Oleksandr Svatok	M	NA	NA	NA	0(1)	NA	NA	1	NA	NA	100	NA	NA	5.95
+Ukraine	Dnipro	Douglas	D	23	190	84	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Ukraine	Dnipro	Igor Vartsaba	GK	23	182	76	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Ukraine	Dnipro	Jan Lastuvka	GK	31	191	87	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Ukraine	Dynamo Kyiv	Andriy Yarmolenko	AM(LR)	24	187	76	7	4	NA	3	NA	2.7	78.2	0.4	1	8.06
+Ukraine	Dynamo Kyiv	Yevhen Khacheridi	D(C)	26	197	86	7	NA	NA	1	NA	0.7	83.2	6.1	NA	7.7
+Ukraine	Dynamo Kyiv	Evgeniy Makarenko	M	22	182	71	4(2)	NA	NA	NA	NA	0.2	82	2.3	1	7.29
+Ukraine	Dynamo Kyiv	Oleksandr Rybka	GK	26	193	92	1(1)	NA	NA	NA	NA	NA	54.3	NA	NA	7.27
+Ukraine	Dynamo Kyiv	Danilo Silva	D(R)	27	185	69	6	NA	2	2	NA	0.3	72.3	1.7	NA	7.16
+Ukraine	Dynamo Kyiv	Oleksandr Shovkovskiy	GK	39	191	86	4	NA	NA	NA	NA	NA	54.2	0.5	1	7.1
+Ukraine	Dynamo Kyiv	Miguel Veloso	DM(C)	27	181	79	7	1	NA	NA	NA	1.6	87.6	0.6	1	7.08
+Ukraine	Dynamo Kyiv	Maxim Koval	GK	21	184	79	3	NA	NA	1	NA	NA	62.2	NA	NA	7.05
+Ukraine	Dynamo Kyiv	Benoît Trémoulinas	D(L),M(L)	28	172	65	4	NA	1	NA	NA	NA	75.2	0.5	NA	6.89
+Ukraine	Dynamo Kyiv	Aleksandar Dragovic	D(C)	23	184	76	7	NA	NA	1	NA	0.4	86.7	2	NA	6.88
+Ukraine	Dynamo Kyiv	Lukman Haruna	M(C)	23	177	73	3(1)	NA	NA	NA	NA	2.8	85.8	0.5	NA	6.85
+Ukraine	Dynamo Kyiv	Younès Belhanda	M(CLR)	24	177	78	7	NA	NA	1	NA	0.9	82.8	0.3	NA	6.81
+Ukraine	Dynamo Kyiv	Jeremain Lens	AM(LR)	26	178	80	7	1	NA	2	NA	1.7	77.4	0.7	NA	6.8
+Ukraine	Dynamo Kyiv	Dieudonné Mbokani	FW	28	185	80	3(2)	1	NA	1	1	2	65.8	4.8	NA	6.79
+Ukraine	Dynamo Kyiv	Sergiy Sydorchuk	M	22	185	71	3(1)	NA	1	3	NA	0.3	84.5	1	NA	6.78
+Ukraine	Dynamo Kyiv	Domagoj Vida	D(CR)	24	184	73	2(1)	NA	NA	1	NA	0.3	81.1	1.7	NA	6.64
+Ukraine	Dynamo Kyiv	Oleg Gusev	D(R),M(L)	30	179	73	4(4)	2	NA	1	NA	0.8	82.9	0.3	NA	6.58
+Ukraine	Dynamo Kyiv	Roman Bezus	FW	23	185	78	0(5)	NA	NA	NA	NA	1	71.8	1.2	NA	6.56
+Ukraine	Dynamo Kyiv	Ognjen Vukojevic	DM(C)	30	183	76	4(2)	NA	1	3	NA	0.5	82.3	0.7	NA	6.48
+Ukraine	Dynamo Kyiv	Ideye Brown	FW	25	180	70	5	NA	1	NA	NA	2.2	73.9	1.4	NA	6.37
+Ukraine	Dynamo Kyiv	Denis Garmash	DM(C)	23	186	77	0(1)	NA	NA	NA	NA	2	77.8	NA	NA	6.22
+Ukraine	Dynamo Kyiv	Dudu	M	22	165	66	0(1)	NA	NA	NA	NA	1	80	NA	NA	6.21
+Ukraine	Dynamo Kyiv	Artem Kravets	FW	24	185	73	0(1)	NA	NA	NA	NA	NA	100	NA	NA	5.95
+Ukraine	Dynamo Kyiv	Andrei Tsurikov	D	21	185	72	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Ukraine	Dynamo Kyiv	Artur Rudko	GK	21	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Spain	Real Betis	Antonio Amaya	D(C)	30	192	86	20(2)	1	1	8	1	1	71.9	4.5	3	7.26
+Spain	Real Betis	Alfred N'Diaye	D(C),DM(C)	24	186	80	9	NA	1	2	NA	0.4	72.5	3.1	NA	7.12
+Spain	Real Betis	Jordi Figueras	D(C)	26	185	82	14(4)	1	NA	4	NA	0.4	72.4	2.1	3	7.09
+Spain	Real Betis	Dídac Vilá	D(L)	24	184	74	11(1)	NA	1	2	NA	0.3	61	1.8	NA	6.85
+Spain	Real Betis	Nacho	D(L)	33	176	70	15(1)	NA	NA	2	NA	0.3	72.7	1.3	NA	6.85
+Spain	Real Betis	Juan Carlos	M(L)	24	178	69	12(2)	NA	1	2	NA	0.9	68.5	1	NA	6.85
+Spain	Real Betis	Rubén Castro	AM(CLR),FW	32	174	72	15(2)	8	NA	1	NA	2.7	79.5	0.4	NA	6.82
+Spain	Real Betis	Salva Sevilla	AM(CLR)	30	182	69	14(4)	3	3	8	NA	1.7	76.8	0.5	2	6.81
+Spain	Real Betis	Antonio Adán	GK	26	190	88	9	NA	NA	NA	NA	NA	48.3	0.8	NA	6.72
+Spain	Real Betis	Joan Verdú	M(C)	30	178	71	15(4)	2	1	1	NA	1.2	82.8	0.4	NA	6.7
+Spain	Real Betis	Lorenzo Reyes	DM(C)	22	176	76	17(2)	NA	NA	4	1	0.1	84.2	1.2	1	6.69
+Spain	Real Betis	Jorge Molina	FW	31	189	83	20(5)	8	1	3	NA	2.1	73.9	2.1	NA	6.67
+Spain	Real Betis	Nosa	M(C)	23	182	78	6(5)	1	NA	3	NA	1.4	85.2	1.6	NA	6.63
+Spain	Real Betis	Paulao	D(C)	31	186	82	16	NA	NA	2	1	0.7	87.7	2.3	NA	6.63
+Spain	Real Betis	Javi Chica	D(LR)	28	176	78	17(1)	NA	NA	6	1	0.5	69.4	1.6	NA	6.62
+Spain	Real Betis	Juanfran	D(R),M(R)	25	179	72	21(5)	NA	1	1	NA	0.8	71.7	0.8	NA	6.57
+Spain	Real Betis	Leo Baptistao	AM(CR),FW	21	181	71	9(2)	1	1	1	NA	2	73	0.7	NA	6.57
+Spain	Real Betis	Nono	DM(C)	21	178	72	11(7)	NA	1	7	1	1	79.4	0.8	NA	6.48
+Spain	Real Betis	Xavi Torres	DM(C)	27	184	82	9(1)	NA	NA	5	NA	0.4	82.9	1.6	NA	6.48
+Spain	Real Betis	Damien Perquis	D(C),DM(C)	29	183	74	8	NA	NA	1	1	0.1	81.7	2.1	NA	6.47
+Spain	Real Betis	Guillermo Sara	GK	26	188	78	15	NA	NA	1	NA	NA	46.5	0.5	1	6.47
+Spain	Real Betis	Javier Matilla	DM(C)	25	176	72	12(8)	NA	NA	6	NA	0.5	87.1	0.4	NA	6.43
+Spain	Real Betis	Cedrick	AM(L)	22	167	62	10(9)	NA	1	5	1	0.9	78.1	0.1	NA	6.31
+Spain	Real Betis	Markus Steinhöfer	D(R)	28	175	69	2(1)	NA	NA	NA	NA	0.7	73.1	NA	NA	6.27
+Spain	Real Betis	Stephan Andersen	GK	32	188	82	6(1)	NA	NA	NA	NA	NA	49.5	0.1	NA	6.22
+Spain	Real Betis	Caro	D	21	182	70	1(3)	NA	NA	NA	NA	0.3	69.2	0.8	NA	6.21
+Spain	Real Betis	Chuli	FW	23	175	67	4(7)	NA	1	2	NA	1.6	69.9	0.3	NA	6.19
+Spain	Real Betis	Juanma	FW	21	180	75	0(2)	NA	NA	NA	NA	NA	50	NA	NA	6.08
+Spain	Real Betis	Sergio Rodríguez	M	21	169	65	0(5)	NA	NA	1	NA	0.6	50	1.4	NA	6.06
+Spain	Real Betis	Braian Rodríguez	FW	27	190	84	1	NA	NA	NA	1	NA	38.5	NA	NA	5.42
+Spain	Real Betis	Francisco Varela	D	19	178	72	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Spain	Real Betis	Javier Montoya	GK	22	186	73	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Spain	Real Betis	Jesús Pozo	D	19	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Spain	Real Betis	José Carlos	D	17	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Spain	Real Betis	Pedro López	GK	19	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Turkey	Trabzonspor	Onur Kivrak	GK	26	187	74	8	NA	NA	NA	NA	NA	45.9	0.1	1	7.69
+Turkey	Trabzonspor	Mustafa Yumlu	D(C)	26	191	76	8	NA	NA	2	NA	0.6	85	1.6	1	7.35
+Turkey	Trabzonspor	Olcan Adin	AM(R)	28	173	66	8	5	1	NA	NA	2	79.5	0.3	1	7.33
+Turkey	Trabzonspor	Souleymane Bamba	D(C)	29	190	90	5	NA	NA	2	NA	NA	90.1	2.4	NA	7.29
+Turkey	Trabzonspor	Florent Malouda	M(CL)	33	184	73	7	1	2	1	NA	2.3	85.4	1	1	7.25
+Turkey	Trabzonspor	Aykut Demir	D	25	180	67	7	NA	NA	2	NA	0.1	86.1	1.3	NA	7.12
+Turkey	Trabzonspor	José Bosingwa	D(LR)	31	183	75	8	NA	NA	1	NA	0.5	79.2	1.4	NA	7.06
+Turkey	Trabzonspor	Paulo Henrique	FW	25	180	79	6(1)	1	1	1	NA	1.1	79.1	1	1	6.9
+Turkey	Trabzonspor	Adrian Mierzejewski	AM(C)	27	174	73	5(1)	1	1	NA	NA	2.2	84.2	1	NA	6.83
+Turkey	Trabzonspor	Soner Aydogdu	M	23	180	72	1(1)	1	NA	NA	NA	2.5	94.9	NA	NA	6.83
+Turkey	Trabzonspor	Zeki Ayvaz	GK	24	188	78	0(1)	NA	NA	NA	NA	NA	28.6	NA	NA	6.82
+Turkey	Trabzonspor	Gustavo Colman	DM(C)	28	175	71	6	NA	NA	NA	NA	0.8	91.3	0.3	NA	6.75
+Turkey	Trabzonspor	Didier Zokora	DM(C)	33	179	72	7	NA	NA	4	NA	NA	88.6	0.7	NA	6.71
+Turkey	Trabzonspor	Marc Janko	FW	30	196	93	2(1)	1	NA	NA	NA	1.3	59.4	2.7	NA	6.71
+Turkey	Trabzonspor	Aykut Akgun	M	26	183	79	1(2)	NA	NA	1	NA	NA	87.2	0.3	NA	6.67
+Turkey	Trabzonspor	Giray Kacar	D(C)	29	187	78	0(1)	NA	NA	NA	NA	NA	75	NA	NA	6.67
+Turkey	Trabzonspor	Yusuf Erdogan	M	21	172	66	1(4)	2	NA	1	NA	1.2	82.9	0.2	NA	6.53
+Turkey	Trabzonspor	Alexandru Bourceanu	DM(C)	28	177	75	1(1)	NA	NA	NA	NA	0.5	91.7	NA	NA	6.43
+Turkey	Trabzonspor	Kadir Keles	M	26	173	65	3	NA	1	1	NA	NA	82.7	0.3	NA	6.4
+Turkey	Trabzonspor	Caner Osmanpasa	D	26	182	77	0(1)	NA	NA	NA	NA	NA	88.2	NA	NA	6.28
+Turkey	Trabzonspor	Zeki Yavru	M	22	178	72	0(2)	NA	NA	NA	NA	NA	88.6	NA	NA	6.27
+Turkey	Trabzonspor	Alanzinho	M	31	164	62	1(3)	NA	NA	NA	NA	0.8	90.8	NA	NA	6.26
+Turkey	Trabzonspor	Emre Güral	FW	24	188	76	1(2)	NA	NA	1	NA	0.7	88	NA	NA	6.21
+Turkey	Trabzonspor	Abdulkadir Ozdemir	M	23	179	71	0(1)	NA	NA	NA	NA	NA	100	NA	NA	5.97
+Turkey	Trabzonspor	Fatih Ozturk	GK	30	189	88	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Austria	Rapid Wien	Christopher Trimmel	D(R)	27	189	80	6	1	1	2	NA	0.8	71.3	2.3	NA	7.41
+Austria	Rapid Wien	Christopher Dibon	D(C)	23	181	79	6	NA	NA	NA	NA	0.2	90.1	4.7	1	7.39
+Austria	Rapid Wien	Stephan Palla	D	24	173	70	2	NA	2	NA	NA	NA	81.4	NA	1	7.33
+Austria	Rapid Wien	Thanos Petsos	DM(C)	22	184	80	6	NA	NA	NA	NA	2.7	88.2	1.3	NA	7.32
+Austria	Rapid Wien	Terrence Boyd	FW	23	185	82	5(1)	4	NA	2	NA	2.2	76	4	1	7.15
+Austria	Rapid Wien	Guido Burgstaller	AM(L)	24	187	76	4(1)	1	2	1	NA	1.6	75.4	1.2	NA	7.05
+Austria	Rapid Wien	Mario Sonnleitner	D(C)	27	182	82	6	NA	NA	2	NA	0.5	86.3	3.2	NA	7
+Austria	Rapid Wien	Thomas Schrammel	D(L)	26	176	74	4(1)	NA	1	NA	NA	0.2	81.3	1.6	NA	6.9
+Austria	Rapid Wien	Branko Boskovic	DM(C)	33	185	79	5	1	NA	NA	NA	0.6	84.8	0.6	NA	6.88
+Austria	Rapid Wien	Marcel Sabitzer	M	20	176	70	6	1	NA	NA	NA	3	75.5	1.2	NA	6.85
+Austria	Rapid Wien	Louis Schaub	FW	19	177	66	4(2)	NA	NA	1	NA	1.2	78	0.3	NA	6.78
+Austria	Rapid Wien	Steffen Hofmann	M	33	173	69	5	NA	NA	2	NA	0.8	77	1	NA	6.74
+Austria	Rapid Wien	Brian Behrendt	D	22	187	80	1(5)	NA	NA	1	NA	1.2	73.9	1.3	NA	6.51
+Austria	Rapid Wien	Jan Novota	GK	30	199	94	6	NA	NA	1	NA	NA	75.2	0.2	NA	6.27
+Austria	Rapid Wien	Lukas Grozurek	FW	22	189	83	0(2)	NA	NA	1	NA	1	73.3	0.5	NA	6.17
+Austria	Rapid Wien	Dominik Starkl	M	20	176	70	0(4)	NA	NA	1	NA	0.5	82.4	NA	NA	6.12
+Austria	Rapid Wien	Dominik Wydra	M	20	185	74	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Austria	Rapid Wien	Harald Pichler	D	26	187	82	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Austria	Rapid Wien	Lukas Denner	D	22	170	62	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Austria	Rapid Wien	Mario Pavelic	D	20	180	65	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Austria	Rapid Wien	Samuel Radlinger	GK	21	196	83	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Rubin Kazan	Taras Burlak	D(C)	24	191	86	2	NA	NA	NA	NA	NA	79.1	3.5	NA	7.33
+Russia	Rubin Kazan	César Navas	D(C)	34	197	88	22	NA	NA	5	NA	0.3	82	3.7	3	7.25
+Russia	Rubin Kazan	Cristian Ansaldi	D(L)	27	181	76	4	NA	NA	3	NA	1	77.9	0.3	NA	7.11
+Russia	Rubin Kazan	Iván Marcano	D(CL)	26	189	77	17	NA	NA	NA	1	0.2	82.7	2.4	1	7.08
+Russia	Rubin Kazan	Saba Kvirkvelia	D(C)	22	197	80	7(4)	NA	NA	1	NA	0.3	73.6	1.7	1	7.07
+Russia	Rubin Kazan	Pavel Mogilevets	M	21	183	70	4	1	NA	NA	NA	0.5	83.1	0.5	NA	7.06
+Russia	Rubin Kazan	Inal Getigezhev	D	26	187	81	2	NA	NA	NA	NA	NA	71.2	1.5	NA	7.04
+Russia	Rubin Kazan	Salomón Rondón	FW	24	186	86	9(2)	6	1	2	NA	2.5	76	1.3	2	7
+Russia	Rubin Kazan	Bebras Natcho	DM(C)	26	175	73	18(1)	1	2	1	NA	1.9	79.5	0.3	1	6.97
+Russia	Rubin Kazan	Oleg Kuzmin	D(R)	32	175	72	20(1)	1	1	4	NA	0.5	77.1	0.9	NA	6.94
+Russia	Rubin Kazan	Gökdeniz Karadeniz	AM(CLR)	34	168	68	15(1)	3	NA	1	NA	1.8	77.2	0.4	NA	6.92
+Russia	Rubin Kazan	Elmir Nabiullin	D	19	174	70	3	NA	NA	1	NA	NA	79.1	1.3	NA	6.88
+Russia	Rubin Kazan	Yann M'Vila	DM(C)	23	182	80	17	NA	1	5	NA	0.8	86.3	0.9	NA	6.87
+Russia	Rubin Kazan	Chris Mavinga	D(L)	22	183	78	7	NA	NA	1	NA	0.4	82.4	0.7	NA	6.83
+Russia	Rubin Kazan	Sergei Kislyak	M	26	180	75	8(1)	1	1	5	NA	0.7	80.3	1.1	NA	6.77
+Russia	Rubin Kazan	Dmitri Torbinski	AM(LR)	29	172	60	13(4)	1	2	2	NA	0.6	84.2	0.5	1	6.76
+Russia	Rubin Kazan	Marko Devic	FW	30	185	75	4	1	1	NA	NA	2.3	76.4	0.8	1	6.71
+Russia	Rubin Kazan	Sergei Ryzhikov	GK	33	192	92	23	NA	NA	NA	1	NA	50.7	0.3	NA	6.7
+Russia	Rubin Kazan	Roman Sharonov	D(C)	37	184	76	1(1)	NA	NA	NA	NA	NA	73.5	1.5	NA	6.68
+Russia	Rubin Kazan	Vladislav Kulik	M(C)	29	180	72	13(6)	NA	NA	2	NA	1.3	80.8	0.7	1	6.65
+Russia	Rubin Kazan	Mubarak Wakaso	AM(LR)	23	171	66	5(4)	1	1	2	NA	1.4	74.3	0.6	NA	6.64
+Russia	Rubin Kazan	Sardar Azmoun	FW	19	178	72	6(3)	2	NA	2	NA	1.6	68.1	2.2	NA	6.6
+Russia	Rubin Kazan	Roman Eremenko	D(R),M(CL)	27	180	67	12(9)	2	3	3	NA	1.5	79.1	0.1	NA	6.56
+Russia	Rubin Kazan	Aleksandr Ryazantsev	AM(CLR)	27	180	75	12(3)	2	NA	1	2	1.7	78.9	0.5	NA	6.43
+Russia	Rubin Kazan	Ruslan Mukhametshin	FW	32	183	75	5(3)	1	NA	1	NA	1.1	71.4	0.9	NA	6.27
+Russia	Rubin Kazan	Aleksandr Prudnikov	FW	25	185	78	2(9)	1	NA	1	NA	0.5	66.7	0.5	NA	6.22
+Russia	Rubin Kazan	Georgi Nurov	FW	21	179	70	0(2)	NA	NA	NA	NA	0.5	66.7	0.5	NA	6.2
+Russia	Rubin Kazan	Ruslan Kambolov	D	24	180	79	1	NA	NA	1	NA	1	68.2	NA	NA	6.11
+Russia	Rubin Kazan	Alisher Dzhalilov	M	20	168	57	0(1)	NA	NA	NA	NA	2	100	NA	NA	6.08
+Russia	Rubin Kazan	Yuri Nesterenko	GK	22	189	85	0(1)	NA	NA	NA	NA	NA	NA	NA	NA	6
+Russia	Rubin Kazan	Kamil Mullin	FW	20	178	66	1(3)	NA	NA	1	NA	NA	81.4	0.3	NA	5.98
+Russia	Rubin Kazan	Aleksei Berezin	GK	20	190	82	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Rubin Kazan	Arturs Karasausks	FW	22	178	68	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Rubin Kazan	Giedrius Arlauskis	GK	26	184	80	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Rubin Kazan	Maxim Zhestokov	D	22	187	70	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Rubin Kazan	Mella Katcharava	D	20	198	88	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Rubin Kazan	Ruslan Abisov	D	26	187	74	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Rubin Kazan	Vagiz Galiulin	M	26	174	67	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+England	Swansea	Chico	D(CR)	27	187	77	28(1)	2	NA	5	1	0.8	89.8	2.8	2	7.23
+England	Swansea	Ashley Williams	D(C)	29	183	77	29	1	1	5	NA	0.4	87.5	2.8	1	7.12
+England	Swansea	Angel Rangel	D(R)	31	188	84	25(1)	NA	1	8	NA	0.3	85.7	1	NA	7.1
+England	Swansea	Wilfried Bony	FW	25	182	84	21(7)	11	3	4	NA	3.3	76.2	2.8	1	7
+England	Swansea	Jonathan De Guzmán	M(C)	26	174	70	22(6)	4	3	1	NA	1.6	88.7	0.3	1	6.93
+England	Swansea	Ben Davies	D(L)	20	170	67	27(1)	2	NA	3	NA	0.3	85	1.8	NA	6.91
+England	Swansea	Roland Lamah	AM(L)	26	180	71	4(5)	2	2	1	NA	1.6	87.3	1.1	NA	6.89
+England	Swansea	Jonjo Shelvey	M(C)	22	185	80	23(3)	5	4	3	NA	2.3	83.7	0.4	1	6.87
+England	Swansea	Michu	AM(C),FW	28	191	76	14(2)	2	2	2	NA	2.6	81.6	1.4	1	6.87
+England	Swansea	Nathan Dyer	AM(R)	26	165	60	17(6)	5	2	1	NA	1.3	87.3	0.2	NA	6.83
+England	Swansea	Leon Britton	DM(C)	31	168	64	18(1)	NA	1	2	NA	0.2	91.1	0.2	1	6.81
+England	Swansea	Pablo Hernández	AM(CLR)	28	173	64	13(9)	1	7	1	NA	1	82.1	NA	2	6.74
+England	Swansea	Neil Taylor	D(L)	25	175	65	5(2)	NA	1	1	NA	0.4	85.4	0.7	NA	6.73
+England	Swansea	Jordi Amat	D(C)	22	184	78	9(3)	NA	NA	1	NA	0.3	85.9	1.3	NA	6.68
+England	Swansea	Wayne Routledge	AM(CLR)	29	170	64	26(3)	2	3	2	NA	0.9	81.7	0.2	2	6.64
+England	Swansea	José Cañas	DM(C)	26	177	71	19(4)	NA	NA	5	NA	0.6	90.8	1.1	NA	6.58
+England	Swansea	Dwight Tiendalli	D(LR)	28	180	69	7(1)	NA	NA	NA	NA	0.4	91.8	0.4	NA	6.51
+England	Swansea	Michel Vorm	GK	30	183	84	21	NA	NA	2	1	NA	70	0.2	NA	6.49
+England	Swansea	Gerhard Tremmel	GK	35	190	86	11	NA	NA	NA	NA	NA	67.9	0.4	NA	6.4
+England	Swansea	Ki Sung-Yueng	DM(C)	25	187	79	0(1)	NA	NA	NA	NA	NA	100	NA	NA	6.1
+England	Swansea	Marvin Emnes	AM(C),FW	25	180	66	1(2)	NA	NA	NA	NA	NA	86.4	NA	NA	6.02
+England	Swansea	David Ngog	FW	24	190	76	0(2)	NA	NA	NA	NA	1.5	42.9	NA	NA	5.98
+England	Swansea	Leroy Lita	FW	29	170	75	0(1)	NA	NA	NA	NA	NA	80	NA	NA	5.86
+England	Swansea	Ashley Richards	D(R)	22	185	78	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+England	Swansea	Daniel Alfei	D	22	180	77	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+England	Swansea	David Cornell	GK	23	180	73	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+England	Swansea	Gregor Zabret	GK	18	187	82	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+England	Swansea	Lee Lucas	M	21	180	74	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+England	Swansea	Rory Donnelly	FW	22	188	81	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Napoli	Juan Zuñiga	D(L),M(CLR)	28	172	72	4	NA	2	NA	NA	0.3	87.3	0.5	1	7.9
+Italy	Napoli	Giandomenico Mesto	D(R),M(CLR)	31	180	74	8	NA	NA	1	NA	0.3	84.7	1.5	NA	7.4
+Italy	Napoli	Raúl Albiol	D(C)	28	190	80	27(1)	1	1	4	NA	0.2	84	2	2	7.23
+Italy	Napoli	José Callejón	AM(LR),FW	27	178	73	26(4)	12	3	6	NA	1.7	82.6	0.8	2	7.21
+Italy	Napoli	Miguel Britos	D(C)	28	188	82	11(1)	1	NA	5	NA	0.1	86.1	2.7	NA	7.2
+Italy	Napoli	Dries Mertens	AM(LR)	26	164	55	17(10)	7	3	3	NA	2.6	75.9	0.3	2	7.15
+Italy	Napoli	Gökhan Inler	M(C)	29	183	79	25(2)	2	2	6	NA	1.7	86.5	1.6	1	7.15
+Italy	Napoli	Bruno Uvini	D	22	188	81	0(1)	NA	NA	NA	NA	NA	83.8	4	NA	7.14
+Italy	Napoli	Faouzi Ghoulam	D(L)	NA	186	80	8(1)	NA	1	NA	1	0.7	83.6	1.9	1	7.1
+Italy	Napoli	Federico Fernández	D(C)	25	190	83	21	NA	1	4	NA	0.6	83.7	2.2	2	7.09
+Italy	Napoli	Gonzalo Higuaín	AM(R),FW	26	184	79	25(4)	14	7	5	NA	2.7	81.3	0.9	2	7.09
+Italy	Napoli	Marek Hamsik	AM(CR)	26	184	73	19(4)	6	5	2	NA	1.9	84.5	0.5	NA	7.04
+Italy	Napoli	Blerim Dzemaili	M(C)	27	179	73	16(6)	5	3	3	NA	1.5	89.3	1.2	2	7.01
+Italy	Napoli	Christian Maggio	D(R),M(R)	32	184	79	20	NA	1	3	1	0.3	82.5	2.2	2	7.01
+Italy	Napoli	Lorenzo Insigne	AM(L),FW	22	163	59	19(11)	2	4	2	NA	2.2	81.7	NA	NA	6.96
+Italy	Napoli	Jorginho	DM(C)	22	180	65	7(2)	NA	1	2	NA	0.4	87.3	0.1	NA	6.89
+Italy	Napoli	José Reina	GK	31	187	85	24	NA	NA	NA	NA	NA	62.5	0.1	1	6.88
+Italy	Napoli	Valon Behrami	DM(C),M(R)	28	184	76	14(5)	NA	NA	2	NA	0.2	90.5	1.2	1	6.84
+Italy	Napoli	Anthony Réveillere	D(LR)	34	181	76	11	NA	NA	1	NA	NA	91	1.2	NA	6.74
+Italy	Napoli	Henrique	D(C)	27	187	84	3(3)	1	NA	1	NA	0.3	91.6	0.5	NA	6.74
+Italy	Napoli	Pablo Armero	D(L),M(L)	27	174	73	9(5)	NA	NA	1	NA	0.3	86.4	0.6	NA	6.73
+Italy	Napoli	Goran Pandev	AM(CLR),FW	30	184	75	15(9)	6	4	3	NA	1	78.6	0.4	2	6.68
+Italy	Napoli	Rafael Cabral	GK	23	186	88	7(1)	NA	NA	NA	NA	NA	57.7	0.1	NA	6.59
+Italy	Napoli	Paolo Cannavaro	D(C)	32	185	80	2(2)	NA	NA	NA	1	0.3	89.8	0.5	NA	6.38
+Italy	Napoli	Duván Zapata	FW	22	189	80	3(8)	2	NA	1	NA	0.5	65.3	1	NA	6.27
+Italy	Napoli	Davide Bariti	M	22	173	65	0(2)	NA	NA	NA	NA	NA	100	NA	NA	6.17
+Italy	Napoli	Josip Radosevic	M	19	180	74	0(6)	NA	NA	1	NA	NA	82.6	NA	NA	6.17
+Italy	Napoli	Toni Doblas	GK	33	184	78	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Napoli	Nikita Contini	GK	17	190	82	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Italy	Napoli	Roberto Colombo	GK	38	190	80	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Genk	Derick Katuku Tshimanga	D(L)	25	176	68	7	NA	NA	NA	NA	0.4	79.2	0.6	NA	7.29
+Belgium	Genk	Sandy Walsh	D	19	179	72	1	NA	NA	NA	NA	NA	80	1	NA	7.28
+Belgium	Genk	Kara	D(C)	24	192	85	8	1	NA	2	NA	0.4	85.8	3.3	2	7.27
+Belgium	Genk	László Köteles	GK	29	187	88	6	NA	NA	1	NA	NA	53.2	0.3	1	7.15
+Belgium	Genk	Kalidou Koulibaly	D(C)	22	195	89	7	NA	NA	2	NA	0.3	74.5	2.4	NA	7.09
+Belgium	Genk	Thomas Buffel	AM(R)	33	175	68	6(1)	1	NA	2	NA	0.6	82.6	0.4	NA	7.08
+Belgium	Genk	Khaleem Hyland	DM(C)	24	186	85	4(1)	NA	NA	NA	NA	0.4	88.3	1	NA	7.04
+Belgium	Genk	Fabien Camus	AM(CLR)	29	179	68	6(1)	NA	4	2	NA	0.9	81.8	0.3	NA	7.03
+Belgium	Genk	Kristof van Hout	GK	27	208	111	2	NA	NA	NA	NA	NA	66.7	NA	1	7.03
+Belgium	Genk	Benjamin De Ceulaer	AM(L)	30	174	67	4(2)	1	NA	2	NA	2.3	74	1	NA	6.95
+Belgium	Genk	Julien Gorius	M(C)	29	182	78	6(2)	3	1	1	NA	1.1	84.7	0.5	1	6.88
+Belgium	Genk	Brian Hamalainen	D	24	176	69	1	NA	NA	NA	NA	NA	72.1	2	NA	6.87
+Belgium	Genk	Bennard Kumordzi	DM(C)	29	185	72	7(1)	1	NA	2	NA	0.6	86	1.6	NA	6.81
+Belgium	Genk	Jelle Vossen	FW	25	180	70	8	3	1	2	NA	2.4	73.7	1.5	1	6.78
+Belgium	Genk	Jeroen Simaeys	D(C)	28	193	80	3(1)	NA	NA	NA	NA	0.3	83.5	1	NA	6.76
+Belgium	Genk	Masika	M	21	174	69	1(2)	NA	1	NA	NA	0.3	81.4	0.3	NA	6.71
+Belgium	Genk	Anele Ngcongca	D(R)	26	177	68	5(2)	NA	1	NA	NA	NA	79.7	0.6	NA	6.63
+Belgium	Genk	Anthony Limbombe	M	19	177	72	1(2)	NA	NA	NA	NA	0.3	82.2	0.3	NA	6.43
+Belgium	Genk	Sekou Cissé	FW	28	184	78	1(1)	NA	NA	NA	NA	0.5	86.5	0.5	NA	6.43
+Belgium	Genk	Pieter Gerkens	M	19	180	72	1(1)	NA	NA	NA	NA	NA	87.2	0.5	NA	6.35
+Belgium	Genk	Siebe Schrijvers	FW	17	181	76	1(1)	NA	NA	1	NA	1	66.7	NA	NA	6.22
+Belgium	Genk	Ilombe Mboyo	FW	26	190	80	2(1)	NA	NA	1	NA	0.3	68.4	0.3	NA	6.03
+Belgium	Genk	Youssef Makraou	FW	20	NA	NA	0(1)	NA	NA	NA	NA	NA	30.8	1	NA	6.02
+Belgium	Genk	Steven Joseph-Monrose	AM(L)	23	180	73	0(1)	NA	NA	NA	NA	NA	33.3	1	NA	5.9
+Belgium	Genk	Brian Gielen	GK	17	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Genk	Jordy Croux	M	20	167	67	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Genk	Kim Ojo	FW	25	192	82	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Genk	Lennert Baerts	GK	17	189	78	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Genk	Timothy Castagne	D	18	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Genk	Willem Ofori-Appiah	D	20	174	72	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+France	Lyon	Alexandre Lacazette	AM(CLR),FW	22	175	73	29	14	3	5	2	2.4	76.2	0.9	3	7.3
+France	Lyon	Clément Grenier	M(C)	23	186	72	24(1)	4	4	6	NA	2.9	77.2	1.1	4	7.23
+France	Lyon	Gueida Fofana	D(R),DM(C)	22	182	74	24(1)	2	1	NA	NA	1.2	86.1	1.7	1	7.22
+France	Lyon	Henri Bedimo	D(L),M(L)	29	180	80	29	1	7	4	NA	0.4	78.4	1.3	3	7.18
+France	Lyon	Maxime Gonalons	D(C),DM(C)	25	187	76	29	NA	2	3	1	0.6	87.4	3.2	3	7.16
+France	Lyon	Miguel Lopes	D(R)	27	182	83	19	NA	1	3	NA	0.3	79.1	1.7	NA	7.1
+France	Lyon	Yoann Gourcuff	AM(CL)	27	185	79	13(4)	3	5	NA	NA	1.7	83.3	0.5	1	7.01
+France	Lyon	Mehdi Zeffane	D(R)	21	174	63	5(1)	NA	NA	1	NA	0.5	78.5	1.2	1	6.97
+France	Lyon	Samuel Umtiti	D(CL)	20	181	75	22	NA	NA	1	1	0.4	85.1	2	NA	6.93
+France	Lyon	Bafétimbi Gomis	FW	28	184	77	23(3)	11	1	2	NA	2.6	78.3	1.8	NA	6.8
+France	Lyon	Anthony Lopes	GK	23	184	81	25	NA	NA	2	NA	NA	52.4	0.3	2	6.76
+France	Lyon	Bakary Koné	D(C)	25	188	80	13(6)	NA	1	NA	NA	0.3	85.5	2.1	NA	6.76
+France	Lyon	Mathieu Gorgelin	GK	23	187	83	1(1)	NA	NA	NA	NA	NA	44	0.5	NA	6.75
+France	Lyon	Milan Bisevac	D(C)	30	185	85	23	NA	NA	4	NA	0.2	88.3	1.4	NA	6.71
+France	Lyon	Mouhamadou Dabo	D(LR)	27	176	65	6(1)	NA	NA	NA	NA	0.1	80.8	0.9	NA	6.65
+France	Lyon	Jimmy Briand	AM(R),FW	28	181	84	7(11)	6	4	1	NA	1.6	75.2	0.7	NA	6.64
+France	Lyon	Corentin Tolisso	D	19	165	54	3(6)	1	NA	2	NA	0.6	79.1	0.7	NA	6.55
+France	Lyon	Yassine Benzia	AM(R)	19	179	71	4(6)	2	2	NA	NA	1.1	75	0.5	1	6.54
+France	Lyon	Fares Bahlouli	M	18	181	78	1(3)	NA	NA	NA	NA	1.3	80.9	0.3	NA	6.5
+France	Lyon	Mahamadou-Naby Sarr	D	20	196	94	1(1)	NA	NA	NA	NA	NA	70.6	1	NA	6.43
+France	Lyon	Nabil Fekir	M	20	173	72	3(3)	NA	NA	1	NA	0.8	82.3	0.5	NA	6.43
+France	Lyon	Steed Malbranque	M(CLR)	34	171	75	12(6)	1	NA	2	NA	0.6	85.8	0.3	NA	6.43
+France	Lyon	Jordan Ferri	DM(C)	22	172	70	12(11)	1	NA	3	NA	0.4	80.6	0.7	NA	6.42
+France	Lyon	Arnold Mvuemba	DM(C)	29	172	67	7(2)	NA	NA	1	NA	0.6	89.8	0.1	NA	6.3
+France	Lyon	Alassane Plea	M	21	180	72	0(6)	NA	NA	NA	NA	0.2	75	NA	NA	6.16
+France	Lyon	Clinton N'Jie	FW	20	175	68	0(3)	NA	NA	NA	NA	0.3	66.7	NA	NA	6.16
+France	Lyon	Gaël Danic	AM(CL)	32	176	65	1(8)	NA	NA	NA	NA	0.4	70.4	NA	NA	6.04
+France	Lyon	Rémy Vercoutre	GK	33	185	78	5	NA	NA	2	NA	NA	50.8	NA	NA	5.96
+France	Lyon	Jeremy Frick	GK	21	192	88	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+France	Lyon	Rachid Ghezzal	AM(L)	21	182	65	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+France	Lyon	Théo Defourny	GK	21	194	85	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Germany	Freiburg	Admir Mehmedi	AM(C),FW	23	182	76	24(3)	9	4	2	1	2.3	78	1.4	3	7.3
+Germany	Freiburg	Pavel Krmas	D(C)	34	193	86	14(2)	1	1	3	NA	0.5	82.8	5.1	NA	7.18
+Germany	Freiburg	Oliver Sorg	D(LR)	23	175	69	26	1	2	3	1	0.6	73.4	1.6	2	7.12
+Germany	Freiburg	Immanuel Höhn	D(C)	22	183	72	12(3)	NA	NA	NA	NA	0.5	82.4	3.8	NA	7.11
+Germany	Freiburg	Fallou Diagne	D(C)	24	185	75	12	NA	NA	3	1	0.4	81.7	2.9	1	6.97
+Germany	Freiburg	Jonathan Schmid	D(R),M(R)	23	179	77	22(1)	3	7	2	NA	1.2	72	1.3	2	6.95
+Germany	Freiburg	Vladimir Darida	M(C),FW	23	171	64	15(2)	2	2	1	NA	1.2	73.2	1.4	NA	6.92
+Germany	Freiburg	Gelson Fernandes	DM(C)	27	183	70	24(2)	1	2	5	NA	0.2	83.6	0.8	NA	6.9
+Germany	Freiburg	Matthias Ginter	D(C),DM(C)	20	188	85	28	NA	NA	1	NA	0.6	85.8	3.6	NA	6.88
+Germany	Freiburg	Felix Klaus	AM(R)	21	179	79	9(7)	5	NA	4	NA	1.6	69.6	1.3	1	6.84
+Germany	Freiburg	Julian Schuster	DM(C)	28	190	78	17(5)	2	1	5	NA	0.4	83.5	1.7	NA	6.78
+Germany	Freiburg	Karim Guédé	AM(C),FW	29	184	85	10(4)	3	NA	2	NA	0.6	63.5	3.1	1	6.72
+Germany	Freiburg	Charles-Elie Laprévotte	M	21	179	73	1	NA	NA	NA	NA	1	75	4	NA	6.68
+Germany	Freiburg	Christian Günter	D(L)	21	184	81	19(4)	NA	NA	4	NA	0.3	69.6	1.3	NA	6.68
+Germany	Freiburg	Oliver Baumann	GK	23	187	80	28	NA	NA	NA	NA	NA	57.7	0.6	1	6.67
+Germany	Freiburg	Sebastian Freis	AM(R),FW	28	183	78	12(2)	2	4	NA	NA	1.5	72	0.5	NA	6.61
+Germany	Freiburg	Nicolas Höfler	DM(C)	24	181	78	7(5)	2	1	5	NA	0.5	80.3	0.9	NA	6.54
+Germany	Freiburg	Vaclav Pilar	AM(L)	25	170	68	5(1)	NA	NA	2	NA	NA	74.7	1	NA	6.51
+Germany	Freiburg	Francis Coquelin	M(CLR)	22	178	74	9(7)	NA	1	2	1	0.4	73.9	2.4	NA	6.4
+Germany	Freiburg	Mensur Mujdza	D(LR)	30	185	77	7	NA	NA	3	NA	NA	71.7	1.3	NA	6.34
+Germany	Freiburg	Mike Hanke	FW	30	185	85	4(11)	2	NA	2	NA	1	70	1.3	NA	6.32
+Germany	Freiburg	Sebastian Kerk	M	19	182	74	1(14)	NA	NA	2	NA	0.6	78.4	0.4	NA	6.24
+Germany	Freiburg	Hendrick Zuck	M	23	176	64	1(1)	NA	NA	NA	NA	NA	80.8	1	NA	6.23
+Germany	Freiburg	Philipp Zulechner	FW	23	182	74	1(4)	NA	NA	NA	NA	1.4	73.9	0.6	NA	6.16
+Germany	Freiburg	Nicolai Lorenzoni	D	21	180	76	0(1)	NA	NA	NA	NA	NA	100	NA	NA	5.92
+Germany	Freiburg	Tim Albutat	M	21	184	76	0(1)	NA	NA	NA	NA	1	72.7	4	NA	5.81
+Germany	Freiburg	Alexander Schwolow	GK	21	189	83	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Germany	Freiburg	Caleb Stanko	M	20	178	72	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Germany	Freiburg	Daniel Batz	GK	23	189	84	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Germany	Freiburg	Tim Schraml	D	21	190	72	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Germany	Freiburg	Vegar Hedenstad	D(LR)	22	178	74	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Bulgaria	PFC Ludogorets Razgrad	Junior Caiçara	D(R)	24	168	62	10	NA	1	2	NA	0.4	80.9	0.8	1	7.38
+Bulgaria	PFC Ludogorets Razgrad	Vladislav Stoyanov	GK	26	186	73	9	NA	NA	NA	NA	NA	47.8	0.2	4	7.37
+Bulgaria	PFC Ludogorets Razgrad	Cosmin Moti	D(C)	29	183	74	8	NA	1	4	NA	NA	88.8	0.9	NA	7.2
+Bulgaria	PFC Ludogorets Razgrad	Tero Mantyla	D	22	185	79	4	NA	NA	NA	NA	NA	84.6	3	NA	7.03
+Bulgaria	PFC Ludogorets Razgrad	Georgi Terziev	D	21	183	76	2(1)	NA	NA	NA	NA	0.3	88.8	2	NA	6.98
+Bulgaria	PFC Ludogorets Razgrad	Alexandre Barthe	D(C)	28	184	79	6	NA	NA	NA	NA	NA	84.5	2	NA	6.97
+Bulgaria	PFC Ludogorets Razgrad	Roman Bezjak	FW	25	179	71	7(2)	6	NA	2	NA	2.4	69.6	0.2	2	6.9
+Bulgaria	PFC Ludogorets Razgrad	Virgil Misidjan	AM(L)	20	173	70	9	2	1	1	NA	2.3	82.4	0.6	NA	6.9
+Bulgaria	PFC Ludogorets Razgrad	Yordan Minev	D(L)	33	178	70	7	NA	NA	1	NA	0.6	71.4	0.7	NA	6.9
+Bulgaria	PFC Ludogorets Razgrad	Choco	FW	24	176	75	3	NA	NA	NA	NA	NA	83.2	NA	NA	6.85
+Bulgaria	PFC Ludogorets Razgrad	Marcelinho	AM(C)	29	177	72	10	NA	2	1	NA	2.4	80.2	0.5	NA	6.83
+Bulgaria	PFC Ludogorets Razgrad	Hristo Zlatinski	DM(C)	29	179	73	7(2)	2	1	3	NA	1.7	87.4	0.6	NA	6.82
+Bulgaria	PFC Ludogorets Razgrad	Svetoslav Dyakov	DM(C)	29	175	70	8	1	NA	4	1	0.8	82	0.4	NA	6.77
+Bulgaria	PFC Ludogorets Razgrad	Fábio Espinho	DM(C)	28	171	65	5(4)	NA	1	3	NA	0.9	81.8	0.3	NA	6.73
+Bulgaria	PFC Ludogorets Razgrad	Mihail Aleksandrov	AM(R)	24	179	72	8(1)	NA	NA	NA	NA	1.3	70.4	1.7	1	6.71
+Bulgaria	PFC Ludogorets Razgrad	Dani Abalo	M	26	174	68	2(2)	1	1	1	NA	1	79	0.5	NA	6.68
+Bulgaria	PFC Ludogorets Razgrad	Juninho Quixadá	FW	28	170	62	3(5)	3	NA	1	1	1.1	74.1	0.1	NA	6.38
+Bulgaria	PFC Ludogorets Razgrad	Ivan Cvorovic	GK	28	194	83	1	NA	NA	NA	NA	NA	30	1	NA	6.29
+Bulgaria	PFC Ludogorets Razgrad	Ivan Stoyanov	M	30	177	73	1(4)	NA	NA	NA	NA	0.2	78.8	0.2	NA	6.13
+Bulgaria	PFC Ludogorets Razgrad	Mitchell Burgzorg	M	26	171	74	0(1)	NA	NA	NA	NA	NA	100	NA	NA	6.06
+Bulgaria	PFC Ludogorets Razgrad	Sebastian Hernandez	FW	27	178	75	0(1)	NA	NA	NA	NA	NA	78.6	NA	NA	6.06
+Bulgaria	PFC Ludogorets Razgrad	Michel Platini	FW	30	187	79	0(4)	NA	NA	NA	NA	0.5	63	NA	NA	6.05
+Bulgaria	PFC Ludogorets Razgrad	Jeroen Lumu	M	18	180	64	0(3)	NA	NA	NA	NA	0.3	75	NA	NA	6
+Portugal	Vitoria de Guimaraes	Abdoulaye Ba	D(C)	23	197	79	5	1	NA	1	NA	0.8	80.3	2	1	7.76
+Portugal	Vitoria de Guimaraes	André André	M	24	177	65	4(2)	1	1	1	NA	1.2	82.7	1.5	1	7.28
+Portugal	Vitoria de Guimaraes	Luís Rocha	M	20	174	70	2	NA	NA	1	NA	NA	70.8	1.5	NA	7.28
+Portugal	Vitoria de Guimaraes	Kanú	D	22	180	74	1	NA	NA	NA	NA	NA	85.3	1	NA	7.27
+Portugal	Vitoria de Guimaraes	Douglas	GK	31	188	80	6	NA	NA	1	NA	NA	55.7	0.3	NA	7.22
+Portugal	Vitoria de Guimaraes	David Addy	D	24	180	75	4	NA	NA	NA	NA	0.5	67.2	1.3	NA	7.21
+Portugal	Vitoria de Guimaraes	João Amorim	D	21	178	75	1	NA	NA	NA	NA	NA	73.8	1	NA	7.14
+Portugal	Vitoria de Guimaraes	Moussa Maazou	FW	25	186	80	4(1)	2	1	1	1	2.4	63.5	2.2	NA	6.92
+Portugal	Vitoria de Guimaraes	Rafael Crivellaro	M	25	183	79	1	NA	NA	NA	NA	3	55.6	2	NA	6.88
+Portugal	Vitoria de Guimaraes	Paulo Oliveira	D(C)	22	187	78	6	NA	NA	1	NA	0.2	74.3	0.8	NA	6.86
+Portugal	Vitoria de Guimaraes	Leandro Freire	D	24	186	73	1	NA	NA	NA	NA	3	94.9	1	NA	6.81
+Portugal	Vitoria de Guimaraes	Moreno	M	32	185	81	2(1)	NA	NA	1	NA	1	86.4	1	NA	6.8
+Portugal	Vitoria de Guimaraes	Marco Matias	FW	24	177	67	3(2)	NA	1	NA	NA	1.4	74.7	0.8	NA	6.75
+Portugal	Vitoria de Guimaraes	Jean Barrientos	M	23	173	69	2	NA	NA	1	NA	2	79.2	NA	NA	6.71
+Portugal	Vitoria de Guimaraes	Chris Malonga	AM(L)	26	182	72	4	NA	NA	1	NA	2.8	82.5	0.8	NA	6.66
+Portugal	Vitoria de Guimaraes	Pedro Correia	D	27	178	68	4	NA	NA	1	1	NA	78.2	1	NA	6.64
+Portugal	Vitoria de Guimaraes	Leonel Olimpio	M	31	184	78	4	NA	NA	3	NA	0.8	73.7	1.8	NA	6.61
+Portugal	Vitoria de Guimaraes	Tomané	FW	21	184	84	2(2)	1	NA	NA	NA	1.5	54.3	2	NA	6.51
+Portugal	Vitoria de Guimaraes	Nii Plange	M	24	175	70	2(3)	1	NA	NA	NA	1.2	74.5	0.4	NA	6.47
+Portugal	Vitoria de Guimaraes	Andre Santos	AM(C)	25	178	77	5(1)	NA	NA	1	NA	1.2	81.9	0.5	NA	6.32
+Portugal	Vitoria de Guimaraes	Tiago Rodrigues	M	22	177	69	2(2)	NA	NA	1	NA	0.5	74.7	0.5	NA	6.31
+Portugal	Vitoria de Guimaraes	Fernando Russi	FW	24	184	77	1(1)	NA	NA	NA	NA	1.5	52.9	1.5	NA	6.23
+Portugal	Vitoria de Guimaraes	Ricardo	M	22	188	89	0(2)	NA	NA	NA	NA	0.5	100	NA	NA	6.21
+Portugal	Vitoria de Guimaraes	Assis Giovanaz	GK	24	191	85	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Portugal	Vitoria de Guimaraes	Josué	D	21	186	75	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Portugal	Estoril	Babanco	D(L)	28	180	74	5	NA	1	1	NA	1.4	78	2.6	1	7.83
+Portugal	Estoril	Rúben Fernandes	D	27	186	75	4	1	NA	1	NA	0.5	89.5	1.3	1	7.53
+Portugal	Estoril	Mano	D(R)	26	168	60	6	NA	NA	NA	NA	0.2	82.3	1.3	NA	7.26
+Portugal	Estoril	Gonçalo	DM(C)	27	184	79	5	NA	NA	2	NA	0.2	82.5	2.2	1	7.2
+Portugal	Estoril	Carlitos	M	31	176	72	2(1)	NA	NA	1	NA	3	72.4	2.7	NA	7.04
+Portugal	Estoril	Anderson Luis	D	25	175	71	1(1)	NA	NA	NA	NA	NA	81.4	0.5	NA	6.88
+Portugal	Estoril	Diogo Amado	M	24	177	72	1	NA	NA	NA	NA	2	86	1	NA	6.84
+Portugal	Estoril	Evandro Goebel	AM(C)	27	179	70	5(1)	NA	1	2	NA	0.8	82.3	0.2	NA	6.82
+Portugal	Estoril	Vagner Silva	GK	27	186	80	6	NA	NA	NA	NA	NA	65	0.5	NA	6.75
+Portugal	Estoril	Sebá	FW	21	179	73	5(1)	2	NA	1	NA	1.8	70.8	1.2	NA	6.74
+Portugal	Estoril	Yohan Tavares	D(C)	26	188	79	5(1)	NA	NA	NA	NA	0.2	86.2	1.7	NA	6.72
+Portugal	Estoril	Bruno Miguel	D	31	188	84	2	1	NA	NA	1	1	90.7	0.5	NA	6.63
+Portugal	Estoril	Javier Balboa	M	28	182	73	2(4)	NA	1	NA	NA	NA	77.8	1	NA	6.61
+Portugal	Estoril	Luís Leal	FW	26	176	75	5	1	1	NA	NA	2.2	70.9	1.6	NA	6.59
+Portugal	Estoril	João Pedro Galvão	M	22	184	73	3(3)	NA	NA	NA	NA	0.8	80.3	0.7	NA	6.47
+Portugal	Estoril	Filipe Gonçalves	DM(C)	29	183	80	6	NA	NA	1	NA	0.8	84.5	0.5	NA	6.45
+Portugal	Estoril	Joao Pedro	D	26	191	86	1	NA	NA	NA	NA	1	79.7	NA	NA	6.33
+Portugal	Estoril	Gerso Fernandes	FW	23	174	67	1(2)	NA	NA	NA	NA	1	81.8	0.7	NA	6.28
+Portugal	Estoril	Bruno Lopes	FW	27	181	75	1(3)	NA	NA	NA	NA	1	65.5	0.3	NA	6.15
+Portugal	Estoril	Ricardo Ribeiro	GK	24	183	73	0(1)	NA	NA	NA	NA	NA	73.3	NA	NA	6.14
+Portugal	Estoril	Gladestony	M	20	183	75	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Portugal	Estoril	Ricardo Vaz	FW	19	172	68	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Ukraine	Shakhtar Donetsk	Douglas Costa	AM(R)	23	170	65	6	2	2	1	NA	2.3	83.9	0.2	1	7.36
+Ukraine	Shakhtar Donetsk	Olexandr Kucher	D(C)	31	184	77	6	NA	NA	2	NA	NA	87.5	1.3	NA	7.29
+Ukraine	Shakhtar Donetsk	Darijo Srna	D(R)	31	182	78	6	NA	NA	2	NA	1.2	81.4	0.7	NA	7.25
+Ukraine	Shakhtar Donetsk	Alex Teixeira	AM(CR)	24	173	70	6	3	1	2	NA	2.3	84.2	0.8	NA	7.02
+Ukraine	Shakhtar Donetsk	Taison	AM(L)	26	172	64	4(2)	1	1	NA	NA	0.7	85.9	0.8	1	6.95
+Ukraine	Shakhtar Donetsk	Viacheslav Shevchuk	D(L)	34	184	82	6	NA	NA	NA	NA	0.7	74.9	1.5	NA	6.83
+Ukraine	Shakhtar Donetsk	Tomás Hübschman	DM(C)	32	180	74	4	NA	NA	NA	NA	0.5	84.7	0.5	NA	6.81
+Ukraine	Shakhtar Donetsk	Yaroslav Rakitskiy	D(C)	24	180	70	6	NA	NA	2	NA	1.2	78.6	1.3	NA	6.78
+Ukraine	Shakhtar Donetsk	Fred	M(C)	21	174	68	2(1)	NA	NA	NA	NA	1.3	90.4	NA	NA	6.68
+Ukraine	Shakhtar Donetsk	Taras Stepanenko	DM(C)	24	181	76	2(1)	NA	1	1	NA	0.3	80.7	1.7	NA	6.64
+Ukraine	Shakhtar Donetsk	Andriy Pyatov	GK	29	190	78	6	NA	NA	NA	NA	NA	67.7	0.3	1	6.63
+Ukraine	Shakhtar Donetsk	Fernando	DM(C)	22	173	66	4(1)	NA	NA	1	NA	0.4	88.7	0.8	NA	6.53
+Ukraine	Shakhtar Donetsk	Bernard	M	21	162	57	2(4)	NA	NA	NA	NA	0.5	80.8	0.2	NA	6.49
+Ukraine	Shakhtar Donetsk	Luiz Adriano	FW	26	182	71	5(1)	1	NA	1	NA	0.8	72.6	1.7	NA	6.46
+Ukraine	Shakhtar Donetsk	Eduardo	AM(L),FW	31	177	72	0(1)	NA	NA	NA	NA	NA	66.7	NA	NA	6.26
+Ukraine	Shakhtar Donetsk	Ilsinho	M	28	178	82	0(3)	NA	NA	NA	NA	1	80	NA	NA	6.14
+Ukraine	Shakhtar Donetsk	Facundo Ferreyra	FW	23	185	76	1(4)	NA	NA	1	NA	0.6	66.7	0.2	NA	5.95
+Ukraine	Shakhtar Donetsk	Aleksandr Volovik	D	28	185	68	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Ukraine	Shakhtar Donetsk	Anton Kanibolotskiy	GK	25	191	79	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Ukraine	Shakhtar Donetsk	Sergey Krivtsov	D	23	186	80	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Czech Republic	Liberec	David Pavelka	AM(C)	22	184	74	8	1	3	1	NA	1	74.3	1.9	2	7.4
+Czech Republic	Liberec	Radoslav Kovac	D(C),DM(C)	34	189	78	8	1	2	1	NA	0.5	82.8	2.5	NA	7.33
+Czech Republic	Liberec	Renato Kelic	D(C)	23	190	84	5	NA	NA	1	NA	0.8	82	4.6	NA	7.33
+Czech Republic	Liberec	Jiri Fleisman	D(L)	29	185	77	8	NA	1	NA	NA	0.8	64.3	1.8	NA	7.18
+Czech Republic	Liberec	Evgen Budnik	FW	23	185	75	2	1	NA	1	NA	2	57.1	5.5	NA	7.1
+Czech Republic	Liberec	Josef Sural	AM(R)	23	182	78	7(1)	2	1	2	NA	1.3	63.9	2.1	1	7.06
+Czech Republic	Liberec	Michael Rabusic	FW	24	184	80	6	3	NA	3	NA	2.5	67.6	1.8	1	7.06
+Czech Republic	Liberec	Lukas Hrosso	GK	26	195	NA	3(1)	NA	NA	NA	NA	NA	54.2	0.3	NA	6.92
+Czech Republic	Liberec	Serhiy Rybalka	DM(C)	23	176	68	7	1	NA	1	1	1	83.8	0.3	NA	6.89
+Czech Republic	Liberec	Jan Rajnoch	D	32	186	78	2	NA	NA	NA	NA	0.5	74.2	3.5	NA	6.84
+Czech Republic	Liberec	Isaac Sackey	DM(C)	19	NA	NA	6	NA	NA	3	1	0.3	74.4	1.8	NA	6.82
+Czech Republic	Liberec	Dzon Delarge	FW	23	173	NA	5	NA	NA	NA	NA	1	64	0.2	NA	6.69
+Czech Republic	Liberec	Milos Karisik	D	25	183	78	1	NA	NA	1	NA	NA	52.9	1	NA	6.68
+Czech Republic	Liberec	Martin Frydek	D	22	180	NA	6(1)	NA	NA	1	NA	1.1	54.4	1	NA	6.5
+Czech Republic	Liberec	Vladimir Coufal	D	21	NA	NA	3(1)	NA	NA	2	NA	0.5	53.1	1	NA	6.5
+Czech Republic	Liberec	Douglas Djika	M	21	170	62	0(1)	NA	NA	NA	NA	NA	72.2	1	NA	6.46
+Czech Republic	Liberec	Vladyslav Kalitvintsev	M	21	178	NA	1(5)	1	NA	NA	NA	0.7	61.7	0.5	NA	6.37
+Czech Republic	Liberec	Marek Jarolim	M	29	182	66	1	NA	NA	NA	NA	1	62.5	NA	NA	6.36
+Czech Republic	Liberec	Jiri Pimpara	D	27	190	NA	0(5)	NA	1	NA	NA	0.4	52.2	1	NA	6.28
+Czech Republic	Liberec	Ondrej Kusnír	D	29	186	72	3	NA	NA	3	NA	0.7	81.3	1.3	NA	6.21
+Czech Republic	Liberec	Lubos Husek	M	30	187	66	1(2)	NA	NA	NA	NA	NA	65	0.3	NA	6.16
+Czech Republic	Liberec	Premysl Kovar	GK	28	186	NA	5	NA	NA	NA	1	NA	68	0.8	NA	6.01
+Czech Republic	Liberec	Lubos Kolar	M	24	179	NA	0(3)	NA	NA	NA	NA	NA	57.1	0.3	NA	5.99
+Czech Republic	Liberec	Vojtech Hadascok	FW	22	178	68	0(1)	NA	NA	NA	NA	NA	NA	NA	NA	5.99
+Czech Republic	Liberec	Lukas Pokorny	D	20	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Czech Republic	Liberec	Martin Janosik	D	20	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Czech Republic	Liberec	Vojtech Novotny	D	19	180	72	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Czech Republic	Liberec	Zbynek Hauzr	GK	40	189	88	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Standard Liege	Yanis Mbombo	FW	19	NA	NA	1	1	NA	NA	NA	5	73.3	1	NA	7.47
+Belgium	Standard Liege	Tal Ben Haim	D(CLR)	32	183	74	4(1)	NA	NA	NA	NA	0.4	79.7	4.2	1	7.27
+Belgium	Standard Liege	Daniel Opare	D	23	174	70	3	NA	NA	1	NA	NA	60.9	2.3	NA	7.22
+Belgium	Standard Liege	Laurent Ciman	D	28	180	65	4	NA	NA	NA	NA	1.3	75	1	NA	7.22
+Belgium	Standard Liege	Dino Arslanagic	D	20	188	79	3(1)	NA	NA	NA	NA	NA	82.6	2	NA	7.19
+Belgium	Standard Liege	William Vainqueur	M	25	179	73	2(3)	NA	NA	1	NA	0.2	85.5	0.8	NA	7.1
+Belgium	Standard Liege	Geoffrey Mujangi Bia	M	24	176	71	1(3)	3	NA	NA	NA	3.5	73	0.3	NA	7.03
+Belgium	Standard Liege	Ibrahima Cissé	D	20	184	77	2(1)	NA	NA	NA	NA	1.3	84.4	2	NA	7.02
+Belgium	Standard Liege	Paul-José M'Poku	FW	21	174	65	4(1)	1	2	NA	NA	1.8	69.6	1.4	NA	6.98
+Belgium	Standard Liege	Alpaslan Oeztuerk	D	20	184	83	3	NA	NA	3	NA	0.7	82.7	2	NA	6.91
+Belgium	Standard Liege	Ronnie Stam	D(R),M(R)	29	175	62	3	NA	NA	NA	NA	0.3	82.8	NA	NA	6.9
+Belgium	Standard Liege	Jelle van Damme	D	30	191	87	3	NA	NA	NA	NA	NA	86.4	1.7	NA	6.87
+Belgium	Standard Liege	Julien De Sart	M	19	182	68	1	NA	NA	NA	NA	2	71	1	NA	6.77
+Belgium	Standard Liege	Frédéric Bulot	AM(CLR)	23	182	70	4	NA	1	NA	NA	1.8	75.6	2	NA	6.76
+Belgium	Standard Liege	Deni Milosevic	M	19	NA	NA	0(1)	NA	NA	NA	NA	NA	85.7	NA	NA	6.74
+Belgium	Standard Liege	Yoni Buyens	M	26	182	75	4	NA	NA	NA	NA	0.3	80.3	1	NA	6.63
+Belgium	Standard Liege	Eiji Kawashima	GK	31	185	78	3	NA	NA	NA	NA	NA	51.3	0.3	NA	6.59
+Belgium	Standard Liege	Michy Batshuayi	FW	NA	180	78	2(3)	NA	NA	1	NA	2	72.3	0.2	NA	6.53
+Belgium	Standard Liege	Yohann Thuram	GK	25	187	85	3	NA	NA	NA	NA	NA	38.5	NA	NA	6.53
+Belgium	Standard Liege	Alessandro Iandoli	M	29	181	76	2	NA	NA	1	NA	NA	81.5	0.5	NA	6.5
+Belgium	Standard Liege	Dudu Biton	FW	26	185	81	0(2)	NA	NA	NA	NA	2.5	50	0.5	NA	6.46
+Belgium	Standard Liege	Mehdi Carcela-González	AM(CR)	24	176	67	3	NA	NA	NA	1	0.7	69.8	1.3	NA	6.42
+Belgium	Standard Liege	Imoh Ezekiel	FW	20	178	65	3	NA	1	3	NA	1	79.5	1.3	NA	6.4
+Belgium	Standard Liege	Igor de Camargo	AM(C),FW	30	187	83	3	1	NA	1	NA	1.7	62.7	2.3	NA	6.39
+Belgium	Standard Liege	Reza Ghoochanneijhad	FW	26	180	76	2(2)	NA	NA	NA	NA	NA	78	1.3	NA	6.13
+Belgium	Standard Liege	Kanu	D	29	188	77	2	NA	NA	NA	1	NA	80.9	1	NA	6.08
+Belgium	Standard Liege	Francois Marquet	M	18	172	62	1	NA	NA	NA	NA	NA	75	NA	NA	6
+Belgium	Standard Liege	Ali Yasar	D	19	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Standard Liege	Anthony Moris	GK	23	184	75	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Standard Liege	Corentin Fiore	D	19	182	69	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Standard Liege	Georgy Zhukov	M	19	181	76	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Standard Liege	Guillaume Hubert	GK	20	196	88	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Netherlands	PSV Eindhoven	Memphis Depay	AM(L)	20	176	78	29	11	6	1	1	5.1	77	0.4	5	7.7
+Netherlands	PSV Eindhoven	Jetro Willems	D(L)	20	170	65	26	4	3	5	NA	1	81.5	1.5	4	7.52
+Netherlands	PSV Eindhoven	Bryan Ruiz	AM(CR)	28	188	78	9(1)	4	2	NA	NA	2	79.2	0.9	1	7.37
+Netherlands	PSV Eindhoven	Jeffrey Bruma	D(CR)	22	189	88	28	3	1	7	1	1	89.5	2.7	2	7.35
+Netherlands	PSV Eindhoven	Georginio Wijnaldum	AM(C)	23	173	69	6(1)	4	NA	NA	NA	2.9	86.8	1	NA	7.32
+Netherlands	PSV Eindhoven	Stijn Schaars	DM(C)	30	177	70	26(1)	NA	6	4	NA	0.7	82.9	1.1	1	7.22
+Netherlands	PSV Eindhoven	Joshua Brenet	D(R)	20	181	74	9(1)	NA	NA	NA	NA	0.8	82.6	0.7	NA	7.16
+Netherlands	PSV Eindhoven	Santiago Arias	D(R)	22	175	72	22	1	2	3	NA	0.6	83.1	0.9	NA	7.13
+Netherlands	PSV Eindhoven	Karim Rekik	D(C)	19	185	78	22	1	NA	6	NA	0.6	87.4	2.8	NA	7.07
+Netherlands	PSV Eindhoven	Jeroen Zoet	GK	23	187	78	25	NA	NA	NA	NA	NA	69.9	0.2	1	7.02
+Netherlands	PSV Eindhoven	Przemyslaw Tyton	GK	26	195	80	5(1)	NA	NA	NA	NA	NA	71.8	0.2	NA	6.97
+Netherlands	PSV Eindhoven	Oscar Hiljemark	M(C)	21	184	73	19(4)	2	1	2	NA	0.7	86.4	0.7	NA	6.87
+Netherlands	PSV Eindhoven	Jürgen Locadia	FW	20	187	78	22(5)	12	5	1	NA	2.3	83.4	0.9	NA	6.84
+Netherlands	PSV Eindhoven	Park Ji-Sung	AM(CLR)	33	175	72	18(2)	2	5	1	NA	0.8	87.8	0.4	1	6.8
+Netherlands	PSV Eindhoven	Adam Maher	DM(C)	20	174	76	18(6)	3	1	1	NA	1.7	83.4	0.3	1	6.74
+Netherlands	PSV Eindhoven	Jorrit Hendrix	D(C)	19	182	70	10(7)	NA	1	1	NA	0.2	85.9	0.9	NA	6.73
+Netherlands	PSV Eindhoven	Zakaria Bakkali	AM(R)	18	164	60	7(8)	3	NA	1	NA	1.3	89.7	NA	1	6.65
+Netherlands	PSV Eindhoven	Peter van Ooijen	M	22	179	75	0(1)	NA	NA	NA	NA	NA	78.1	NA	NA	6.61
+Netherlands	PSV Eindhoven	Tim Matavz	FW	25	190	74	7(7)	2	3	1	NA	1.2	69.2	1.1	NA	6.61
+Netherlands	PSV Eindhoven	Zanka	D(C)	23	191	79	2(6)	NA	NA	1	NA	0.3	87.6	1.5	NA	6.59
+Netherlands	PSV Eindhoven	Ola Toivonen	AM(C),FW	27	190	74	7(7)	1	2	1	NA	1.4	79.7	1.2	NA	6.5
+Netherlands	PSV Eindhoven	Luciano Narsingh	AM(R)	23	178	69	7(10)	NA	1	NA	NA	0.5	85	NA	NA	6.31
+Netherlands	PSV Eindhoven	Abel Tamata	D	23	179	72	3(3)	NA	NA	NA	NA	NA	73.2	1.2	NA	6.3
+Netherlands	PSV Eindhoven	Florian Jozefzoon	FW	23	182	80	3(12)	2	1	2	NA	0.7	79.4	0.1	NA	6.3
+Netherlands	PSV Eindhoven	Hjörtur Hermannsson	D	19	189	81	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Netherlands	PSV Eindhoven	Marcelo	D(C)	26	191	80	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Netherlands	PSV Eindhoven	Menno Koch	D	19	195	78	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Netherlands	PSV Eindhoven	Nigel Bertrams	GK	21	189	81	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Netherlands	PSV Eindhoven	Rai Vloet	FW	18	180	75	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Moldova	FC Sheriff	Henrique Luvannor	AM(L)	23	182	NA	6	NA	1	2	NA	1.5	69	1.3	NA	7.27
+Moldova	FC Sheriff	Kobi Moyal	DM(C)	26	NA	NA	6	NA	NA	2	NA	1.5	73.8	2	1	7.25
+Moldova	FC Sheriff	Djibril Paye	D(L)	24	182	79	6	NA	NA	1	NA	NA	73.5	0.5	NA	6.96
+Moldova	FC Sheriff	Benjamin Balima	M	29	188	78	5(1)	NA	2	NA	NA	0.2	81	0.8	NA	6.92
+Moldova	FC Sheriff	Marcel Metoua	D	25	180	76	6	NA	NA	NA	NA	0.3	72.5	0.8	NA	6.9
+Moldova	FC Sheriff	Miral Samardzic	D(C)	27	186	NA	6	NA	NA	NA	NA	NA	79.5	1	NA	6.9
+Moldova	FC Sheriff	Cadu	AM(C)	27	177	72	6	1	NA	NA	NA	2.2	75.8	0.3	NA	6.86
+Moldova	FC Sheriff	Ricardinho	FW	24	175	NA	5	1	NA	1	1	2	67	0.6	1	6.85
+Moldova	FC Sheriff	Ismail Isa	FW	24	183	79	5(1)	3	NA	1	NA	2.7	78.4	1.3	1	6.73
+Moldova	FC Sheriff	Vjekoslav Tomic	GK	30	190	94	6	NA	NA	NA	NA	NA	39.5	0.3	NA	6.7
+Moldova	FC Sheriff	Melli	D	29	184	75	3	NA	NA	NA	1	0.3	76.2	1	NA	6.63
+Moldova	FC Sheriff	Marko Stanojevic	M	25	NA	NA	3(1)	NA	NA	NA	NA	1.3	77.1	0.8	NA	6.51
+Moldova	FC Sheriff	Valentin Furdui	M	26	NA	NA	1(3)	NA	NA	NA	NA	NA	84.6	NA	NA	6.42
+Moldova	FC Sheriff	Fernando	M	27	182	71	1(2)	NA	NA	NA	NA	0.3	76.8	0.3	NA	6.18
+Moldova	FC Sheriff	William Celestino	D	24	187	NA	0(1)	NA	NA	NA	NA	NA	100	NA	NA	6.15
+Moldova	FC Sheriff	Vadim Paireli	FW	18	NA	NA	0(1)	NA	NA	NA	NA	NA	NA	NA	NA	6.12
+Moldova	FC Sheriff	Alexandr Pascenco	M	24	183	88	0(2)	NA	NA	NA	NA	NA	73.3	0.5	NA	6.05
+Moldova	FC Sheriff	Dmitri Stajila	GK	22	204	87	0(1)	NA	NA	NA	NA	NA	20	NA	NA	5.97
+Moldova	FC Sheriff	Jhulliam	M	25	NA	NA	1(2)	NA	NA	NA	NA	0.3	66.7	NA	NA	5.89
+Moldova	FC Sheriff	Alexandr Bolsacov	D	19	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Moldova	FC Sheriff	Alexandru Scripcenco	D	23	187	69	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Moldova	FC Sheriff	Valentin Birdan	M	18	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Moldova	FC Sheriff	Veaceslav Lisa	M	20	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Anzhi Makhachkala	Willian	AM(CLR)	25	175	75	4	NA	3	NA	NA	1.8	83.4	NA	2	7.93
+Russia	Anzhi Makhachkala	Arsenii Logashov	D(R)	22	183	68	2	NA	NA	NA	NA	NA	81.9	0.5	NA	7.16
+Russia	Anzhi Makhachkala	Christopher Samba	D(C)	30	196	84	4(1)	1	NA	1	NA	1.4	79.7	2.4	1	7.08
+Russia	Anzhi Makhachkala	Lass Diarra	D(R),DM(C)	29	173	70	4	NA	NA	NA	NA	0.8	89.2	1	NA	7.02
+Russia	Anzhi Makhachkala	Andrey Eshchenko	D(LR)	30	176	74	10	NA	NA	NA	NA	0.2	69.8	0.8	1	6.92
+Russia	Anzhi Makhachkala	Jucilei	DM(C)	25	185	79	18(1)	NA	NA	NA	NA	0.5	81.2	0.9	NA	6.9
+Russia	Anzhi Makhachkala	Diniyar Bilyaletdinov	AM(LR)	29	185	79	3(1)	NA	1	NA	NA	1.3	72.8	1	1	6.84
+Russia	Anzhi Makhachkala	Alexandru Epureanu	D(C),DM(C)	27	185	76	8(2)	2	NA	5	NA	0.8	75.2	2.1	1	6.81
+Russia	Anzhi Makhachkala	Ali Gadzhibekov	D(CLR)	24	183	73	19(1)	NA	1	1	NA	0.5	74.1	1.2	NA	6.77
+Russia	Anzhi Makhachkala	Ayodele Adeleye	D(C)	25	189	76	9	NA	NA	2	NA	0.2	76.6	2	NA	6.77
+Russia	Anzhi Makhachkala	Samuel Eto'o	AM(LR),FW	33	180	75	6	2	NA	1	NA	4.3	81.5	0.5	NA	6.77
+Russia	Anzhi Makhachkala	João Carlos	D(C)	32	189	85	4	NA	NA	NA	NA	0.3	91.7	1	NA	6.76
+Russia	Anzhi Makhachkala	Aleksandr Bukharov	FW	29	191	83	3	1	NA	1	NA	2.3	69.1	3	NA	6.73
+Russia	Anzhi Makhachkala	Benoit Angbwa	D(R)	32	175	76	8(1)	NA	NA	NA	NA	0.1	75.7	1	1	6.73
+Russia	Anzhi Makhachkala	Mikhail Kerzhakov	GK	27	189	84	16	NA	NA	NA	NA	NA	46.3	0.2	1	6.71
+Russia	Anzhi Makhachkala	Odil Ahmedov	M(CR)	26	176	68	17(2)	1	NA	NA	NA	1.8	77.1	0.2	NA	6.65
+Russia	Anzhi Makhachkala	Nikita Burmistrov	AM(L)	24	181	75	11(2)	1	1	1	NA	1.5	69	0.4	1	6.62
+Russia	Anzhi Makhachkala	Gia Grigalava	D(CL)	24	190	89	15(1)	NA	NA	2	NA	0.5	65	1.1	NA	6.6
+Russia	Anzhi Makhachkala	Igor Denisov	DM(C)	29	176	70	3	NA	NA	NA	NA	NA	95.7	NA	NA	6.58
+Russia	Anzhi Makhachkala	Alan Gatagov	M	23	180	71	4(3)	1	NA	1	NA	1.4	61.7	0.6	NA	6.57
+Russia	Anzhi Makhachkala	Lacina Traoré	FW	23	203	85	3(2)	1	1	3	NA	1.8	64.5	2.4	1	6.57
+Russia	Anzhi Makhachkala	Rasim Tagirbekov	D(L)	29	185	80	6(2)	NA	NA	1	NA	0.9	72.6	0.5	NA	6.51
+Russia	Anzhi Makhachkala	Oleksandr Aliyev	AM(C)	29	178	75	3(1)	NA	NA	1	NA	1.5	78.8	NA	NA	6.47
+Russia	Anzhi Makhachkala	Ewerton	D(C)	25	188	81	9(1)	1	NA	4	1	0.4	78.3	1.9	1	6.44
+Russia	Anzhi Makhachkala	Pavel Solomatin	FW	20	176	73	8(3)	2	NA	3	NA	2.6	71.3	1.2	NA	6.44
+Russia	Anzhi Makhachkala	Kamil Agalarov	D(R),M(R)	25	178	70	8(2)	NA	1	1	NA	0.6	66.5	0.4	NA	6.39
+Russia	Anzhi Makhachkala	Mbark Boussoufa	AM(C)	29	165	58	3(1)	NA	NA	1	NA	0.5	82.6	0.3	NA	6.34
+Russia	Anzhi Makhachkala	Vladimir Gabulov	GK	30	190	75	5	NA	NA	NA	NA	NA	44.8	0.2	NA	6.32
+Russia	Anzhi Makhachkala	Oleg Shatov	M(CLR)	23	173	64	1(1)	NA	NA	NA	NA	0.5	88.6	1	NA	6.3
+Russia	Anzhi Makhachkala	Ilya Maksimov	M(C)	27	183	74	6(1)	NA	NA	3	NA	1.1	82.2	0.3	NA	6.28
+Russia	Anzhi Makhachkala	Abdul Razak	DM(C)	21	180	76	4(3)	NA	NA	1	NA	0.6	81.3	0.1	NA	6.27
+Russia	Anzhi Makhachkala	Vladimir Sobolev	M	22	167	65	4(4)	NA	NA	NA	NA	0.5	63.3	0.6	NA	6.27
+Russia	Anzhi Makhachkala	Sharif Muhammad	M	23	184	72	1(2)	NA	NA	NA	NA	0.3	66.7	0.3	NA	6.23
+Russia	Anzhi Makhachkala	Islamnur Abdulavov	FW	20	185	80	1(7)	1	NA	3	NA	0.9	62.3	0.3	NA	6.21
+Russia	Anzhi Makhachkala	Karlen Mkrtchyan	DM(C)	25	175	76	7(2)	NA	NA	1	NA	0.2	80.6	0.7	NA	6.18
+Russia	Anzhi Makhachkala	Serder Serderov	FW	20	176	69	4(10)	1	1	3	NA	0.5	59.2	0.6	NA	6.17
+Russia	Anzhi Makhachkala	Vladimir Bystrov	AM(R)	30	177	73	1(3)	NA	NA	NA	NA	0.5	60	0.8	NA	6.17
+Russia	Anzhi Makhachkala	Evgeny Pomazan	GK	25	193	85	2	NA	NA	NA	NA	NA	50	NA	NA	6.15
+Russia	Anzhi Makhachkala	Mehdi Carcela-González	AM(CR)	24	176	67	1(2)	NA	NA	NA	NA	1	81.8	0.3	NA	6.15
+Russia	Anzhi Makhachkala	Fedor Smolov	FW	24	185	73	3(1)	NA	NA	1	NA	2	58.9	0.8	NA	6.13
+Russia	Anzhi Makhachkala	Aleksey Ionov	AM(LR)	25	177	68	5(1)	NA	NA	NA	NA	NA	77	0.2	NA	6
+Russia	Anzhi Makhachkala	Islam Sulejmanov	M	20	173	64	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Anzhi Makhachkala	Makhach Gadzhiev	AM(L)	26	181	73	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Anzhi Makhachkala	Mekhti Dzhenetov	GK	22	187	93	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Anzhi Makhachkala	Tagir Musalov	FW	20	183	74	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Anzhi Makhachkala	Vadim Demidov	D(C)	27	185	80	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Anzhi Makhachkala	Yuri Udunyan	D	19	173	64	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Israel	Maccabi Haifa	Dekel Keinan	D(C)	29	184	74	3	NA	NA	NA	NA	0.3	88.6	3.3	NA	7.41
+Israel	Maccabi Haifa	Sari Falah	D	22	191	72	1	NA	NA	NA	NA	NA	87.1	2	NA	7.32
+Israel	Maccabi Haifa	Amir Edri	GK	28	183	81	1	NA	NA	NA	NA	NA	38.9	NA	NA	7.23
+Israel	Maccabi Haifa	Bojan Saranov	GK	26	188	83	5	NA	NA	NA	NA	NA	69.1	0.4	1	7.18
+Israel	Maccabi Haifa	Eyal Golasa	M	22	173	70	2	1	NA	NA	NA	1.5	87.5	0.5	NA	7.13
+Israel	Maccabi Haifa	Hen Ezra	M	25	NA	NA	3(1)	1	NA	2	NA	2.5	78.2	NA	NA	7.13
+Israel	Maccabi Haifa	Andriy Pylyavskyi	M	25	193	88	3	NA	NA	NA	NA	0.7	85.5	2.3	NA	7.07
+Israel	Maccabi Haifa	Gustavo Boccoli	M(C)	36	172	70	3(1)	NA	NA	NA	NA	0.8	84.3	1.3	1	7.04
+Israel	Maccabi Haifa	Elad Gabai	D(R)	28	175	71	3	NA	NA	NA	NA	NA	73.7	0.7	NA	6.97
+Israel	Maccabi Haifa	Edin Cocalic	D(C)	26	189	83	5	NA	NA	1	NA	0.2	85.1	2.4	NA	6.94
+Israel	Maccabi Haifa	Avihay Yadin	M(C)	27	183	71	3(1)	NA	NA	NA	NA	0.8	84.4	0.5	NA	6.92
+Israel	Maccabi Haifa	Shoval Gozlan	FW	19	NA	NA	2	1	NA	1	NA	1	68	0.5	1	6.76
+Israel	Maccabi Haifa	Eyal Meshumar	D(R)	30	176	69	3	NA	NA	1	NA	NA	80.6	0.7	NA	6.71
+Israel	Maccabi Haifa	Alon Turgeman	FW	22	NA	NA	2(2)	1	NA	2	NA	1	65.1	0.3	1	6.68
+Israel	Maccabi Haifa	Rayo	M	27	176	73	4(2)	NA	2	NA	NA	1.8	83.3	0.5	NA	6.68
+Israel	Maccabi Haifa	Yaniv Katan	FW	33	184	82	1(1)	NA	NA	NA	NA	1.5	75.7	0.5	NA	6.59
+Israel	Maccabi Haifa	Ran Abukarat	M	25	NA	NA	3	NA	NA	2	NA	NA	81.3	0.3	NA	6.56
+Israel	Maccabi Haifa	Shmuel Scheimann	D	26	180	75	2	NA	NA	1	NA	0.5	72.2	1	NA	6.47
+Israel	Maccabi Haifa	Idan Vered	FW	24	177	65	3(2)	NA	1	NA	NA	0.2	66.7	NA	NA	6.38
+Israel	Maccabi Haifa	Shimon Abuhatzira	FW	27	181	74	3(3)	1	NA	NA	NA	1.5	85.2	0.3	NA	6.36
+Israel	Maccabi Haifa	Taleb Tawatha	D(L)	21	176	64	5	NA	NA	NA	NA	0.2	70.4	0.4	NA	6.36
+Israel	Maccabi Haifa	Dino Ndlovu	FW	24	NA	NA	3(2)	1	NA	1	NA	0.8	70	0.8	NA	6.22
+Israel	Maccabi Haifa	Shlomi Azulay	FW	24	186	76	1(2)	NA	NA	NA	NA	0.7	64.3	0.3	NA	6.18
+Israel	Maccabi Haifa	Ismail Raiyan	FW	19	NA	NA	2(1)	NA	NA	NA	NA	NA	76.5	NA	NA	5.95
+Israel	Maccabi Haifa	Ayad Habashi	D	18	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Israel	Maccabi Haifa	Ron Shushan	GK	20	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Greece	PAOK Thessaloniki FC	Miguel Vítor	D	24	178	75	4	1	NA	NA	NA	0.8	91.7	1.3	NA	7.51
+Greece	PAOK Thessaloniki FC	Georgios Katsikas	D	23	187	84	1	NA	NA	1	NA	NA	93.8	4	NA	7.39
+Greece	PAOK Thessaloniki FC	Alexandros Tziolis	DM(C)	29	189	84	6	NA	NA	1	NA	1.3	87.5	1.2	NA	7.2
+Greece	PAOK Thessaloniki FC	Stylianos Pozoglou	M	18	NA	NA	0(1)	1	NA	NA	NA	2	50	NA	NA	7.13
+Greece	PAOK Thessaloniki FC	Giorgios Tzavellas	D(L)	26	183	81	4	NA	NA	NA	NA	NA	68.9	0.3	NA	7.1
+Greece	PAOK Thessaloniki FC	Stelios Kitsiou	D(R)	20	176	75	7	1	NA	2	NA	0.4	80.6	0.9	1	6.97
+Greece	PAOK Thessaloniki FC	Lino	D(L)	36	185	76	5(2)	NA	3	1	NA	0.1	81.2	1.3	NA	6.95
+Greece	PAOK Thessaloniki FC	Panagiotis Glykos	GK	27	180	73	4	NA	NA	NA	NA	NA	62.1	NA	NA	6.92
+Greece	PAOK Thessaloniki FC	Costin Lazar	DM(C)	32	179	67	8	NA	NA	2	NA	1.6	87.7	0.8	NA	6.87
+Greece	PAOK Thessaloniki FC	Konstantinos Katsouranis	D(C),DM(C)	34	183	81	8	NA	NA	NA	1	0.4	79.5	1.3	1	6.83
+Greece	PAOK Thessaloniki FC	Lucas	AM(R)	25	181	73	6(2)	1	2	NA	NA	2.3	72.2	0.5	NA	6.82
+Greece	PAOK Thessaloniki FC	Jacobo	GK	30	193	82	4	NA	NA	NA	NA	NA	51.9	NA	NA	6.71
+Greece	PAOK Thessaloniki FC	Sotirios Ninis	AM(C)	23	173	69	6(1)	1	NA	NA	NA	1	83.9	0.6	NA	6.6
+Greece	PAOK Thessaloniki FC	Giannis Skondras	D	24	178	75	1(1)	NA	NA	1	NA	NA	75.4	0.5	NA	6.55
+Greece	PAOK Thessaloniki FC	Miroslav Stoch	AM(L)	24	168	60	6(2)	NA	1	1	NA	2.3	82.5	NA	NA	6.5
+Greece	PAOK Thessaloniki FC	Stefanos Athanasiadis	FW	25	185	72	8	1	NA	NA	NA	1.4	71.4	2.3	NA	6.47
+Greece	PAOK Thessaloniki FC	Dimitrios Salpingidis	AM(R)	32	171	72	1(5)	2	NA	NA	NA	0.8	76.9	NA	NA	6.43
+Greece	PAOK Thessaloniki FC	Juan Insaurralde	D(C)	29	188	81	2	NA	NA	NA	NA	NA	86.5	2	NA	6.41
+Greece	PAOK Thessaloniki FC	Sekou Jabateh Oliseh	M	23	178	70	2(2)	NA	NA	NA	NA	0.5	85.1	1.3	NA	6.3
+Greece	PAOK Thessaloniki FC	Hedwiges Maduro	D(C),DM(C)	29	185	79	2	NA	NA	1	NA	NA	85	0.5	NA	6.25
+Greece	PAOK Thessaloniki FC	Tomas Necid	FW	24	190	89	0(2)	NA	NA	NA	NA	1	100	NA	NA	6.25
+Greece	PAOK Thessaloniki FC	Zvonimir Vukic	M	34	182	72	0(4)	1	NA	NA	NA	0.3	96	0.3	NA	6.25
+Greece	PAOK Thessaloniki FC	Ergys Kace	M	20	161	60	2	NA	NA	1	NA	0.5	84.1	NA	NA	6.22
+Greece	PAOK Thessaloniki FC	Dimitrios Konstantinidis	D	19	173	70	1	NA	NA	NA	NA	NA	76.9	NA	NA	6.15
+Greece	PAOK Thessaloniki FC	Liam Lawrence	M(R)	32	180	71	0(2)	NA	NA	NA	NA	NA	73.3	NA	NA	5.78
+Greece	PAOK Thessaloniki FC	Asterios Giakoumis	GK	25	182	71	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Greece	PAOK Thessaloniki FC	Georgios Georgiadis	FW	26	178	63	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Greece	PAOK Thessaloniki FC	Iñigo López	D(C)	31	185	72	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Greece	PAOK Thessaloniki FC	Michael Gspurning	GK	32	196	95	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Denmark	Esbjerg fB	Mikkel Vestergaard	FW	21	180	75	0(1)	1	NA	NA	NA	2	81.8	1	NA	7.47
+Denmark	Esbjerg fB	Hans Henrik Andreasen	M(C)	35	183	72	7	2	NA	NA	NA	1.6	68.9	3.4	1	7.33
+Denmark	Esbjerg fB	Peter Ankersen	D(R)	23	180	73	6	NA	1	3	NA	2.2	70.8	0.7	NA	7.24
+Denmark	Esbjerg fB	Ryan Laursen	D	21	NA	NA	2	NA	NA	NA	NA	NA	72.9	2	NA	7
+Denmark	Esbjerg fB	Kian Hansen	D	25	175	69	5(1)	NA	NA	NA	NA	0.3	70.8	2.2	NA	6.99
+Denmark	Esbjerg fB	Emil Lyng	M(L)	24	188	75	6	NA	1	NA	NA	1.3	71.3	2.5	NA	6.91
+Denmark	Esbjerg fB	Jonas Knudsen	D(L)	21	185	72	8	NA	2	3	NA	0.6	65.3	1.8	NA	6.89
+Denmark	Esbjerg fB	Martin Pusic	FW	26	187	NA	2	1	NA	NA	NA	1.5	71	1.5	NA	6.86
+Denmark	Esbjerg fB	Mick Van Buren	FW	21	184	73	6(1)	3	NA	1	NA	1.6	63.8	2.6	1	6.82
+Denmark	Esbjerg fB	Jens Berthel Askou	D(C)	31	190	85	5(1)	NA	NA	NA	NA	0.2	73	2.3	NA	6.8
+Denmark	Esbjerg fB	Jerry Lucena	D	33	176	68	3	NA	NA	NA	NA	NA	83	1.3	NA	6.72
+Denmark	Esbjerg fB	Frederik Ronnow	GK	21	188	76	6	NA	NA	NA	NA	NA	50	NA	NA	6.7
+Denmark	Esbjerg fB	Martin Dubravka	GK	25	190	80	2	NA	NA	NA	NA	NA	47.5	NA	NA	6.69
+Denmark	Esbjerg fB	Jakob Ankersen	M(R)	23	182	70	7(1)	NA	2	2	NA	1.9	68.1	0.6	NA	6.62
+Denmark	Esbjerg fB	Magnus Lekven	M	26	177	75	4(1)	NA	NA	1	NA	0.2	86.8	0.6	NA	6.59
+Denmark	Esbjerg fB	Jeppe Andersen	M	21	178	NA	3(1)	NA	NA	NA	NA	1	80.6	0.3	NA	6.58
+Denmark	Esbjerg fB	Davidson Drobo-Ampem	D(C)	26	189	82	5	NA	NA	2	NA	0.4	82.2	1.4	NA	6.56
+Denmark	Esbjerg fB	Mushaga Bakenga	FW	21	181	75	4(1)	1	NA	NA	NA	1.4	71.7	1	NA	6.39
+Denmark	Esbjerg fB	Casper Nielsen	FW	19	NA	NA	1(2)	NA	NA	NA	NA	2.3	70.7	1	NA	6.36
+Denmark	Esbjerg fB	Pape Pate Diouf	FW	27	186	76	1(4)	1	NA	NA	NA	1.6	73.3	0.6	NA	6.32
+Denmark	Esbjerg fB	Martin Bergvold	AM(C)	30	184	70	2(4)	NA	NA	NA	NA	0.2	74.7	0.3	NA	6.23
+Denmark	Esbjerg fB	Jakob Andreasen	M	20	NA	NA	0(1)	NA	NA	NA	NA	NA	75	NA	NA	6.18
+Denmark	Esbjerg fB	Jesper Rasmussen	M	22	NA	NA	1(4)	NA	NA	NA	NA	0.2	84.4	0.4	NA	6.14
+Denmark	Esbjerg fB	Mikkel Maigaard	FW	19	NA	NA	0(1)	NA	NA	NA	NA	NA	NA	NA	NA	5.97
+Denmark	Esbjerg fB	Mohammed Fellah	M	24	167	70	1	NA	NA	NA	NA	2	83.3	NA	NA	5.89
+Denmark	Esbjerg fB	Michael Jakobsen	D(L)	28	185	80	1	NA	NA	1	NA	NA	90	NA	NA	5.85
+Denmark	Esbjerg fB	Jeppe Brinch	D	18	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Denmark	Esbjerg fB	Jeppe Höjbjerg	GK	18	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Denmark	Esbjerg fB	Jonas Gejel Hansen	M	18	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Denmark	Esbjerg fB	Mathias Rosenörn	GK	20	185	79	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Kuban Krasnodar	Aras Özbiliz	AM(R)	24	170	71	2	2	NA	NA	NA	3.5	82.4	0.5	2	8.35
+Russia	Kuban Krasnodar	Xandao	D(C)	26	193	88	23	2	NA	3	NA	0.7	74.7	2.5	2	7.19
+Russia	Kuban Krasnodar	Charles Kaboré	D(R),DM(C)	26	181	75	18(1)	NA	4	6	1	0.8	76.9	0.4	1	7.09
+Russia	Kuban Krasnodar	Ivelin Popov	AM(C)	26	181	71	23	3	9	2	NA	2.4	73.9	0.6	2	6.89
+Russia	Kuban Krasnodar	Vladislav Ignatjev	AM(R)	27	180	72	7(1)	1	1	NA	NA	2	72.2	0.8	NA	6.87
+Russia	Kuban Krasnodar	Aleksei Kozlov	D(R)	27	182	75	18	NA	2	NA	NA	0.6	78.6	0.4	1	6.86
+Russia	Kuban Krasnodar	Aleksandr Belenov	GK	27	197	94	23	NA	NA	1	NA	NA	43.9	0.3	NA	6.79
+Russia	Kuban Krasnodar	Igor Armas	D(C)	26	192	86	4(3)	NA	NA	1	NA	NA	79.4	2.3	NA	6.79
+Russia	Kuban Krasnodar	Ibrahima Baldé	AM(LR),FW	24	188	72	14(5)	7	1	2	NA	2.2	59.7	2.5	1	6.74
+Russia	Kuban Krasnodar	Artur Tlisov	DM(C)	31	182	73	17(2)	NA	NA	4	NA	0.6	79.6	0.5	NA	6.66
+Russia	Kuban Krasnodar	Maksim Zhavnerchik	D(LR)	29	179	76	9(2)	NA	NA	3	NA	0.7	72.2	0.5	NA	6.63
+Russia	Kuban Krasnodar	Stanislav Manolev	D(R)	28	183	72	3	NA	NA	1	NA	0.3	71.3	1.3	NA	6.62
+Russia	Kuban Krasnodar	Artem Fidler	DM(C)	30	178	74	7(1)	NA	1	1	NA	0.3	79.5	0.5	NA	6.61
+Russia	Kuban Krasnodar	Gigel Bucur	AM(L)	33	171	66	16(6)	5	1	2	NA	1.9	75.6	0.3	1	6.6
+Russia	Kuban Krasnodar	Anton Sosnin	DM(C)	24	178	72	5(7)	NA	NA	2	NA	1	74.6	1.3	NA	6.59
+Russia	Kuban Krasnodar	Roman Bugayev	D(L)	25	181	70	14(2)	NA	1	1	1	0.4	75.9	0.8	NA	6.59
+Russia	Kuban Krasnodar	Djibril Cissé	FW	32	183	83	5(10)	4	1	1	NA	1.5	65.2	1.5	1	6.56
+Russia	Kuban Krasnodar	David Tsorayev	AM(R)	30	174	72	8(4)	NA	NA	NA	1	0.8	74.2	0.5	NA	6.48
+Russia	Kuban Krasnodar	Lorenzo Melgarejo	D(L),M(L)	23	171	78	8(3)	2	NA	1	1	1.4	69.1	0.8	NA	6.47
+Russia	Kuban Krasnodar	Arsen Khubulov	AM(R)	23	181	74	8(3)	1	NA	NA	1	1.4	78.6	0.3	NA	6.35
+Russia	Kuban Krasnodar	Gonzalo Bueno	FW	21	176	74	0(3)	NA	NA	NA	NA	1	70	NA	NA	6.25
+Russia	Kuban Krasnodar	Vladimir Lobkarev	D	20	174	67	0(1)	NA	NA	NA	NA	NA	NA	2	NA	6.18
+Russia	Kuban Krasnodar	Mohammed Rabiu	DM(C)	24	187	70	1(3)	NA	NA	1	NA	NA	76.1	1.5	NA	6.15
+Russia	Kuban Krasnodar	Marcos Ureña	FW	24	179	72	0(4)	NA	NA	NA	NA	NA	76.9	0.3	NA	6.13
+Russia	Kuban Krasnodar	Nikita Bezlikhotnov	M	23	180	72	1(3)	NA	NA	NA	NA	0.5	39.3	0.3	NA	6.12
+Russia	Kuban Krasnodar	Bogdan Karuykin	GK	28	184	92	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Kuban Krasnodar	Denis Yakuba	D	17	178	68	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Kuban Krasnodar	Eduard Baychora	GK	22	194	75	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Kuban Krasnodar	Temur Bukia	M	19	176	70	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+England	Wigan	Martyn Waghorn	AM(R)	24	176	83	9	3	5	3	NA	1.7	69.5	0.6	1	7.44
+England	Wigan	Shaun Maloney	AM(CLR)	31	173	69	5	3	NA	NA	NA	1.2	89	NA	1	7.31
+England	Wigan	Leon Barnett	D(C)	28	185	71	35	4	NA	4	NA	1	71.7	4.3	2	7.26
+England	Wigan	Joshua McEachran	DM(C)	21	178	66	3(2)	NA	1	2	NA	NA	82.1	0.2	NA	7.18
+England	Wigan	Ryan Shotton	D(CR),M(R)	25	191	85	7(2)	1	1	3	NA	0.7	68.5	2.7	NA	7.16
+England	Wigan	Nick Powell	AM(C),FW	20	183	65	21(5)	7	2	4	NA	3	68.8	1.3	4	7.12
+England	Wigan	Thomas Rogne	D(C)	23	187	87	10(2)	NA	1	NA	NA	0.5	73.3	4.6	1	7.12
+England	Wigan	Ben Watson	M(C)	28	178	68	25	2	3	6	NA	1.5	81.8	0.6	2	7.1
+England	Wigan	Emmerson Boyce	D(CR),M(R)	34	180	73	32(3)	2	3	3	NA	0.8	71.9	1.9	1	7.09
+England	Wigan	Iván Ramis	D(C)	29	188	82	12	NA	NA	1	NA	0.3	80.3	2.4	1	7.09
+England	Wigan	Lee Nicholls	GK	21	191	85	6	NA	NA	NA	NA	NA	39.6	0.2	NA	7.05
+England	Wigan	James McArthur	M(C)	26	168	64	31(3)	4	2	3	NA	1.6	78.8	1	3	6.92
+England	Wigan	James McCarthy	M(CL)	23	180	72	5	NA	NA	1	NA	1	78.5	0.2	NA	6.91
+England	Wigan	Ali Al-Habsi	GK	32	194	80	19	NA	NA	1	NA	NA	47	0.3	1	6.88
+England	Wigan	James Perch	D(CLR),DM(C)	28	180	72	32(2)	NA	NA	7	NA	0.4	80.2	1.8	NA	6.86
+England	Wigan	Jordi Gómez	AM(CLR)	28	178	74	16(9)	6	2	4	NA	1.5	82	0.4	NA	6.86
+England	Wigan	Chris McCann	M(C)	26	185	75	22(5)	2	NA	1	NA	1	75.8	0.9	NA	6.84
+England	Wigan	Scott Carson	GK	28	190	76	13	NA	NA	NA	NA	NA	55.3	0.2	NA	6.82
+England	Wigan	Jean Beausejour	D(L),M(L)	29	178	84	25(3)	2	2	9	NA	0.5	71.3	0.9	1	6.78
+England	Wigan	Callum McManaman	AM(LR)	22	174	74	13(12)	1	1	2	1	1.2	80	0.3	1	6.7
+England	Wigan	James McClean	AM(L)	24	175	68	20(11)	2	3	5	1	1.9	74.2	1.2	1	6.64
+England	Wigan	Stephen Crainey	D(L)	32	175	60	10(6)	NA	1	2	NA	0.3	75.2	0.4	NA	6.63
+England	Wigan	Marc-Antoine Fortuné	AM(R),FW	32	183	81	15(14)	4	5	NA	NA	1.5	76.6	1.1	NA	6.62
+England	Wigan	Nicky Maynard	FW	27	180	70	8(3)	3	NA	NA	NA	1.7	78.3	0.5	1	6.54
+England	Wigan	Grant Holt	FW	32	183	77	9(7)	2	1	1	NA	1.4	56.4	1.4	NA	6.51
+England	Wigan	Robert Kiernan	D	23	186	77	2(4)	NA	NA	NA	NA	0.3	66.7	1.3	NA	6.46
+England	Wigan	Roger Espinoza	M	27	181	73	4(11)	NA	NA	1	NA	0.3	75.9	0.7	NA	6.4
+England	Wigan	Marc Albrighton	AM(R)	24	175	67	2(2)	NA	NA	1	NA	1	61.2	NA	NA	6.39
+England	Wigan	Tyias Browning	D	19	181	76	1(1)	NA	NA	NA	NA	0.5	62.2	0.5	NA	6.36
+England	Wigan	Jack Collison	M(CLR)	25	183	75	1(2)	NA	NA	NA	NA	0.7	77.9	NA	NA	6.29
+England	Wigan	Ryan Tunnicliffe	M(CL)	21	183	80	3(2)	NA	NA	NA	NA	0.6	67	1	NA	6.27
+England	Wigan	William Keane	FW	21	178	78	2(2)	NA	NA	NA	NA	1	89.1	NA	NA	6.03
+England	Wigan	Gary Caldwell	D(C)	31	180	74	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+England	Wigan	Juan Carlos Garcia	D	26	180	76	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+England	Wigan	Markus Holgersson	D(C)	28	188	79	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+England	Wigan	Michael Pollitt	GK	42	193	76	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+England	Wigan	Nouha Dicko	FW	21	173	74	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+France	Bordeaux	Grégory Sertic	M(C)	24	183	76	22(1)	3	6	2	NA	2	84.6	0.6	3	7.32
+France	Bordeaux	Lamine Sané	D(CR),DM(C)	27	192	77	30	NA	NA	3	NA	0.6	84	3.5	2	7.26
+France	Bordeaux	Théo Pellenard	D	20	182	71	3	NA	NA	1	NA	NA	80.5	3	NA	7.18
+France	Bordeaux	Lucas Orban	D(L)	25	184	77	20	NA	1	3	1	0.1	76.1	2.9	1	7.15
+France	Bordeaux	Mariano	D(R),M(R)	27	177	69	31	NA	3	3	NA	0.4	73	0.7	2	7.13
+France	Bordeaux	Landry N'Guémo	DM(C)	28	173	70	19(2)	1	2	2	NA	0.9	87	0.9	1	7.12
+France	Bordeaux	Carlos Henrique	D(C)	30	189	87	28	2	NA	9	NA	0.4	77.5	2.5	1	7.01
+France	Bordeaux	Henri Saivet	AM(CLR),FW	23	175	73	28(3)	6	5	NA	NA	1.9	75.5	1.9	1	6.98
+France	Bordeaux	Ludovic Obraniak	AM(CLR)	29	174	72	20(1)	4	2	4	NA	1.9	80	0.9	NA	6.95
+France	Bordeaux	Kévin Olimpa	GK	26	186	92	1(1)	NA	NA	NA	NA	NA	58.7	NA	NA	6.85
+France	Bordeaux	Jaroslav Plasil	M(CR)	32	182	72	4	NA	NA	NA	NA	1.3	86.4	1	NA	6.84
+France	Bordeaux	Nicolas Maurice-Belay	AM(CLR),FW	28	182	80	24(4)	3	3	4	NA	0.9	81.1	1	2	6.82
+France	Bordeaux	Cédric Carrasso	GK	32	187	87	29	NA	NA	NA	NA	NA	57.1	0.2	2	6.8
+France	Bordeaux	Cheick Diabaté	FW	25	194	88	13(6)	8	NA	2	NA	2.5	76	2.9	1	6.79
+France	Bordeaux	Andre Biyogo Poko	DM(C)	21	173	72	10(5)	NA	NA	1	NA	0.7	77.6	1.2	1	6.75
+France	Bordeaux	Matthieu Chalmé	D(R)	33	176	71	0(2)	NA	NA	1	NA	NA	88.2	NA	NA	6.68
+France	Bordeaux	Azbe Jug	GK	22	191	92	1	NA	NA	NA	NA	NA	81.8	NA	NA	6.67
+France	Bordeaux	Guillaume Hoarau	FW	30	191	76	6(5)	1	NA	NA	NA	2.3	63.6	5.7	NA	6.61
+France	Bordeaux	Jussie	M(CL),FW	30	181	81	13(6)	6	1	2	NA	1.1	77.9	0.8	1	6.57
+France	Bordeaux	Abdou Traoré	M(CR)	26	180	79	6(4)	1	NA	1	1	0.5	84.2	0.9	NA	6.56
+France	Bordeaux	Diego Rolan	AM(R),FW	21	176	69	7(5)	NA	2	1	NA	1.1	76.1	0.8	NA	6.44
+France	Bordeaux	Marc Planus	D(C)	32	180	82	8(2)	NA	NA	2	1	NA	83.9	0.9	NA	6.44
+France	Bordeaux	Julien Faubert	D(R),M(R)	30	180	75	9(8)	2	NA	1	NA	0.5	72.9	0.8	NA	6.39
+France	Bordeaux	Maxime Poundje	D(L)	21	179	71	8(3)	NA	NA	2	3	0.5	77.3	0.5	NA	6.29
+France	Bordeaux	Jeremie Bréchet	D(C)	34	186	81	1(3)	NA	NA	NA	NA	0.5	80	1	NA	6.25
+France	Bordeaux	Fahid Ben Khalfallah	AM(CLR)	31	170	72	0(3)	NA	NA	NA	NA	0.3	90	NA	NA	6.21
+France	Bordeaux	Hadi Sacko	FW	20	183	79	0(5)	NA	NA	1	NA	NA	81.3	NA	NA	6.08
+France	Bordeaux	Younes Kaabouni	M	18	179	67	0(3)	NA	NA	NA	NA	NA	84.6	0.3	NA	6.01
+France	Bordeaux	Vujadin Savic	D(C)	23	193	82	0(2)	NA	NA	NA	NA	NA	80	NA	NA	5.98
+France	Bordeaux	David Bellion	AM(R),FW	31	181	78	0(2)	NA	NA	NA	NA	NA	100	NA	NA	5.96
+France	Bordeaux	Enzo Crivelli	FW	19	NA	NA	0(2)	NA	NA	NA	NA	NA	66.7	0.5	NA	5.96
+France	Bordeaux	Clement Badin	M	20	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+France	Bordeaux	Jerome Prior	GK	18	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Ukraine	Chornomorets O.	Pablo Fontanello	D(C)	29	193	84	8	NA	NA	1	NA	0.6	73.5	4	1	7.42
+Ukraine	Chornomorets O.	Petro Kovalchuk	D	29	183	75	1	NA	NA	NA	NA	NA	58.8	3	NA	7.04
+Ukraine	Chornomorets O.	Evgen Past	GK	26	187	72	2	NA	NA	NA	NA	NA	46.2	NA	NA	7.03
+Ukraine	Chornomorets O.	Markus Berger	D(C)	29	186	82	7	NA	1	3	NA	0.3	77.3	3	NA	6.93
+Ukraine	Chornomorets O.	Anderson Santana	D(L)	27	184	78	7	NA	NA	NA	NA	0.9	75.6	1.7	NA	6.82
+Ukraine	Chornomorets O.	Vladimir Priyomov	M	28	183	75	2(2)	NA	1	NA	NA	2	76.7	0.3	NA	6.81
+Ukraine	Chornomorets O.	Franck Dja Djédjé	AM(LR),FW	27	176	70	7(1)	2	NA	1	NA	1.6	81.4	2.3	NA	6.73
+Ukraine	Chornomorets O.	Sito Riera	FW	27	184	75	5(1)	NA	2	1	1	1	66.5	0.3	NA	6.73
+Ukraine	Chornomorets O.	Kirill Kovalchuk	DM(C)	27	185	73	8	NA	NA	2	NA	0.6	81.6	1.1	NA	6.66
+Ukraine	Chornomorets O.	Ivan Bobko	DM(C)	23	183	70	7(1)	NA	1	NA	NA	0.9	77.6	0.9	NA	6.59
+Ukraine	Chornomorets O.	Olexiy Gai	M(C)	31	181	73	8	1	NA	NA	NA	1.4	80.2	1.6	NA	6.59
+Ukraine	Chornomorets O.	Oleksiy Antonov	FW	27	180	76	8	2	NA	NA	NA	1.6	75.7	1.6	NA	6.58
+Ukraine	Chornomorets O.	Pavlo Kutas	D	31	178	68	4(1)	NA	NA	NA	NA	NA	80.6	1.6	NA	6.55
+Ukraine	Chornomorets O.	Evgeniy Zubeyko	D	24	179	67	4	NA	NA	NA	1	0.3	70.3	1.3	NA	6.53
+Ukraine	Chornomorets O.	Dmitriy Bezotosnyi	GK	30	192	84	6	NA	NA	1	NA	NA	59.2	0.2	2	6.46
+Ukraine	Chornomorets O.	Léo Matos	D	27	182	72	3(5)	NA	NA	1	NA	0.5	73.6	1.3	NA	6.31
+Ukraine	Chornomorets O.	Anatoliy Didenko	FW	31	193	82	0(6)	1	NA	1	NA	1	76.2	0.3	NA	6.3
+Ukraine	Chornomorets O.	Tornike Okriashvili	M	22	181	71	0(2)	NA	NA	NA	NA	NA	50	NA	NA	6.06
+Ukraine	Chornomorets O.	Elis Bakaj	FW	26	175	68	1	NA	NA	NA	NA	NA	62.5	3	NA	6.05
+Ukraine	Chornomorets O.	Sergey Samodin	FW	29	178	76	0(2)	NA	NA	NA	NA	NA	25	0.5	NA	5.96
+Ukraine	Chornomorets O.	Pavlo Rebenok	M	28	180	70	0(1)	NA	NA	1	NA	NA	100	NA	NA	5.87
+Ukraine	Chornomorets O.	Kristi Vangjeli	D	28	176	70	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Ukraine	Chornomorets O.	Renar Valeev	M	26	176	71	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Ukraine	Chornomorets O.	Volodymyr Arzhanov	M	28	181	75	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Ukraine	Chornomorets O.	Yuriy Martyshchuk	GK	27	188	78	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Sweden	Elfsborg	Sebastian Holmén	D	21	NA	NA	4	NA	NA	NA	NA	0.5	86	4.3	NA	7.53
+Sweden	Elfsborg	Anton Lans	D	22	182	76	1	NA	NA	NA	NA	NA	85.7	1	NA	7.25
+Sweden	Elfsborg	Jon Jönsson	D(C)	30	184	85	5	1	NA	1	NA	0.8	80.9	3	NA	7.2
+Sweden	Elfsborg	Daniel Mobaeck	M	33	185	82	2(1)	NA	NA	NA	NA	0.3	80	3	NA	7.1
+Sweden	Elfsborg	Lasse Nilsson	FW	32	180	71	5	2	1	NA	NA	2.8	70.5	NA	1	6.83
+Sweden	Elfsborg	Kevin Stuhr-Ellegaard	GK	30	196	89	6	NA	NA	NA	NA	NA	58.4	0.7	1	6.82
+Sweden	Elfsborg	Mikkel Beckmann	FW	30	183	76	4	1	NA	2	NA	3	72.6	2	NA	6.82
+Sweden	Elfsborg	Abbas Hassan	GK	28	198	98	0(1)	NA	NA	NA	NA	NA	57.1	NA	NA	6.8
+Sweden	Elfsborg	Anders Svensson	DM(C)	37	175	76	6	NA	NA	1	NA	1.8	73.8	2	NA	6.71
+Sweden	Elfsborg	Stefan Ishizaki	M	31	181	75	4(1)	NA	1	3	NA	1.2	79	1.6	NA	6.71
+Sweden	Elfsborg	Johan Larsson	D(R)	23	181	75	6	NA	NA	1	NA	1.5	74.3	0.3	NA	6.7
+Sweden	Elfsborg	Henning Hauger	M	28	179	76	1	NA	NA	NA	NA	NA	69.2	2	NA	6.69
+Sweden	Elfsborg	Viktor Claesson	M	22	180	71	4(1)	1	1	3	NA	1.4	83.8	0.6	1	6.67
+Sweden	Elfsborg	Andreas Klarström	D(L)	36	174	70	5	NA	NA	1	NA	NA	77	0.8	NA	6.51
+Sweden	Elfsborg	Simon Hedlund	FW	21	175	68	1(3)	NA	NA	NA	NA	1	76.3	0.5	NA	6.38
+Sweden	Elfsborg	Niklas Hult	M	24	173	65	3	NA	NA	2	NA	0.3	72.3	1	NA	6.36
+Sweden	Elfsborg	Stefan Larsson	D	31	183	79	1	NA	NA	NA	NA	NA	52.4	1	NA	6.34
+Sweden	Elfsborg	Marcus Rohdén	M	22	182	76	5(1)	NA	NA	NA	NA	0.2	80.5	0.5	NA	6.26
+Sweden	Elfsborg	Mohamed Bangura	FW	24	177	77	0(4)	NA	NA	NA	NA	1	81.3	1	NA	6.25
+Sweden	Elfsborg	James Keene	FW	28	180	74	1(2)	NA	NA	NA	NA	0.3	65.5	1	NA	6.2
+Sweden	Elfsborg	Adam Lundqvist	M	20	NA	NA	1(1)	NA	NA	NA	NA	NA	78.8	NA	NA	6.01
+Sweden	Elfsborg	Joachim Jørgensen	M	25	183	76	1(2)	NA	NA	1	NA	NA	82.9	NA	NA	5.89
+Sweden	Elfsborg	Skúli Jón Fridgeirsson	D	25	184	75	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Sweden	Elfsborg	Tom Söderberg	D	26	191	90	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Croatia	Rijeka	Niko Datkovic	D	20	189	82	1	NA	NA	NA	NA	NA	68.2	1	NA	7.46
+Croatia	Rijeka	Mateo Bertosa	D(L)	25	186	71	5(1)	NA	NA	2	NA	NA	73.7	2.5	NA	7.25
+Croatia	Rijeka	Dario Knezevic	D(C)	31	184	80	5	NA	NA	1	NA	0.4	85.2	4	1	7.2
+Croatia	Rijeka	Ivan Vargic	GK	27	192	90	6	NA	NA	NA	NA	NA	32.9	0.3	NA	6.96
+Croatia	Rijeka	Ivan Tomecak	M	24	176	65	4(1)	NA	1	NA	NA	0.6	65.3	1.6	NA	6.87
+Croatia	Rijeka	Mate Males	M(C)	25	181	80	6	NA	NA	1	NA	0.7	79.2	0.7	NA	6.82
+Croatia	Rijeka	Mehmed Alispahic	M	26	182	75	2(1)	NA	NA	NA	NA	1.7	75.7	1.7	NA	6.82
+Croatia	Rijeka	Goran Mujanovic	M	30	175	75	2(3)	NA	NA	1	NA	0.6	53.7	0.4	NA	6.8
+Croatia	Rijeka	Luka Maric	D(C)	26	183	79	5	NA	1	NA	NA	NA	80.8	2	NA	6.79
+Croatia	Rijeka	Ivan Mocinic	M(C)	20	180	72	6	NA	NA	1	NA	0.2	79.6	0.5	NA	6.68
+Croatia	Rijeka	Zoran Kvrzic	M	25	180	72	5(1)	NA	NA	1	NA	1	63.5	1.7	NA	6.6
+Croatia	Rijeka	Andrej Kramaric	FW	22	177	70	3(1)	1	NA	1	NA	0.8	75	0.8	NA	6.43
+Croatia	Rijeka	Marko Leskovic	D	22	188	83	1	NA	NA	NA	NA	NA	100	NA	NA	6.41
+Croatia	Rijeka	Leon Benko	FW	30	182	78	6	1	NA	NA	NA	3.2	67.1	1.2	NA	6.29
+Croatia	Rijeka	Ivan Boras	D	22	191	84	1(1)	NA	NA	2	NA	NA	71.1	1	NA	6.28
+Croatia	Rijeka	Nikola Pokrivac	M	28	184	85	2(1)	NA	NA	NA	NA	0.3	89.1	0.7	NA	6.28
+Croatia	Rijeka	Anas Sharbini	M	27	180	75	1(3)	NA	NA	NA	NA	0.5	84.2	0.3	NA	6.25
+Croatia	Rijeka	Vedran Jugovic	M	24	178	76	1	NA	NA	NA	NA	NA	100	NA	NA	6.11
+Croatia	Rijeka	Josip Brezovec	M	27	176	75	2(3)	NA	NA	1	NA	1	46.9	NA	NA	6.06
+Croatia	Rijeka	Ivan Krstanovic	FW	31	196	87	2(2)	NA	NA	1	NA	0.8	64.3	1.3	NA	6.02
+Croatia	Rijeka	Ivan Mance	GK	31	195	91	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Croatia	Rijeka	Ricardo Bagadur	D	18	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Czech Republic	Viktoria Plzen	Matús Kozácik	GK	30	193	85	6	NA	NA	1	NA	NA	52.4	0.2	1	7.1
+Czech Republic	Viktoria Plzen	Frantisek Rajtoral	D(R),M(R)	28	179	77	6	1	1	NA	NA	1.8	82.8	0.2	NA	6.74
+Czech Republic	Viktoria Plzen	Tomas Horava	DM(C)	25	180	68	6	1	NA	1	NA	0.7	82.9	0.7	1	6.67
+Czech Republic	Viktoria Plzen	Daniel Kolár	AM(C)	28	179	76	6	1	2	1	NA	1.7	82.9	0.5	NA	6.61
+Czech Republic	Viktoria Plzen	Pavel Horváth	DM(C)	38	178	80	6	NA	1	1	NA	1.8	72.4	0.2	NA	6.53
+Czech Republic	Viktoria Plzen	Tomas Wágner	FW	24	175	74	0(2)	1	NA	NA	NA	1	100	NA	NA	6.46
+Czech Republic	Viktoria Plzen	Stanislav Tecl	FW	23	179	78	3(3)	1	1	1	NA	1.3	71.1	1	NA	6.42
+Czech Republic	Viktoria Plzen	Marian Cisovsky	D(C)	34	186	80	4	NA	NA	1	NA	0.5	83.3	0.5	NA	6.32
+Czech Republic	Viktoria Plzen	Milan Petrzela	AM(R)	30	171	65	6	NA	NA	NA	NA	1	68.6	NA	NA	6.29
+Czech Republic	Viktoria Plzen	Marek Bakos	FW	30	184	76	2(3)	1	NA	1	NA	0.8	70	0.8	NA	6.26
+Czech Republic	Viktoria Plzen	David Limbersky	D(L)	30	178	73	3	NA	NA	2	NA	0.7	77.7	NA	NA	6.24
+Czech Republic	Viktoria Plzen	Roman Hubnik	D(C)	29	192	83	4(1)	NA	NA	2	NA	NA	73.5	2.4	NA	6.21
+Czech Republic	Viktoria Plzen	Michal Duris	AM(L)	25	183	75	3(3)	NA	NA	NA	NA	1	80	0.3	NA	6.2
+Czech Republic	Viktoria Plzen	Vaclav Prochazka	D(C)	29	185	78	6	NA	NA	1	NA	0.3	75.3	2	NA	6.15
+Czech Republic	Viktoria Plzen	Jan Kovarik	AM(L)	25	182	75	2(3)	NA	NA	NA	NA	0.6	73.2	0.6	NA	6.12
+Czech Republic	Viktoria Plzen	Martin Pospisil	M	22	178	73	0(2)	NA	NA	NA	NA	NA	100	NA	NA	6.04
+Czech Republic	Viktoria Plzen	Radim Reznik	D(R)	25	180	74	2(1)	NA	NA	NA	NA	NA	79.4	NA	NA	5.74
+Czech Republic	Viktoria Plzen	Lukas Hejda	D	23	191	81	1	NA	NA	NA	NA	NA	72.7	2	NA	5.52
+Czech Republic	Viktoria Plzen	Petr Bolek	GK	29	190	78	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Czech Republic	Viktoria Plzen	Zdenek Koukal	M	30	180	75	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Israel	Maccabi Tel Aviv	Carlos García	D(C)	29	184	82	7	NA	NA	3	NA	NA	94.5	1.1	NA	7.18
+Israel	Maccabi Tel Aviv	Eran Zahavi	AM(CL)	26	182	72	7	3	1	NA	NA	2.7	73.6	0.9	1	7.14
+Israel	Maccabi Tel Aviv	Eitan Tibi	D(C)	26	185	81	8	NA	NA	1	NA	0.1	88.2	0.8	1	7.01
+Israel	Maccabi Tel Aviv	Barak Itzhaki	FW	29	174	70	5(1)	3	NA	1	NA	3	75.5	0.5	1	6.89
+Israel	Maccabi Tel Aviv	Omri Ben Harush	D	24	NA	NA	7(1)	NA	1	1	NA	0.1	77.4	1.3	NA	6.81
+Israel	Maccabi Tel Aviv	Sherran Yeini	D(R)	27	175	NA	8	NA	NA	1	NA	0.1	83.1	1.1	NA	6.78
+Israel	Maccabi Tel Aviv	Juan Pablo	GK	35	187	83	8	NA	NA	NA	NA	NA	78.4	0.3	1	6.71
+Israel	Maccabi Tel Aviv	Gal Alberman	M(C)	30	180	72	5(1)	NA	NA	NA	NA	0.3	85.2	0.8	1	6.67
+Israel	Maccabi Tel Aviv	Dor Micha	M	22	NA	NA	2(2)	1	NA	1	NA	0.8	82.6	NA	NA	6.61
+Israel	Maccabi Tel Aviv	Maharan Radi	M(C)	31	181	73	7(1)	NA	NA	1	NA	1	81.5	0.9	NA	6.48
+Israel	Maccabi Tel Aviv	Nikola Mitrovic	DM(C)	27	180	76	5(3)	NA	NA	1	NA	0.1	77.7	1	NA	6.45
+Israel	Maccabi Tel Aviv	Omri Altman	FW	20	NA	NA	4(2)	NA	NA	NA	NA	0.5	79.7	0.2	NA	6.42
+Israel	Maccabi Tel Aviv	Dabur Muanes	FW	21	NA	NA	2(3)	NA	NA	NA	NA	0.2	71.2	0.4	NA	6.4
+Israel	Maccabi Tel Aviv	Dan Einbinder	M	25	177	67	2(2)	NA	NA	1	NA	0.3	70	0.8	NA	6.34
+Israel	Maccabi Tel Aviv	Tal Ben Haim	AM(L)	24	175	64	3(2)	NA	NA	2	1	1	72.2	1	NA	6.28
+Israel	Maccabi Tel Aviv	Mané	D(L)	32	175	82	1	NA	NA	NA	NA	NA	87.2	1	NA	6.23
+Israel	Maccabi Tel Aviv	Rade Prica	FW	33	185	80	5(2)	NA	2	NA	NA	0.9	75.3	1	NA	6.22
+Israel	Maccabi Tel Aviv	Yoav David Ziv	D	33	177	75	1(1)	NA	NA	NA	NA	0.5	72.7	NA	NA	6.17
+Israel	Maccabi Tel Aviv	Remi Mareval	D	31	182	75	1	NA	NA	NA	NA	1	81	2	NA	6.06
+Israel	Maccabi Tel Aviv	Gael Margolis	FW	20	175	72	0(2)	NA	NA	NA	NA	NA	44.4	NA	NA	6
+Israel	Maccabi Tel Aviv	Barak Badash	FW	31	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Israel	Maccabi Tel Aviv	Barak Levi	GK	21	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Israel	Maccabi Tel Aviv	Moshe Lugasi	M	23	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Israel	Maccabi Tel Aviv	Reef Peretz	M	23	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Zulte-Waregem	Thorgan Hazard	AM(C)	21	172	70	6	2	NA	2	NA	4	84.5	0.5	1	7.28
+Belgium	Zulte-Waregem	Davy de Fauw	D(R)	32	185	65	6	1	NA	NA	NA	1.8	84.7	2.2	1	7.11
+Belgium	Zulte-Waregem	Bruno Godeau	D	21	NA	NA	1	NA	NA	1	NA	1	77.8	NA	NA	7.04
+Belgium	Zulte-Waregem	Bernard Malanda-Adje	D	19	181	NA	6	1	NA	2	NA	1.3	87.3	2	NA	7.01
+Belgium	Zulte-Waregem	Karel D'Haene	D(C)	33	181	76	6	NA	NA	NA	NA	0.7	83.8	1.8	NA	6.77
+Belgium	Zulte-Waregem	Sammy Bossut	GK	28	185	73	6	NA	NA	1	NA	NA	63.4	0.2	NA	6.77
+Belgium	Zulte-Waregem	Ibrahima Conte	M	22	177	NA	6	NA	NA	1	NA	1.2	79.9	0.2	NA	6.63
+Belgium	Zulte-Waregem	Sven Kums	DM(C)	26	178	65	6	NA	1	NA	NA	0.5	87.5	NA	NA	6.54
+Belgium	Zulte-Waregem	Jens Naessens	FW	22	187	76	3(1)	NA	NA	1	NA	1	83.8	1.5	NA	6.49
+Belgium	Zulte-Waregem	Steve Colpaert	D	27	176	71	4	NA	NA	1	NA	0.3	87.7	1	NA	6.46
+Belgium	Zulte-Waregem	Mouhamadou Habib Ha...	FW	26	192	80	5	NA	NA	1	NA	2.2	80.6	1.2	NA	6.43
+Belgium	Zulte-Waregem	Olafur Skulason	M	30	183	75	4	NA	NA	2	NA	0.5	82.4	1	NA	6.42
+Belgium	Zulte-Waregem	Idrissa Sylla	FW	23	187	75	1(3)	NA	1	NA	NA	1	82.1	2	NA	6.38
+Belgium	Zulte-Waregem	Frédéric Duplus	D(LR)	23	175	73	5	NA	NA	NA	NA	0.4	76	1.2	NA	6.25
+Belgium	Zulte-Waregem	Raphael Caceres	FW	26	187	80	1(5)	NA	NA	NA	NA	2	69.1	0.5	NA	6.17
+Belgium	Zulte-Waregem	Mamoutou N'Diaye	M	24	185	NA	0(4)	NA	NA	NA	NA	NA	86.7	NA	NA	6.13
+Belgium	Zulte-Waregem	Bryan Verboom	D	22	175	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Zulte-Waregem	Formose Mendy	D	20	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Zulte-Waregem	Mehdi Tarfi	M	20	175	70	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Zulte-Waregem	Sebastien Bruzzese	GK	25	184	74	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Zulte-Waregem	Theo Bongonda	FW	18	176	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Portugal	P.Ferreira	Tony	D(R)	33	178	70	4	NA	NA	2	NA	0.5	76.4	1.5	1	7.28
+Portugal	P.Ferreira	Hélder Lopes	D	25	179	66	3	NA	NA	NA	NA	NA	75	1.3	NA	7.18
+Portugal	P.Ferreira	Ricardo	D(C)	33	185	77	5	NA	NA	1	NA	0.4	84.6	1.6	NA	7.02
+Portugal	P.Ferreira	Matías Degra	GK	30	191	88	2	NA	NA	1	NA	NA	54.1	0.5	1	6.96
+Portugal	P.Ferreira	Gregory	D(C)	33	187	87	1	NA	NA	NA	NA	1	86	6	NA	6.94
+Portugal	P.Ferreira	Carlão	FW	27	190	78	1	NA	NA	NA	NA	3	73.1	3	NA	6.9
+Portugal	P.Ferreira	Rodrigo Antonio	M	26	179	76	2(1)	NA	NA	NA	NA	NA	76.1	0.7	NA	6.85
+Portugal	P.Ferreira	Tiago Valente	D(C)	28	186	82	5	NA	NA	2	NA	0.2	78.4	1.4	NA	6.8
+Portugal	P.Ferreira	Filipe Anunciação	M	34	179	75	5	NA	NA	2	NA	0.6	86.2	0.8	NA	6.74
+Portugal	P.Ferreira	António Filipe	GK	28	187	84	4	NA	NA	NA	NA	NA	52.8	NA	NA	6.73
+Portugal	P.Ferreira	Manuel José	AM(R)	33	177	75	5	NA	NA	NA	NA	1.6	81	0.6	NA	6.68
+Portugal	P.Ferreira	Jean Seri	M(C)	22	165	71	5(1)	NA	1	1	NA	1	84.5	0.5	NA	6.67
+Portugal	P.Ferreira	Bebé	FW	23	190	75	4(1)	NA	NA	NA	NA	2.6	79.3	0.8	NA	6.56
+Portugal	P.Ferreira	Sergio Oliveira	M	21	181	72	1(4)	NA	NA	NA	NA	1	76.7	NA	NA	6.55
+Portugal	P.Ferreira	Rui Miguel	M	30	176	70	3(1)	1	NA	1	NA	1.5	86.3	0.5	NA	6.51
+Portugal	P.Ferreira	Nuno Santos	FW	33	183	74	3	NA	NA	NA	NA	NA	80.2	1	NA	6.45
+Portugal	P.Ferreira	André Leão	DM(C)	28	182	78	5	NA	NA	1	1	0.2	81.9	0.6	NA	6.39
+Portugal	P.Ferreira	Paolo Hurtado	FW	23	177	68	2(2)	NA	NA	NA	NA	1	79.7	NA	NA	6.38
+Portugal	P.Ferreira	Caetano	FW	22	165	57	1	NA	NA	NA	NA	1	100	NA	NA	6.28
+Portugal	P.Ferreira	Rúben Ribeiro	D	26	175	67	3(2)	NA	NA	1	NA	0.6	84.6	0.4	NA	6.15
+Portugal	P.Ferreira	Romeu	M	28	185	72	0(3)	NA	NA	NA	NA	NA	100	NA	NA	6.05
+Portugal	P.Ferreira	Irobiso	FW	20	190	77	2(1)	NA	NA	1	NA	2	69.8	1	NA	6.04
+Croatia	Dinamo Zagreb	Josip Calusic	D	20	184	NA	1	NA	NA	NA	NA	NA	88.9	2	NA	7.62
+Croatia	Dinamo Zagreb	Grzegorz Sandomierski	GK	24	196	87	1	NA	NA	NA	NA	NA	66.7	NA	NA	7.17
+Croatia	Dinamo Zagreb	Josip Simunic	D(C)	36	195	89	5	NA	NA	1	NA	0.2	91.2	2.2	NA	7.04
+Croatia	Dinamo Zagreb	Arijan Ademi	DM(C)	23	183	79	4(1)	NA	1	2	NA	0.6	88.3	2	NA	6.94
+Croatia	Dinamo Zagreb	Domagoj Antolic	M	23	180	73	3	NA	NA	1	NA	1.7	82.5	1.3	NA	6.86
+Croatia	Dinamo Zagreb	Sammir	AM(C),FW	26	178	77	4	NA	NA	NA	NA	1	83.7	0.8	NA	6.86
+Croatia	Dinamo Zagreb	Ivo Pinto	D(R)	24	184	73	6	NA	1	NA	NA	0.3	79.4	1.2	1	6.79
+Croatia	Dinamo Zagreb	Josip Pivaric	D(L)	25	174	72	3	NA	NA	2	NA	0.3	83.8	0.3	NA	6.75
+Croatia	Dinamo Zagreb	Jerko Leko	M	33	188	76	1	NA	NA	NA	NA	1	86.2	NA	NA	6.73
+Croatia	Dinamo Zagreb	Junior Fernandes	FW	25	181	78	5(1)	1	NA	NA	NA	2.3	67.6	1.8	NA	6.71
+Croatia	Dinamo Zagreb	Lee Addy	D	23	175	73	3	NA	NA	NA	NA	NA	81.1	1	NA	6.68
+Croatia	Dinamo Zagreb	Marcelo Brozovic	AM(C)	21	180	65	5(1)	NA	NA	NA	NA	2.5	82.2	0.8	NA	6.64
+Croatia	Dinamo Zagreb	Soudani	FW	26	182	75	4	NA	NA	NA	NA	3.8	74.2	0.3	NA	6.63
+Croatia	Dinamo Zagreb	Fatos Beqiraj	FW	25	183	82	1(2)	1	NA	NA	NA	2	83.3	0.3	NA	6.54
+Croatia	Dinamo Zagreb	Duje Cop	FW	24	180	75	2(3)	1	NA	NA	NA	2.4	76.2	1.4	NA	6.5
+Croatia	Dinamo Zagreb	Ruben Lima	D	24	176	69	4(1)	NA	NA	1	NA	NA	79.3	1.2	NA	6.46
+Croatia	Dinamo Zagreb	Alen Halilovic	M	17	169	61	1(4)	NA	NA	1	NA	0.8	76.9	NA	NA	6.35
+Croatia	Dinamo Zagreb	Zvonko Pamic	M	23	184	79	3(1)	NA	NA	NA	NA	0.5	77.4	0.8	NA	6.35
+Croatia	Dinamo Zagreb	Oliver Zelenika	GK	20	192	82	5	NA	NA	NA	NA	NA	51.8	0.2	NA	6.31
+Croatia	Dinamo Zagreb	Jozo Simunovic	D	19	188	81	3(1)	NA	NA	NA	NA	NA	89.1	0.8	NA	6.21
+Croatia	Dinamo Zagreb	Ante Rukavina	FW	27	187	77	1(1)	NA	NA	1	NA	0.5	75.5	2	NA	6.03
+Croatia	Dinamo Zagreb	Said Husejinovic	M	25	178	75	0(1)	NA	NA	NA	NA	1	85.7	1	NA	5.9
+Croatia	Dinamo Zagreb	Bakary Sare	M	23	182	77	1	NA	NA	1	NA	NA	75	NA	NA	5.73
+Croatia	Dinamo Zagreb	Luka Capan	D	18	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Croatia	Dinamo Zagreb	Marko Mikulic	GK	20	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Romania	Pandurii	Marian Pleasca	M	24	172	65	2	NA	NA	NA	NA	1	79.1	NA	NA	7.22
+Romania	Pandurii	Erico	D	NA	185	81	5	NA	NA	2	NA	1.4	62	3.4	NA	7.14
+Romania	Pandurii	Paraskevas Christou	D(C)	30	185	78	6	NA	1	1	NA	0.2	84.5	2.5	NA	7.11
+Romania	Pandurii	Eric Pereira	M	28	177	78	6	2	NA	NA	NA	3	79.3	0.7	NA	7.09
+Romania	Pandurii	João Pedro Mingote	GK	33	184	80	2(1)	NA	NA	1	NA	NA	50	NA	NA	7.08
+Romania	Pandurii	Bogdan Ungurusan	D	31	178	73	4	NA	NA	1	NA	0.8	81.1	0.8	NA	7.04
+Romania	Pandurii	Iulian Mamele	D	24	182	78	1(1)	NA	NA	NA	NA	NA	86.3	1	NA	6.8
+Romania	Pandurii	Marko Momcilovic	D(L)	26	185	82	6	1	NA	1	NA	0.7	77	0.5	1	6.76
+Romania	Pandurii	Paul Anton	M	22	185	79	4	NA	NA	2	NA	0.8	81.3	1	NA	6.55
+Romania	Pandurii	Viorel Nicoara	M	26	178	70	2(1)	NA	NA	NA	NA	4.7	86.1	1	NA	6.53
+Romania	Pandurii	Alin Buleica	D	22	178	77	4(2)	NA	1	NA	NA	2	79.5	0.3	NA	6.48
+Romania	Pandurii	Razvan Stanca	GK	34	187	73	4	NA	NA	NA	NA	NA	74.4	NA	NA	6.48
+Romania	Pandurii	Admir Adrovic	FW	25	186	80	2	NA	NA	2	NA	1.5	72.1	3.5	NA	6.43
+Romania	Pandurii	Alexandru Ciucur	M	24	178	73	4(1)	NA	NA	1	NA	1	82.3	0.2	NA	6.37
+Romania	Pandurii	David Distefano	M	26	175	72	1(4)	NA	NA	NA	NA	0.2	81.7	0.4	NA	6.36
+Romania	Pandurii	Alex dos Santos	FW	23	181	77	3(2)	NA	NA	1	NA	1.4	76.3	1.6	NA	6.35
+Romania	Pandurii	Deivydas Matulevicius	FW	24	190	83	2	NA	NA	1	NA	1	79.6	3.5	NA	6.34
+Romania	Pandurii	Nicandro Breeveld	DM(C)	27	174	70	6	NA	NA	1	NA	0.8	83.4	1.2	NA	6.31
+Romania	Pandurii	Ionut Rada	D	24	188	85	1	NA	NA	NA	NA	NA	91.9	1	NA	6.09
+Romania	Pandurii	Paulinho	M	29	175	60	0(2)	NA	NA	1	NA	NA	81.8	NA	NA	6.06
+Romania	Pandurii	Calin Cristea	M	25	182	78	1(2)	NA	NA	NA	NA	1	86.2	0.3	NA	6.03
+Romania	Pandurii	Sipo	D	26	178	70	0(1)	NA	NA	NA	NA	NA	100	NA	NA	5.9
+Romania	Pandurii	Andrei Pitian	M	18	NA	NA	0(1)	NA	NA	NA	NA	NA	83.3	NA	NA	5.83
+Romania	Pandurii	Bogdan Danaricu	M	19	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Cyprus	Apollon Limassol	Isli Hidi	GK	33	191	85	2	NA	NA	NA	NA	NA	50.9	0.5	1	7.18
+Cyprus	Apollon Limassol	Abraham Guié Gneki	FW	27	180	70	1(1)	1	NA	NA	NA	1	90	0.5	NA	7.17
+Cyprus	Apollon Limassol	Marios Stylianou	M	21	182	75	3	NA	NA	1	NA	0.3	72.3	1.3	NA	7.11
+Cyprus	Apollon Limassol	Giorgos Vasiliou	D(L)	29	175	72	5	NA	1	2	NA	NA	70.2	NA	NA	6.95
+Cyprus	Apollon Limassol	Giorgos Merkis	D(C)	29	183	78	6	NA	NA	1	NA	0.7	79.7	1.7	NA	6.92
+Cyprus	Apollon Limassol	Rachid Hamdani	M	28	176	65	4	NA	NA	NA	NA	NA	85.5	0.8	NA	6.86
+Cyprus	Apollon Limassol	Christos Karipidis	D	31	184	79	4	NA	NA	1	NA	0.3	92.5	1.8	NA	6.8
+Cyprus	Apollon Limassol	David Rojas Mena	D	22	NA	NA	2	NA	NA	NA	NA	0.5	69.6	1.5	NA	6.74
+Cyprus	Apollon Limassol	Fotis Papoulis	FW	29	175	69	5	1	NA	NA	NA	1	74.4	0.4	NA	6.61
+Cyprus	Apollon Limassol	Gastón Sangoy	FW	29	179	79	5(1)	3	1	2	1	3	60.8	0.8	NA	6.61
+Cyprus	Apollon Limassol	Marcos Gullón	DM(C)	25	185	79	6	NA	NA	1	NA	0.3	84.2	1.3	NA	6.61
+Cyprus	Apollon Limassol	Roberto	FW	34	190	81	5(1)	NA	1	1	NA	0.7	63.2	4.3	NA	6.48
+Cyprus	Apollon Limassol	Bruno Vale	GK	30	193	84	4	NA	NA	NA	NA	NA	63.5	0.5	NA	6.47
+Cyprus	Apollon Limassol	Camel Meriem	AM(CR)	34	174	70	3(3)	NA	NA	NA	NA	0.5	83.9	0.2	NA	6.39
+Cyprus	Apollon Limassol	Charis Kyriakou	M	19	NA	NA	2	NA	NA	NA	NA	NA	86.5	NA	NA	6.38
+Cyprus	Apollon Limassol	Ovidiu Dananae	D	28	180	76	2	NA	NA	NA	NA	NA	75	1	NA	6.32
+Cyprus	Apollon Limassol	Bertrand Robert	M	30	174	68	2(1)	NA	NA	NA	NA	NA	86.8	0.3	NA	6.3
+Cyprus	Apollon Limassol	Alex Konstantinou	FW	21	188	78	2(3)	NA	NA	1	NA	NA	76.7	0.2	NA	6.27
+Cyprus	Apollon Limassol	Catalá	D(L)	29	175	72	1(1)	NA	NA	NA	NA	NA	70.7	0.5	NA	6.17
+Cyprus	Apollon Limassol	Doneil Henry	D(C)	20	188	82	0(2)	NA	NA	NA	NA	NA	NA	NA	NA	5.99
+Cyprus	Apollon Limassol	Stefan Grigorie	M	32	178	73	1(2)	NA	NA	1	NA	NA	84.8	NA	NA	5.98
+Cyprus	Apollon Limassol	Angelis Charalambous	D	24	185	76	1(1)	NA	NA	NA	NA	0.5	92.9	1.5	NA	5.86
+Cyprus	Apollon Limassol	Andreas Stavrou	M	25	170	62	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Cyprus	Apollon Limassol	Michalis Fani	GK	33	185	82	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Switzerland	Thun	Fulvio Sulmoni	D	28	181	71	3	NA	NA	1	NA	NA	90.6	3	NA	7.36
+Switzerland	Thun	Benjamin Lüthi	D(R)	25	176	71	6	NA	1	2	NA	0.7	70.3	1	NA	6.97
+Switzerland	Thun	Sekou Sanogo Junior	M	24	183	78	3	NA	NA	NA	NA	1.3	86.4	0.7	NA	6.89
+Switzerland	Thun	Andreas Wittwer	D	23	180	77	5	NA	1	1	NA	1	79.2	0.8	NA	6.86
+Switzerland	Thun	Luca Zuffi	M	24	180	70	3(1)	NA	1	2	NA	0.3	76.3	1.8	NA	6.71
+Switzerland	Thun	Lukas Schenkel	D	29	183	81	4(1)	NA	NA	1	NA	0.2	85.8	2.2	NA	6.66
+Switzerland	Thun	Christian Schneuwly	M	26	178	74	4(1)	1	NA	3	NA	2.2	78.8	0.4	1	6.65
+Switzerland	Thun	Dennis Hediger	DM(C)	27	175	71	6	NA	NA	1	NA	1	78.2	0.8	NA	6.6
+Switzerland	Thun	Enrico Schirinzi	M	29	177	70	3	NA	NA	1	NA	0.7	68.6	NA	NA	6.6
+Switzerland	Thun	Josef Martinez	FW	20	170	68	3(2)	1	NA	1	NA	1.6	68.1	1.4	NA	6.55
+Switzerland	Thun	Thomas Reinmann	D(C)	30	176	75	5	NA	NA	NA	NA	NA	88.9	0.6	NA	6.51
+Switzerland	Thun	Cássio	FW	27	192	85	2(1)	NA	NA	NA	NA	2.3	73.7	0.3	NA	6.48
+Switzerland	Thun	Michael Siegfried	D	26	188	79	3	NA	NA	NA	NA	0.7	74.8	2	NA	6.42
+Switzerland	Thun	Berat Sadik	FW	27	192	90	1(5)	1	NA	NA	NA	1.5	64.6	1.8	NA	6.41
+Switzerland	Thun	Marco Schneuwly	FW	29	183	82	5(1)	NA	NA	NA	NA	2.5	68.8	2.3	NA	6.37
+Switzerland	Thun	Guillaume Faivre	GK	27	189	82	5	NA	NA	NA	NA	NA	61.3	0.2	NA	6.31
+Switzerland	Thun	David Moser	GK	25	185	78	1	NA	NA	NA	NA	NA	83.3	NA	NA	6.22
+Switzerland	Thun	Milos Krstic	M	27	179	73	1(1)	NA	NA	NA	NA	1.5	78.6	0.5	NA	6.21
+Switzerland	Thun	Nelson Ferreira	M	31	175	71	3(3)	NA	NA	NA	NA	1.3	75	0.2	NA	6.18
+Switzerland	Thun	Mathieu Salamand	M	22	179	70	0(1)	NA	NA	NA	NA	1	33.3	NA	NA	5.36
+Switzerland	Thun	David Frey	M	23	178	81	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Switzerland	Thun	Kevin Bigler	M	21	182	75	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Switzerland	Thun	Nicolas Schindelholz	D	26	180	73	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Cyprus	APOEL Nicosia	Marcelo de Oliveira	D(C)	32	186	78	5	NA	NA	3	NA	0.6	87.1	2.2	1	7.11
+Cyprus	APOEL Nicosia	Kostakis Artymatas	M	20	NA	NA	1	NA	NA	NA	NA	1	97.9	NA	NA	7.03
+Cyprus	APOEL Nicosia	Urko Pardo	GK	31	189	85	5	NA	NA	1	NA	NA	46.8	0.6	1	6.9
+Cyprus	APOEL Nicosia	João Guilherme	D(C)	27	184	74	4	NA	NA	2	NA	0.5	80.6	2.8	NA	6.89
+Cyprus	APOEL Nicosia	Aritz Borda	D(C)	29	189	77	5	NA	NA	1	NA	NA	84.3	1.8	NA	6.88
+Cyprus	APOEL Nicosia	Esmael	FW	22	184	73	3(1)	1	NA	1	NA	2.5	65.6	2	NA	6.86
+Cyprus	APOEL Nicosia	Marios Antoniades	D	23	182	68	1	NA	NA	NA	NA	NA	94.7	NA	NA	6.86
+Cyprus	APOEL Nicosia	Dionisis Chiotis	GK	36	184	80	1	NA	NA	NA	NA	NA	68.4	1	NA	6.76
+Cyprus	APOEL Nicosia	Nuno Morais	DM(C)	30	185	76	6	1	NA	NA	NA	0.8	84.3	0.3	NA	6.66
+Cyprus	APOEL Nicosia	Efstathios Aloneftis	M	31	166	62	5	NA	1	NA	NA	1.6	71.8	0.2	NA	6.64
+Cyprus	APOEL Nicosia	Hélder Cabral	D	29	179	72	3(1)	NA	NA	NA	NA	0.3	73.8	0.8	NA	6.64
+Cyprus	APOEL Nicosia	Vinicius	M	27	186	74	4(2)	NA	NA	2	NA	0.3	86.6	1.2	NA	6.61
+Cyprus	APOEL Nicosia	Mário Sérgio	D(R)	32	174	70	5	NA	1	NA	NA	NA	79.9	0.2	NA	6.6
+Cyprus	APOEL Nicosia	Christian	M	24	NA	NA	2(1)	NA	NA	1	NA	0.3	70.1	0.7	NA	6.45
+Cyprus	APOEL Nicosia	Selim Benachour	AM(C)	32	170	73	0(2)	NA	NA	NA	NA	0.5	76.5	NA	NA	6.38
+Cyprus	APOEL Nicosia	Konstantinos Charalamb...	AM(R)	32	173	67	5	NA	NA	2	NA	0.4	76.1	0.8	NA	6.37
+Cyprus	APOEL Nicosia	Anthos Solomou	M	28	181	79	2(1)	NA	NA	1	NA	0.3	87.7	NA	NA	6.3
+Cyprus	APOEL Nicosia	Cillian Sheridan	FW	25	196	87	1(2)	NA	NA	NA	NA	NA	67.6	1.7	NA	6.28
+Cyprus	APOEL Nicosia	Nektarious Alexandrou	M(L)	30	182	76	4(1)	1	NA	NA	NA	0.4	75.8	0.2	NA	6.21
+Cyprus	APOEL Nicosia	Tiago Gomes	M(C)	28	181	76	1(2)	NA	NA	NA	NA	0.7	78.3	NA	NA	6.08
+Cyprus	APOEL Nicosia	Gustavo Manduca	AM(L)	33	182	78	1(2)	NA	NA	1	NA	0.3	77	0.3	NA	6.06
+Cyprus	APOEL Nicosia	Pieros Sotiriou	FW	21	186	NA	1(2)	NA	NA	1	NA	1.7	77.6	1.3	NA	6.05
+Cyprus	APOEL Nicosia	Mario Budimir	FW	28	193	85	1(1)	NA	NA	NA	1	0.5	70.6	0.5	NA	5.51
+Cyprus	APOEL Nicosia	Tasos Kissas	GK	26	182	78	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Poland	Legia Warszawa	Dusan Kuciak	GK	28	195	89	2	NA	NA	NA	NA	NA	53.3	NA	NA	7.08
+Poland	Legia Warszawa	Tomasz Jodlowiec	D	29	189	85	5(1)	1	NA	2	NA	1.5	83.6	1.8	NA	7
+Poland	Legia Warszawa	Lukasz Broz	D	28	180	74	2	NA	NA	NA	NA	1	85	1.5	NA	6.94
+Poland	Legia Warszawa	Tomasz Brzyski	M	32	170	68	5(1)	1	1	NA	NA	1	69.3	0.3	1	6.92
+Poland	Legia Warszawa	Dosa Júnior	D(C)	27	188	82	5	NA	NA	1	NA	0.8	90	4.2	NA	6.86
+Poland	Legia Warszawa	Jakub Rzezniczak	D(C)	27	182	72	6	NA	NA	1	NA	0.5	88.1	1.7	NA	6.84
+Poland	Legia Warszawa	Michal Zyro	M	21	189	78	2	NA	NA	NA	NA	1	76.9	1.5	NA	6.64
+Poland	Legia Warszawa	Dominik Furman	DM(C)	21	181	75	4(2)	NA	NA	1	NA	1.7	87.8	0.3	NA	6.63
+Poland	Legia Warszawa	Ivica Vrdoljak	M	30	187	83	4	NA	NA	NA	NA	1	82.3	2	NA	6.6
+Poland	Legia Warszawa	Bartosz Bereszynski	D	21	182	72	3	NA	NA	NA	1	NA	75	1.3	NA	6.56
+Poland	Legia Warszawa	Miroslav Radovic	M	30	182	76	3	NA	NA	NA	NA	2	80	0.3	NA	6.54
+Poland	Legia Warszawa	Henrik Ojamaa	FW	22	176	77	3(3)	NA	NA	NA	NA	1.8	75.5	0.2	NA	6.41
+Poland	Legia Warszawa	Michal Kucharczyk	FW	23	178	72	2(3)	NA	NA	NA	NA	1	74	1.2	NA	6.36
+Poland	Legia Warszawa	Helio Pinto	M(C)	30	184	71	5	NA	NA	1	NA	1	84.9	0.2	NA	6.33
+Poland	Legia Warszawa	Jakub Wawrzyniak	D(L)	30	188	84	2(1)	NA	NA	NA	NA	NA	74.5	1.3	NA	6.33
+Poland	Legia Warszawa	Jakub Kosecki	M	23	168	59	3	NA	NA	1	NA	2.3	80.6	1	NA	6.32
+Poland	Legia Warszawa	Iñaki Astiz	D	30	185	73	0(2)	NA	NA	NA	NA	NA	73.1	NA	NA	6.28
+Poland	Legia Warszawa	Marek Saganowski	FW	35	178	78	1	NA	NA	NA	NA	NA	89.5	2	NA	6.27
+Poland	Legia Warszawa	Vladimir Dvalishvili	FW	27	180	76	5	NA	NA	NA	NA	2.2	74.7	0.4	NA	6.12
+Poland	Legia Warszawa	Patryk Mikita	FW	20	185	73	0(3)	NA	NA	1	NA	0.3	72.7	NA	NA	6.11
+Poland	Legia Warszawa	Wojciech Skaba	GK	29	190	81	4	NA	NA	1	NA	NA	87.5	0.5	NA	5.94
+Poland	Legia Warszawa	Daniel Lukasik	M	22	179	73	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Poland	Legia Warszawa	Mateusz Cichocki	D	22	187	79	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Poland	Legia Warszawa	Michal Kopczynski	M	21	180	70	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Poland	Legia Warszawa	Oliwer Wienczatek	GK	20	188	82	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Poland	Legia Warszawa	Raphael Augusto	M(C)	23	181	78	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Slovenia	Maribor	Dare Vrsic	M	29	182	83	0(2)	2	NA	NA	NA	1.5	69.2	NA	NA	7.13
+Slovenia	Maribor	Marcos Tavares	AM(C)	30	177	82	6	2	2	1	NA	2	89.6	0.7	NA	7.02
+Slovenia	Maribor	Dejan Mezga	AM(R)	28	175	71	6(1)	3	1	1	NA	1.3	80.9	NA	1	6.89
+Slovenia	Maribor	Martin Milec	D(R)	22	174	71	7	1	2	1	1	0.3	79.7	0.1	NA	6.79
+Slovenia	Maribor	Jean Philippe Mendy	FW	26	190	86	5(1)	NA	1	1	NA	1.8	66	3.2	NA	6.78
+Slovenia	Maribor	Arghus	D(C)	26	189	81	8	NA	1	2	NA	0.4	85.9	1.1	NA	6.77
+Slovenia	Maribor	Zeljko Filipovic	DM(C)	25	194	80	8	1	1	2	NA	0.9	84.5	0.9	1	6.71
+Slovenia	Maribor	Matic Crnic	M	21	174	69	2(3)	1	1	1	NA	0.4	83.3	0.2	NA	6.64
+Slovenia	Maribor	Aleksandar Rajcevic	D(C)	27	188	83	8	NA	NA	1	NA	0.3	90.6	1.6	NA	6.58
+Slovenia	Maribor	Jasmin Handanovic	GK	36	197	95	8	NA	NA	NA	NA	NA	54.9	0.5	NA	6.46
+Slovenia	Maribor	Ales Mertelj	DM(C)	27	183	79	7	1	NA	NA	1	1.3	81.4	1.3	NA	6.39
+Slovenia	Maribor	Dejan Trajkovski	D	21	175	70	0(1)	NA	NA	NA	NA	1	75	NA	NA	6.32
+Slovenia	Maribor	Goran Cvijanovic	M(L)	27	178	74	3(5)	NA	NA	2	NA	0.5	82.7	0.1	NA	6.3
+Slovenia	Maribor	Damjan Bohar	FW	22	172	68	6(1)	NA	NA	1	NA	1.1	80.6	0.1	NA	6.29
+Slovenia	Maribor	Mitja Viler	D(L)	27	180	75	6(1)	NA	NA	2	NA	1.1	73.3	0.3	NA	6.29
+Slovenia	Maribor	Amir Dervisevic	M	21	195	86	3(2)	NA	NA	1	NA	0.8	81.1	0.6	NA	6.28
+Slovenia	Maribor	Nusmir Fajic	FW	27	190	82	3(4)	1	NA	NA	NA	0.9	73.3	0.7	NA	6.26
+Slovenia	Maribor	Luka Zahovic	FW	18	NA	NA	0(1)	NA	NA	NA	NA	NA	80	NA	NA	6.11
+Slovenia	Maribor	Ranko Moravac	M	19	173	69	0(2)	NA	NA	NA	NA	NA	62.5	NA	NA	6.05
+Slovenia	Maribor	Ales Mejac	D(L)	31	180	71	2	NA	NA	1	NA	1	77.3	NA	NA	6.04
+Slovenia	Maribor	Alijaz Cotman	GK	19	181	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Slovenia	Maribor	Damjan Vuklisevic	D	18	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Slovenia	Maribor	Marko Pridigar	GK	28	188	72	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Slovenia	Maribor	Nejc Mevlja	M	23	189	83	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Slovenia	Maribor	Nejc Potokar	D	25	189	82	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Slovenia	Maribor	Petar Stojanovic	M	18	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Slovenia	Maribor	Timotej Dodlek	M	24	183	70	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Switzerland	St.Gallen	Stephane Besle	D(C)	30	180	80	6	1	NA	NA	NA	0.2	79.3	3.2	NA	7.32
+Switzerland	St.Gallen	Marcel Herzog	GK	33	185	79	1	NA	NA	NA	NA	NA	35.3	NA	NA	7.04
+Switzerland	St.Gallen	Dejan Janjatovic	M	22	187	78	4	NA	1	1	NA	1.3	81	0.8	1	6.91
+Switzerland	St.Gallen	Daniele Russo	D	28	193	81	1(2)	NA	NA	NA	NA	0.3	71.8	1.3	NA	6.9
+Switzerland	St.Gallen	Ivan Martic	M	23	183	73	3	NA	NA	1	NA	0.7	73.5	1.3	NA	6.88
+Switzerland	St.Gallen	Mario Mutsch	D	29	173	74	6	NA	NA	1	NA	0.7	72.7	0.2	NA	6.73
+Switzerland	St.Gallen	Ermir Lenjani	D(L)	24	175	65	6	NA	NA	1	NA	0.7	75.1	1.5	NA	6.65
+Switzerland	St.Gallen	Marco Mathys	AM(C)	26	184	77	6	2	NA	NA	NA	1.7	69.9	1.5	NA	6.64
+Switzerland	St.Gallen	Sébastien Wüthrich	M	23	180	73	1(4)	NA	2	NA	NA	0.6	82.7	0.4	1	6.64
+Switzerland	St.Gallen	Matias Vitkieviez	AM(R)	28	176	74	5	NA	NA	1	NA	NA	71.1	2	NA	6.5
+Switzerland	St.Gallen	Stéphane Nater	M	30	185	75	3(1)	1	NA	NA	NA	1	88	0.5	NA	6.4
+Switzerland	St.Gallen	Martin Stocklasa	D	34	192	89	1(1)	NA	NA	1	NA	0.5	82.1	1.5	NA	6.33
+Switzerland	St.Gallen	Muhamed Demiri	M	28	180	75	2(1)	NA	NA	NA	NA	NA	89	0.3	NA	6.33
+Switzerland	St.Gallen	Daniel Lopar	GK	28	187	81	5	NA	NA	NA	NA	NA	54.3	0.4	NA	6.27
+Switzerland	St.Gallen	Goran Karanoviç	FW	26	184	78	6	2	NA	1	NA	1.7	70.3	0.5	NA	6.27
+Switzerland	St.Gallen	Philippe Montandon	D	31	189	78	4	NA	1	NA	1	0.3	74.8	2.3	NA	6.24
+Switzerland	St.Gallen	Kristian Nushi	M	31	175	72	0(3)	NA	NA	NA	NA	0.3	80	NA	NA	6.21
+Switzerland	St.Gallen	Roberto Rodriguez	AM(L)	23	180	NA	6	NA	NA	NA	NA	1.3	68.7	0.5	NA	6.2
+Switzerland	St.Gallen	Marco Franin	D	22	182	78	0(1)	NA	NA	NA	NA	NA	NA	NA	NA	6.13
+Switzerland	St.Gallen	Alhassane Keita	FW	30	169	68	0(5)	NA	NA	NA	NA	0.4	75.9	0.2	NA	6.04
+Switzerland	St.Gallen	Iljia Kovacic	GK	21	190	85	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Switzerland	St.Gallen	Mario Schönenberger	M	27	186	73	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Kazakhstan	Shakhter Karagandy	Nikola Vasiljevic	D	30	199	94	3	NA	1	1	NA	0.3	50.7	4	NA	7.3
+Kazakhstan	Shakhter Karagandy	Roger Cañas	M(C)	24	190	78	5(1)	2	NA	2	NA	1.5	68	1.7	1	6.84
+Kazakhstan	Shakhter Karagandy	Aleksandar Simcevic	D(R)	27	191	84	6	NA	NA	NA	NA	1.2	68.7	0.8	NA	6.83
+Kazakhstan	Shakhter Karagandy	Stas Pokatilov	GK	21	190	84	2	NA	NA	NA	NA	NA	26.3	NA	NA	6.68
+Kazakhstan	Shakhter Karagandy	Andrey Finonchenko	M(R)	31	177	68	5	2	NA	NA	NA	1.8	54.2	0.6	NA	6.66
+Kazakhstan	Shakhter Karagandy	Askhat Borantaev	M	35	170	62	1	NA	NA	1	NA	NA	52.4	1	NA	6.62
+Kazakhstan	Shakhter Karagandy	Andrey Poryvaev	D	32	178	70	4	NA	NA	2	1	0.5	61.4	0.5	NA	6.61
+Kazakhstan	Shakhter Karagandy	Gediminas Vicius	M(C)	28	184	85	5	NA	NA	NA	NA	0.6	73	1.8	NA	6.55
+Kazakhstan	Shakhter Karagandy	Evgeniy Tarasov	D	28	178	75	5(1)	1	NA	1	NA	0.3	68.2	1.2	NA	6.52
+Kazakhstan	Shakhter Karagandy	Gevorg Ghazaryan	M(L)	25	177	80	6	NA	1	1	NA	1.7	64.5	0.5	NA	6.51
+Kazakhstan	Shakhter Karagandy	Alexandr Mokin	GK	32	192	85	4	NA	NA	NA	NA	NA	33.3	0.3	NA	6.49
+Kazakhstan	Shakhter Karagandy	Sergiy Maliy	D(C)	23	191	76	6	NA	NA	NA	NA	0.3	61.9	2	NA	6.42
+Kazakhstan	Shakhter Karagandy	Sergei Khizhnichenko	FW	22	186	74	5	NA	NA	NA	NA	2.8	63.9	1.6	NA	6.35
+Kazakhstan	Shakhter Karagandy	Aldin Dzidic	D(C)	30	197	95	5	NA	NA	1	NA	0.6	71.3	2	NA	6.32
+Kazakhstan	Shakhter Karagandy	Maksat Baizhanov	M	29	178	69	2(4)	NA	NA	NA	NA	0.5	68.8	0.2	NA	6.22
+Kazakhstan	Shakhter Karagandy	Stanislav Lunin	FW	20	180	69	0(2)	NA	NA	NA	NA	NA	80	NA	NA	6.05
+Kazakhstan	Shakhter Karagandy	Igor Zenkovich	FW	26	185	76	1(4)	NA	NA	NA	NA	0.2	58.3	0.8	NA	5.98
+Kazakhstan	Shakhter Karagandy	Roman Murtazaev	M	20	185	78	0(2)	NA	NA	NA	NA	0.5	25	NA	NA	5.98
+Kazakhstan	Shakhter Karagandy	Aslan Darabaev	M	25	180	78	1(1)	NA	NA	NA	NA	0.5	72.4	NA	NA	5.97
+Kazakhstan	Shakhter Karagandy	Mikhail Gabyshev	D	24	172	68	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Kazakhstan	Shakhter Karagandy	Sergey Tkachuk	GK	22	196	88	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Kazakhstan	Shakhter Karagandy	Vadim Borovsky	FW	27	170	67	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Netherlands	Ajax	Christian Eriksen	AM(CL)	22	175	71	4	2	3	1	NA	3	85.7	NA	1	7.96
+Netherlands	Ajax	Joël Veltman	D(C)	22	184	75	20	1	2	2	NA	0.4	88.7	2.7	6	7.75
+Netherlands	Ajax	Daley Blind	D(L),DM(C)	24	180	72	25	1	1	3	NA	0.9	87.8	1.4	2	7.4
+Netherlands	Ajax	Niklas Moisander	D(C)	28	182	75	22(1)	1	2	NA	NA	0.7	89.6	1.8	NA	7.34
+Netherlands	Ajax	Davy Klaassen	M(C)	21	185	77	18(3)	8	2	1	NA	1.5	80.3	0.9	2	7.33
+Netherlands	Ajax	Lasse Schöne	AM(CR)	27	178	75	21(4)	8	6	1	NA	1.5	83	1	2	7.31
+Netherlands	Ajax	Ricardo Kishna	FW	19	NA	NA	4(1)	1	2	NA	NA	1.4	74.3	0.6	NA	7.27
+Netherlands	Ajax	Stefano Denswil	D(C)	20	186	78	11(2)	1	NA	1	NA	0.5	91.7	1.5	2	7.16
+Netherlands	Ajax	Ricardo van Rhijn	D(R)	22	176	79	27(1)	2	3	4	1	0.5	84.8	0.9	3	7.08
+Netherlands	Ajax	Jasper Cillessen	GK	24	187	82	20(1)	NA	NA	NA	NA	NA	72.8	0.2	NA	7.07
+Netherlands	Ajax	Thulani Serero	M(C)	23	175	68	22(3)	2	3	3	NA	0.9	89.1	0.4	NA	7.06
+Netherlands	Ajax	Nicolai Boilesen	D(L)	22	185	75	13(3)	1	2	3	NA	0.5	85.4	0.8	NA	7.03
+Netherlands	Ajax	Viktor Fischer	AM(L)	19	180	71	19(5)	3	2	1	NA	2.6	82.3	0.5	NA	6.99
+Netherlands	Ajax	Lerin Duarte	M(C)	23	168	65	4(6)	3	NA	NA	NA	1.4	85.8	0.3	1	6.96
+Netherlands	Ajax	Siem de Jong	AM(C),FW	25	185	76	16(2)	7	1	1	NA	2.9	74.6	1.7	1	6.96
+Netherlands	Ajax	Toby Alderweireld	D(C)	25	186	81	4	NA	NA	NA	NA	0.8	91	1.8	NA	6.92
+Netherlands	Ajax	Christian Poulsen	DM(C)	34	182	79	11(13)	NA	2	1	NA	0.4	86.8	1.6	NA	6.83
+Netherlands	Ajax	Bojan	AM(LR),FW	23	170	65	14(6)	3	3	2	NA	2.1	82.7	0.1	NA	6.8
+Netherlands	Ajax	Kolbeinn Sigthorsson	FW	24	181	75	15(10)	9	1	NA	NA	2	71.8	1.7	NA	6.8
+Netherlands	Ajax	Ruben Ligeon	D	21	168	65	3(1)	NA	1	NA	NA	0.5	91.7	0.3	NA	6.79
+Netherlands	Ajax	Jaïro Riedewald	D	17	186	NA	3(1)	2	NA	1	NA	0.5	91.5	0.3	NA	6.78
+Netherlands	Ajax	Lesly de Sa	AM(R)	20	170	69	3(5)	1	1	1	NA	1	87.8	0.1	1	6.74
+Netherlands	Ajax	Kenneth Vermeer	GK	28	183	80	9	NA	NA	NA	NA	NA	87.1	0.4	NA	6.61
+Netherlands	Ajax	Mike van der Hoorn	D	21	187	78	1(1)	NA	NA	NA	NA	NA	93.9	0.5	NA	6.61
+Netherlands	Ajax	Danny Hoesen	FW	23	185	75	4(10)	2	1	NA	NA	1.4	75.9	0.6	NA	6.52
+Netherlands	Ajax	Tobias Sana	AM(R)	24	173	64	2(2)	NA	NA	NA	NA	1.3	85.3	NA	NA	6.51
+Netherlands	Ajax	Lucas Andersen	M	19	185	72	4(4)	NA	NA	NA	NA	0.3	82.5	0.6	NA	6.32
+Netherlands	Ajax	Mickey van der Hart	GK	19	188	87	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Norway	Tromsø	Marcus Sahlman	GK	29	197	86	3	NA	NA	NA	NA	NA	39.1	0.3	NA	6.94
+Norway	Tromsø	Hendrik Helmke	M	26	180	82	3(1)	NA	NA	2	NA	0.3	75.4	3.5	NA	6.82
+Norway	Tromsø	Hans Norbye	D	27	176	75	3(1)	NA	NA	NA	NA	0.5	65.9	0.3	NA	6.71
+Norway	Tromsø	Jaroslaw Fojut	D(C)	26	188	83	5	NA	NA	3	NA	0.6	76.4	2.6	NA	6.61
+Norway	Tromsø	Magnus Andersen	M	27	179	71	3(1)	NA	1	NA	NA	0.5	59.6	1	NA	6.52
+Norway	Tromsø	Zdenek Ondrasek	FW	25	185	79	5	1	NA	1	NA	1.4	63.9	2.8	NA	6.5
+Norway	Tromsø	Ruben Kristiansen	D(L)	26	NA	NA	5	NA	NA	NA	NA	0.2	72.2	0.6	NA	6.44
+Norway	Tromsø	Thomas Bendiksen	M(C)	24	178	69	5(1)	NA	NA	NA	NA	1.2	87.6	0.3	NA	6.43
+Norway	Tromsø	Remi Johansen	M	23	183	75	4(2)	NA	NA	NA	NA	0.7	78.9	1.2	NA	6.37
+Norway	Tromsø	Thomas Drage	M(L)	22	174	62	6	NA	NA	1	NA	0.8	72.2	NA	NA	6.31
+Norway	Tromsø	Hamza Zakari	M	19	NA	NA	1	NA	NA	NA	NA	1	92.3	1	NA	6.3
+Norway	Tromsø	Morten Moldskred	FW	33	176	75	4(2)	NA	NA	NA	NA	1.3	60.8	0.3	NA	6.26
+Norway	Tromsø	Kent-Are Antonsen	FW	19	172	70	2(2)	NA	NA	1	NA	0.3	67.8	0.8	NA	6.25
+Norway	Tromsø	Adnan Causevic	D	24	NA	NA	5	NA	NA	NA	NA	0.4	81.2	1.4	NA	6.2
+Norway	Tromsø	Lars Gunnar Johnsen	M	22	NA	NA	1(2)	NA	NA	2	NA	NA	82.1	NA	NA	6.17
+Norway	Tromsø	Benny Lekström	GK	33	191	88	3	NA	NA	NA	NA	NA	54.5	0.3	NA	6.16
+Norway	Tromsø	Runar Espejord	FW	18	NA	NA	1(3)	NA	NA	NA	NA	1.3	62.5	1	NA	6.13
+Norway	Tromsø	William Frantzen	M	20	NA	NA	2(1)	NA	NA	NA	NA	NA	70	NA	NA	6.13
+Norway	Tromsø	Josh Pritchard	M	21	175	71	2(1)	NA	NA	NA	NA	0.7	76.6	0.3	NA	6.06
+Norway	Tromsø	Steffen Nystrom	FW	29	180	73	2(1)	NA	NA	NA	NA	0.7	76.2	0.3	NA	5.86
+Norway	Tromsø	Miika Koppinen	D	35	188	80	1	NA	NA	NA	NA	NA	76.9	NA	NA	5.84
+Norway	Tromsø	Fredrik Bakkelund	GK	17	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Norway	Tromsø	Mathias Johnsen	D	18	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA

@@ -1,0 +1,299 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Code:400,700,400italic);
+/* @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Lato&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Gentium+Basic&display=swap'); */
+
+:root{
+    /* Laranjado do LEG */
+    /* --main-color: #ff4c00; */
+    /* Azul UFPR */
+    --main-color: #0066cc;
+}
+
+.remark-code,
+.remark-inline-code {
+    font-family: 'Fira Code';
+}
+
+body {
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Source Serif Pro', serif; */
+    /* font-family: 'Gentium Basic', serif; */
+}
+
+h3 {
+    font-family: 'Oswald';
+    font-weight: 200;
+}
+
+/* .remark-slide-number { */
+/*   font-size: 10pt; */
+/*   margin-bottom: -11.6px; */
+/*   margin-right: 10px; */
+/*   /\* color: #FFFFFF; /\\* white *\\/ *\/ */
+/*   opacity: 1; /\* default: 0.5 *\/ */
+/* } */
+
+/* Listas ----------------------------------- */
+
+ul:not([class]) > li {
+    list-style: none;
+}
+ul:not([class]) > li:before {
+    content: '\25B8';
+    margin-left: -1em;
+    position: absolute;
+    color: var(--main-color);
+}
+
+/* https://www.lockedowndesign.com/ordered-list-ol-different-color-for-numbers/ */
+ol:not([class]) {
+    counter-reset: list;
+}
+ol > li {
+    counter-increment: list;
+    list-style-type: none;
+    position: relative;
+}
+ol > li:before {
+    color: var(--main-color);
+    content: counter(list) ".";
+    left: -32px;
+    position: absolute;
+    text-align: right;
+    width: 26px;
+}
+
+/* Parafrases ------------------------------- */
+
+blockquote {
+    border-left: none;
+    width: 600px;
+    box-shadow: none;
+    background: none;
+    display: block;
+    margin: auto;
+}
+
+blockquote p {
+    text-indent: 0em;
+}
+
+blockquote p:first-child {
+    font-style: italic;
+}
+
+blockquote p:last-child {
+    text-indent: 0em;
+    text-align: right;
+    font-style: normal;
+    display: inherit;
+}
+
+/*---------------------------------------------------------------------- */
+/* https://github.com/fernandomayer/pesqrep-slides/blob/master/eco/fc.css */
+
+/* Various left and right split columns*/
+.pull-left-70 { float: left; width: 66.5%; }
+.pull-right-30 { float: right; width: 28.5%; }
+.pull-right-30 ~ * { clear: both; }
+
+.pull-left-60 { float: left; width: 57%; }
+.pull-right-40 { float: right; width: 38%; }
+.pull-right-40 ~ * { clear: both; }
+
+.pull-left-50 { float: left; width: 47.5%; }
+.pull-right-50 { float: right; width: 47.5%; }
+.pull-right-50 ~ * { clear: both; }
+
+.pull-left-40 { float: left; width: 38%; }
+.pull-right-60 { float: right; width: 57%; }
+.pull-right-60 ~ * { clear: both; }
+
+.pull-left-30 { float: left; width: 28.5%; }
+.pull-right-70 { float: right; width: 66.5%; }
+.pull-right-70 ~ * { clear: both; }
+
+.pull-left-33 { float: left; width: 30%; margin-right: 3%; }
+
+/* /\* headers and fonts*\/ */
+/* h1, h2, h3, h4 { */
+/*   margin-top: 0; */
+/*   padding-top: 0em; */
+/*   font-family: 'Oswald'; */
+/*   font-weight: 400; */
+/*   margin-left: 0; */
+/* } */
+
+.orange {
+    color: #ff5533;
+}
+
+.bottom {
+    margin-top: 3em;
+    vertical-align: bottom;
+}
+
+.large {
+    font-size: 23px;
+}
+
+.small {
+    font-size: 15px;
+}
+
+/* inverse slide */
+.inverse {
+    background-color: #121316;
+    color: #ffffff;
+}
+
+/* header colors are the same regardless of inverse or not*/
+.remark-slide-content h1, .inverse h1 {
+    color: var(--main-color);
+    font-size: 36px;
+}
+
+.remark-slide-content h2, .inverse h2 {
+    color: #5b5b5b; /* #b7b7b7; */
+    font-size: 30px;
+}
+
+.remark-slide-content h3, .inverse h3 {
+    color: #5b5b5b;
+    font-size: 25px;
+}
+
+/* Linha de borda inferior na página de título. */
+.title-slide.remark-slide-content {
+    /* background-color: #FAFAFA; */
+    /* border-bottom: 5px solid var(--main-color); */
+    border-bottom: unset;
+}
+
+.title-slide.remark-slide-content.section::after {
+    background-image: unset;
+}
+
+/* Linha de borda inferior nas páginas de conteúdo. */
+:not(.title-slide).title-slide.remark-slide-content {
+    /* background-color: #FAFAFA; */
+    /* border-bottom: 5px solid var(--main-color); */
+    border-bottom: unset;
+}
+
+.remark-slide-content {
+    font-size: 28px;
+    font-weight: unset;
+}
+
+/* Paginação. */
+.remark-slide-number {
+    z-index: 10;
+    bottom: 0.25em;
+    right: 20px;
+}
+
+/* ATTENTION: Conteúdo transferido para o custom_css.R */
+/* .author-footnote:after { */
+/*     z-index: 10; */
+/*     bottom: 0.45em; */
+/*     left: 20px; */
+/*     font-size: 14px; */
+/*     content: 'W. Zeviani · UFPR'; */
+/*     color: white; */
+/*     position: absolute; */
+/*     height: 1em; */
+/*     width: 50%; */
+/*     background-repeat: no-repeat; */
+/*     background-size: contain; */
+/* } */
+
+/* Faixa inferior com gradiente. */
+:not(.title-slide).remark-slide-content:after {
+    content: "";
+    background: -webkit-linear-gradient(left, var(--main-color) 0%, var(--main-color) 20%, white 100%);
+    display: block;
+    height: 22px;
+    width: 100%;
+    left: 0px;
+    bottom: -2px;
+    position: absolute;
+    z-index: 0;
+}
+
+.title-slide h1  {
+    color: var(--main-color);
+    font-size: 50px;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 40px;
+    padding-top: 150px;
+    text-shadow: 0 0 20px #c1c1c1;
+}
+
+.title-slide h2  {
+    color: #FAFAFA;
+    font-size: 35px;
+    font-weight: 350;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: -25px;
+    padding-bottom: -20px;
+}
+
+.title-slide h3  {
+    color: #000;
+    font-size: 25px;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 0;
+}
+
+/* code */
+.remark-inline-code {
+    color: var(--main-color);
+    border-radius: 1px;
+    padding: 0;
+    background: #e0e0e0;
+}
+
+.inverse .remark-inline-code {
+    background: #333333;
+}
+
+.remark-code-line-highlighted {
+    background-color: var(--main-color);
+}
+
+a, a > code {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+p.caption {
+    font-size: 20px;
+}
+
+.remark-code, .remark-inline-code {
+	font-size: 18px;
+}
+
+.hljs-github .hljs {
+	margin-top: -1em;
+}
+
+:not(.hljs).remark-code > .remark-code-line {
+    background-color: lightgray;
+    padding: 10px;
+    margin-top: -1.25em;
+}
+
+:not(.title-slide).remark-slide-content.attention h1 {
+    color: red;
+}
