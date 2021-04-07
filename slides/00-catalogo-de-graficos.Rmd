@@ -25,6 +25,16 @@ params:
   logo: 'ufpr-transparent-600px.png'
 ---
 
+<!-- --- -->
+<!-- class: middle -->
+# Por que conhecer os tipos de gráficos?
+
+- .orange[Nunca antes a **visualização de dados** esteve em tanta evidência].
+- Conhecer os tipos de gráficos mais usados.
+- Compreender os aspectos físicos, funcionais e de forma dos gráficos.
+- Desenvolver senso crítico para escolha de representações.
+- Nutrir a criatividade para desenvolver novas visualizações.
+
 ```{r, write_author_css, include = FALSE}
 source("config-xaringan/custom_css.R")
 ```
@@ -33,6 +43,7 @@ source("config-xaringan/custom_css.R")
 source("config/setup.R")
 knitr::opts_chunk$set(out.width = "70%",
                       dev = "svg",
+                      # cache = TRUE,
                       dev.args = list(family = "Roboto Condensed",
                                       bg = NA))
 ```
@@ -40,15 +51,6 @@ knitr::opts_chunk$set(out.width = "70%",
 ```{r include = FALSE}
 read_chunk("00-graphics-gallery.R")
 ```
-
----
-class: middle
-# Por que conhecer os tipos de gráficos?
-
-- Conhecer os tipos de gráficos mais usados.
-- Compreender os aspectos físicos, funcionais e de forma dos gráficos.
-- Desenvolver senso crítico para escolha de representações.
-- Nutrir a criatividade para desenvolver novas visualizações.
 
 ---
 # A escolha do gráfico
@@ -69,7 +71,6 @@ knitr::include_graphics("img/tipos-variaveis.png")
 ```
 
 ---
-# Taxonomia
 
 ```{r, echo = FALSE, fig.cap = cap, out.width = "55%"}
 cap <- "Taxonomia de gráficos baseada na função por Andrew Abela. Visite: https://extremepresentation.com/."
@@ -81,13 +82,13 @@ knitr::include_graphics("img/abela-chart-type.jpg")
 
 - Agrupamento dos gráficos baseado nas características comuns.
 - Função
-  - Classificação principal: função do gráfico.
-  - Relacionado às quantidades a serem representadas.
-  - Quais quantidades/propriedades serão exibidas $\rightarrow$ o que?
+  - Classificação principal: **função** do gráfico.
+  - Relacionado às **quantidades** a serem representadas.
+  - Quais quantidades/propriedades serão exibidas $\rightarrow$ **o que**?
 - Forma
-  - Classificação secundária: forma do gráfico.
-  - Relacionado às decisões estéticas e de mídia.
-  - Como as quantidades/propriedades serão exibidas $\rightarrow$ como?
+  - Classificação secundária: **forma** do gráfico.
+  - Relacionado às decisões **estéticas** e de mídia.
+  - Como as quantidades/propriedades serão exibidas $\rightarrow$ **como**?
 
 
 ---
@@ -101,23 +102,39 @@ knitr::include_graphics("img/funcao-grafico.png")
 ---
 # Função de um gráfico
 
-- Distribuição: Caracterizam a *distribuição* de variáveis qualitativas ou
-  quantitativas.
-- Relação: Exibem a forma da *relação* entre variáveis ou *contraste* entre categorias.
-- Ordenação: Priorizam exibir a *classificação* de
-  categorias/elementos baseada nas variáveis.
-- Evolução: Exploram o comportamento de dados *cronológicos*.
-- Mapa: Representam dados com propriedades *geográficas*.
-- Organização: Retratam a *estrutura* de organização de coleções de
-  categorias/elementos.
-- Fluxo: Descrevem o *movimento ou conexão* entre
-  categorias/elementos.
+.pull-left[
+
+**Distribuição**</br>
+Caracterizam a *distribuição* de variáveis qualitativas ou quantitativas.
+
+**Relação**<br>
+Exibem a forma da *relação* entre variáveis ou *contraste* entre categorias.
+
+**Ordenação**<br>
+Priorizam exibir a *classificação* de categorias/elementos baseada nas variáveis.
+
+**Evolução**<br>
+Exploram o comportamento de dados *cronológicos*.
+
+]
+
+.pull-right[
+
+**Mapa**<br>
+Representam dados com propriedades *geográficas*.
+
+**Organização**<br>
+Retratam a *estrutura* de organização de coleções de categorias/elementos.
+
+**Fluxo**<br>
+Descrevem o *movimento ou conexão* entre categorias/elementos.
+
+]
 
 ---
 class: middle, title-slide, section
 # Gráficos para a distribuição
-
-Caracterizam a *distribuição* de variáveis qualitativas ou quantitativas
+## Caracterizam a **distribuição** de variáveis qualitativas ou quantitativas
 
 ```{r read_futbol, include = FALSE}
 ```
@@ -157,8 +174,16 @@ Caracterizam a *distribuição* de variáveis qualitativas ou quantitativas
 ---
 # Diagrama de violinos (violin plot)
 
-```{r height_violin, fig.dim = c(3, 3.5), out.width = "35%", results = "hide", echo = FALSE, fig.cap = cap}
+.pull-left-60[
+```{r height_boxplot, out.width = "100%", results = "hide", echo = FALSE, fig.cap = cap}
 ```
+]
+
+.pull-right-30[
+```{r height_violin, fig.dim = c(3, 3.5), out.width = "100%", results = "hide", echo = FALSE, fig.cap = cap}
+```
+]
+
 
 ---
 # Joy plot
@@ -199,8 +224,7 @@ Caracterizam a *distribuição* de variáveis qualitativas ou quantitativas
 ---
 class: middle, title-slide, section
 # Gráficos para a relação entre variáveis
-
-Exibem a forma da *relação* entre variáveis ou *contraste* entre categorias
+## Exibem a forma da **relação** entre variáveis ou **contraste** entre categorias
 
 ---
 # Barras empilhadas e barras lado a lado
@@ -216,16 +240,17 @@ Exibem a forma da *relação* entre variáveis ou *contraste* entre categorias
 ]
 
 ---
-# Barras preenchidas
+# Barras preenchidas e mosaico
 
-```{r yel_filled_bar, results = "hide", echo = FALSE, fig.cap = cap}
+.pull-left[
+```{r yel_filled_bar, out.width = "100%", fig.dim = 0.75 * c(5, 4), results = "hide", echo = FALSE, fig.cap = cap}
 ```
+]
 
----
-# Gráfico de mosaico
-
-```{r yel_mosaic, results = "hide", echo = FALSE, fig.cap = cap}
+.pull-right[
+```{r yel_mosaic, out.width = "100%", fig.dim = 0.75 * c(5, 4), results = "hide", echo = FALSE, fig.cap = cap}
 ```
+]
 
 ---
 # Diagrama de dispersão
@@ -236,19 +261,36 @@ Exibem a forma da *relação* entre variáveis ou *contraste* entre categorias
 ---
 # Diagrama de dispersão tamanhos e cores
 
-```{r cm_x_kg_x_age, results = "hide", echo = FALSE, fig.cap = cap}
+```{r cm_x_kg_x_age, out.width = "95%", fig.dim = c(9, 4), results = "hide", echo = FALSE, fig.cap = cap}
 ```
 
 ---
 # Matriz de diagramas de dispersão
 
-```{r ggpairs, results = "hide", out.width = "40%", fig.dim = c(5, 5), echo = FALSE, fig.cap = cap}
+```{r ggpairs, results = "hide", out.width = "45%", fig.dim = c(5, 5), echo = FALSE, fig.cap = cap}
 ```
+
+---
+# Variações de diagramas de dispersão
+
+.pull-left[
+```{r, echo = FALSE, fig.cap = cap, out.width = "90%"}
+cap <- "Exemplo de diagrama de dispersão tridimensional. Fonte: https://stackoverflow.com/questions/30904198/how-to-export-an-interactive-rgl-3d-plot-to-share-or-publish."
+knitr::include_graphics("img/scatter3d.png")
+```
+]
+
+.pull-right[
+```{r, echo = FALSE, fig.cap = cap, out.width = "90%"}
+cap <- "Exemplo de diagrama ternário. Fonte: http://www.ggtern.com/2013/12/16/pps-3-state-model/."
+knitr::include_graphics("img/ggtern.png")
+```
+]
 
 ---
 # Correlograma
 
-```{r correlogram, results = "hide", echo = FALSE, fig.cap = cap}
+```{r correlogram, out.width = "100%", fig.dim = c(9, 4), results = "hide", echo = FALSE, fig.cap = cap}
 ```
 
 ---
@@ -266,8 +308,17 @@ Exibem a forma da *relação* entre variáveis ou *contraste* entre categorias
 ---
 # Gráfico de radar ou teia
 
-```{r spider, results = "hide", out.width = "40%cm", fig.dim = c(5, 5), echo = FALSE, fig.cap = cap}
+.pull-left[
+```{r spider, results = "hide", out.width = "90%", fig.dim = c(5, 5), echo = FALSE, fig.cap = cap}
 ```
+]
+
+.pull-right[
+```{r, echo = FALSE, fig.cap = cap, out.width = "90%"}
+cap <- "Exemplo de gráfico radial mostrando o contraste entre cluster. Fonte: https://www.nature.com/articles/s41599-020-00590-z"
+knitr::include_graphics("img/41599_2020_590_Fig1_HTML.png")
+```
+]
 
 ---
 # Diagrama de Cleveland (Cleveland dot plot)
@@ -291,7 +342,7 @@ Exibem a forma da *relação* entre variáveis ou *contraste* entre categorias
 ---
 # Faces de Chernoff
 
-```{r, echo = FALSE, fig.cap = cap}
+```{r, echo = FALSE, fig.cap = cap, out.width = "50%"}
 cap <- "Faces de Chernoff para medidas descritivas dos jogadores conforme função em campo."
 knitr::include_graphics("img/football_chernoff.png")
 ```
@@ -299,8 +350,7 @@ knitr::include_graphics("img/football_chernoff.png")
 ---
 class: middle, title-slide, section
 # Ordenação
-
-Exibem a *classificação* de categorias/elementos baseada nas variáveis
+## Exibem a **classificação** de categorias/elementos baseada nas variáveis
 
 ---
 # Barras ordenadas (Pareto)
@@ -324,8 +374,7 @@ Exibem a *classificação* de categorias/elementos baseada nas variáveis
 ---
 class: middle, title-slide, section
 # Gráficos para a evolução
-
-Exploram o comportamento de dados *cronológicos*
+## Exploram o comportamento de dados **cronológicos**
 
 ---
 # Gráfico de série (pontos conectados)
@@ -356,7 +405,7 @@ knitr::include_graphics("img/cZ1Dw.png")
 # Gráficos de inclinação (slope graph)
 
 .pull-left[
-```{r, echo = FALSE, fig.cap = cap}
+```{r, echo = FALSE, fig.cap = cap, out.width = "90%"}
 cap <- "Um exemplo de slopegraph. Fonte:
 http://www.storytellingwithdata.com/blog/2018/6/1/swdchallenge-slopegraph."
 knitr::include_graphics("img/SlopegraphProgression_7A.png")
@@ -364,7 +413,7 @@ knitr::include_graphics("img/SlopegraphProgression_7A.png")
 ]
 
 .pull-right[
-```{r, echo = FALSE, fig.cap = cap}
+```{r, echo = FALSE, fig.cap = cap, out.width = "85%"}
 cap <- "Slopegraph com mais condições. Fonte:
 https://shivathudi.com/2017/04/19/data-visualization-in-r-using-ggplot-and-shiny/."
 knitr::include_graphics("img/slope-survival.png")
@@ -382,21 +431,27 @@ knitr::include_graphics("img/Calendar_Chart.png")
 ```
 
 ---
+# Diagrama de Gantt
+
+```{r, eval = FALSE, echo = FALSE, fig.cap = cap}
+cap <- "Exemplo de diagrama de Gantt. Fonte:
+http://curiousgnu1.rssing.com/chan-66482562/all_p1.html."
+knitr::include_graphics("img/gantt.png")
+```
+
+```{r, echo = FALSE, fig.cap = cap}
+cap <- "Exemplo de diagrama de Gantt. Fonte:
+https://www.nytimes.com/interactive/2020/04/30/opinion/coronavirus-covid-vaccine.html."
+knitr::include_graphics("img/coronavirus-covid-19-vaccine-timeline-promo-1588200256894-superJumbo-v7.png")
+```
+
+---
 # Gráfico de cascata (waterfall)
 
 ```{r, echo = FALSE, fig.cap = cap}
 cap <- "Exemplo de um gráfico de barras em cascata. Fonte:
 https://www.ablebits.com/office-addins-blog/2014/07/25/waterfall-chart-in-excel/."
 knitr::include_graphics("img/waterfall-chart.png")
-```
-
----
-# Diagrama de Gantt
-
-```{r, echo = FALSE, fig.cap = cap}
-cap <- "Exemplo de diagrama de Gantt. Fonte:
-http://curiousgnu1.rssing.com/chan-66482562/all_p1.html."
-knitr::include_graphics("img/gantt.png")
 ```
 
 ---
@@ -411,83 +466,109 @@ knitr::include_graphics("img/candle-stick-1.png")
 ---
 class: middle, title-slide, section
 # Mapas
+## Representam dados com propriedades **geográficas**
 
 ---
 # Mapa temático (colorpleth map)
 
-```{r, echo = FALSE, fig.cap = cap, out.width = "50%"}
-cap <- "Mapa de densidade populacional por Estado. Fonte:
-https://gl.maps-brazil.com/brasil-densidade-de-poboación-mapa."
-knitr::include_graphics("img/brasil-populacao.jpg")
+.pull-left-60[
+```{r, echo = FALSE, fig.cap = cap, out.width = "100%"}
+cap <- "Mapa do covid por Estado. Fonte:
+https://www.ufpb.br/legat/contents/mapas-coronavirus/30-09-brasil.png."
+knitr::include_graphics("img/30-09-brasil.png")
 ```
+]
+
+.pull-right-40[
+```{r, echo = FALSE, fig.cap = cap, out.width = "100%"}
+cap <- "Taxa de ocupação dos leitos na pandemia. Fonte:
+https://portal.fiocruz.br/sites/portal.fiocruz.br/files/imagensPortal/situacaodeleitos_uti_covid_interna.jpg."
+knitr::include_graphics("img/situacaodeleitos_uti_covid_interna.jpg")
+```
+]
 
 ---
 # Mapa de bolhas (bubble map)
 
-```{r, echo = FALSE, fig.cap = cap, out.width = "50%"}
-cap <- "Tradição indígenas no Brasil. Fonte:
-[[https://journals.openedition.org/confins/7785]]."
-knitr::include_graphics("img/brasil-tradicoes-indigenas.png")
+.pull-left-60[
+```{r, echo = FALSE, fig.cap = cap, out.width = "100%"}
+cap <- "Mapa do covid no mundo. Fonte: http://www.mexicosocial.org/wp-content/uploads/2020/04/mapa-covid.png."
+knitr::include_graphics("img/mapa-covid.png")
 ```
+]
+
+.pull-right-30[
+```{r, echo = FALSE, fig.cap = cap, out.width = "100%"}
+cap <- "Mapa do covid no Brasil. Fonte: https://noticias.uol.com.br/saude/ultimas-noticias/redacao/2020/04/16/coronavirus-avanca-para-o-interior-do-brasil-veja-evolucao-em-mapa.htm."
+knitr::include_graphics("img/cidades-infectadas-com-coronavirus-no-brasil-no-dia-14-de-abril-1586990006722_v2_879x1052.jpg")
+```
+]
 
 ---
 # Mapa de elevação ou contornos de nível
 
-.pull-left[
-```{r, echo = FALSE, fig.cap = cap}
-cap <- "Mapa do Paraná. Fonte:
-http://www.leg.ufpr.br/geoR/PASI/."
-knitr::include_graphics("img/parana-geor.png")
+.pull-left-60[
+```{r, echo = FALSE, fig.cap = cap, out.width = "100%"}
+cap <- "Mapa sobre o covid conforme idade e sexo. Fonte:
+https://www.unicamp.br/unicamp/sites/default/files/inline-images/ju-man_mortalidade-covid_20210212_1.jpg."
+knitr::include_graphics("img/ju-man_mortalidade-covid_20210212_1.jpg")
 ```
 ]
 
-.pull-right[
-```{r, echo = FALSE, fig.cap = cap}
-cap <- "Anomalias de temperaturas médias no Brasil para Abril de
-2016. Fonte: https://www.bbc.com/portuguese/internacional/2016/05/160516_nasa_aquecimento_np."
-knitr::include_graphics("img/brasil-anomalias.jpg")
+.pull-right-40[
+```{r, echo = FALSE, fig.cap = cap, out.width = "100%"}
+cap <- "Densidade de casos confirmados de covid. Fonte: https://www1.udesc.br/agencia/arquivos/25420/images/mapa_4_densidade.jpg."
+knitr::include_graphics("img/mapa_4_densidade.jpg")
 ```
 ]
 
 ---
 # Mapa de densidade
 
+.pull-left[
 ```{r, echo = FALSE, fig.cap = cap, out.width = "60%"}
+cap <- "Mapa de densidade de casos de covid. Fonte:
+https://www.nsctotal.com.br/noticias/coronavirus-como-a-pandemia-evoluiu-de-forma-distinta-entre-santa-catarina-e-rio-grande-do."
+knitr::include_graphics("img/WhatsApp Image 2020-05-13 at 18.38.08.png")
+```
+]
+
+.pull-right[
+```{r, echo = FALSE, fig.cap = cap, out.width = "80%"}
 cap <- "Mapa de densidade de ocorrência. Fonte:
 https://cran.r-project.org/package=HistData."
 knitr::include_graphics("img/snow-map.png")
 ```
+]
 
 ---
 # Mapa de conexões
 
-```{r, echo = FALSE, fig.cap = cap, out.width = "60%"}
-cap <- "Mapa de conexões entre empresas e prefeituras no Paraná.
-Fonte: Trabalho de Conclusão de Curso de Especialização em Data Science
-& Big Data, Paulo Jhonny Scheleder da Costa Rosa."
-knitr::include_graphics("img/parana-paulo-jhony.png")
+```{r, echo = FALSE, fig.cap = cap, out.width = "80%"}
+cap <- "Mapa de disseminação do covid.
+Fonte: https://www.fredhutch.org/en/news/center-news/2020/03/tracking-covid-19-trevor-bedford.html."
+knitr::include_graphics("img/social-transmission-map.jpg")
 ```
 
 ---
 # Cartograma
 
-```{r, echo = FALSE, fig.cap = cap, out.width = "85%"}
-cap <- "Cartograma da população mundial em 2020. Fonte:
-https://giphy.com/gifs/geography-jpJ6VkD9k17cA."
-knitr::include_graphics("img/cartograma-populacao.png")
+```{r, echo = FALSE, fig.cap = cap, out.width = "60%"}
+cap <- "Cartograma de casos de covid no Brasil. Fonte:
+https://www.agb.org.br/covid19/2020/08/08/anamorfose-geografica-da-covid-19-no-brasil/."
+knitr::include_graphics("img/Anamorfose-Casos-14-julho-scaled.jpeg")
 ```
 
 ---
 class: middle, title-slide, section
 # Organização
-
-Retratam a *estrutura* de organização de coleções de categorias/elementos.
+## Retratam a **estrutura** de organização de coleções de categorias/elementos
 
 ---
 # Dendograma
 
-.pull-left-30[
-```{r, echo = FALSE, fig.cap = cap, out.width = "90%"}
+.pull-left-40[
+```{r, echo = FALSE, fig.cap = cap, out.width = "100%"}
 cap <- "Exemplo de dendrograma. Fonte:
 https://www.datanovia.com/en/courses/hierarchical-clustering-in-r-the-essentials/."
 knitr::include_graphics("img/dendrogram.png")
@@ -503,18 +584,27 @@ knitr::include_graphics("img/clustergram.png")
 ]
 
 ---
+# Dendograma com mapa de calor
+
+```{r, echo = FALSE, fig.cap = cap, out.width = "80%"}
+cap <- "Exemplo de dendrograma com mapa de calor. Fonte:
+https://www.researchgate.net/profile/Giovanni-Giuliano/publication/51761161."
+knitr::include_graphics("img/Cluster-heat-map-of-gene-expression-data-The-hierarchical-clustering-was-generated-using.png")
+```
+
+---
 # Mapa de árvore e empacotamento circular
 
 .pull-left-60[
-```{r, echo = FALSE, fig.cap = cap, out.width = "90%"}
+```{r, echo = FALSE, fig.cap = cap, out.width = "100%"}
 cap <- "Exemplo de treemap. Fonte:
 https://github.com/mtennekes/treemap."
 knitr::include_graphics("img/treemap-population.png")
 ```
 ]
 
-.pull-right-30[
-```{r, echo = FALSE, fig.cap = cap, out.width = "90%"}
+.pull-right-40[
+```{r, echo = FALSE, fig.cap = cap, out.width = "100%"}
 cap <- "Exemplo de circular packing. Fonte: https://d3indepth.com/layouts/."
 knitr::include_graphics("img/circular-pack.png")
 ```
@@ -532,20 +622,21 @@ knitr::include_graphics("img/sunburst.png")
 ---
 class: middle, title-slide, section
 # Gráficos de relacionamento e fluxo
+## Descrevem o **movimento** ou **conexão** entre categorias/elementos
 
 ---
 # Rede de relacionamento
 
 .pull-left-60[
-```{r, echo = FALSE, fig.cap = cap, out.width = "90%"}
+```{r, echo = FALSE, fig.cap = cap, out.width = "100%"}
 cap <- "Exemplos de redes. Fonte:
 https://kateto.net/network-visualization."
 knitr::include_graphics("img/visNetwork-3.png")
 ```
 ]
 
-.pull-right-30[
-```{r, echo = FALSE, fig.cap = cap, out.width = "70%"}
+.pull-right-40[
+```{r, echo = FALSE, fig.cap = cap, out.width = "100%"}
 cap <- "Relação entre livros sobre visualização de dados comprados na
 Amazon. Fonte: http://yasiv.com/#/Search?q=Data%20visualization."
 knitr::include_graphics("img/yasiv.png")
@@ -555,15 +646,15 @@ knitr::include_graphics("img/yasiv.png")
 ---
 # Variações de apresentação da rede
 
-.pull-left-30[
-```{r, echo = FALSE, fig.cap = cap, out.width = "90%"}
+.pull-left-40[
+```{r, echo = FALSE, fig.cap = cap, out.width = "100%"}
 cap <- "Exemplo de rede radial. Fonte: https://truth-and-beauty.net/projects/muesli-ingredient-network."
 knitr::include_graphics("img/radial-network-1.jpg")
 ```
 ]
 
 .pull-right-60[
-```{r, echo = FALSE, fig.cap = cap, out.width = "90%"}
+```{r, echo = FALSE, fig.cap = cap, out.width = "100%"}
 cap <- "Exemplo de rede na forma de arco. Fonte:
 https://plot.ly/~empet/13574/arc-diagram-of-star-wars-characters-that-interacted-in-the-force-awakens."
 knitr::include_graphics("img/arc-diagram.png")
@@ -575,7 +666,7 @@ knitr::include_graphics("img/arc-diagram.png")
 
 .pull-left-50[
 ```{r, echo = FALSE, fig.cap = cap, out.width = "90%"}
-cap <- "Exemplo de /Sankey diagram/. Fonte:
+cap <- "Exemplo de Sankey diagram. Fonte:
 https://www.theinformationlab.co.uk/2018/03/09/build-sankey-diagram-tableau-without-data-prep-beforehand/.
 [[file:]]"
 knitr::include_graphics("img/sankey-1.png")
@@ -594,9 +685,9 @@ knitr::include_graphics("img/Sankey-Chord.png")
 # Diagrama aluvial para processos
 
 ```{r, echo = FALSE, fig.cap = cap}
-cap <- "Exemplo de Sankey diagram. Fonte:
-https://www.r-graph-gallery.com/sankey-diagram/."
-knitr::include_graphics("img/sankey-2.png")
+cap <- "Exemplo de Sankey diagram aplicado ao covid. Fonte:
+https://www.sciencedirect.com/science/article/pii/S1871402120302332?dgcid=rss_sd_all."
+knitr::include_graphics("img/1-s2.0-S1871402120302332-gr14.jpg")
 ```
 
 ---
@@ -610,6 +701,14 @@ knitr::include_graphics("img/chord-diagram-1.png")
 
 ---
 class: middle, title-slide, section
+# .orange[Vários, vários, vários gráficos sobre o Covid-19]
+
+.center[
+<https://statsandr.com/blog/top-r-resources-on-covid-19-coronavirus/>
+]
+
+---
+class: middle, title-slide, section
 # Gráficos de resultados ou etapas de análise
 
 ---
@@ -617,14 +716,46 @@ class: middle, title-slide, section
 
   * Gráficos para análise de diagnóstico em modelos de regressão.
   * Gráficos com intervalos de confiança ou bandas de confiança.
-  * Gráficos de Kaplan-Meyer.
+  * Gráficos de sobreviência de Kaplan-Meyer.
   * Gráficos de biplot para análise de componentes principais.
   * Gráficos HE-plot de análise multivariada.
   * Gráfico de Shewart para monitoramento de processos.
   * Gráfico de autocorrelação serial.
-  * Gráfico de semivariograma.
-  * Árvore de regressão/classificação.
+  * Gráfico de semivariograma e krigagem.
+  * Gráficos de árvore de regressão/classificação.
   * etc.
 
+---
+# Considerações finais
+
+.pull-left[
+## Conclusões
+
+  * Nunca antes visualização de dados esteve em tanta **evidência**.
+  * Conhecer os tipos de gráficos, suas funções e formas, conduz a **escolhas mais apropriadas** para representação de dados e storytelling.
+  * Uso combinado e integrado de gráficos são os painéis ou dashboards.
+  * Ainda tem-se os gráficos interativos.
+
+]
+
+.pull-right[
+## Alguns links
+
+  * O que você deve evitar (a partir do slide 144):
+    <http://leg.ufpr.br/~walmes/cursoR/data-vis/slides/00-graphics-gallery.pdf>.
+  * A gramática dos gráficos (a partir do slide 17):
+    <http://leg.ufpr.br/~walmes/cursoR/data-vis/slides/08-ggplot2.pdf>.
+  * Recursos para a visualização de dados e a lógica do `ggplot2`:
+    <https://www.youtube.com/embed/KvWCppWip7I>
+
+]
+
+```{r, include = FALSE, eval = FALSE}
+if (require(xaringanBuilder)) {
+  xaringanBuilder::build_pdf(input = "00-catalogo-de-graficos.html")
+}
+```
+
+
 <!-- .. -->
-<!-- <script src="./config-xaringan/author-footnote.js"></script> -->
+<script src="./config-xaringan/author-footnote.js"></script>
