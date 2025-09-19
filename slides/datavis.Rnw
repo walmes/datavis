@@ -1,4 +1,4 @@
-\documentclass[serif, professionalfont, usenames, dvipsnames]{beamer}
+\documentclass[serif, professionalfont, usenames, dvipsnames, aspectratio=169]{beamer}
 
 \input{config/preamble.tex}
 \input{config/preamble-refs.tex}
@@ -48,7 +48,7 @@ read_chunk("00-datavis.R")
 
   \begin{figure}[h]
     \centering
-    \includegraphics[width = 5.5cm]{img/plano-de-fuga.png}
+    \includegraphics[width = 4.5cm]{img/plano-de-fuga.png}
     \caption{Mapa de rota de fuga. Adapatado de
       \citeonline{berinato2016good}.}
   \end{figure}
@@ -170,7 +170,7 @@ read_chunk("00-datavis.R")
 
   \begin{figure}[h]
     \centering
-    \includegraphics[height=6.00cm]{./img/vis-4-plano.png}
+    \includegraphics[height=5.00cm]{./img/vis-4-plano.png}
     \caption{Os 4 tipos de visualização que resultam das respostas às
       duas perguntas. Fonte: adaptado de \citeonline{berinato2016good}.}
   \end{figure}
@@ -196,7 +196,7 @@ read_chunk("00-datavis.R")
 \begin{frame}[allowframebreaks]{Descoberta visual}
   \begin{figure}[h]
     \centering
-    \includegraphics[height=6.00cm]{./img/groups-ggpairs-1.png}
+    \includegraphics[height=5.00cm]{./img/groups-ggpairs-1.png}
     \caption{Fonte: \url{http://www.sthda.com/english/articles/32-r-graphics-essentials/130-plot-multivariate-continuous-data/}.}
   \end{figure}
 \end{frame}
@@ -341,8 +341,8 @@ read_chunk("00-datavis.R")
   \vspace{-3.5em}
   \begin{figure}[h]
     \centering
-    \hspace*{-2.5em}
-    \includegraphics[height=6.5cm]{img/timeline_dataviz.pdf}
+    % \hspace*{-0.5em}
+    \includegraphics[height=5.5cm]{img/timeline_dataviz.pdf}
     \caption{A linha do tempo da visualização de dados. Fonte: o autor.}
   \end{figure}
 

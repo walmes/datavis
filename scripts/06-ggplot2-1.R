@@ -54,7 +54,7 @@ gg_h +
                    color = "black")
 
 gg_h +
-    geom_histogram(binwidth = 500,
+    geom_histogram(binwidth = 100,
                    fill = "seagreen",
                    color = "black")
 
@@ -77,6 +77,23 @@ gg_h +
 
 ggplot(data = tb, mapping = aes(x = preco)) +
     geom_freqpoly()
+
+library(esquisse)
+
+esquisser(tb)
+
+ggplot(tb) +
+    aes(x = metros, y = preco, colour = quartos) +
+    geom_point(size = 2.5) +
+    scale_color_viridis_c(option = "viridis", direction = 1) +
+    scale_x_continuous(trans = "log10") +
+    scale_y_continuous(trans = "log10") +
+    ggthemes::theme_few()
+
+library(DataExplorer)
+
+plot_histogram(tb)
+plot_scatterplot(tb, by="preco")
 
 #--------------------------------------------
 # Densidade empírica.
@@ -893,3 +910,6 @@ if (require(maps)) {
 
 # TODO: gráficos de coordenadas polares.
 # http://rpubs.com/htejero/212368
+
+
+demo(plots, package = "DescTools")

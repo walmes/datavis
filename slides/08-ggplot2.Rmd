@@ -2,7 +2,8 @@
 title: "Visualização de dados com `ggplot2`"
 # subtitle: "a abordagem `tidyverse`"
 # date: '23 Mar 2017'
-bibliography: ../config/refs.bib
+classoption: "aspectratio=169"
+dbibliography: ../config/refs.bib
 csl: ../config/ABNT-UFPR-2011-Mendeley.csl
 ---
 

@@ -314,7 +314,7 @@ knitr::include_graphics("img/ggtern.png")
 ]
 
 .pull-right[
-```{r, echo = FALSE, fig.cap = cap, out.width = "90%"}
+```{r, eval = FALSE, echo = FALSE, fig.cap = cap, out.width = "90%"}
 cap <- "Exemplo de gráfico radial mostrando o contraste entre cluster. Fonte: https://www.nature.com/articles/s41599-020-00590-z"
 knitr::include_graphics("img/41599_2020_590_Fig1_HTML.png")
 ```
@@ -439,7 +439,7 @@ http://curiousgnu1.rssing.com/chan-66482562/all_p1.html."
 knitr::include_graphics("img/gantt.png")
 ```
 
-```{r, echo = FALSE, fig.cap = cap}
+```{r, eval = FALSE, echo = FALSE, fig.cap = cap}
 cap <- "Exemplo de diagrama de Gantt. Fonte:
 https://www.nytimes.com/interactive/2020/04/30/opinion/coronavirus-covid-vaccine.html."
 knitr::include_graphics("img/coronavirus-covid-19-vaccine-timeline-promo-1588200256894-superJumbo-v7.png")
@@ -472,7 +472,7 @@ class: middle, title-slide, section
 # Mapa temático (colorpleth map)
 
 .pull-left-60[
-```{r, echo = FALSE, fig.cap = cap, out.width = "100%"}
+```{r, eval = FALSE, echo = FALSE, fig.cap = cap, out.width = "100%"}
 cap <- "Mapa do covid por Estado. Fonte:
 https://www.ufpb.br/legat/contents/mapas-coronavirus/30-09-brasil.png."
 knitr::include_graphics("img/30-09-brasil.png")
