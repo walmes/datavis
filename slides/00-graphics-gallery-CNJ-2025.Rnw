@@ -1,13 +1,12 @@
-\documentclass[serif, professionalfont, usenames, dvipsnames, aspectratio=169]{beamer}
+\documentclass[usenames, dvipsnames, aspectratio=169]{beamer}
 
 \input{config/preamble-CNJ-2025.tex}
 \input{config/preamble-refs.tex}
 \input{config/preamble-chunk-rnw.tex}
-% \input{config/preamble-author.tex}
 \input{config/preamble-commands.tex}
 
-\title{Almanaque de gráficos para visualização de dados}
-\subtitle{Taxonomia, funções \& formas}
+\title{Visualização de dados}
+\subtitle{Fundamentos, Taxonomia \& Cuidados}
 \author{Prof. Dr. Walmes Zeviani}
 \date{}
 
@@ -16,8 +15,9 @@ source("config/setup.R")
 @
 
 <<include = FALSE>>=
-read_chunk("00-graphics-gallery.R")
+read_chunk("00-datavis.R")
 @
+
 
 %=======================================================================
 
@@ -29,13 +29,189 @@ read_chunk("00-graphics-gallery.R")
 
 %=======================================================================
 
+\section{Por que visualização de dados é tão importante?}
+
+\begin{frame}[allowframebreaks]{O poder de ver além}
+
+  <<anscombe_table, echo = FALSE, results = "asis">>=
+  @
+
+  \framebreak
+
+  <<anscombe_plot, echo = FALSE, message = FALSE, results = "hide", out.width = "11cm", fig.cap = cap>>=
+  @
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Rápida percepção, rápida reação}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width = 4.5cm]{img/plano-de-fuga.png}
+    \caption{Mapa de rota de fuga. Adapatado de
+      \citeonline{berinato2016good}.}
+  \end{figure}
+
+  \framebreak
+
+  \begin{figure}[h]
+    \centering
+    \begin{minipage}[c]{0.8\linewidth}
+
+      Saia desta sala. Vire à direita e caminhe 3 metros até o final do
+      corredor, onde você estará em frente a uma grande sala de
+      conferências. Vire à esquerda e caminhe mais 3 metros até chegar
+      ao final do corredor. À sua esquerda estará um alarme de incêndio,
+      perto do elevador. À sua direita, no final do corredor, há uma
+      escadaria. Não vá ao elevador. Vire à direita e caminhe mais 4
+      metros até o final do corredor, vire à esquerda e desça pelas
+      escadas. Desça dois lances de escadas e saia do prédio na porta na
+      parte inferior das escadas.
+
+    \end{minipage}
+    \caption{Plano de rota de fuga. Adapatado de
+      \citeonline{berinato2016good}.}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}
+
+  \myquote{img/tukey.jpg}{
+    ``O maior valor de um gráfico é quando ele nos força a \textbf{perceber} o que nós jamais esperávamos ver.''}{
+    John Tukey $\cdot$ Estatístico}
+
+\end{frame}
+
+\begin{frame}{10 Vs do Big Data}
+\scalebox{0.9}{
+\begin{minipage}{1.1\textwidth} % garante largura adequada para as duas colunas
+\begin{columns}[t]
+  \column{0.48\textwidth}
+  \begin{description}
+    \item[Volume:] Refere-se à quantidade massiva de dados gerados continuamente.
+    \item[Variedade:] Diversidade de formatos: estruturados, semi-estruturados e não estruturados.
+    \item[Veracidade:] Confiabilidade e qualidade da fonte dos dados.
+    \item[Volatilidade:] Tempo de relevância dos dados para análises e modelos preditivos.
+    \item[Visualização:] Técnicas de representação gráfica que tornam os dados compreensíveis.
+  \end{description}
+
+  \column{0.48\textwidth}
+  \begin{description}
+    \item[Velocidade:] É a rapidez com que os dados são gerados, transmitidos e processados.
+    \item[Variabilidade:] Inconsistência nos dados, exigindo atenção ao contexto e à reprodutibilidade.
+    \item[Validade:] Indica se os dados são precisos e adequados ao uso pretendido.
+    \item[Vulnerabilidade:] Riscos de privacidade e segurança no uso e compartilhamento de dados.
+    \item[Valor:] Utilidade prática e benefício que os dados geram para indivíduos e organizações.
+  \end{description}
+\end{columns}
+\end{minipage}
+}
+\end{frame}
+
+%=======================================================================
+
+\section{Visualização de dados}
+
+\begin{frame}{Definição de como deve ser}
+  \begin{center}
+    \includegraphics[height=5cm]{img/twitter-martin-leblanc.png}
+  \end{center}
+\end{frame}
+
+\begin{frame}{Definição}
+
+    \begin{block}{\Large Visualização de dados}
+      \Large
+
+      A \hi{representação} e \hi{apresentação} de dados que exploram
+      nossa habilidade de \hi{percepção visual} com a finalidade de
+      aumentar a \hi{compreensão} \cite{kirk2012data}.
+    \end{block}
+
+\end{frame}
+
+\begin{frame}{Tipos de visualização}
+
+  Segundo \citeonline{berinato2016good}, dois aspectos determinam o tipo
+  de visualização:
+
+  \begin{enumerate}
+  \item A informação é \hi{conceitual} ou \hi{orientada a dados}?
+  \item Está se \hi{declarando} ou \hi{explorando} algo?
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Os 4 tipos de visualização}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=5.00cm]{./img/vis-4-plano.png}
+    \caption{Os 4 tipos de visualização que resultam das respostas às
+      duas perguntas. Fonte: adaptado de \citeonline{berinato2016good}.}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Desenvolvimento de ideia}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=6.25cm]{./img/large_453078_f_cCGSZhQ9oWETQYCM3uDfTfT.jpg}
+    \caption{Fonte: \url{https://www.coroflot.com/harriettemachin/TAG-Heuer-Branding-Project}.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Ilustração de ideia}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=5.50cm]{./img/logistics-supply-chain-diagram.png}
+    \caption{Fonte: \url{https://icograms.com/usage-supply-chain-diagram.php}.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Descoberta visual}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=5.00cm]{./img/groups-ggpairs-1.png}
+    \caption{Fonte: \url{http://www.sthda.com/english/articles/32-r-graphics-essentials/130-plot-multivariate-continuous-data/}.}
+  \end{figure}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Visualização do cotidiano}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[height=5.5cm]{./img/4304w_F3_Graph_850_478.jpg}
+    \caption{Fonte: \url{http://inthesetimes.com/article/21771/new-optimists-bill-gates-steven-pinker-hans-rosling-world-health}.}
+  \end{figure}
+\end{frame}
+
+%=======================================================================
+
+\begin{frame}{A visualização orientadas a dados}
+
+  \textbf{A escolha de um gráfico} depende de uma série de elementos. Os
+  principais são:
+  \begin{itemize}
+  \item \hi{Escala} das variáveis.
+  \item \hi{Propósito} da visualização $\rightarrow$ \hi{função} do
+    gráfico.
+  \item Questões \hi{visuais/estéticas} $\rightarrow$ \hi{forma} do
+    gráfico.
+  \end{itemize}
+
+\end{frame}
+
+%=======================================================================
+
+<<include = FALSE>>=
+read_chunk("00-graphics-gallery.R")
+@
+
 \begin{comment}
   <<>>=
   2 + 2
   @
 \end{comment}
-
-\section{Motivação}\label{motivacao}
 
 \begin{frame}{Por que conhecer os tipos de gráficos?}
 
@@ -1152,7 +1328,7 @@ Qual usar para:
 
   \begin{figure}[h]
     \centering
-    \includegraphics[width = 10cm]{img/parana-geor.png}
+    \includegraphics[width = 4cm]{img/parana-geor.png}
     \caption{Mapa de densidade populacional por Estado. Fonte:
       \url{http://www.leg.ufpr.br/geoR/PASI/}.}
   \end{figure}
@@ -1161,7 +1337,7 @@ Qual usar para:
 
   \begin{figure}[h]
     \centering
-    \includegraphics[width = 10cm]{img/geor-mo.png}
+    \includegraphics[width = 9cm]{img/geor-mo.png}
     \caption{Valores para matéria orgânica do solo. Fonte:
       \url{http://shiny.leg.ufpr.br/walmes/geor/}.}
   \end{figure}
@@ -1728,23 +1904,9 @@ Qual usar para:
 
 \end{frame}
 
-\begin{frame}{Próximo encontro}
-
-  \begin{itemize}
-  \item Recursos para elaboração de gráficos no R.
-  \item Análise exploratória com \emph{data storytelling}.
-  \item Introdução ao pacote \texttt{ggplot2}.
-  \end{itemize}
-
-\end{frame}
-
-\begin{frame}
-  \centertitle{Pela oportunidade e atenção, agradeço.}
-
-  \begin{center}
-    Prof. Walmes Zeviani\\
-    \url{walmes@ufpr.br}\\
-  \end{center}
+\begin{frame}[allowframebreaks]{Referências}
+  % \printbibliography
+  \bibliography{config/refs} % abnt
 \end{frame}
 
 \end{document}

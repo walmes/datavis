@@ -1,4 +1,7 @@
 beamer_presentation:
+  latex_engine: xelatex
   highlight: tango
   includes:
-    in_header: [./config/preamble.tex, ./config/preamble-chunk-rmd.tex, ./config/preamble-author.tex]
+    # in_header: [./config/preamble.tex, ./config/preamble-chunk-rmd.tex, ./config/preamble-author.tex]
+    # Arquivos de preambulo para o CNJ 2025.
+    in_header: [./config/preamble-CNJ-2025.tex, ./config/preamble-chunk-rmd.tex]

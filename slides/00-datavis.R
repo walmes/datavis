@@ -6,7 +6,7 @@ tb <- anscombe[, c(1, 5, 2, 6, 3, 7, 4, 8)]
 names(tb) <- gsub("^([xy])([1-4])$", "$\\1_\\2$", names(tb))
 
 xtb <- xtable(tb,
-              caption = "Os 4 pares de variáveis do quarteto de Ancombe.",
+              caption = "Os 4 pares de variáveis do quarteto de Anscombe.",
               digits = c(0, 0, 2, 0, 2, 0, 2, 0, 2))
 print.xtable(xtb,
              caption.placement = "top",

@@ -1,10 +1,10 @@
 \documentclass[usenames, dvipsnames, aspectratio=169]{beamer}
 
-% \input{config/preamble.tex}
+% IMPORTANT: Compilar usando Xelatex.
+
 \input{config/preamble-CNJ-2025.tex}
 \input{config/preamble-refs.tex}
 \input{config/preamble-chunk-rnw.tex}
-% \input{config/preamble-author.tex}
 \input{config/preamble-commands.tex}
 
 \title{Importância, tendências e competências}
@@ -109,52 +109,55 @@ read_chunk("00-datavis.R")
   %   ``Visualizations act as a campfire around which we gather to tell stories.''}{
   %   Al Shalloway $\cdot$ CEO Net Objectives}
 
-  \vspace*{-1em}
-  \myquote{img/shalloway.jpg}{
-    ``Visualizações funcionam como uma fogueira na qual nos reunimos para \textbf{contar histórias}.''}{
-    Al Shalloway $\cdot$ CEO Net Objectives}
+  % \vspace*{-1em}
+  % \myquote{img/shalloway.jpg}{
+  %   ``Visualizações funcionam como uma fogueira na qual nos reunimos para \textbf{contar histórias}.''}{
+  %   Al Shalloway $\cdot$ CEO Net Objectives}
 
   % ``Most of us need to listen to the music to understand how
   % beautiful it is. But often that's how we present statistics: we
   % just show the notes, we don't play the music.''
 
-  \vspace*{-1em}
-  \myquote{img/rosling-hans.jpg}{``A maioria de nós precisa ouvir a
-    música para \textbf{entender} o quão bonita ela é. No entanto, é assim que
-    apresentamos estatísticas: nós apenas mostramos as notas, nós não
-    tocamos a \textbf{música}.''}{
-    Hans Rosling}
+  % \vspace*{-1em}
+  % \myquote{img/rosling-hans.jpg}{``A maioria de nós precisa ouvir a
+  %   música para \textbf{entender} o quão bonita ela é. No entanto, é assim que
+  %   apresentamos estatísticas: nós apenas mostramos as notas, nós não
+  %   tocamos a \textbf{música}.''}{
+  %   Hans Rosling}
 
 \end{frame}
 
 %-----------------------------------------------------------------------
 
-\begin{frame}[allowframebreaks]{O fenômeno Big Data}
+\begin{frame}{10 Vs do Big Data}
+\scalebox{0.9}{
+\begin{minipage}{1.1\textwidth} % garante largura adequada para as duas colunas
+\begin{columns}[t]
+  \column{0.48\textwidth}
+  \begin{description}
+    \item[Volume:] Refere-se à quantidade massiva de dados gerados continuamente.
+    \item[Variedade:] Diversidade de formatos: estruturados, semi-estruturados e não estruturados.
+    \item[Veracidade:] Confiabilidade e qualidade da fonte dos dados.
+    \item[Volatilidade:] Tempo de relevância dos dados para análises e modelos preditivos.
+    \item[Visualização:] Técnicas de representação gráfica que tornam os dados compreensíveis.
+  \end{description}
 
-  \mytwocolumns{0.45}{0.54}{
-    \begin{itemize}
-    \item \hi{Big data}: conjuntos de \textbf{dados grandes ou
-        complexos} na qual as abordagens tradicionais de processamento
-      são inadequadas/impraticáveis.
-    \item \hi{Desafios}: captura, armazenamento, qualidade,
-      beneficiamento, consulta, transferência, \textbf{visualização},
-      análise, privacidade e governança.
-    \end{itemize}
-  }{
-    \begin{figure}
-      \centering
-      \includegraphics[width=5.5cm]{img/big-data-8v.png}
-      \caption{Os 8 V's do Big Data.}
-    \end{figure}
-  }
-
+  \column{0.48\textwidth}
+  \begin{description}
+    \item[Velocidade:] É a rapidez com que os dados são gerados, transmitidos e processados.
+    \item[Variabilidade:] Inconsistência nos dados, exigindo atenção ao contexto e à reprodutibilidade.
+    \item[Validade:] Indica se os dados são precisos e adequados ao uso pretendido.
+    \item[Vulnerabilidade:] Riscos de privacidade e segurança no uso e compartilhamento de dados.
+    \item[Valor:] Utilidade prática e benefício que os dados geram para indivíduos e organizações.
+  \end{description}
+\end{columns}
+\end{minipage}
+}
 \end{frame}
 
 %=======================================================================
 
-\begin{frame}
-  \centertitle{Visualização de dados}
-\end{frame}
+\section{Visualização de dados}
 
 \begin{frame}{Definição de como deve ser}
   \begin{center}

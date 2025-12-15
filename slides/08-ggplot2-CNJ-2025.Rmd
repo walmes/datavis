@@ -2,10 +2,15 @@
 title: "Visualização de dados com `ggplot2`"
 # subtitle: "a abordagem `tidyverse`"
 # date: '23 Mar 2017'
+author: "Profg. Dr. Walmes Zeviani"
 classoption: "aspectratio=169"
 dbibliography: ../config/refs.bib
 csl: ../config/ABNT-UFPR-2011-Mendeley.csl
 ---
+
+# Recursos gráficos do R
+
+## Visão geral
 
 <!-- IMPORTANT: Compilar com Xelatex. -->
 
@@ -13,10 +18,6 @@ csl: ../config/ABNT-UFPR-2011-Mendeley.csl
 source("config/setup.R")
 library(tidyverse)
 ```
-
-# Recursos gráficos do R
-
-## Visão geral
 
 O [landscape de recursos para visualização] de dados no R pode ser
 representado por uma divisão em 4 territórios.
@@ -26,96 +27,18 @@ representado por uma divisão em 4 territórios.
   3. O pacote [`ggplot2`] e derivados.
   4. Pacotes para gráficos interativos.
 
-## O pacote `graphics`
-
-  * Contém os recursos mais primitivos: com funções de
-    alto e baixo nível.
-  * Pouco suporte para mapeamento em variáveis visuais retinais.
-  * Vários pacotes que complementam suas funcionalidades: [`plotrix`]
-    e [`gplots`].
-  * Usado em métodos gráficos de saídas de análises: dendrogramas,
-    biplots, etc.
-
-## O pacote `lattice`
-
-  * Desenvolvido por [Deepayan Sarkar].
-  * Plotagem multi-painel e mapeamento em variáveis visuais retinais.
-  * Já vem com a instalação básica do R.
-  * Também é utilizado na implementação de métodos gráficos.
-
-## O pacote `ggplot2`
-
-  * Desenvolvido por [Hadley Wickham].
-  * Baseado na [*Grammar of Graphics*].
-  * Plotagem multi-painel e mapeamento em variáveis visuais retinais.
-  * A importância da [`ggplot2`] está no modelo mental mais claro.
-
 ## Pacotes para recursos interativos
 
 A visualização interativa é voltada para exibicação na WEB.  Alguns dos
 pacotes para isso são estes:
 
   * [`plotly`](https://plot.ly/r/).
+  * [`leaflet`](https://rstudio.github.io/leaflet/).
+  * [`echarts4r`](https://echarts4r.john-coene.com/index.html).
   * [`highcharter`](http://jkunst.com/highcharter/).
   * [`googleVis`](https://cran.r-project.org/web/packages/googleVis/vignettes/googleVis_examples.html).
-  * [`rCharts`](https://ramnathv.github.io/rCharts/).
-  * [`leaflet`](https://rstudio.github.io/leaflet/).
-  * [`iplots`](http://rosuda.org/software/iPlots/).
   * [`rgl`](https://cran.r-project.org/web/packages/rgl/vignettes/rgl.html).
   * [`animation`](https://yihui.name/animation/).
-
-## Mais informação
-
-Para mais detalhes sobre os recursos gráficos, siga esse link:
-<https://www.stat.ubc.ca/~jenny/STAT545A/block90_baseLatticeGgplot2.html>.
-
-Para uma descrição completada comparação entre [`lattice`] e [`ggplot2`],
-siga esse link: <https://learnr.wordpress.com/2009/08/26/ggplot2-version-of-figures-in-lattice-multivariate-data-visualization-with-r-final-part/>.
-
-Confira no [R Graph Gallery] a variedade de gráficos confeccionados com
-o R.
-
-# Galerias e tutoriais
-
-## The R Graph Gallery
-
-```{r, echo = FALSE, out.width = "9 cm", fig.cap = cap}
-cap <- "Gráficos da galeria de gráficos do R. Fonte: \\href{https://pbs.twimg.com/media/DeUD4fKW0AAcyqO.jpg}{Mara Averick}."
-knitr::include_graphics("img/r-graph-gallery.jpg")
-```
-
-## Galerias
-
-  * <https://www.r-graph-gallery.com/portfolio/ggplot2-package/>.
-  * <http://r-statistics.co/Top50-Ggplot2-Visualizations-MasterList-R-Code.html>.
-  * <https://r4stats.com/examples/graphics-ggplot2/>.
-  * <http://girke.bioinformatics.ucr.edu/GEN242/pages/mydoc/Rgraphics.html>.
-
-## Extensões do `ggplot2`
-
-```{r, echo = FALSE, out.width = "6 cm", fig.cap = cap}
-cap <- "Gráficos da galeria de extensões do \\texttt{ggplot2}. Fonte: \\href{https://ggobi.github.io/ggally/index_files/figure-html/nostic_flea-3.png}{GGally}."
-knitr::include_graphics("img/nostic_flea-3.png")
-```
-
-  * <http://www.ggplot2-exts.org/gallery/>.
-  * <https://mode.com/blog/r-ggplot-extension-packages>.
-
-## Mapas
-
-  * <https://rstudio-pubs-static.s3.amazonaws.com/176768_ec7fb4801e3a4772886d61e65885fbdd.html>.
-  * <https://www.curso-r.com/blog/2017-05-04-mapas-tematicos-3-minutos/>.
-  * <http://girke.bioinformatics.ucr.edu/GEN242/pages/mydoc/Rgraphics.html>.
-
-## Tutoriais em português
-
-  * <https://rpubs.com/mnunes/ggplot2>.
-  * <https://analisereal.com/2015/09/19/introducao-ao-ggplot2/>.
-  * <https://timogrossenbacher.ch/2016/12/beautiful-thematic-maps-with-ggplot2-only/>.
-  * <http://recologia.com.br/tag/graficos/>.
-  * <http://rstudio-pubs-static.s3.amazonaws.com/24563_3b7b0a6414824e3b91769a95309380f1.html>.
-  * <http://eduardogutierres.com/inteligencia-geografica-gerando-mapas-em-r/>.
-  * <https://pt.stackoverflow.com/questions/332053/r-mapa-de-cidades-brasileiras>.
 
 # Um overview do `ggplot2`
 
@@ -179,7 +102,7 @@ knitr::include_graphics("img/visual_variables-in-ggplot2.png")
 
 Funções para controle de escala:
 
-```{r, echo = FALSE, comment = NA}
+```{r, eval = FALSE, echo = FALSE, comment = NA}
 ls_ggplot <- ls("package:ggplot2")
 
 u <- ls("package:ggplot2") %>%
@@ -199,11 +122,29 @@ v[, 1] <- paste0("scale_", v[, 1], "_")
 v <- split(v[, 2], v[, 1])
 
 for (i in seq(v)) {
-    cat(names(v)[i], ":\n", sep = "")
+    cat(names(v)[i], ": ", sep = "")
     p <- paste(v[[i]], collapse = " ")
     cat(paste(" ", strwrap(p, width = 65)),
         sep = "\n")
 }
+```
+
+```{r, echo = FALSE, comment = NA}
+ls_ggplot <- ls("package:ggplot2")
+
+k <- 3
+u <- ls("package:ggplot2") %>%
+    str_subset("scale_\\w+_")
+
+u <- u |>
+    gsub(pattern = "(scale_\\w+_).*", replacement = "\\1") |>
+    unique() |>
+    paste0("*")
+
+a <- (k * (length(u) %/% k + 1) - length(u)) %% k
+u <- append(u, rep("", a))
+
+MASS::write.matrix(matrix(u, ncol = k))
 ```
 
 ## Camada 3: geometrias
